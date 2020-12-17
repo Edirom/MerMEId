@@ -1,28 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<h:div id="work-div" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:xf="http://www.w3.org/2002/xforms"
-	xmlns:xxf="http://orbeon.org/oxf/xml/xforms" xmlns:fr="http://orbeon.org/oxf/xml/form-runner"
-	xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:m="http://www.music-encoding.org/ns/mei"
-	xmlns:xi="http://www.w3.org/2001/XInclude"
-	xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:dcm="http://www.kb.dk/dcm">
+<h:div xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:xxf="http://orbeon.org/oxf/xml/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:fr="http://orbeon.org/oxf/xml/form-runner" xmlns:m="http://www.music-encoding.org/ns/mei" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:dcm="http://www.kb.dk/dcm" id="work-div">
 
 	<h:div class="inputdiv">
 
 		<xf:group ref=".[not(instance('data-instance')/m:meiHead/m:workList/m:work)]">
 			<h:div class="vertical_spacer"/>
-			<dcm:create ref="instance('data-instance')/m:meiHead" nodeset="m:workList"
-				label="Add basic work metadata"
-				origin="instance('reduced-template')/m:meiHead/m:workList"/>
-			<dcm:create ref="instance('data-instance')/m:meiHead/m:workList" nodeset="m:work"
-				label="Add basic work metadata"
-				origin="instance('reduced-template')/m:meiHead/m:workList/m:work"/>
+			<dcm:create ref="instance('data-instance')/m:meiHead" nodeset="m:workList" label="Add basic work metadata" origin="instance('reduced-template')/m:meiHead/m:workList"/>
+			<dcm:create ref="instance('data-instance')/m:meiHead/m:workList" nodeset="m:work" label="Add basic work metadata" origin="instance('reduced-template')/m:meiHead/m:workList/m:work"/>
 		</xf:group>
 
 		<xf:group ref=".[instance('data-instance')/m:meiHead/m:workList/m:work]">
 
 			<h:fieldset>
 				<h:legend>Titles</h:legend>
-				<xf:group ref="instance('data-instance')/m:meiHead/m:workList/m:work"
-					id="repeat-title">
+				<xf:group ref="instance('data-instance')/m:meiHead/m:workList/m:work" id="repeat-title">
 					<h:div class="blocklabel">Main title </h:div>
 					<dcm:create nodeset="m:title[not(@type) or @type='main' or @type='']" label="Add main title"
 						origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:title[not(@type)]"/>
@@ -41,13 +31,10 @@
 					<xf:group ref=".[m:title[@type='alternative']]">
 						<h:div class="blocklabel">Alternative title</h:div>
 					</xf:group>
-					<xf:repeat nodeset="m:title[@type='alternative']" id="alternative_titles"
-						class="input_group">
+					<xf:repeat nodeset="m:title[@type='alternative']" id="alternative_titles" class="input_group">
 						<h:div>
-							<xi:include href="includes/input_with_xmllang.xml" parse="xml"/>&#160;
-								<dcm:element-buttons-typed triggers="up down move copy add remove"
-								nodeset="m:title[@type='alternative']" index="alternative_titles"
-								origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:title[@type='alternative']"/>
+							<xi:include href="includes/input_with_xmllang.xml" parse="xml"/> 
+								<dcm:element-buttons-typed triggers="up down move copy add remove" nodeset="m:title[@type='alternative']" index="alternative_titles" origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:title[@type='alternative']"/>
 							<dcm:attribute-editor ref="."/>
 						</h:div>
 					</xf:repeat>
@@ -55,13 +42,10 @@
 					<xf:group ref=".[m:title[@type='subordinate']]">
 						<h:div class="blocklabel">Subtitle</h:div>
 					</xf:group>
-					<xf:repeat nodeset="m:title[@type='subordinate']" id="subtitles"
-						class="input_group">
+					<xf:repeat nodeset="m:title[@type='subordinate']" id="subtitles" class="input_group">
 						<h:div>
-							<xi:include href="includes/input_with_xmllang.xml" parse="xml"/>&#160;
-								<dcm:element-buttons-typed triggers="up down move copy add remove"
-								nodeset="m:title[@type='subordinate']" index="subtitles"
-								origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:title[@type='subordinate']"/>
+							<xi:include href="includes/input_with_xmllang.xml" parse="xml"/> 
+								<dcm:element-buttons-typed triggers="up down move copy add remove" nodeset="m:title[@type='subordinate']" index="subtitles" origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:title[@type='subordinate']"/>
 							<dcm:attribute-editor ref="."/>
 						</h:div>
 					</xf:repeat>
@@ -69,13 +53,10 @@
 					<xf:group ref=".[m:title[@type='uniform']]">
 						<h:div class="blocklabel">Uniform title</h:div>
 					</xf:group>
-					<xf:repeat nodeset="m:title[@type='uniform']" id="uniform_titles"
-						class="input_group">
+					<xf:repeat nodeset="m:title[@type='uniform']" id="uniform_titles" class="input_group">
 						<h:div>
-							<xi:include href="includes/input_with_xmllang.xml" parse="xml"/>&#160;
-								<dcm:element-buttons-typed triggers="up down move copy add remove"
-								nodeset="m:title[@type='uniform']" index="uniform_titles"
-								origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:title[@type='uniform']"/>
+							<xi:include href="includes/input_with_xmllang.xml" parse="xml"/> 
+								<dcm:element-buttons-typed triggers="up down move copy add remove" nodeset="m:title[@type='uniform']" index="uniform_titles" origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:title[@type='uniform']"/>
 							<dcm:attribute-editor ref="."/>
 						</h:div>
 					</xf:repeat>
@@ -83,78 +64,52 @@
 					<xf:group ref=".[m:title[@type='original']]">
 						<h:div class="blocklabel">Original title</h:div>
 					</xf:group>
-					<xf:repeat nodeset="m:title[@type='original']" id="original_titles"
-						class="input_group">
+					<xf:repeat nodeset="m:title[@type='original']" id="original_titles" class="input_group">
 						<h:div>
-							<xi:include href="includes/input_with_xmllang.xml" parse="xml"/>&#160;
-								<dcm:element-buttons-typed triggers="up down move copy add remove"
-								nodeset="m:title[@type='original']" index="original_titles"
-								origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:title[@type='original']"/>
+							<xi:include href="includes/input_with_xmllang.xml" parse="xml"/> 
+								<dcm:element-buttons-typed triggers="up down move copy add remove" nodeset="m:title[@type='original']" index="original_titles" origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:title[@type='original']"/>
 							<dcm:attribute-editor ref="."/>
 						</h:div>
 					</xf:repeat>
 
 					<xf:group ref=".[m:title[@type='text_source']]">
-						<h:div class="blocklabel">Text source <h:a class="help">&#160;?<h:span
-									class="comment">The title of a textual source for a sung or
-									recited text used in the work, e.g. "Psalm 101"</h:span></h:a>
+						<h:div class="blocklabel">Text source <h:a class="help"> ?<h:span class="comment">The title of a textual source for a sung or
+									recited text used in the work, e.g. "Psalm 101"</h:span>
+                            </h:a>
 						</h:div>
 					</xf:group>
-					<xf:repeat nodeset="m:title[@type='text_source']" id="text_sources"
-						class="input_group">
+					<xf:repeat nodeset="m:title[@type='text_source']" id="text_sources" class="input_group">
 						<h:div>
-							<xi:include href="includes/input_with_xmllang.xml" parse="xml"/>&#160;
-								<dcm:element-buttons-typed triggers="up down move copy add remove"
-								nodeset="m:title[@type='text_source']" index="text_sources"
-								origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:title[@type='text_source']"/>
+							<xi:include href="includes/input_with_xmllang.xml" parse="xml"/> 
+								<dcm:element-buttons-typed triggers="up down move copy add remove" nodeset="m:title[@type='text_source']" index="text_sources" origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:title[@type='text_source']"/>
 							<dcm:attribute-editor ref="."/>
 						</h:div>
 					</xf:repeat>
 
 
-					<xf:group
-						ref=".[not(m:title[@type='alternative'] 
-			 and m:title[@type='subordinate'] 
-			 and	m:title[@type='uniform'] 
-			 and	m:title[@type='original'] 
-			 and	m:title[@type='text_source'])]">
+					<xf:group ref=".[not(m:title[@type='alternative']      and m:title[@type='subordinate']      and m:title[@type='uniform']      and m:title[@type='original']      and m:title[@type='text_source'])]">
 						<h:div class="vertical_spacer"/>
-						<h:a class="popup"><h:img
-								src="{instance('parameters')/dcm:server_name}editor/images/add.gif"
-								title="Add more titles"/> Add more titles...<h:span class="comment">
+						<h:a class="popup">
+                            <h:img src="{instance('parameters')/dcm:server_name}editor/images/add.gif" title="Add more titles"/> Add more titles...<h:span class="comment">
 								<h:div style="text-align:center">
 									<h:div>
-										<dcm:create nodeset="m:title[@type='alternative']"
-											label="Add alternative title"
-											origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:title[@type='alternative']"
-										/>
+										<dcm:create nodeset="m:title[@type='alternative']" label="Add alternative title" origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:title[@type='alternative']"/>
 									</h:div>
 									<h:div>
-										<dcm:create nodeset="m:title[@type='subordinate']"
-											label="Add subtitle"
-											origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:title[@type='subordinate']"
-										/>
+										<dcm:create nodeset="m:title[@type='subordinate']" label="Add subtitle" origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:title[@type='subordinate']"/>
 									</h:div>
 									<h:div>
-										<dcm:create nodeset="m:title[@type='uniform']"
-											label="Add uniform title"
-											origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:title[@type='uniform']"
-										/>
+										<dcm:create nodeset="m:title[@type='uniform']" label="Add uniform title" origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:title[@type='uniform']"/>
 									</h:div>
 									<h:div>
-										<dcm:create nodeset="m:title[@type='original']"
-											label="Add original title"
-											origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:title[@type='original']"
-										/>
+										<dcm:create nodeset="m:title[@type='original']" label="Add original title" origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:title[@type='original']"/>
 									</h:div>
 									<h:div>
-										<dcm:create nodeset="m:title[@type='text_source']"
-											label="Add title of text source"
-											origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:title[@type='text_source']"
-										/>
+										<dcm:create nodeset="m:title[@type='text_source']" label="Add title of text source" origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:title[@type='text_source']"/>
 									</h:div>
 								</h:div>
-							</h:span></h:a>
+							</h:span>
+                        </h:a>
 					</xf:group>
 
 				</xf:group>
@@ -162,46 +117,41 @@
 
 			<h:fieldset>
 				<h:legend>Identification</h:legend>
-				<dcm:create ref="instance('data-instance')/m:meiHead/m:workList/m:work"
-					nodeset="m:identifier" label="Add identifier"
-					origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:identifier"/>
+				<dcm:create ref="instance('data-instance')/m:meiHead/m:workList/m:work" nodeset="m:identifier" label="Add identifier" origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:identifier"/>
 				<xf:group ref="instance('data-instance')/m:meiHead/m:workList/m:work/m:identifier">
 					<h:div class="blocklabel">
-						<h:span class="fixed_width"> List name <h:a class="help">&#160;?<h:span
-									class="comment">Name of a list, catalogue or other numbering
+						<h:span class="fixed_width"> List name <h:a class="help"> ?<h:span class="comment">Name of a list, catalogue or other numbering
 									system in which the work is identified (e.g. "Opus", "CNW",
 									"BWV", "Neue Mozart-Ausgabe" etc.)<h:br/> If the name matches
 									the name of a file collection as defined at the "File" tab, this
 									identifier will be shown (like "BWV 1063" or "NMA II/3") next to
 									the work's title on the file list; it will also be used as a
-									header in the HTML preview. </h:span></h:a></h:span>
-						<h:span class="fixed_width"> No. <h:a class="help">&#160;?<h:span
-									class="comment">The work's number or signature in the list
-									identifying it</h:span></h:a>
+									header in the HTML preview. </h:span>
+                            </h:a>
+                        </h:span>
+						<h:span class="fixed_width"> No. <h:a class="help"> ?<h:span class="comment">The work's number or signature in the list
+									identifying it</h:span>
+                            </h:a>
 						</h:span>
 					</h:div>
 				</xf:group>
-				<xf:repeat
-					nodeset="instance('data-instance')/m:meiHead/m:workList/m:work/m:identifier"
-					id="work-id-repeat">
+				<xf:repeat nodeset="instance('data-instance')/m:meiHead/m:workList/m:work/m:identifier" id="work-id-repeat">
 					<h:div>
 						<xf:input ref="@label" class="mediumshort"/>
 						<xf:input ref="." class="mediumshort"/>
-						<dcm:element-buttons triggers="add remove up down" nodeset="m:identifier"
-							index="work-id-repeat"
-							origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:identifier"/>
+						<dcm:element-buttons triggers="add remove up down" nodeset="m:identifier" index="work-id-repeat" origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:identifier"/>
 						<dcm:attribute-editor ref="."/>
 					</h:div>
 				</xf:repeat>
 			</h:fieldset>
 
 			<h:fieldset>
-				<h:legend>Contributors <h:a class="help">&#160;?<h:span class="comment">A list of person
+				<h:legend>Contributors <h:a class="help"> ?<h:span class="comment">A list of person
 							involved in the creation or transmission of this work in general, such
-							as the composer or text author</h:span></h:a></h:legend>
-				<dcm:create ref="instance('data-instance')/m:meiHead/m:workList/m:work"
-					nodeset="m:contributor" label="Add contributor"
-					origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:contributor"/>
+							as the composer or text author</h:span>
+                    </h:a>
+                </h:legend>
+				<dcm:create ref="instance('data-instance')/m:meiHead/m:workList/m:work" nodeset="m:contributor" label="Add contributor" origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:contributor"/>
 				<xf:group ref="instance('data-instance')/m:meiHead/m:workList/m:work/m:contributor">
 					<xi:include href="includes/person-input.xml"/>
 				</xf:group>
@@ -211,69 +161,62 @@
 				<h:fieldset>
 					<h:legend>Work notes</h:legend>
 					<h:div class="vertical_spacer"/>
-					<dcm:create nodeset="m:notesStmt" label="Add work description"
-						origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:notesStmt"/>
+					<dcm:create nodeset="m:notesStmt" label="Add work description" origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:notesStmt"/>
 					<xf:group ref="m:notesStmt">
-						<dcm:create nodeset="m:annot[@type='general_description']"
-							label="Add work description"
-							origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:notesStmt/m:annot[@type='general_description']"/>
+						<dcm:create nodeset="m:annot[@type='general_description']" label="Add work description" origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:notesStmt/m:annot[@type='general_description']"/>
 						<xf:group ref="m:annot[@type='general_description']">
-							<h:div class="blocklabel">General work description <h:a class="help"
-										>&#160;?<h:span class="comment">A general description of or
-										introduction to the work</h:span></h:a>
+							<h:div class="blocklabel">General work description <h:a class="help"> ?<h:span class="comment">A general description of or
+										introduction to the work</h:span>
+                                </h:a>
 							</h:div>
 						</xf:group>
-						<xf:repeat nodeset="m:annot[@type='general_description']"
-							id="repeat_work_description">
+						<xf:repeat nodeset="m:annot[@type='general_description']" id="repeat_work_description">
+							<xf:output value="./m:p"/>
+						
 							<xf:input ref="@label" class="maxlong">
 								<xf:label>
-									<h:span class="blocklabel">Label <h:a class="help"
-												>&#160;?<h:span class="comment">An optional label
-												for this block of text</h:span></h:a>
+									<h:span class="blocklabel">Label <h:a class="help"> ?<h:span class="comment">An optional label
+												for this block of text</h:span>
+                                        </h:a>
 									</h:span>
 								</xf:label>
-							</xf:input>&#160; <dcm:element-buttons-typed
-								triggers="add up down remove" index="repeat_work_description"
-								nodeset="m:annot[@type='general_description']"
-								origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:notesStmt/m:annot[@type='general_description']"/>
+							</xf:input>  <dcm:element-buttons-typed triggers="add up down remove" index="repeat_work_description" nodeset="m:annot[@type='general_description']" origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:notesStmt/m:annot[@type='general_description']"/>
 							<dcm:id/>
 							<dcm:attribute-editor/>
-							<fr:tinymce ref="."/>
+							<fr:tinymce ref="." />
 							<h:hr/>
 						</xf:repeat>
 
-						<h:div class="blocklabel">Links <h:a class="help">&#160;?<h:span
-									class="comment">Links to external resources (web pages, PDF
+						<h:div class="blocklabel">Links <h:a class="help"> ?<h:span class="comment">Links to external resources (web pages, PDF
 									files etc.) related to the work in general - not about a
 									particular source.									
-						</h:span></h:a></h:div>
-						<dcm:create nodeset="m:annot[@type='links']" label="Add link"
-							origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:notesStmt/m:annot[@type='links']"/>
-						<dcm:create ref="m:annot[@type='links']" nodeset="m:ptr" label="Add link"
-							origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:notesStmt/m:annot[@type='links']/m:ptr"/>
+						</h:span>
+                            </h:a>
+                        </h:div>
+						<dcm:create nodeset="m:annot[@type='links']" label="Add link" origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:notesStmt/m:annot[@type='links']"/>
+						<dcm:create ref="m:annot[@type='links']" nodeset="m:ptr" label="Add link" origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:notesStmt/m:annot[@type='links']/m:ptr"/>
 						<xf:group ref="m:annot[@type='links']">
 							<xf:repeat nodeset="m:ptr" id="general-notesstmt-annot-repeat-ptr">
 								<h:div>
 									<xf:input ref="@target" class="long">
-										<xf:label>URI <h:a class="help">&#160;?<h:span
-												class="comment">Link to the resource, e.g.
+										<xf:label>URI <h:a class="help"> ?<h:span class="comment">Link to the resource, e.g.
 												'http://example.com/preface.pdf'<br/>
 												MerMEId interprets references without the 'http://' protocol as links to other MEI files
 												in the same database as this one; for instance, 'sonata.xml' will be resolved as a link to 
 												a file of that name in the same folder in the database, 
 												whereas 'http://example.com/sonata.xml' generates a
 												link to an external web resource.
-										</h:span></h:a>
+										</h:span>
+                                            </h:a>
 										</xf:label>
 									</xf:input>
 									<xf:input ref="@label">
-										<xf:label>Label <h:a class="help">&#160;?<h:span
-												class="comment">A short, descriptive text which
-												may serve as the link text, e.g. 'Printed edition's preface'</h:span></h:a></xf:label>
+										<xf:label>Label <h:a class="help"> ?<h:span class="comment">A short, descriptive text which
+												may serve as the link text, e.g. 'Printed edition's preface'</h:span>
+                                            </h:a>
+                                        </xf:label>
 									</xf:input>
-									<dcm:element-buttons triggers="up down copy add remove"
-										nodeset="m:ptr" index="general-notesstmt-annot-repeat-ptr"
-										origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:notesStmt/m:annot[@type='links']/m:ptr"/>
+									<dcm:element-buttons triggers="up down copy add remove" nodeset="m:ptr" index="general-notesstmt-annot-repeat-ptr" origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:notesStmt/m:annot[@type='links']/m:ptr"/>
 									<dcm:attribute-editor ref="."/>
 								</h:div>
 							</xf:repeat>
@@ -284,7 +227,7 @@
 
 			<xf:group ref="instance('data-instance')/m:meiHead/m:workList/m:work">
 				<h:fieldset>
-					<h:legend>Relations <h:a class="help">&#160;?<h:span class="comment">Relations
+					<h:legend>Relations <h:a class="help"> ?<h:span class="comment">Relations
 								between this work and other works or files may be specified here to
 								create links between them.<h:br/> For instance, if this work is also
 								part of a larger work or a collection of works defined in a
@@ -295,11 +238,11 @@
 								preview, relative URIs are interpreted as being links to other MEI
 								files to be displayed using the MerMEId preview as well. To avoid
 								this, make the URI absolute (i.e., starting with a protocol like
-								"http://"). </h:span></h:a></h:legend>
-					<dcm:create nodeset="m:relationList" label="Add relation"
-						origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:relationList"/>
-					<dcm:create ref="m:relationList" nodeset="m:relation" label="Add relation"
-						origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:relationList/m:relation"/>
+								"http://"). </h:span>
+                        </h:a>
+                    </h:legend>
+					<dcm:create nodeset="m:relationList" label="Add relation" origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:relationList"/>
+					<dcm:create ref="m:relationList" nodeset="m:relation" label="Add relation" origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:relationList/m:relation"/>
 					<h:table class="element_list" cellspacing="0" cellpadding="0" border="0">
 						<xf:repeat nodeset="m:relationList/m:relation" id="work_relations">
 							<h:tr>
@@ -308,8 +251,7 @@
 									<xi:include href="includes/relation_select.xml" parse="xml"/>
 									<xf:group ref="@target">
 										<xf:input ref="." class="maxlong">
-											<xf:label>URI <h:a class="help">&#160;?<h:span
-												class="comment">The location of the linked
+											<xf:label>URI <h:a class="help"> ?<h:span class="comment">The location of the linked
 												ressource (target). The target may be either an
 												external file (such as
 												"http://www.example.org/some_file.xml"), an
@@ -324,19 +266,17 @@
 												files to be displayed as MerMEId previews as well.
 												To avoid this, make the URI absolute (i.e.,
 												starting with a protocol like "http://").
-												</h:span></h:a>
+												</h:span>
+                                                </h:a>
 											</xf:label>
 										</xf:input>
 										<xf:trigger>
-											<xf:label><h:img
-												src="{instance('parameters')/dcm:server_name}/editor/images/search.png"
-												title="search for file" alt="search"/> Select file</xf:label>
+											<xf:label>
+                                                <h:img src="{instance('parameters')/dcm:server_name}/editor/images/search.png" title="search for file" alt="search"/> Select file</xf:label>
 											<xf:action ev:event="DOMActivate">
-												<xf:setvalue ref="instance('temp')/nodeset"
-												value="&quot;instance(&apos;data-instance&apos;)/m:meiHead/m:workList/m:work/m:relationList/m:relation[index(&apos;work_relations&apos;)]&quot;"/>
+												<xf:setvalue ref="instance('temp')/nodeset" value="&#34;instance('data-instance')/m:meiHead/m:workList/m:work/m:relationList/m:relation[index('work_relations')]&#34;"/>
 												<xxf:show dialog="relation_dialog"/>
-												<xf:setvalue ref="instance('temp')/target_uri"
-												value="concat(instance('parameters')/dcm:server_name,'/modules/cross-link.xq?get=works')"/>
+												<xf:setvalue ref="instance('temp')/target_uri" value="concat(instance('parameters')/dcm:server_name,'/modules/cross-link.xq?get=works')"/>
 												<!-- load data on open - may be deactivated if performance is an issue -->
 												<xf:send submission="load-fileList"/>
 											</xf:action>
@@ -344,20 +284,12 @@
 										<xf:trigger appearance="minimal">
 											<xf:label>
 												<h:span style="vertical-align:bottom;">
-												<h:img
-												src="{instance('parameters')/dcm:server_name}/editor/images/go_to_link.png"
-												title="Go to linked resource"/>
+												<h:img src="{instance('parameters')/dcm:server_name}/editor/images/go_to_link.png" title="Go to linked resource"/>
 												</h:span>
 											</xf:label>
 											<xf:action ev:event="DOMActivate">
-												<xf:var name="uri"
-												select="concat(
-					      instance('parameters')/dcm:orbeon_dir,
-					      '?uri=',
-					      instance('parameters')/dcm:form_home,
-					      'edit-work-case.xml&amp;doc=',.)"/>
-												<xf:setvalue ref="instance('temp')/target_uri"
-												value="$uri"/>
+												<xf:var name="uri" select="concat(            instance('parameters')/dcm:orbeon_dir,            '?uri=',            instance('parameters')/dcm:form_home,            'edit-work-case.xml&amp;doc=',.)"/>
+												<xf:setvalue ref="instance('temp')/target_uri" value="$uri"/>
 												<xxf:show dialog="leave-warning-dialog"/>
 											</xf:action>
 										</xf:trigger>
@@ -365,23 +297,21 @@
 								</h:td>
 								<h:td>
 									<xf:input ref="@label" class="long">
-										<xf:label> Label <h:a class="help">&#160;?<h:span
-												class="comment">The text to be displayed as the
+										<xf:label> Label <h:a class="help"> ?<h:span class="comment">The text to be displayed as the
 												link text (usually the title of the linked
 												item).<h:br/> Please note that MerMEId displays
 												labels containing a colon (:) in a special way: In
 												that case, the text before the colon is displayed
 												as the label before the link instead of the
 												standard description af the relation.
-												</h:span></h:a></xf:label>
+												</h:span>
+                                            </h:a>
+                                        </xf:label>
 									</xf:input>
 								</h:td>
 								<h:td style="vertical-align:top; white-space:nowrap;">
 									<h:span class="editmenu">
-										<dcm:element-buttons
-											triggers="up down add del-parent-with-last"
-											nodeset="m:relation" index="work_relations"
-											origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:relationList/m:relation"/>
+										<dcm:element-buttons triggers="up down add del-parent-with-last" nodeset="m:relation" index="work_relations" origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:relationList/m:relation"/>
 										<dcm:attribute-editor ref="."/>
 									</h:span>
 								</h:td>
@@ -396,15 +326,17 @@
 				<h:legend>Classification and keywords</h:legend>
 				
 				<xf:group ref="instance('data-instance')/m:meiHead/m:workList/m:work">
-					<dcm:keywords-input ref="." query="keywords.xml" />
+					<dcm:keywords-input ref="." query="keywords.xml"/>
 				</xf:group>
 			</h:fieldset>
+		
 		</xf:group>
 
 	</h:div>
 
 	<xi:include href="includes/code-inspector.xml" parse="xml"/>
 	<h:br clear="all"/>
+
 
 
 	<xxf:dialog id="leave-warning-dialog" appearance="full">
