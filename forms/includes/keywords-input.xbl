@@ -135,7 +135,6 @@
                       <!-- level 2 keywords -->
                       <xf:repeat nodeset="m:category" id="category-index">
                       <xf:var value="index('category-index')" name="index"/>
-                      <xf:output ref="$index"/>
                         <xf:trigger submission="replace-form-with" appearance="minimal">
                           <xf:label>
                             <h:img src="{instance('parameters')/dcm:server_name}/editor/images/add.gif" alt="Add"/>
