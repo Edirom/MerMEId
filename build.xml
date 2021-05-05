@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default="xar" name="mermeid">
-    <xmlproperty file="expath-pkg.xml"/>
-    <property name="project.version" value="${package(version)}"/>
     <property name="project.app" value="mermeid"/>
     <property name="build.dir" value="build"/>
     
@@ -13,8 +11,21 @@
         <mkdir dir="${build.dir}"/>
     </target>
     
-    <target name="xar" depends="init,expath-pkg.xml">
-        <zip destfile="${build.dir}/${project.app}-${project.version}.xar">
+    <target name="xar" depends="init">
+        <exec executable="git" outputproperty="git.revision" failifexecutionfails="false" errorproperty="">
+            <arg value="describe"/>
+            <arg value="--tags"/>
+            <arg value="--always"/>
+            <arg value="HEAD"/>
+        </exec>
+        <condition property="repository.version" value="${git.revision}" else="unknown">
+            <and>
+                <isset property="git.revision"/>
+                <length string="${git.revision}" trim="yes" length="0" when="greater"/>
+            </and>
+        </condition>
+        
+        <zip destfile="${build.dir}/${project.app}-${repository.version}.xar">
             <fileset dir=".">
                 <include name="**/*.*"/>
                 <exclude name="${build.dir}/**"/>
@@ -33,34 +44,6 @@
                 <exclude name="trunk/**"/>
             </fileset>
         </zip>
-    </target>
-    
-    <available file=".git" type="dir" property="git.present"/>
-
-    <target name="git.revision" description="Store git revision in ${repository.version}" if="git.present">
-        <exec executable="git" outputproperty="git.revision" failifexecutionfails="false" errorproperty="">
-            <arg value="describe"/>
-            <arg value="--tags"/>
-            <arg value="--always"/>
-            <arg value="HEAD"/>
-        </exec>
-        <condition property="repository.version" value="${git.revision}" else="unknown">
-            <and>
-                <isset property="git.revision"/>
-                <length string="${git.revision}" trim="yes" length="0" when="greater"/>
-            </and>
-        </condition>
-        <echo message="${repository.version}" />
-    </target>
-
-    <target name="expath-pkg.xml" depends="git.revision" description="build expath-pkg.xml from template">
-        <copy file="expath-pkg.xml.template" tofile="expath-pkg.xml" overwrite="yes">
-            <filterchain>
-                <replacetokens>
-                    <token key="repository.version" value="${repository.version}" />
-                </replacetokens>
-            </filterchain>
-        </copy>
     </target>
     
 </project>
