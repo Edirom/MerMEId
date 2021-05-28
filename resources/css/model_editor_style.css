@@ -32,3 +32,16 @@ body.orbeon {
     padding: 10px;
     border: 1px solid #999;
 }
+
+.orbeon div#top-bar p#view_menu a {
+    text-decoration: none;      
+}
+
+.orbeon div#settings-dialog div.xxforms-dialog-body span.xforms-group {
+    line-height: 2em;
+}
+
+.orbeon div#settings-dialog label.checkbox input[type="checkbox"] {
+    margin: 0;
+    float: left;
+}
