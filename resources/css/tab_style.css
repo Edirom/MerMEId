@@ -77,9 +77,9 @@ a {
     width:200px;    
 }
 
-#work_identifier {
-    display: inline-block;
-    margin-left: 20px;    
+#work_identifier { 
+    display: inline-grid;
+    margin: 0px 0px 0px 17px;
 }
 
 #form-body {
