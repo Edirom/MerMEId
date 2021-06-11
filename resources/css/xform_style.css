@@ -757,8 +757,10 @@ a.help .help_label, a.help .help_value {
 .orbeon div#top-bar p#view_menu a { text-decoration: none; }
 
 .orbeon div.xxforms-dialog-body{ padding: 10px 10px 20px 10px; }
-.orbeon div.xxforms-dialog-body div.date_editor_heading span.dcm-date-editor-label{ display: block; margin-bottom: 10px; }
+.orbeon div.xxforms-dialog-body div.date_editor_heading span.dcm-date-editor-label{ clear: both; display: block; margin-bottom: 10px; }
 .orbeon div.xxforms-dialog-body div.date_editor_heading span.xforms-items > span { display: inline; float: none; }
+.orbeon div.xxforms-dialog-body div.date_editor_heading span.xforms-items label.radio { display:inline-flex; }
+.orbeon div.xxforms-dialog-body div.date_editor_heading span.xforms-items label.radio > span { margin: 0px 10px 0px 0px; }
 .orbeon div.xxforms-dialog-body div.date_editor_heading span.xforms-items label.radio input[type="radio"] { float: left; margin: 3px; }
 
 
