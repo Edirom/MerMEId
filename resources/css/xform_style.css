@@ -750,6 +750,16 @@ a.help .help_label, a.help .help_value {
     font-family: courier, fixed, monospace;
 }
 
+/* rules for problematic orbeon parts */
+.orbeon div#settings-dialog div.xxforms-dialog-body span.xforms-group { line-height: 2em; }
+.orbeon div#settings-dialog label.checkbox input[type="checkbox"] { margin: 0; float: left;}
+
+.orbeon div#top-bar p#view_menu a { text-decoration: none; }
+
+.orbeon div.xxforms-dialog-body div.date_editor_heading span.xforms-items > span { display: inline; float: none; }
+.orbeon div.xxforms-dialog-body div.date_editor_heading span.xforms-items label.radio input[type="radio"] { float: left; margin: 3px; }
+
+
 /* Embedded fonts */
 /* Unicode music symbols font */
 @font-face {
