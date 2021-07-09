@@ -763,6 +763,7 @@ a.help .help_label, a.help .help_value {
 .orbeon div.xxforms-dialog-body div.date_editor_heading span.xforms-items label.radio > span { margin: 0px 10px 0px 0px; }
 .orbeon div.xxforms-dialog-body div.date_editor_heading span.xforms-items label.radio input[type="radio"] { float: left; margin: 3px; }
 
+.orbeon div#bibliography-div div.inputdiv{ padding-top:40px; }
 
 /* Embedded fonts */
 /* Unicode music symbols font */
