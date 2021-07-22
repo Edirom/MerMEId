@@ -44,7 +44,7 @@ RUN ant
 # and adding our freshly built xar-package
 # as well as orbeon and the orbeon xforms filter
 #########################
-FROM existdb/existdb:5.2.0
+FROM acdhch/existdb:5.2.0-java11-ShenGC
 
 ENV CLASSPATH=/exist/lib/exist.uber.jar:/exist/lib/orbeon-xforms-filter.jar
 
