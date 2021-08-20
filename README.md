@@ -3,8 +3,7 @@ MerMEId
 
 [![Apache-2 License](https://img.shields.io/github/license/edirom/MerMEId)](https://github.com/Edirom/MerMEId/blob/develop/LICENSE)
 [![GitHub release](https://img.shields.io/github/release/edirom/MerMEId.svg)](https://github.com/Edirom/MerMEId/releases)
-[![Docker Automated build](https://img.shields.io/docker/automated/edirom/mermeid)](https://hub.docker.com/r/edirom/mermeid/)
-[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/edirom/MerMEId)](https://hub.docker.com/r/edirom/mermeid/)
+[![Docker Testing](https://github.com/Edirom/MerMEId/actions/workflows/docker-testing.yml/badge.svg)](https://github.com/Edirom/MerMEId/actions/workflows/docker-testing.yml)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
 
 MerMEId is a system for the editing, handling, and (pre-)viewing of music
