@@ -40,7 +40,7 @@ jobs:
         uses: docker/login-action@28218f9b04b4f3f62068d7b6ce6ca5b26e35336c
         with:
           username: vifebot
-          password: ${{ secrets.DOCKERHUB_GITHUB_TOKEN }}
+          password: ${{ secrets.VIFEBOT_DOCKERHUB_TOKEN }}
 
       # Extract metadata (tags, labels) for Docker
       # https://github.com/docker/metadata-action
