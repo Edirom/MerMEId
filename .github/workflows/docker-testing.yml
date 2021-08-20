@@ -3,16 +3,18 @@ name: Docker Testing
 on:
   workflow_run:
     workflows: ["Artifacts"]
+    types:
+      - completed
 
 jobs:
-  build:
-    name: Build the Docker image
+  test1:
+    name: Basic test of the Docker image
     runs-on: ubuntu-latest
     
     steps:
       - name: Extract branch name
         uses: nelonoel/branch-name@v1.0.1
       - name: Run Docker image
-        run: docker run --rm -p 8080:8080 -d mermeid:${BRANCH_NAME}
+        run: docker run --rm -p 8080:8080 -d edirom/mermeid:${BRANCH_NAME}
       - name: Check the deployed service URL
         run: i=0 ; while (! curl --fail -sv http://localhost:8080/index.html) ; do if ((i > 20)) ; then echo ' **** timeout ... aborting **** ' ; exit 1 ; else sleep 5 ; echo waiting for container ... ; i=$((i+1)) ; fi ; done
