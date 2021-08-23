@@ -130,7 +130,7 @@
 div.inputdiv {
     margin: 4px 16px 24px 8px;
     padding: 0px;
-    padding-top: 10px;
+    padding-top: 20px;
     margin-top:0px;
 }
 
@@ -749,6 +749,21 @@ a.help .help_label, a.help .help_value {
     white-space: nowrap;
     font-family: courier, fixed, monospace;
 }
+
+/* rules for problematic orbeon parts */
+.orbeon div#settings-dialog div.xxforms-dialog-body span.xforms-group { line-height: 2em; }
+.orbeon div#settings-dialog label.checkbox input[type="checkbox"] { margin: 0; float: left;}
+
+.orbeon div#top-bar p#view_menu a { text-decoration: none; }
+
+.orbeon div.xxforms-dialog-body{ padding: 10px 10px 20px 10px; }
+.orbeon div.xxforms-dialog-body div.date_editor_heading span.dcm-date-editor-label{ clear: both; display: block; margin-bottom: 10px; }
+.orbeon div.xxforms-dialog-body div.date_editor_heading span.xforms-items > span { display: inline; float: none; }
+.orbeon div.xxforms-dialog-body div.date_editor_heading span.xforms-items label.radio { display:inline-flex; }
+.orbeon div.xxforms-dialog-body div.date_editor_heading span.xforms-items label.radio > span { margin: 0px 10px 0px 0px; }
+.orbeon div.xxforms-dialog-body div.date_editor_heading span.xforms-items label.radio input[type="radio"] { float: left; margin: 3px; }
+
+.orbeon div#bibliography-div div.inputdiv{ padding-top:40px; }
 
 /* Embedded fonts */
 /* Unicode music symbols font */
