@@ -3,6 +3,7 @@
 # 1. set up the build environment and build the expath-package
 # 2. run the eXist-db
 #########################
+ARG EXISTDB_IMAGE=existdb/existdb:5.2.0
 FROM openjdk:8-jdk as builder
 LABEL maintainer="Peter Stadler,Omar Siam"
 
@@ -44,7 +45,7 @@ RUN ant
 # and adding our freshly built xar-package
 # as well as orbeon and the orbeon xforms filter
 #########################
-FROM acdhch/existdb:5.2.0-java11-ShenGC
+FROM ${EXISTDB_IMAGE}
 
 ENV CLASSPATH=/exist/lib/exist.uber.jar:/exist/lib/orbeon-xforms-filter.jar
 
