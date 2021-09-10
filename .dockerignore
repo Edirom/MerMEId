@@ -1,5 +1,7 @@
 .DS_Store
 .vscode
-trunk/
-build/
+trunk
+build
+logs
 docker-compose.yml
+.github

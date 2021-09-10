@@ -3,6 +3,7 @@
 # 1. set up the build environment and build the expath-package
 # 2. run the eXist-db
 #########################
+ARG EXISTDB_IMAGE=existdb/existdb:5.2.0
 FROM openjdk:8-jdk as builder
 LABEL maintainer="Peter Stadler,Omar Siam"
 
@@ -44,11 +45,10 @@ RUN ant
 # and adding our freshly built xar-package
 # as well as orbeon and the orbeon xforms filter
 #########################
-FROM existdb/existdb:5.2.0
+FROM ${EXISTDB_IMAGE}
 
 ENV CLASSPATH=/exist/lib/exist.uber.jar:/exist/lib/orbeon-xforms-filter.jar
 
-COPY --from=builder /opt/builder/build/*.xar ${EXIST_HOME}/autodeploy/
 COPY --from=builder /orbeon ${EXIST_HOME}/etc/jetty/webapps/orbeon
 COPY jetty-exist-additional-config/etc/jetty/webapps/*.xml jetty-exist-additional-config/etc/jetty/webapps/*.properties ${EXIST_HOME}/etc/jetty/webapps/
 COPY jetty-exist-additional-config/etc/jetty/webapps/portal/WEB-INF/* ${EXIST_HOME}/etc/jetty/webapps/portal/WEB-INF/
@@ -56,3 +56,10 @@ COPY --from=builder /orbeon-xforms-filter/WEB-INF/lib/orbeon-xforms-filter.jar $
 COPY jetty-exist-additional-config/etc/webapp/WEB-INF/*.xml ${EXIST_HOME}/etc/webapp/WEB-INF/
 COPY orbeon-additional-config/WEB-INF/resources/config/* ${EXIST_HOME}/etc/jetty/webapps/orbeon/WEB-INF/resources/config/
 RUN ["java", "-cp", "/exist/lib/exist.uber.jar", "net.sf.saxon.Transform", "-s:/exist/etc/log4j2.xml", "-xsl:/exist/etc/jetty/webapps/orbeon/WEB-INF/resources/config/log4j2-patch.xsl", "-o:/exist/etc/log4j2.xml"]
+
+# install all the default application XAR so startup is faster. See tei-publisher's Dockerfile
+# pre-populate the database by launching it once
+RUN [ "java", \
+    "org.exist.start.Main", "client", "-l", \
+    "--no-gui",  "--xpath", "system:get-version()" ]
+COPY --from=builder /opt/builder/build/*.xar ${EXIST_HOME}/autodeploy/
