@@ -24,6 +24,13 @@ jobs:
   docker:
     name: build the Docker image
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - EXISTDB_IMAGE: existdb/existdb:5.2.0
+            IMAGE_TAG_SUFFIX:
+          - EXISTDB_IMAGE: acdhch/existdb:5.2.0-java11-ShenGC
+            IMAGE_TAG_SUFFIX: -java11-ShenGC
     
     steps:
       - name: Checkout repository
@@ -46,13 +53,14 @@ jobs:
       # https://github.com/docker/metadata-action
       - name: Extract Docker metadata
         id: meta
-        uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
+        uses: docker/metadata-action@v3
         with:
           images: |
             ghcr.io/edirom/mermeid
             edirom/mermeid
           flavor: |
             latest=${{ github.ref == 'refs/heads/main' }}
+            suffix=${{ matrix.IMAGE_TAG_SUFFIX }},onlatest=true
             
       # Build and push Docker image with Buildx (don't push on PR)
       # https://github.com/docker/build-push-action
@@ -60,6 +68,8 @@ jobs:
         uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
         with:
           context: .
+          build-args: |
+           EXISTDB_IMAGE=${{ matrix.EXISTDB_IMAGE }}
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
