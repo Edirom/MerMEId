@@ -26,6 +26,7 @@
                 <exclude name="*.patch"/>
                 <exclude name=".gitignore"/>
                 <exclude name=".git"/>
+                <exclude name=".github/**"/>
                 <exclude name=".dockerignore"/>
                 <exclude name="docker-compose.yml"/>
                 <exclude name="*build.properties"/>
