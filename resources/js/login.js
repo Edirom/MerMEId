@@ -17,11 +17,11 @@ function showModal() {
  * and login on submit
  */
 function closeModal() {
-    document.getElementById("login-modal").style.display = "none"
     if(this.classList.contains('submit')) {
         const inputs = document.getElementById("login-modal").querySelectorAll('input')
-        ajaxLogin(inputs[0].value, inputs[1].value)
-    } 
+        ajaxLogin(inputs[0].value, inputs[1].value, inputs[2].checked)
+    }
+    document.getElementById("login-modal").style.display = "none";
 }
 
 /*
@@ -30,7 +30,7 @@ function closeModal() {
  * if user=logout and pass=logout, the current user gets logged out and the session invalidated
  * if user and pass are provided, the new user information is returned  
  */
-function ajaxLogin(user, pass) {
+function ajaxLogin(user, pass, dur) {
     const xhttp = new XMLHttpRequest();
     let postBody;
     xhttp.onreadystatechange = function() {
@@ -43,6 +43,9 @@ function ajaxLogin(user, pass) {
     }
     else if(user && pass) {
         postBody = "user=" + user + "&password=" + pass;
+        if(dur) {
+            postBody += "&duration=P14D"
+        }
     }
     
     xhttp.open("POST", "login", true);
