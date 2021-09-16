@@ -1,64 +1,32 @@
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <title>
-      MerMEId Login
-    </title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <link href="/resources/css/front_page.css" rel="stylesheet" type="text/css"/>
-
-    <link rel="styleSheet" 
-    href="/resources/css/list_style.css" 
-    type="text/css"/>
-    <link rel="styleSheet" 
-    href="/resources/css/xform_style.css" 
-    type="text/css"/>
-    
-
-    <script type="text/javascript" src="/resources/js/confirm.js">
-    //
-    </script>
-    
-    <script type="text/javascript" src="/resources/js/checkbox.js">
-    //
-    </script>
-    
-    <script type="text/javascript" src="/resources/js/publishing.js">
-    //
-    </script>
-
-  </head>
-  <body>
-    <div class="list_header">
-      <div style="float:right;">
-        <form id="create-file" action="./create-file.xq" method="post" class="addLink"  style="display:inline;">
-            <input type="image" src="/resources/images/new.gif" name="button" value="new" title="Add new file"/>
-        </form>&#160;<a href="/manual/index.html" 
-        class="addLink"
-        target="_blank"><img 
-        src="/resources/images/help_light.png" 
-        title="Help - opens the manual in a new window or tab" 
-        alt="Help" 
-        border="0"/></a>
-      </div>
-      <img src="/resources/images/mermeid_30px.png" 
-            title="MerMEId - Metadata Editor and Repository for MEI Data" 
-      alt="MerMEId Logo"/>
+<div id="login-modal" class="modal" xmlns="http://www.w3.org/1999/xhtml">
+  <!-- Credits to https://www.w3schools.com/howto/howto_css_login_form.asp -->
+  <span class="close-modal close" title="Close Modal">&#215;</span>
+  
+  <!-- Modal Content -->
+  <form class="modal-content animate">
+    <div class="imgcontainer">
+      <img src="img_avatar2.png" alt="Avatar" class="avatar"/>
     </div>
-    <div class="main">
-    <h2>Please log in</h2>
-    <div>
-      <form class="form" id="form" action="/modules/list_files.xq" method="post">
-        <input type="hidden" name="origin" value="{$origin}" autocomplete="on"/>
-        <input label="User ID" id="user" name="user" autofocus="autofocus" required="required"
-               error="Please input your username"/>
-        <input label="Password" type="password" id="password" name="password"
-               error="Please input your password"/>
-        <button type="submit">Sign me in</button>
-      </form>
+    
+    <div class="container">
+      <label for="user"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="user" required="required"/>
+      
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required="required"/>
+      
+      <button type="submit" class="close-modal submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"/> Remember me
+      </label>
     </div>
+    
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="close-modal">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
     </div>
-    {$config:footer}
-  </body>
-</html>
-
+  </form>
+  <script type="text/javascript" src="../resources/js/login.js">
+    //
+  </script>
+</div>
