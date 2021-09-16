@@ -103,11 +103,11 @@ declare function local:format-reference(
               title="View source" />
 	    </a>
 	  </td>
-	  <td class="tools">{app:edit-form-reference($doc)}</td>
-	  <td class="tools">{app:copy-document-reference($doc)}</td>
-	  <td class="tools">{app:rename-document-reference($doc)}</td>
-	  <td class="tools">{app:get-publication-reference($doc)}</td>
-	  <td class="tools">{app:delete-document-reference($doc)}</td>
+	  <td class="tools loginRequired">{app:edit-form-reference($doc)}</td>
+	  <td class="tools loginRequired">{app:copy-document-reference($doc)}</td>
+	  <td class="tools loginRequired">{app:rename-document-reference($doc)}</td>
+	  <td class="tools loginRequired">{app:get-publication-reference($doc)}</td>
+	  <td class="tools loginRequired">{app:delete-document-reference($doc)}</td>
 	  <td nowrap="nowrap">{app:view-document-notes($doc)}</td>
 	</tr>
 	return $ref

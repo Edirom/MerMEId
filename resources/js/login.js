@@ -70,4 +70,6 @@ function updateLoginInfo(obj) {
 
 document.getElementById("login-info").addEventListener("click", showModal, false);
 document.querySelectorAll(".close-modal").forEach(el => {el.addEventListener("click", closeModal, false)});
+document.querySelectorAll(".loginRequired input").forEach(el => {el.setAttribute('disabled', 'disabled')});
+document.querySelectorAll(".loginRequired a").forEach(el => {el.style.pointerEvents = "none"});
 window.addEventListener("focus", ajaxLogin);
