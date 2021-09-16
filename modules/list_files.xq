@@ -126,6 +126,9 @@ declare function local:format-reference(
 	  <link rel="styleSheet" 
 	  href="../resources/css/xform_style.css" 
 	  type="text/css"/>
+	  <link rel="styleSheet" 
+	  href="../resources/css/login.css" 
+	  type="text/css"/>
 	  
 	  <script type="text/javascript" src="../resources/js/confirm.js">
 	  //
@@ -143,6 +146,7 @@ declare function local:format-reference(
 	<body class="list_files">
 	  <div class="list_header">
 	    <div style="float:right;">
+	      <a id="login-info" href="#" data-user="">Login</a>
 	      <form id="create-file" action="./create-file.xq" method="post" class="addLink"  style="display:inline;">
     	      <input type="image" src="../resources/images/new.gif" name="button" value="new" title="Add new file"/>
 	      </form>&#160;<a href="../manual/index.html" 
@@ -324,6 +328,7 @@ declare function local:format-reference(
         </table>
       </div>
     }
+    {doc('../login.html')/*}
     {config:replace-properties(config:get-property('footer'))}
   </body>
 </html>
