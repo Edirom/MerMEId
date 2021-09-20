@@ -505,6 +505,9 @@
                      <title/>
                   </titleStmt>
                   <physDesc/>
+                  <relationList>
+                     <relation rel="" label="" target=""/>
+                  </relationList>
                </manifestation>
             </componentList>
             <relationList>
