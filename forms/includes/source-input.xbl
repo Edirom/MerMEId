@@ -107,16 +107,22 @@
                                     </xf:repeat>
                                 </xf:group>
                             </xf:group>
+                        
+                        </h:fieldset>
 
-                            <h:div>
-                             <dcm:create nodeset="m:contents" label="Add table of contents"
-                                origin="xxf:instance('empty-instance')/m:meiHead/m:manifestationList/m:manifestation/m:contents"/>
-                            <xf:group ref="m:contents">
-                             <dcm:create nodeset="m:contentItem" label="Add content item"
-                                origin="xxf:instance('empty-instance')/m:meiHead/m:manifestationList/m:manifestation/m:contents/m:contentItem"/>
+
+                        <h:fieldset>
+                            <h:legend>Table of contents<h:a class="help">&#160;?<h:span
+                                        class="comment">Text describing the contents of the source
+                                    </h:span></h:a>
+                            </h:legend>
+                            <dcm:create nodeset="m:contents" label="Add table of contents"
+                                origin="xxf:instance('empty-instance')/m:meiHead/m:manifestationList/m:manifestation[1]/m:contents"/>
+                             <dcm:create ref="m:contents" nodeset="m:contents/m:contentItem" label="Add content item"
+                                origin="xxf:instance('empty-instance')/m:meiHead/m:manifestationList/m:manifestation[1]/m:contents/m:contentItem"/>
                                  <h:table class="component_list" cellpadding="0" cellspacing="0"
                                 border="0">
-                                <xf:repeat nodeset="m:contentItem"
+                                <xf:repeat nodeset="m:contents/m:contentItem"
                                     id="repeat-source-contents">
                                     <h:tr class="component">
                                         <h:td
@@ -127,6 +133,7 @@
                                         </h:td>
                                         <h:td>
                                             <h:fieldset class="compact">
+
                                                 <h:span class="blocklabel strong">Content item <dcm:id/>
                                                   <dcm:element-buttons
                                                   triggers="up down copy add remove"
@@ -152,13 +159,7 @@
                                     </h:tr>
                                 </xf:repeat>
                             </h:table>
-                            </xf:group>
-                        </h:div>
-
                         </h:fieldset>
-
-
-
 
                         <!-- Source classification -->
                         <!-- For now, editing classification requires either the DCM classcodes being defined already 
