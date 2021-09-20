@@ -107,6 +107,54 @@
                                     </xf:repeat>
                                 </xf:group>
                             </xf:group>
+
+                            <h:div>
+                             <dcm:create nodeset="m:contents" label="Add table of contents"
+                                origin="xxf:instance('empty-instance')/m:meiHead/m:manifestationList/m:manifestation/m:contents"/>
+                            <xf:group ref="m:contents">
+                             <dcm:create nodeset="m:contentItem" label="Add content item"
+                                origin="xxf:instance('empty-instance')/m:meiHead/m:manifestationList/m:manifestation/m:contents/m:contentItem"/>
+                                 <h:table class="component_list" cellpadding="0" cellspacing="0"
+                                border="0">
+                                <xf:repeat nodeset="m:contentItem"
+                                    id="repeat-source-contents">
+                                    <h:tr class="component">
+                                        <h:td
+                                            class="{if(position()=last()) then 'last_cell' else 'index_cell'}">
+                                            <h:img
+                                                src="{xxf:instance('parameters')/dcm:server_name}/editor/images/tree-1.png"
+                                                alt="component" border="0"/>
+                                        </h:td>
+                                        <h:td>
+                                            <h:fieldset class="compact">
+                                                <h:span class="blocklabel strong">Content item <dcm:id/>
+                                                  <dcm:element-buttons
+                                                  triggers="up down copy add remove"
+                                                  nodeset="m:contentItem" index="repeat-source-contents"
+                                                  origin="instance('empty-instance')/m:meiHead/m:manifestationList/m:manifestation[1]/m:contents/m:contentItem"/>
+                                                  <dcm:attribute-editor/>
+                                                </h:span>
+                                                <h:div class="vertical_spacer"/>
+
+                                                <xf:input ref="m:locus" class="short">
+                                                  <xf:label>Location <h:a class="help">&#160;?<h:span
+                                                  class="comment">The content item's position in
+                                                  the source, e.g. "pp.3-4"</h:span></h:a>
+                                                  </xf:label>
+                                                </xf:input>
+                                                <xf:input ref="./text()" class="maxlong">
+                                                  <xf:label>Content <h:a class="help">&#160;?<h:span
+                                                  class="comment">Summary of the contents of the given locus</h:span></h:a>
+                                                  </xf:label>
+                                                </xf:input>
+                                            </h:fieldset>
+                                        </h:td>
+                                    </h:tr>
+                                </xf:repeat>
+                            </h:table>
+                            </xf:group>
+                        </h:div>
+
                         </h:fieldset>
 
 

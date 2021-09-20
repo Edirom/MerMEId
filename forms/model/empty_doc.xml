@@ -318,6 +318,9 @@
                <pubPlace/>
                <date isodate="" startdate="" enddate="" notbefore="" notafter=""/>
             </pubStmt>
+            <contents>
+              <contentItem><locus></locus></contentItem>
+            </contents>
             <physDesc type="paper_type" label="">
                <dimensions>
                   <locusGrp><locus></locus></locusGrp>
