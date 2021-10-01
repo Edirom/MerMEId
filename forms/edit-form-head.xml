@@ -305,9 +305,7 @@
       <!-- store XML data file name -->
       <xf:setvalue ref="instance('parameters')/dcm:xml_file" value="xxf:get-request-parameter('doc')"/>
       <!-- store page URI -->
-      <xf:setvalue ref="instance('parameters')/dcm:this_page" value="concat(
-        instance('parameters')/dcm:orbeon_dir,'?uri=',xxf:get-request-parameter('uri'),
-        '&amp;doc=',instance('parameters')/dcm:xml_file)"/>
+      <xf:setvalue ref="instance('parameters')/dcm:this_page" value="replace(xxf:get-request-path(), '/forms/', '')"/>
 
       <!-- load XML data -->
       <xf:send submission="load-data-submission"/>
