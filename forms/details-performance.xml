@@ -206,7 +206,8 @@
                                     <xf:action ev:event="DOMActivate">
                                         <xf:var name="uri" 
                                             select="concat(instance('parameters')/dcm:orbeon_dir,'?uri=',instance('parameters')/dcm:form_home,'details-reference.xml&amp;doc=',instance('parameters')/dcm:xml_file,'&amp;id=',@xml:id)"/>
-                                        <xf:insert context="." origin="xxf:set-session-attribute('return_uri',concat(instance('parameters')/dcm:this_page,'&amp;id=',instance('temp')/id))"/>
+                                            Testing 
+                                       <xf:insert context="." origin="xxf:set-session-attribute('return_uri',concat(instance('parameters')/dcm:form_home,instance('parameters')/dcm:this_page,'?doc=',instance('parameters')/dcm:xml_file,'&amp;id=',instance('temp')/id))"/>
                                         <xf:action if="instance('temp')/changed='true'">
                                             <xf:setvalue ref="instance('temp')/target_uri" value="$uri"/>
                                             <xxf:show dialog="exit-warning-dialog"/>
@@ -299,7 +300,7 @@
                                         <xf:action ev:event="DOMActivate">
                                             <xf:var name="uri" 
                                                 select="concat(instance('parameters')/dcm:orbeon_dir,'?uri=',instance('parameters')/dcm:form_home,'details-reference.xml&amp;doc=',instance('parameters')/dcm:xml_file,'&amp;id=',@xml:id)"/>
-                                            <xf:insert context="." origin="xxf:set-session-attribute('return_uri',concat(instance('parameters')/dcm:this_page,'&amp;id=',instance('temp')/id))"/>
+                                            <xf:insert context="." origin="xxf:set-session-attribute('return_uri',concat(instance('parameters')/dcm:form_home,instance('parameters')/dcm:this_page,'?doc=',instance('parameters')/dcm:xml_file,'&amp;id=',instance('temp')/id))"/>
                                             <xf:action if="instance('temp')/changed='true'">
                                                 <xf:setvalue ref="instance('temp')/target_uri" value="$uri"/>
                                                 <xxf:show dialog="exit-warning-dialog"/>
