@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classification xmlns="http://www.music-encoding.org/ns/mei">
+    
+    <!-- 
+        This file defines systematic keywords for the classification of works. 
+        The structured keywords are used to create the structured part of the 
+        keywords menu at the "Work" tab. 
+        They may be used to generate a catalog's hierarchical menu of genres
+        like the one in the CNW (http://www.kb.dk/dcm/cnw.html). 
+    -->
+    
+    <!-- Structured classification, 2 levels -->
+
+    <taxonomy xml:id="Source">
+        <category xml:id="Content">
+            <desc>Content</desc>
+            <category xml:id="NotatedMusic">
+                <desc>Notated music</desc>
+            </category>
+            <category xml:id="Text">
+                <desc>Text</desc>
+            </category>
+            <category xml:id="SoundRecording">
+                <desc>Sound recording</desc>
+            </category>
+            <category xml:id="VideoRecording">
+                <desc>Video recording</desc>
+            </category>
+            <category xml:id="MotionPicture">
+            <label>Motion picture</label>
+            </category>
+        </category>
+        <category xml:id="Presentation">
+            <desc>Presentation</desc>
+            <category xml:id="Manuscript">
+                <desc>Manuscript</desc>
+            </category>
+            <category xml:id="Print">
+                <desc>Print</desc>
+            </category>
+            <category xml:id="AudioStorageMedium">
+                <desc>Audio storage medium</desc>
+            </category>
+            <category xml:id="VideoStorageMedium">
+                <desc>Video storage medium</desc>
+            </category>
+            <category xml:id="ElectronicResource">
+                <desc>Electronic resource</desc>
+            </category>
+        </category>
+        <category xml:id="Authority">
+            <desc>Authority</desc>
+            <category xml:id="Autograph">
+                <desc>Autograph</desc>
+            </category>
+            <category xml:id="DoubtfulAutograph">
+                <desc>Doubtful autograph</desc>
+            </category>
+            <category xml:id="PartlyAutograph">
+                <desc>Partly autograph</desc>
+            </category>
+            <category xml:id="Copy">
+                <desc>Copy</desc>
+            </category>
+        </category>
+        <category xml:id="Scoring">
+            <desc>Scoring</desc>
+            <category xml:id="Score">
+                <desc>Score</desc>
+            </category>
+            <category xml:id="ShortScore">
+                <desc>Short score</desc>
+            </category>
+            <category xml:id="VocalScore">
+                <desc>Vocal score</desc>
+            </category>
+            <category xml:id="ChoralScore">
+                <desc>ChoralScore</desc>
+            </category>
+            <category xml:id="PianoScore">
+                <desc>Piano score</desc>
+            </category>
+            <category xml:id="Parts">
+                <desc>Parts</desc>
+            </category>
+            <category xml:id="ScoreAndParts">
+                <desc>Score and parts</desc>
+            </category>
+        </category>
+
+        <category xml:id="State">
+            <desc>State</desc>
+            <category xml:id="Sketch">
+                <desc>Scetch</desc>
+            </category>
+            <category xml:id="Draft">
+                <desc>Draft</desc>
+            </category>
+            <category xml:id="FairCopy">
+                <desc>Fair copy</desc>
+            </category>
+            <category xml:id="EngraversCopy">
+                <desc>Engraver's copy</desc>
+            </category>
+            <category xml:id="PrintersCopy">
+                <desc>Printer's copy</desc>
+            </category>
+            <category xml:id="FirstEdition">
+                <desc>First edition</desc>
+            </category>
+            <category xml:id="LaterEdition">
+                <desc>Later edition</desc>
+            </category>
+        </category>
+        <category xml:id="Completeness">
+            <desc>Completeness</desc>
+            <category xml:id="Complete">
+                <desc>Complete</desc>
+            </category>
+            <category xml:id="Incomplete">
+                <desc>Incomplete</desc>
+            </category>
+            <category xml:id="Excerpt">
+                <desc>Excerpt</desc>
+            </category>
+            <category xml:id="Fragment">
+                <desc>Fragment(s)</desc>
+            </category>
+        </category>
+    </taxonomy>
+    
+    <!-- Unordered supplementary keywords (may also be entered manually in the editor instead)  -->
+    
+    <termList label="source_keywords">           
+    </termList>          
+</classification>
+

@@ -127,8 +127,10 @@
                                 </xf:trigger>
                                 <dcm:attribute-editor ref="m:classification/m:termList"/>
                             </h:legend>
-                            <dcm:create nodeset="m:classification" label="Add source classification"
+<!--                             <dcm:create nodeset="m:classification" label="Add source classification"
                                 origin="xxf:instance('empty-instance')/m:meiHead/m:manifestationList/m:manifestation/m:classification"/>
+ -->                                <dcm:keywords-input ref="." query="classification-source.xml" />
+                            <!--
                             <xf:group
                                 ref=".[m:classification/m:termList or //m:work/m:classification/m:classCode[@xml:id='DcmContentClass']]">
                                 <h:div class="vertical_spacer"> </h:div>
@@ -294,6 +296,7 @@
                                     </h:div>
                                 </xf:repeat>
                             </xf:group>
+                            -->
                         </h:fieldset>
                         <!-- End source classification -->
 

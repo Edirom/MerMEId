@@ -391,12 +391,6 @@
             </notesStmt>
             <classification>
                <termList>
-                  <term class="#DcmContentClass"/>
-                  <term class="#DcmPresentationClass"/>
-                  <term class="#DcmAuthorityClass"/>
-                  <term class="#DcmScoringClass"/>
-                  <term class="#DcmStateClass"/>
-                  <term class="#DcmCompletenessClass"/>
                   <term/>
                </termList>
             </classification>
