@@ -18,8 +18,18 @@
   background-color: #fefefe;
   margin: 5px auto; /* 15% from the top and centered */
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 60%; /* Could be more or less, depending on screen size */
+  padding: 15px;
 }
+
+.modal-content .container label,
+.modal-content .container button.close-modal
+{
+	display:block;
+	margin-top:10px;
+}
+
+
 
 /* The Close Button */
 .close {
@@ -27,7 +37,7 @@
   position: absolute;
   right: 25px;
   top: 0;
-  color: #000;
+  color: #eee;
   font-size: 35px;
   font-weight: bold;
 }
