@@ -41,7 +41,8 @@ function ajaxLogin(user, pass, dur) {
     if(user === "logout" && pass === "logout") {
         postBody = "logout=logout";
     }
-    else if(user && pass) {
+    // password might be empty, so allow for empty string but reject every other undefined value
+    else if(user && (typeof pass === 'string' || pass instanceof String)) {
         postBody = "user=" + user + "&password=" + pass;
         if(dur) {
             postBody += "&duration=P14D"
