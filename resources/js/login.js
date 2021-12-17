@@ -56,21 +56,57 @@ function ajaxLogin(user, pass, dur) {
 
 /*
  * update the login icon in the top menu
+ * and toggle classes for edit buttons
  */
 function updateLoginInfo(obj) {
     const info = document.getElementById("login-info")
     if(obj.user) {
         info.setAttribute("data-user", obj.user);
         info.innerHTML = obj.user;
+        // toggle classes
+        toggleButtons('show');
     }
     else {
         info.setAttribute("data-user", "");
         info.innerHTML = "Login";
+        // toggle classes
+        toggleButtons('hide');
     }
+}
+
+/*
+ * Toggle css and events for edit buttons
+ * param: hide|show
+ */
+function toggleButtons(status) {
+    document.querySelectorAll(".loginRequired input").forEach(el => {
+        if(status === 'show') {
+            el.removeAttribute('disabled');
+            el.parentElement.parentElement.classList.add(status);
+        }
+        else {
+            el.setAttribute('disabled', 'disabled');
+            el.parentElement.parentElement.classList.remove('show');
+        }
+    });
+    document.querySelectorAll(".loginRequired a").forEach(el => {
+        if(status === 'show') {
+            el.style.pointerEvents = "auto";
+            el.parentElement.classList.add(status);
+        }
+        else {
+            el.style.pointerEvents = "none";
+            el.parentElement.classList.remove('show');
+        }
+    });
 }
 
 document.getElementById("login-info").addEventListener("click", showModal, false);
 document.querySelectorAll(".close-modal").forEach(el => {el.addEventListener("click", closeModal, false)});
-document.querySelectorAll(".loginRequired input").forEach(el => {el.setAttribute('disabled', 'disabled')});
-document.querySelectorAll(".loginRequired a").forEach(el => {el.style.pointerEvents = "none"});
+
+/*
+ * add (main) event listener on focus change
+ * this will trigger and propagate 
+ * all changes to login form and buttons
+ */
 window.addEventListener("focus", ajaxLogin);

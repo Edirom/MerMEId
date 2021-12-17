@@ -68,3 +68,7 @@
 .loginRequired {
     cursor: not-allowed;
 }
+
+.loginRequired.show {
+    cursor: pointer;
+}
