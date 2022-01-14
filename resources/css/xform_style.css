@@ -643,21 +643,17 @@ a.help, a.help_plain, a.warning,
     text-align: left;
     vertical-align:text-top;
     color: #999;
-    background-color: rgba(255,255,192,0.5);
-    border: 1px solid #999;
     font-weight: bold;
     padding: 0;
     font-size:.7em;
-    line-height: 12px;
     cursor: help;
-    position: relative;
-    border-radius: 6px;
-    display: inline;
     display: inline-block;
     width: 11px;
     height: 11px;
-    /* For non-CSS3 FireFox */
-    -moz-border-radius: 6px;    
+	background-image: url('../images/hint2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 }
 
 a.help:hover, a.help:active {
