@@ -79,6 +79,7 @@ function updateLoginInfo(obj) {
  * param: hide|show
  */
 function toggleButtons(status) {
+    // input elements toggle the "disabled" attribute
     document.querySelectorAll(".loginRequired input").forEach(el => {
         if(status === 'show') {
             el.removeAttribute('disabled');
@@ -89,7 +90,8 @@ function toggleButtons(status) {
             el.parentElement.parentElement.classList.remove('show');
         }
     });
-    document.querySelectorAll(".loginRequired a").forEach(el => {
+    // all other elements toggle the pointerEvents and toggle the class "show" 
+    document.querySelectorAll(".loginRequired a, .loginRequired img, .loginRequired label").forEach(el => {
         if(status === 'show') {
             el.style.pointerEvents = "auto";
             el.parentElement.classList.add(status);
