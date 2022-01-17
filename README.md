@@ -3,7 +3,7 @@ MerMEId
 
 [![Apache-2 License](https://img.shields.io/github/license/edirom/MerMEId)](https://github.com/Edirom/MerMEId/blob/develop/LICENSE)
 [![GitHub release](https://img.shields.io/github/release/edirom/MerMEId.svg)](https://github.com/Edirom/MerMEId/releases)
-[![Docker Testing](https://github.com/Edirom/MerMEId/actions/workflows/docker-testing.yml/badge.svg)](https://github.com/Edirom/MerMEId/actions/workflows/docker-testing.yml)
+[![Docker Testing](https://github.com/Edirom/MerMEId/actions/workflows/artifacts.yml/badge.svg)](https://github.com/Edirom/MerMEId/actions/workflows/artifacts.yml)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
 
 MerMEId is a system for the editing, handling, and (pre-)viewing of music
@@ -35,7 +35,7 @@ The most convenient way to set up MerMEId is by pulling the ready made Docker im
 Starting a MerMEId instance is simple: 
 
 ```sh
-$ docker run --name my-mermeid -p 8080:8080 -d edirom/mermeid:develop
+$ docker run --name my-mermeid -p 8080:8080 -d edirom/mermeid:develop-java11-ShenGC
 ```
 
 … where `my-mermeid` is the name you want to assign to your container and `8080` is the local port where the MerMEId server will listen.
@@ -49,7 +49,7 @@ version: '3'
 
 services:
   mermeid:
-    image: edirom/mermeid:develop
+    image: edirom/mermeid:develop-java11-ShenGC
     ports: 
       - 8080:8080
     environment: 
@@ -99,14 +99,14 @@ Otherwise restarting the container might result in data loss!
 
 The database files are stored within `/exist/data` in the container so you simply mount a host directory there:
 ```
-$ docker run --name my-mermeid -p 8080:8080 -d --mount type=bind,source="$(pwd)/exist-data",target=/exist/data edirom/mermeid:develop
+$ docker run --name my-mermeid -p 8080:8080 -d --mount type=bind,source="$(pwd)/exist-data",target=/exist/data edirom/mermeid:develop-java11-ShenGC
 ```
 
 ### Logs
 
 Orbeon logs everything to stdout, so you can access them with `docker logs my-mermeid`. Existdb writes most information into logfiles though, so in case you want to access them you should mount a host directory to `/exist/logs` like this:
 ```
-$ docker run --name my-mermeid -p 8080:8080 -d --mount type=bind,source="$(pwd)/exist-logs",target=/exist/logs edirom/mermeid:develop
+$ docker run --name my-mermeid -p 8080:8080 -d --mount type=bind,source="$(pwd)/exist-logs",target=/exist/logs edirom/mermeid:develop-java11-ShenGC
 ```
 
 ## Building the docker image
