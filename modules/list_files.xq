@@ -13,11 +13,13 @@ declare namespace util="http://exist-db.org/xquery/util";
 declare namespace ft="http://exist-db.org/xquery/lucene";
 declare namespace ht="http://exist-db.org/xquery/httpclient";
 declare namespace xi="http://www.w3.org/2001/XInclude";
+declare namespace output="http://www.w3.org/2010/xslt-xquery-serialization";
 
 declare namespace local="http://kb.dk/this/app";
 declare namespace m="http://www.music-encoding.org/ns/mei";
 
-declare option exist:serialize "method=xml media-type=text/html"; 
+declare option output:method "xhtml5";
+declare option output:media-type "text/html";
 
 (: get parameters, either from querystring or fall back to session attributes :)
 declare variable $coll              := request:get-parameter("c", session:get-attribute("coll"));
@@ -101,11 +103,11 @@ declare function local:format-reference(
               title="View source" />
 	    </a>
 	  </td>
-	  <td class="tools">{app:edit-form-reference($doc)}</td>
-	  <td class="tools">{app:copy-document-reference($doc)}</td>
-	  <td class="tools">{app:rename-document-reference($doc)}</td>
-	  <td class="tools">{app:get-publication-reference($doc)}</td>
-	  <td class="tools">{app:delete-document-reference($doc)}</td>
+	  <td class="tools loginRequired">{app:edit-form-reference($doc)}</td>
+	  <td class="tools loginRequired">{app:copy-document-reference($doc)}</td>
+	  <td class="tools loginRequired">{app:rename-document-reference($doc)}</td>
+	  <td class="tools loginRequired">{app:get-publication-reference($doc)}</td>
+	  <td class="tools loginRequired">{app:delete-document-reference($doc)}</td>
 	  <td nowrap="nowrap">{app:view-document-notes($doc)}</td>
 	</tr>
 	return $ref
@@ -126,6 +128,9 @@ declare function local:format-reference(
 	  <link rel="styleSheet" 
 	  href="../resources/css/xform_style.css" 
 	  type="text/css"/>
+	  <link rel="styleSheet" 
+	  href="../resources/css/login.css" 
+	  type="text/css"/>
 	  
 	  <script type="text/javascript" src="../resources/js/confirm.js">
 	  //
@@ -138,11 +143,12 @@ declare function local:format-reference(
 	  <script type="text/javascript" src="../resources/js/publishing.js">
 	  //
 	  </script>
-
+	  
 	</head>
 	<body class="list_files">
 	  <div class="list_header">
 	    <div style="float:right;">
+	      <a id="login-info" href="#" data-user="">Login</a>
 	      <form id="create-file" action="./create-file.xq" method="post" class="addLink"  style="display:inline;">
     	      <input type="image" src="../resources/images/new.gif" name="button" value="new" title="Add new file"/>
 	      </form>&#160;<a href="../manual/index.html" 
@@ -324,6 +330,7 @@ declare function local:format-reference(
         </table>
       </div>
     }
+    {doc('../login.html')/*}
     {config:replace-properties(config:get-property('footer'))}
   </body>
 </html>
