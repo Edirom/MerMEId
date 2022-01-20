@@ -654,10 +654,9 @@ a.help, a.help_plain, a.warning,
     background-repeat: no-repeat;
     background-size: contain;
 }
-}
 
 a.help, a.help:hover, a.help:active {
-    color: #transparent !important; 
+    color: transparent !important; 
     text-decoration: none;
 }
 
