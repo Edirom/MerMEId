@@ -37,7 +37,7 @@ declare function filter:print-filters(
         <input name="genre"  value='{$genre}' type='hidden' />
         <input name="notbefore" value='{request:get-parameter("notbefore","")}' type='hidden' />
         <input name="notafter" value='{request:get-parameter("notafter","")}' type='hidden' />
-        <a class="help">?<span class="comment">Search is case insensitive. 
+        <a class="help">&#160;<span class="comment">Search is case insensitive. 
         Search terms may be combined using boolean operators. Wildcards allowed. Some examples:<br/>
         <span class="help_table">
           <span class="help_example">

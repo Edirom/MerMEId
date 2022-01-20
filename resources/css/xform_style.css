@@ -656,10 +656,15 @@ a.help, a.help_plain, a.warning,
 }
 }
 
-a.help:hover, a.help:active {
-    color: #999;
+a.help, a.help:hover, a.help:active {
+    color: #transparent !important; 
     text-decoration: none;
 }
+
+a.help .comment{
+	color: #999;
+}
+
 
 a.help_plain, a.popup {
     background-color:transparent;
