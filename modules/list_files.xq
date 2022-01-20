@@ -210,7 +210,7 @@ declare function local:format-reference(
               <input name="query"  value='{session:get-attribute("query")}'/>
               <input type="submit" value="Search"               />
               <input type="submit" value="Clear" onclick="this.form.query.value='';this.form.submit();return true;"/>
-              <a class="help">&nbsp;<span class="comment">Search terms may be combined using boolean operators. Wildcards allowed. 
+              <a class="help">&#160;<span class="comment">Search terms may be combined using boolean operators. Wildcards allowed. 
                   Search is case insensitive (except for boolean operators, which must be uppercase).
                   Some examples:<br/>
                   <span class="help_table">
