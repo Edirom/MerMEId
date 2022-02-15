@@ -76,12 +76,13 @@ else if($exist:path = '/copy' and request:get-method() eq 'POST') then
     let $isInMermeidGroup := sm:get-group-members('mermedit') = $user
     let $source := request:get-parameter('source', '')
     let $target := request:get-parameter('target', '')
+    let $title := request:get-parameter('title', ())
     let $overwriteString := request:get-parameter('overwrite', 'false')
     let $overwrite := $overwriteString = ('1', 'yes', 'ja', 'y', 'true', 'true()') (: some string values that are considered boolean "true()" :)
     return 
         if($isInMermeidGroup) then 
             response:stream(
-                serialize(crud:copy($source, $target, $overwrite) => map:merge(), 
+                serialize(crud:copy($source, $target, $overwrite, $title), 
                     <output:serialization-parameters>
                         <output:method>json</output:method>
                     </output:serialization-parameters>
