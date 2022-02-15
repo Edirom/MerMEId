@@ -1,11 +1,14 @@
-xquery version "3.0";
+xquery version "3.1";
 
 declare namespace exist="http://exist.sourceforge.net/NS/exist";
 declare namespace request="http://exist-db.org/xquery/request";
 declare namespace response="http://exist-db.org/xquery/response";
 declare namespace transform="http://exist-db.org/xquery/transform";
+declare namespace output="http://www.w3.org/2010/xslt-xquery-serialization";
 
+import module namespace login="http://exist-db.org/xquery/login" at "resource:org/exist/xquery/modules/persistentlogin/login.xql";
 import module namespace config="https://github.com/edirom/mermeid/config" at "../modules/config.xqm";
+import module namespace crud="https://github.com/edirom/mermeid/crud" at "../modules/crud.xqm";
 import module namespace xmldb="http://exist-db.org/xquery/xmldb";
 
 import module namespace console="http://exist-db.org/xquery/console";
@@ -63,6 +66,39 @@ if (ends-with($exist:resource, ".xml")) then
     }
     default return (response:set-status-code(405), <_/>)
     )
+(:~
+ : copy files endpoint 
+~:)
+else if($exist:path = '/copy' and request:get-method() eq 'POST') then
+    let $loggedIn := login:set-user("org.exist.login", (), false())
+    let $serializationParameters := ('method=text', 'media-type=application/json', 'encoding=utf-8')
+    let $user := request:get-attribute("org.exist.login.user")
+    let $isInMermeidGroup := sm:get-group-members('mermedit') = $user
+    let $source := request:get-parameter('source', '')
+    let $target := request:get-parameter('target', '')
+    let $overwriteString := request:get-parameter('overwrite', 'false')
+    let $overwrite := $overwriteString = ('1', 'yes', 'ja', 'y', 'true', 'true()') (: some string values that are considered boolean "true()" :)
+    return 
+        if($isInMermeidGroup) then 
+            response:stream(
+                serialize(crud:copy($source, $target, $overwrite) => map:merge(), 
+                    <output:serialization-parameters>
+                        <output:method>json</output:method>
+                    </output:serialization-parameters>
+                ),
+                string-join($serializationParameters, ' ')
+            )
+        else (
+            response:set-status-code(401),
+            response:stream(
+                serialize(map {'error': 'permissions missing'} => map:merge(), 
+                    <output:serialization-parameters>
+                        <output:method>json</output:method>
+                    </output:serialization-parameters>
+                ),
+                string-join($serializationParameters, ' ')
+            )
+        ) 
 else
 (: everything else is passed through :)
    (console:log('/data Controller: passthrough'),
