@@ -87,7 +87,7 @@ let $list := local:getlist($database, $coll, $query)
 
 
 let $content := 
-    if(xdb:get-current-user() = "admin") then 
+    if(false()) then (: set to disable by default. This needs some treatment per project :) 
         <div>
             <h1>Batch transform XML files in the database</h1> 
             <table cellpadding="2" cellspacing="0" border="0" style="width: auto;">
