@@ -132,10 +132,6 @@ declare function local:format-reference(
 	  href="../resources/css/login.css" 
 	  type="text/css"/>
 	  
-	  <script type="text/javascript" src="../resources/js/confirm.js">
-	  //
-	  </script>
-	  
 	  <script type="text/javascript" src="../resources/js/checkbox.js">
 	  //
 	  </script>
@@ -332,6 +328,9 @@ declare function local:format-reference(
     }
     {doc('../login.html')/*}
     {config:replace-properties(config:get-property('footer'))}
+     <script type="text/javascript" src="../resources/js/confirm.js">
+	  //
+	  </script>
   </body>
 </html>
 

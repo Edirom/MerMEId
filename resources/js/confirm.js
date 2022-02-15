@@ -23,3 +23,14 @@ function filename_prompt(formid, text, published)
     }
 }
 
+function filecopy(ev) {
+    ev.preventDefault();
+    var source = ev.target[0].value, target, overwrite=false;
+    target = prompt("Copy " + source + " to:", source.substring(0, source.length -4) + "-copy.xml");
+    const xhttp = new XMLHttpRequest();
+    xhttp.open("POST", "../data/copy", true);
+    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhttp.send("source="+source+"&target="+target+"&overwrite="+overwrite);
+}
+
+document.querySelectorAll(".copyform").forEach(el => {el.addEventListener("submit", filecopy)});

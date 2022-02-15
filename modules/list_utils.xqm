@@ -139,12 +139,11 @@ let $options:=
     {
       let $form-id := util:document-name($doc)
       let $uri     := concat($config:data-public-root, "/", util:document-name($doc))
-      let $form := 
-      <form id="copy{$form-id}" action="./copy-file.xq" method="post" style="display:inline;">
-    	<input type="hidden" value="copy" name="{util:document-name($doc)}" />
-    	<input type="image" src="../resources/images/copy.gif" name="button" value="copy" title="Copy"/>
+      return
+      <form id="copy{$form-id}" action="#" method="post" style="display:inline;" class="copyform">
+    	<input type="hidden" name="source" value="{util:document-name($doc)}" />
+    	<input type="image" src="../resources/images/copy.gif" name="button" value="source" title="Copy"/>
       </form>
-      return  $form
     };
 
 
