@@ -3,6 +3,7 @@ xquery version "3.0" encoding "UTF-8";
 import module namespace loop="http://kb.dk/this/getlist" at "./main_loop.xqm";
 import module namespace app="http://kb.dk/this/listapp"  at "./list_utils.xqm";
 import module namespace config="https://github.com/edirom/mermeid/config" at "./config.xqm";
+import module namespace common="https://github.com/edirom/mermeid/common" at "./common.xqm";
 
 declare namespace xl="http://www.w3.org/1999/xlink";
 declare namespace request="http://exist-db.org/xquery/request";
@@ -64,39 +65,27 @@ declare function local:format-reference(
       else
 	"even"
 
-      let $date_output :=
-    	if($doc//m:workList/m:work/m:creation/m:date/(@notbefore|@notafter|@startdate|@enddate)!='') then
-    	  concat(substring($doc//m:workList/m:work/m:creation/m:date/@notbefore,1,4),
-    	  substring($doc//m:workList/m:work/m:creation/m:date/@startdate,1,4),
-    	  '-',
-    	  substring($doc//m:workList/m:work/m:creation/m:date/@enddate,1,4),
-    	  substring($doc//m:workList/m:work/m:creation/m:date/@notafter,1,4))
-        else if($doc//m:workList/m:work/m:creation/m:date/@isodate!='') then
-          substring($doc//m:workList/m:work/m:creation/m:date[1]/@isodate,1,4)
-        else if($doc//m:workList/m:work/m:expressionList/m:expression[m:creation/m:date][1]/m:creation/m:date/(@notbefore|@notafter|@startdate|@enddate)!='') then
-    	  concat(substring($doc//m:workList/m:work/m:expressionList/m:expression[m:creation/m:date][1]/m:creation/m:date/@notbefore,1,4),
-    	  substring($doc//m:workList/m:work/m:expressionList/m:expression[m:creation/m:date][1]/m:creation/m:date/@startdate,1,4),
-    	  '-',
-    	  substring($doc//m:workList/m:work/m:expressionList/m:expression[m:creation/m:date][1]/m:creation/m:date/@enddate,1,4),
-    	  substring($doc//m:workList/m:work/m:expressionList/m:expression[m:creation/m:date][1]/m:creation/m:date/@notafter,1,4))
-        else
-          substring($doc//m:workList/m:work/m:expressionList/m:expression[m:creation/m:date][1]/m:creation/m:date[@isodate][1]/@isodate,1,4)
-
 	(: for some reason the sort-key function must be called outside the actual searching to have correct work number sorting when searching within all collections :)
     let $dummy := loop:sort-key("dummy_collection", $doc, "null")
 
 	let $ref   := 
 	<tr class="result {$class}">
 	  <td nowrap="nowrap">
-	    {$doc//m:workList/m:work/m:contributor/m:persName[@role='composer']}
+	    {common:get-composers($doc)}
 	  </td>
-	  <td>{app:view-document-reference($doc)}</td>
-	  <td>{"  ",$date_output}</td>
-	  <td nowrap="nowrap">{app:get-edition-and-number($doc)}</td>
+	  <td>
+	    <a target="_blank"
+           title="View" 
+           href="{config:link-to-app('modules/present.xq') || '?doc=' || util:document-name($doc)}">
+           {common:get-title($doc)}
+        </a>
+      </td>
+	  <td>{common:display-date($doc)}</td>
+	  <td nowrap="nowrap">{common:get-edition-and-number($doc)}</td>
 	  <td class="tools">
 	    <a target="_blank"
             title="View XML source" 
-            href="../data/{util:document-name($doc)}">
+            href="{config:link-to-app('data/read') || '?filename=' || util:document-name($doc)}">
 	      <img src="../resources/images/xml.gif" 
 	      alt="view source" 
 	      border="0"

@@ -74,32 +74,6 @@ let $options:=
       return $form
     };
 
-    declare function app:get-edition-and-number($doc as node() ) as xs:string* {
-      let $c := 
-	  $doc//m:fileDesc/m:seriesStmt/m:identifier[@type="file_collection"][1]/string()
-      let $no := $doc//m:meiHead/m:workList/m:work[1]/m:identifier[@label=$c][1]/string()
-      (: shorten very long identifiers (i.e. lists of numbers) :)
-	  let $part1 := substring($no, 1, 11)
-	  let $part2 := substring($no, 12)
-      let $delimiter := substring(concat(translate($part2,'0123456789',''),' '),1,1)
-      let $n := 
-          if (string-length($no)>11) then 
-            concat($part1,substring-before($part2,$delimiter),'...')
-          else
-            $no
-      return ($c, $n)	
-    };
-
-    declare function app:view-document-reference($doc as node()) as node() {
-      (: it is assumed that we live in the same collection 'modules' :)
-      let $ref := 
-      <a  target="_blank"
-      title="View" 
-      href="./present.xq?doc={util:document-name($doc)}">
-	{$doc//m:workList/m:work/m:title[1]/string()}
-      </a>
-      return $ref
-    };
 
     declare function app:view-document-notes($doc as node()) as node() {
       let $note := $doc//m:fileDesc/m:notesStmt/m:annot[@type='private_notes']/string()
