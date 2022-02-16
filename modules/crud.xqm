@@ -17,6 +17,7 @@ declare namespace err="http://www.w3.org/2005/xqt-errors";
 declare namespace jb="http://exist.sourceforge.net/NS/exist/java-binding";
 
 import module namespace config="https://github.com/edirom/mermeid/config" at "config.xqm";
+import module namespace common="https://github.com/edirom/mermeid/common" at "common.xqm";
 
 (:~
  : Delete files within the data directory
@@ -156,6 +157,34 @@ declare function crud:copy($source-filename as xs:string, $target-filename as xs
             'message': 'source does not exist',
             'code': 200
         } 
+};
+
+(:~
+ : Read a file from the data directory
+ :
+ :)
+declare function crud:read($filename as xs:string) as map(*) {
+    let $doc :=
+        if(doc-available($config:data-root || '/' || $filename))
+        then doc($config:data-root || '/' || $filename)
+        else ()
+    return
+        if($doc)
+        then map {
+            'filename': $filename,
+            'document-node': $doc,
+            'composer': common:get-composers($doc),
+            'title': common:get-title($doc),
+            'year': common:display-date($doc),
+            'collection': common:get-edition-and-number($doc),
+            'message': 'read successfully',
+            'code': 200
+        }
+        else map {
+            'filename': $filename,
+            'message': 'file not found or permissions missing',
+            'code': 404
+        }
 };
 
 (:~

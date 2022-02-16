@@ -127,6 +127,18 @@ else if($exist:path = '/delete' and request:get-method() eq 'POST') then
         if(request:get-header('Accept') eq 'application/json')
         then output:stream-json($backend-response, $backend-response(1)?code)
         else output:redirect-to-main-page()
+(:~
+ : read files endpoint 
+~:)
+else if($exist:path = '/read' and request:get-method() eq 'GET') then 
+    let $filename := request:get-parameter('filename', '')
+    let $backend-response := crud:read($filename)
+    return 
+        if(request:get-header('Accept') eq 'application/json')
+        then output:stream-json(map:remove($backend-response, 'document-node'), $backend-response?code)
+        else if(contains(request:get-header('Accept'), 'application/xml'))
+        then $backend-response?document-node
+        else ()
 else
 (: everything else is passed through :)
    (console:log('/data Controller: passthrough'),
