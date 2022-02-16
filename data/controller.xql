@@ -2,6 +2,7 @@ xquery version "3.1";
 
 declare namespace exist="http://exist.sourceforge.net/NS/exist";
 declare namespace request="http://exist-db.org/xquery/request";
+declare namespace session="http://exist-db.org/xquery/session";
 declare namespace response="http://exist-db.org/xquery/response";
 declare namespace transform="http://exist-db.org/xquery/transform";
 declare namespace output="http://www.w3.org/2010/xslt-xquery-serialization";
@@ -18,6 +19,33 @@ declare variable $exist:resource external;
 declare variable $exist:controller external;
 declare variable $exist:prefix external;
 declare variable $exist:root external;
+
+(:~
+ : Wrapper function for outputting JSON
+ :
+ : @param $response-body the response body
+ : @param $response-code the response status code
+ :)
+declare function output:stream-json($response-body, $response-code as xs:integer) as empty-sequence() {
+    response:set-status-code($response-code),
+    response:stream(
+        serialize($response-body, 
+            <output:serialization-parameters>
+                <output:method>json</output:method>
+            </output:serialization-parameters>
+        ),
+        'method=text media-type=application/json encoding=utf-8'
+    )
+};
+
+(:~
+ : Wrapper function for redirecting to the main page
+ :)
+declare function output:redirect-to-main-page() as element(exist:dispatch) {
+    <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
+        <redirect url="{config:link-to-app('modules/list_files.xq')}"/>
+    </dispatch>
+};
 
 (console:log('/data Controller'),
 if (ends-with($exist:resource, ".xml")) then
@@ -68,38 +96,37 @@ if (ends-with($exist:resource, ".xml")) then
     )
 (:~
  : copy files endpoint 
+ : For POST requests with Accept header 'application/json' the response 
+ : of the crud operation (a map object) is returned as JSON, for all other
+ : Accept headers the client is redirected to the main page (after the 
+ : execution of the crud operation)   
 ~:)
 else if($exist:path = '/copy' and request:get-method() eq 'POST') then
-    let $loggedIn := login:set-user("org.exist.login", (), false())
-    let $serializationParameters := ('method=text', 'media-type=application/json', 'encoding=utf-8')
-    let $user := request:get-attribute("org.exist.login.user")
-    let $isInMermeidGroup := sm:get-group-members('mermedit') = $user
     let $source := request:get-parameter('source', '')
-    let $target := request:get-parameter('target', '')
-    let $title := request:get-parameter('title', ())
+    let $target := request:get-parameter('target', util:uuid() || '.xml') (: generate a unique filename if none is provided :)
+    let $title := request:get-parameter('title', ()) (: empty titles will get passed on and filled in later :)
     let $overwriteString := request:get-parameter('overwrite', 'false')
     let $overwrite := $overwriteString = ('1', 'yes', 'ja', 'y', 'true', 'true()') (: some string values that are considered boolean "true()" :)
+    let $backend-response := crud:copy($source, $target, $overwrite, $title) 
+    let $log := util:log-system-out(request:get-header('Accept'))
     return 
-        if($isInMermeidGroup) then 
-            response:stream(
-                serialize(crud:copy($source, $target, $overwrite, $title), 
-                    <output:serialization-parameters>
-                        <output:method>json</output:method>
-                    </output:serialization-parameters>
-                ),
-                string-join($serializationParameters, ' ')
-            )
-        else (
-            response:set-status-code(401),
-            response:stream(
-                serialize(map {'error': 'permissions missing'} => map:merge(), 
-                    <output:serialization-parameters>
-                        <output:method>json</output:method>
-                    </output:serialization-parameters>
-                ),
-                string-join($serializationParameters, ' ')
-            )
-        ) 
+        if(request:get-header('Accept') eq 'application/json')
+        then output:stream-json($backend-response, $backend-response?code)
+        else output:redirect-to-main-page()
+(:~
+ : delete files endpoint 
+ : For POST requests with Accept header 'application/json' the response 
+ : of the crud operation (an array) is returned as JSON, for all other
+ : Accept headers the client is redirected to the main page (after the 
+ : execution of the crud operation)   
+~:)
+else if($exist:path = '/delete' and request:get-method() eq 'POST') then 
+    let $filename := request:get-parameter('filename', '')
+    let $backend-response := crud:delete($filename)
+    return 
+        if(request:get-header('Accept') eq 'application/json')
+        then output:stream-json($backend-response, $backend-response(1)?code)
+        else output:redirect-to-main-page()
 else
 (: everything else is passed through :)
    (console:log('/data Controller: passthrough'),
