@@ -13,6 +13,8 @@ declare namespace request="http://exist-db.org/xquery/request";
 declare namespace response="http://exist-db.org/xquery/response";
 declare namespace xmldb="http://exist-db.org/xquery/xmldb";
 declare namespace map="http://www.w3.org/2005/xpath-functions/map";
+declare namespace err="http://www.w3.org/2005/xqt-errors";
+declare namespace jb="http://exist.sourceforge.net/NS/exist/java-binding";
 
 import module namespace config="https://github.com/edirom/mermeid/config" at "config.xqm";
 
@@ -34,10 +36,17 @@ declare function crud:delete($filenames as xs:string*) as array(map(xs:string,xs
                     'code': 200
                 }
             )}
+            catch jb:org.xmldb.api.base.XMLDBException {
+                map {
+                    'filename': $filename,
+                    'message': 'failed to delete: ' || $err:description,
+                    'code': 401
+                }
+            }
             catch * {
                 map {
                     'filename': $filename,
-                    'message': 'failed to delete: ' || string-join(($err:code, $err:description)),
+                    'message': 'failed to delete: ' || string-join(($err:code, $err:description), '; '),
                     'code': 500
                 }
             }
@@ -52,16 +61,32 @@ declare function crud:delete($filenames as xs:string*) as array(map(xs:string,xs
  : @return a map object with filename, message and code properties concerning the create operation
  :)
 declare function crud:create($node as node(), $filename as xs:string) as map(xs:string,xs:string) {
-    if(xmldb:store($config:data-root, $filename, $node))
-    then map {
-        'filename': $filename,
-        'message': 'created successfully',
-        'code': 200
+    try {
+        if(xmldb:store($config:data-root, $filename, $node))
+        then map {
+            'filename': $filename,
+            'message': 'created successfully',
+            'code': 200
+        }
+        else map {
+            'filename': $filename,
+            'message': 'failed to create file',
+            'code': 500
+        }
     }
-    else map {
-        'filename': $filename,
-        'message': 'failed to create file',
-        'code': 500
+    catch jb:org.xmldb.api.base.XMLDBException {
+        map {
+            'filename': $filename,
+            'message': 'failed to create file: ' || $err:description,
+            'code': 401
+        }
+    }
+    catch * {
+        map {
+            'filename': $filename,
+            'message': 'failed to create file: ' || string-join(($err:code, $err:description), '; '),
+            'code': 500
+        }
     }
 };
 
@@ -80,11 +105,31 @@ declare function crud:copy($source-filename as xs:string, $target-filename as xs
         then doc($config:data-root || '/' || $source-filename)
         else ()
     let $create-target := 
-        if($source and (not(doc-available($config:data-root || '/' || $target-filename)) or $overwrite))
-        then xmldb:store($config:data-root, $target-filename, $source) => crud:adjust-mei-title($new_title)
-        else ()
+        try {
+            if($source and (not(doc-available($config:data-root || '/' || $target-filename)) or $overwrite))
+            then xmldb:store($config:data-root, $target-filename, $source) => crud:adjust-mei-title($new_title)
+            else ()
+        }
+        catch jb:org.xmldb.api.base.XMLDBException {
+            map {
+                'source': $source-filename,
+                'target': $target-filename,
+                'message': 'failed to copy file: ' || $err:description,
+                'code': 401
+            }
+        }
+        catch * {
+            map {
+                'source': $source-filename,
+                'target': $target-filename,
+                'message': 'failed to copy file: ' || string-join(($err:code, $err:description), '; '),
+                'code': 500
+            }
+        }
     return 
-        if($create-target)
+        if($create-target instance of map(*))
+        then $create-target
+        else if($create-target instance of xs:string)
         then map {
             'source': $source-filename,
             'target': $target-filename,
