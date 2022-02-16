@@ -137,11 +137,12 @@ let $options:=
 
     declare function app:copy-document-reference($doc as node()) as node() 
     {
-      let $form-id := util:document-name($doc)
+      let $doc-name := util:document-name($doc)
       let $uri     := concat($config:data-public-root, "/", util:document-name($doc))
       return
-      <form id="copy{$form-id}" action="#" method="post" style="display:inline;" class="copyform">
-    	<input type="hidden" name="source" value="{util:document-name($doc)}" />
+      <form id="copy{$doc-name}" action="{config:link-to-app('data/copy')}" method="post" style="display:inline;" class="ajaxform">
+    	<input type="hidden" name="source" value="{$doc-name}"/>
+    	<input type="hidden" name="callback" value="copyprompt"/>
     	<input type="image" src="../resources/images/copy.gif" name="button" value="source" title="Copy"/>
       </form>
     };
@@ -166,21 +167,19 @@ let $options:=
 
     declare function app:delete-document-reference($doc as node()) as node() 
     {
-      let $form-id := util:document-name($doc)
+      let $doc-name := util:document-name($doc)
       let $uri     := concat($config:data-public-root,"/",util:document-name($doc))
-      let $form := 
-    	if(doc-available($uri)) then
+      return
+        if(doc-available($uri)) then
         <span>
-        <img src="../resources/images/remove_disabled.gif" alt="Remove (disabled)" title="Only unpublished files may be deleted"/>
+            <img src="../resources/images/remove_disabled.gif" alt="Remove (disabled)" title="Only unpublished files may be deleted"/>
         </span>
         else
-    	<form id="del{$form-id}" action="./delete-file.xq" method="post" style="display:inline;">
-        	<input type="hidden" value="delete" name="{util:document-name($doc)}" />
-        	<input 
-        	    onclick="{string-join(('show_confirm(&quot;del',$form-id,'&quot;,&quot;',$doc//m:workList/m:work/m:title[string()][1]/string(),'&quot;);return false;'),'')}" 
-        	    type="image" src="../resources/images/remove.gif" name="button" value="remove" title="Remove"/>
+    	<form id="del{$doc-name}" action="{config:link-to-app('data/delete')}" method="post" style="display:inline;" class="ajaxform">
+        	<input type="hidden" name="filename" value="{$doc-name}"/>
+        	<input type="hidden" name="callback" value="deleteprompt"/>
+        	<input type="image" src="../resources/images/remove.gif" name="button" value="remove" title="Remove"/>
     	</form>
-      return  $form
     };
 
     declare function app:list-title() 
