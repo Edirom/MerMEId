@@ -108,7 +108,6 @@ else if($exist:path = '/copy' and request:get-method() eq 'POST') then
     let $overwriteString := request:get-parameter('overwrite', 'false')
     let $overwrite := $overwriteString = ('1', 'yes', 'ja', 'y', 'true', 'true()') (: some string values that are considered boolean "true()" :)
     let $backend-response := crud:copy($source, $target, $overwrite, $title) 
-    let $log := util:log-system-out(request:get-header('Accept'))
     return 
         if(request:get-header('Accept') eq 'application/json')
         then output:stream-json($backend-response, $backend-response?code)
