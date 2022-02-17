@@ -155,7 +155,7 @@ declare function crud:copy($source-filename as xs:string, $target-filename as xs
             'source': $source-filename,
             'target': $target-filename,
             'message': 'source does not exist',
-            'code': 200
+            'code': 404
         } 
 };
 
