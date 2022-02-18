@@ -1,18 +1,3 @@
-function filename_prompt(formid, text, published)
-{
-    if (published) {
-        alert("Only unpublished documents can be renamed.\nPlease unpublish the document before renaming it.");
-    } else {
-        var name = prompt("Rename '" + text +"' to " );
-        if (name!=null && name!="") {
-        	var form = document.getElementById(formid);
-        	form.name.value = name;
-        	form.submit();
-        } else {
-        }
-    }
-}
-
 /*
  * main event handler for the forms on the main page
  * it will simply show the modal and clone all inputs etc
