@@ -59,20 +59,23 @@ declare function crud:delete($filenames as xs:string*) as array(map(xs:string,xs
  :
  : @param $node the XML document to store
  : @param $filename the filename for the new file
+ : @param $overwrite whether an existent file may be overwritten
  : @return a map object with filename, message and code properties concerning the create operation
  :)
-declare function crud:create($node as node(), $filename as xs:string) as map(xs:string,xs:string) {
+declare function crud:create($node as node(), $filename as xs:string, $overwrite as xs:boolean) as map(*) {
     try {
-        if(xmldb:store($config:data-root, $filename, $node))
-        then map {
-            'filename': $filename,
-            'message': 'created successfully',
-            'code': 200
-        }
+        if(not(doc-available($config:data-root || '/' || $filename)) or $overwrite)
+        then if(xmldb:store($config:data-root, $filename, $node))
+        then crud:read($filename) => map:put('message', 'created successfully') 
         else map {
             'filename': $filename,
             'message': 'failed to create file',
             'code': 500
+        }
+        else map {
+            'filename': $filename,
+            'message': 'file already exists and no overwrite flag was set',
+            'code': 401
         }
     }
     catch jb:org.xmldb.api.base.XMLDBException {
@@ -100,57 +103,21 @@ declare function crud:create($node as node(), $filename as xs:string) as map(xs:
  : @param $new_title an optional new title. If omitted, the string "(copy)" will be appended to the old title
  : @return a map object with source, target, message and code properties concerning the copy operation
  :)
-declare function crud:copy($source-filename as xs:string, $target-filename as xs:string, $overwrite as xs:boolean, $new_title as xs:string?) as map(xs:string,xs:string) {
+declare function crud:copy($source-filename as xs:string, $target-filename as xs:string, $overwrite as xs:boolean, $new_title as xs:string?) as map(*) {
     let $source :=
         if(doc-available($config:data-root || '/' || $source-filename))
         then doc($config:data-root || '/' || $source-filename)
         else ()
     let $create-target := 
-        try {
-            if($source and (not(doc-available($config:data-root || '/' || $target-filename)) or $overwrite))
-            then xmldb:store($config:data-root, $target-filename, $source) => crud:adjust-mei-title($new_title)
-            else ()
-        }
-        catch jb:org.xmldb.api.base.XMLDBException {
-            map {
-                'source': $source-filename,
-                'target': $target-filename,
-                'message': 'failed to copy file: ' || $err:description,
-                'code': 401
-            }
-        }
-        catch * {
-            map {
-                'source': $source-filename,
-                'target': $target-filename,
-                'message': 'failed to copy file: ' || string-join(($err:code, $err:description), '; '),
-                'code': 500
-            }
-        }
-    return 
-        if($create-target instance of map(*))
+        if($source) then crud:create($source, $target-filename, $overwrite)
+        else ()
+    let $adjust-mei-title := 
+        if($create-target?code = 200)
+        then crud:adjust-mei-title($target-filename, $new_title)
+        else ()
+    return
+        if($source) 
         then $create-target
-        else if($create-target instance of xs:string)
-        then map {
-            'source': $source-filename,
-            'target': $target-filename,
-            'message': 'copied successfully',
-            'code': 200
-        }
-        else if(doc-available($config:data-root || '/' || $target-filename) and not($overwrite))
-        then map {
-            'source': $source-filename,
-            'target': $target-filename,
-            'message': 'target already existent and "overwrite" flag was missing',
-            'code': 500
-        }
-        else if($source)
-        then map {
-            'source': $source-filename,
-            'target': $target-filename,
-            'message': 'failed to create target',
-            'code': 500
-        }
         else map {
             'source': $source-filename,
             'target': $target-filename,

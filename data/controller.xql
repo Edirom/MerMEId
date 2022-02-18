@@ -110,7 +110,7 @@ else if($exist:path = '/copy' and request:get-method() eq 'POST') then
     let $backend-response := crud:copy($source, $target, $overwrite, $title) 
     return 
         if(request:get-header('Accept') eq 'application/json')
-        then output:stream-json($backend-response, $backend-response?code)
+        then output:stream-json(map:remove($backend-response, 'document-node'), $backend-response?code)
         else output:redirect-to-main-page()
 (:~
  : delete files endpoint 
