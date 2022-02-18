@@ -29,7 +29,7 @@ declare function common:display-date($doc as node()?) as xs:string {
       substring($doc//mei:workList/mei:work/mei:expressionList/mei:expression[mei:creation/mei:date][1]/mei:creation/mei:date[@isodate][1]/@isodate,1,4)
 };
 
-declare function common:get-edition-and-number($doc as node()?) as xs:string* {
+declare function common:get-edition-and-number($doc as node()?) as xs:string {
       let $c := ($doc//mei:fileDesc/mei:seriesStmt/mei:identifier[@type="file_collection"])[1] => normalize-space()
       let $no := ($doc//mei:meiHead/mei:workList/mei:work/mei:identifier[normalize-space(@label)=$c])[1] => normalize-space()
       (: shorten very long identifiers (i.e. lists of numbers) :)
@@ -41,7 +41,7 @@ declare function common:get-edition-and-number($doc as node()?) as xs:string* {
             concat($part1,substring-before($part2,$delimiter),'...')
           else
             $no
-      return ($c, $n)
+      return concat($c, ' ', $n)
 };
 
 declare function common:get-composers($doc as node()?) as xs:string? {
