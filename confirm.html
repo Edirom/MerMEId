@@ -1,0 +1,25 @@
+<div xmlns="http://www.w3.org/1999/xhtml" id="confirm_modal" class="modal">
+  <!-- Credits to https://www.w3schools.com/howto/howto_css_login_form.asp -->
+  <span class="close-modal close" title="Close Modal">×</span>
+  
+  <!-- Modal Content -->
+  <form class="modal-content animate">
+    <div class="container">
+      <h1 id="confirm_modal_heading">Some heading given as @title attribute on the form</h1>
+    </div>
+    
+    <div class="container">
+      <p id="confirm_modal_statusmessage">Some error message</p>
+    </div>
+    
+    <div class="container" id="confirm_modal_body">
+      <!-- Nothing to see here. The content gets cloned via Javascript from the original form -->
+      <label><b>Some label</b></label>
+      <input type="text" name="test" required="required" disabled="disabled" size="40" value="Some input text"/>
+    </div>
+    
+  </form>
+  <script type="text/javascript" src="../resources/js/confirm.js">
+    //
+  </script>
+</div>

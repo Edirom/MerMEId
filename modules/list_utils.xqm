@@ -2,6 +2,7 @@ xquery version "1.0" encoding "UTF-8";
 
 module namespace  app="http://kb.dk/this/listapp";
 import module namespace config="https://github.com/edirom/mermeid/config" at "./config.xqm";
+import module namespace common="https://github.com/edirom/mermeid/common" at "./common.xqm";
 
 declare namespace file="http://exist-db.org/xquery/file";
 declare namespace fn="http://www.w3.org/2005/xpath-functions";
@@ -112,12 +113,22 @@ let $options:=
     declare function app:copy-document-reference($doc as node()) as node() 
     {
       let $doc-name := util:document-name($doc)
+      let $title := common:get-title($doc)
       let $uri     := concat($config:data-public-root, "/", util:document-name($doc))
       return
-      <form id="copy{$doc-name}" action="{config:link-to-app('data/copy')}" method="post" style="display:inline;" class="ajaxform">
-    	<input type="hidden" name="source" value="{$doc-name}"/>
-    	<input type="hidden" name="callback" value="copyprompt"/>
-    	<input type="image" src="../resources/images/copy.gif" name="button" value="source" title="Copy"/>
+      <form id="copy{$doc-name}" action="{config:link-to-app('data/copy')}" 
+        method="post" style="display:inline;" class="ajaxform" title="Copy file">
+        <label class="ajaxform_label"><b>Source filename</b></label>
+    	<input type="text" name="source" value="{$doc-name}" class="ajaxform_label" readonly="readonly" size="40"/>
+    	<label class="ajaxform_label"><b>Target filename</b></label>
+    	<input type="text" name="target" value="{$doc-name}-copy.xml" class="ajaxform_input" size="40" maxlength="36"/>
+    	<label class="ajaxform_label"><b>New title</b></label>
+    	<input type="text" name="title" value="{$title} (Copy)" class="ajaxform_input" size="40" maxlength="36"/>
+    	<label class="ajaxform_label">
+    	   <b>Overwrite target?</b>
+    	   <input type="checkbox" name="overwrite"/>
+    	</label>
+    	<button type="submit" value="Copy"><img src="../resources/images/copy.gif"/></button>
       </form>
     };
 
@@ -149,10 +160,12 @@ let $options:=
             <img src="../resources/images/remove_disabled.gif" alt="Remove (disabled)" title="Only unpublished files may be deleted"/>
         </span>
         else
-    	<form id="del{$doc-name}" action="{config:link-to-app('data/delete')}" method="post" style="display:inline;" class="ajaxform">
-        	<input type="hidden" name="filename" value="{$doc-name}"/>
-        	<input type="hidden" name="callback" value="deleteprompt"/>
-        	<input type="image" src="../resources/images/remove.gif" name="button" value="remove" title="Remove"/>
+    	<form id="del{$doc-name}" action="{config:link-to-app('data/delete')}" 
+    	   method="post" style="display:inline;" class="ajaxform" title="Delete file">
+        	<label class="ajaxform_label"><b>Do you really want to delete the following file?</b></label>
+        	<input name="filename" value="{$doc-name}" class="ajaxform_label" readonly="readonly" size="40"/>
+        	<!--<input type="image" src="../resources/images/remove.gif" name="button" value="remove" title="Remove"/>-->
+        	<button type="submit" value="Remove"><img src="../resources/images/remove.gif"/></button>
     	</form>
     };
 

@@ -355,3 +355,32 @@ form.search a.help .help_label {
     white-space: nowrap;
     font-family: courier, fixed, monospace;
 }
+
+.ajaxform .ajaxform_input, .ajaxform .ajaxform_label {
+    display: none;
+}
+
+form.modal-content button {
+    display: block;
+    margin-top: 2ex;
+}
+
+#confirm_modal_statusmessage {
+    display:none;
+}
+
+#confirm_modal_statusmessage.error {
+    display: block;
+    border: 1px solid red;
+    padding: 1ex;
+    color: red;
+    font-weight: bold;
+}
+
+#confirm_modal_statusmessage.info {
+    display: block;
+    border: 1px solid green;
+    padding: 1ex;
+    color: green;
+    font-weight: bold;
+}

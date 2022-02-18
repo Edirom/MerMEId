@@ -316,10 +316,8 @@ declare function local:format-reference(
       </div>
     }
     {doc('../login.html')/*}
+    {doc('../confirm.html')/*}
     {config:replace-properties(config:get-property('footer'))}
-     <script type="text/javascript" src="../resources/js/confirm.js">
-	  //
-	  </script>
   </body>
 </html>
 
