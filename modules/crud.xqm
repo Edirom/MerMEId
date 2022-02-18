@@ -112,12 +112,12 @@ declare function crud:copy($source-filename as xs:string, $target-filename as xs
         if($source) then crud:create($source, $target-filename, $overwrite)
         else ()
     let $adjust-mei-title := 
-        if($create-target?code = 200)
-        then crud:adjust-mei-title($target-filename, $new_title)
+        if($create-target instance of map(*) and $create-target?code = 200)
+        then crud:adjust-mei-title($config:data-root || '/' || $target-filename, $new_title)
         else ()
     return
-        if($source) 
-        then $create-target
+        if($create-target instance of map(*)) 
+        then $create-target => map:put('title', $new_title)
         else map {
             'source': $source-filename,
             'target': $target-filename,
