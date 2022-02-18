@@ -112,7 +112,7 @@ declare function app:copy-document-reference($doc as node()) as element(html:for
                 <b>Overwrite target?</b>
                 <input type="checkbox" name="overwrite"/>
             </label>
-            <button type="submit" value="Copy"><img src="../resources/images/copy.gif"/></button>
+            <button type="submit" value="Copy"><img src="../resources/images/copy.gif" alt="Copy"/></button>
         </form>
 };
 
@@ -140,7 +140,7 @@ declare function app:rename-document-reference($doc as node()) as element(html:f
                 <b>Overwrite target?</b>
                 <input type="checkbox" name="overwrite"/>
             </label>
-            <button type="submit" value="Rename"><img src="../resources/images/rename.png"/></button>
+            <button type="submit" value="Rename"><img src="../resources/images/rename.png" alt="Rename"/></button>
         </form>
 };
 
@@ -160,7 +160,7 @@ declare function app:delete-document-reference($doc as node()) as element() {
         	<label class="ajaxform_label"><b>Do you really want to delete the following file?</b></label>
         	<input name="filename" value="{$doc-name}" class="ajaxform_label" readonly="readonly" size="40"/>
         	<!--<input type="image" src="../resources/images/remove.gif" name="button" value="remove" title="Remove"/>-->
-        	<button type="submit" value="Remove"><img src="../resources/images/remove.gif"/></button>
+        	<button type="submit" value="Remove"><img src="../resources/images/remove.gif" alt="Remove"/></button>
     	</form>
 };
 
