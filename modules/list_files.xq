@@ -135,23 +135,23 @@ declare function local:format-reference(
 	</head>
 	<body class="list_files">
 	  <div class="list_header">
-	    <div style="float:right;">
-	      <a id="login-info" href="#" data-user="">Login</a>
+	    <div class="header_right">
+	      <div>
+	       <a id="login-info" href="#" data-user="">Login</a></div>
 	      <div class="loginRequired" style="display:inline;">
- 	      <form id="create-file" action="{config:link-to-app('data/create')}" method="post" class="addLink"  style="display:inline;">
-     	      <button type="submit" value="new" title="Add new file"><img src="../resources/images/new.gif" /></button>
+ 	      <form id="create-file" action="{config:link-to-app('data/create')}" method="post">
+     	      <button type="submit" value="new" title="Add new file"><img src="../resources/images/new.gif" alt="Add new file"/></button>
  	      </form>
-	      </div>&#160;<a href="../manual/index.html" 
-	      class="addLink"
-	      target="_blank"><img 
-	      src="../resources/images/help_light.png" 
-	      title="Help - opens the manual in a new window or tab" 
-	      alt="Help" 
-	      border="0"/></a>
+	      </div>
+	      <div>
+	       <form id="help-link" action="{config:link-to-app('manual/index.html')}" method="get">
+     	      <button type="submit" value="help" title="Help - opens the manual in a new window or tab"><img src="../resources/images/help_light.png" alt="Help"/></button>
+ 	      </form>
+	      </div>
 	    </div>
 	    <img src="../resources/images/mermeid_30px.png" 
             title="MerMEId - Metadata Editor and Repository for MEI Data" 
-	    alt="MerMEId Logo"/>
+            alt="MerMEId Logo"/>
 	  </div>
 
 	  <div class="filter_bar">
