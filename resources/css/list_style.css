@@ -385,7 +385,7 @@ form.modal-content button {
     font-weight: bold;
 }
 
-.result_table button {
+.result_table button, #create-file button {
     border: none;
     cursor: pointer;
 }

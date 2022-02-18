@@ -137,9 +137,11 @@ declare function local:format-reference(
 	  <div class="list_header">
 	    <div style="float:right;">
 	      <a id="login-info" href="#" data-user="">Login</a>
-	      <form id="create-file" action="./create-file.xq" method="post" class="addLink"  style="display:inline;">
-    	      <input type="image" src="../resources/images/new.gif" name="button" value="new" title="Add new file"/>
-	      </form>&#160;<a href="../manual/index.html" 
+	      <div class="loginRequired" style="display:inline;">
+ 	      <form id="create-file" action="{config:link-to-app('data/create')}" method="post" class="addLink"  style="display:inline;">
+     	      <button type="submit" value="new" title="Add new file"><img src="../resources/images/new.gif" /></button>
+ 	      </form>
+	      </div>&#160;<a href="../manual/index.html" 
 	      class="addLink"
 	      target="_blank"><img 
 	      src="../resources/images/help_light.png" 
