@@ -163,6 +163,29 @@ else if($exist:path = '/rename' and request:get-method() eq 'POST') then
             then output:stream-json(map:remove(map:merge(($backend-response-delete(1), $backend-response-copy)), 'document-node'), $backend-response-copy?code)
             else output:stream-json($backend-response-copy, $backend-response-copy?code)
         else output:redirect-to-main-page()
+(:~
+ : create files endpoint 
+ :
+ :)
+else if($exist:path = '/create' and request:get-method() eq 'POST') then 
+    let $templatepath := request:get-parameter('template', '../forms/model/new_file.xml')
+    let $template :=
+        if(doc-available($templatepath))
+        then doc($templatepath)
+        else ()
+    let $filename := request:get-parameter('filename', util:uuid() || '.xml')
+    let $store := 
+        if($template and $filename) 
+        then crud:create($template, $filename, false())
+        else ()
+    return
+        if($store instance of map(*))
+        then 
+            <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
+                <redirect url="{config:link-to-app('/forms/edit-work-case.xml') || '?doc=' || $filename}"/>
+            </dispatch>
+        else ()
+    
 else
 (: everything else is passed through :)
    (console:log('/data Controller: passthrough'),
