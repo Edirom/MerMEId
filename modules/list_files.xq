@@ -83,14 +83,17 @@ declare function local:format-reference(
 	  <td>{common:display-date($doc)}</td>
 	  <td nowrap="nowrap">{common:get-edition-and-number($doc)}</td>
 	  <td class="tools">
-	    <a target="_blank"
+	    <form target="_blank"
             title="View XML source" 
-            href="{config:link-to-app('data/read') || '?filename=' || util:document-name($doc)}">
-	      <img src="../resources/images/xml.gif" 
-	      alt="view source" 
-	      border="0"
-              title="View source" />
-	    </a>
+            action="{config:link-to-app('data/read')}">
+            <input type="hidden" name="filename" value="{util:document-name($doc)}"/>
+            <button type="submit">
+                <img src="../resources/images/xml.gif" 
+                    alt="view source" 
+                    border="0"
+                    title="View source" />
+            </button>
+	    </form>
 	  </td>
 	  <td class="tools loginRequired">{app:edit-form-reference($doc)}</td>
 	  <td class="tools loginRequired">{app:copy-document-reference($doc)}</td>
