@@ -387,4 +387,5 @@ form.modal-content button {
 
 .result_table button {
     border: none;
+    cursor: pointer;
 }

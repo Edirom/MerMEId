@@ -75,23 +75,11 @@ function updateLoginInfo(obj) {
 }
 
 /*
- * Toggle css and events for edit buttons
+ * Toggle css and events for forms
  * param: hide|show
  */
 function toggleButtons(status) {
-    // input elements toggle the "disabled" attribute
-    document.querySelectorAll(".loginRequired input").forEach(el => {
-        if(status === 'show') {
-            el.removeAttribute('disabled');
-            el.parentElement.parentElement.classList.add(status);
-        }
-        else {
-            el.setAttribute('disabled', 'disabled');
-            el.parentElement.parentElement.classList.remove('show');
-        }
-    });
-    // all other elements toggle the pointerEvents and toggle the class "show" 
-    document.querySelectorAll(".loginRequired a, .loginRequired img, .loginRequired label").forEach(el => {
+    document.querySelectorAll(".loginRequired form").forEach(el => {
         if(status === 'show') {
             el.style.pointerEvents = "auto";
             el.parentElement.classList.add(status);
