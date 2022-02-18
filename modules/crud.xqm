@@ -18,6 +18,7 @@ declare namespace jb="http://exist.sourceforge.net/NS/exist/java-binding";
 
 import module namespace config="https://github.com/edirom/mermeid/config" at "config.xqm";
 import module namespace common="https://github.com/edirom/mermeid/common" at "common.xqm";
+import module namespace login="http://exist-db.org/xquery/login" at "resource:org/exist/xquery/modules/persistentlogin/login.xql";
 
 (:~
  : Delete files within the data directory
@@ -103,7 +104,8 @@ declare function crud:create($node as node(), $filename as xs:string, $overwrite
  : @param $new_title an optional new title. If omitted, the string "(copy)" will be appended to the old title
  : @return a map object with source, target, message and code properties concerning the copy operation
  :)
-declare function crud:copy($source-filename as xs:string, $target-filename as xs:string, $overwrite as xs:boolean, $new_title as xs:string?) as map(*) {
+declare function crud:copy($source-filename as xs:string, $target-filename as xs:string, 
+    $overwrite as xs:boolean, $new_title as xs:string?) as map(*) {
     let $source :=
         if(doc-available($config:data-root || '/' || $source-filename))
         then doc($config:data-root || '/' || $source-filename)
@@ -113,7 +115,15 @@ declare function crud:copy($source-filename as xs:string, $target-filename as xs
         else ()
     let $adjust-mei-title := 
         if($create-target instance of map(*) and $create-target?code = 200)
-        then crud:adjust-mei-title($config:data-root || '/' || $target-filename, $new_title)
+        then try { 
+                let $new-doc := doc($config:data-root || '/' || $target-filename)
+                let $loggedIn := login:set-user("org.exist.login", (), false())
+                return (
+                    crud:adjust-mei-title($new-doc, $new_title),
+                    common:add-change-entry-to-revisionDesc($new-doc, request:get-attribute("org.exist.login.user"), 
+                        'file copied from ' || $source-filename || ' to ' || $target-filename)
+            )}
+            catch * {util:log-system-err('an error occured: ' || $err:description)}
         else ()
     return
         if($create-target instance of map(*)) 
@@ -158,25 +168,19 @@ declare function crud:read($filename as xs:string) as map(*) {
  : Append "copy" to the MEI title
  : Helper function for crud:copy()
  :
- : @param $filepath the (full) filepath to the resource in the eXist db
+ : @param $doc the MEI document to change the title
  : @param $new_title an optional new title. If omitted, the string "(copy)" will be appended to the old title 
  : @return the input filepath if successfull, the empty sequence otherwise 
  :)
-declare %private function crud:adjust-mei-title($filepath as xs:string?, $new_title as xs:string?) as xs:string? {
-    if(doc-available($filepath))
-    then
-        let $mei := doc($filepath)
-        return
-            try {(
-                for $title in $mei//mei:workList/mei:work[1]/mei:title[text()][1]
-                let $new_title_text :=
-                    if($new_title) then $new_title
-                    else concat(normalize-space($title), " (copy)")
-                return 
-                    update value $title with $new_title_text
-                ),
-                $filepath
-            }
-            catch * {()}
-    else ()
+declare %private function crud:adjust-mei-title($doc as document-node(), $new_title as xs:string?) as empty-sequence() {
+    try {(
+        for $title in $doc//mei:workList/mei:work[1]/mei:title[text()][1]
+        let $new_title_text :=
+            if($new_title) then $new_title
+            else concat(normalize-space($title), " (copy)")
+        return 
+            update value $title with $new_title_text
+        )
+    }
+    catch * {util:log-system-err('an error occured: ' || $err:description)}
 };
