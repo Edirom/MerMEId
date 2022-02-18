@@ -106,7 +106,7 @@ else if($exist:path = '/copy' and request:get-method() eq 'POST') then
     let $target := request:get-parameter('target', util:uuid() || '.xml') (: generate a unique filename if none is provided :)
     let $title := request:get-parameter('title', ()) (: empty titles will get passed on and filled in later :)
     let $overwriteString := request:get-parameter('overwrite', 'false')
-    let $overwrite := $overwriteString = ('1', 'yes', 'ja', 'y', 'true', 'true()') (: some string values that are considered boolean "true()" :)
+    let $overwrite := $overwriteString = ('1', 'yes', 'ja', 'y', 'on', 'true', 'true()') (: some string values that are considered boolean "true()" :)
     let $backend-response := crud:copy($source, $target, $overwrite, $title) 
     return 
         if(request:get-header('Accept') eq 'application/json')
