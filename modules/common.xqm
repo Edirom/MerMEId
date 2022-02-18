@@ -14,7 +14,7 @@ declare function common:display-date($doc as node()?) as xs:string {
     if($doc//mei:workList/mei:work/mei:creation/mei:date/(@notbefore|@notafter|@startdate|@enddate)!='') then
       concat(substring($doc//mei:workList/mei:work/mei:creation/mei:date/@notbefore,1,4),
       substring($doc//mei:workList/mei:work/mei:creation/mei:date/@startdate,1,4),
-      '-',
+      '–',
       substring($doc//mei:workList/mei:work/mei:creation/mei:date/@enddate,1,4),
       substring($doc//mei:workList/mei:work/mei:creation/mei:date/@notafter,1,4))
     else if($doc//mei:workList/mei:work/mei:creation/mei:date/@isodate!='') then
@@ -22,7 +22,7 @@ declare function common:display-date($doc as node()?) as xs:string {
     else if($doc//mei:workList/mei:work/mei:expressionList/mei:expression[mei:creation/mei:date][1]/mei:creation/mei:date/(@notbefore|@notafter|@startdate|@enddate)!='') then
       concat(substring($doc//mei:workList/mei:work/mei:expressionList/mei:expression[mei:creation/mei:date][1]/mei:creation/mei:date/@notbefore,1,4),
       substring($doc//mei:workList/mei:work/mei:expressionList/mei:expression[mei:creation/mei:date][1]/mei:creation/mei:date/@startdate,1,4),
-      '-',
+      '–',
       substring($doc//mei:workList/mei:work/mei:expressionList/mei:expression[mei:creation/mei:date][1]/mei:creation/mei:date/@enddate,1,4),
       substring($doc//mei:workList/mei:work/mei:expressionList/mei:expression[mei:creation/mei:date][1]/mei:creation/mei:date/@notafter,1,4))
     else
