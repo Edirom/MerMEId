@@ -100,7 +100,7 @@ if (ends-with($exist:resource, ".xml")) then
  : of the crud operation (a map object) is returned as JSON, for all other
  : Accept headers the client is redirected to the main page (after the 
  : execution of the crud operation)   
-~:)
+ :)
 else if($exist:path = '/copy' and request:get-method() eq 'POST') then
     let $source := request:get-parameter('source', '')
     let $target := request:get-parameter('target', util:uuid() || '.xml') (: generate a unique filename if none is provided :)
@@ -118,7 +118,7 @@ else if($exist:path = '/copy' and request:get-method() eq 'POST') then
  : of the crud operation (an array) is returned as JSON, for all other
  : Accept headers the client is redirected to the main page (after the 
  : execution of the crud operation)   
-~:)
+ :)
 else if($exist:path = '/delete' and request:get-method() eq 'POST') then 
     let $filename := request:get-parameter('filename', '')
     let $backend-response := crud:delete($filename)
@@ -128,7 +128,10 @@ else if($exist:path = '/delete' and request:get-method() eq 'POST') then
         else output:redirect-to-main-page()
 (:~
  : read files endpoint 
-~:)
+ : For GET requests with Accept header 'application/json' the response 
+ : of the crud operation (a map object) is returned as JSON, for an
+ : "application/xml" the raw XML document is returned
+ :)
 else if($exist:path = '/read' and request:get-method() eq 'GET') then 
     let $filename := request:get-parameter('filename', '')
     let $backend-response := crud:read($filename)
@@ -138,6 +141,28 @@ else if($exist:path = '/read' and request:get-method() eq 'GET') then
         else if(contains(request:get-header('Accept'), 'application/xml'))
         then $backend-response?document-node
         else ()
+(:~
+ : rename files endpoint 
+ : this simply chains a "copy" and a "delete" (if the first operation was successfull)
+ : the returned object is a merge of the copy-response and the delete-response with a precedence for the former
+ :)
+else if($exist:path = '/rename' and request:get-method() eq 'POST') then 
+    let $source := request:get-parameter('source', '')
+    let $target := request:get-parameter('target', util:uuid() || '.xml') (: generate a unique filename if none is provided :)
+    let $title := request:get-parameter('title', ()) (: empty titles will get passed on and filled in later :)
+    let $overwriteString := request:get-parameter('overwrite', 'false')
+    let $overwrite := $overwriteString = ('1', 'yes', 'ja', 'y', 'on', 'true', 'true()') (: some string values that are considered boolean "true()" :)
+    let $backend-response-copy := crud:copy($source, $target, $overwrite, $title)
+    let $backend-response-delete := 
+        if($backend-response-copy instance of map(*) and $backend-response-copy?code = 200)
+        then crud:delete($source)
+        else ()
+    return 
+        if(request:get-header('Accept') eq 'application/json')
+        then if($backend-response-delete instance of array(*)) 
+            then output:stream-json(map:remove(map:merge(($backend-response-delete(1), $backend-response-copy)), 'document-node'), $backend-response-copy?code)
+            else output:stream-json($backend-response-copy, $backend-response-copy?code)
+        else output:redirect-to-main-page()
 else
 (: everything else is passed through :)
    (console:log('/data Controller: passthrough'),
