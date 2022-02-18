@@ -9,6 +9,7 @@ declare namespace mei="http://www.music-encoding.org/ns/mei";
 declare namespace map="http://www.w3.org/2005/xpath-functions/map";
 
 import module namespace config="https://github.com/edirom/mermeid/config" at "config.xqm";
+import module namespace functx="http://www.functx.com";
 
 declare function common:display-date($doc as node()?) as xs:string {
     if($doc//mei:workList/mei:work/mei:creation/mei:date/(@notbefore|@notafter|@startdate|@enddate)!='') then
@@ -50,4 +51,16 @@ declare function common:get-composers($doc as node()?) as xs:string? {
 
 declare function common:get-title($doc as node()?) as xs:string {
     ($doc//mei:workList/mei:work/mei:title[text()])[1] => normalize-space()
+};
+
+declare function common:propose-filename($filename as xs:string) as xs:string {
+    let $tokens := $filename => tokenize('\.')
+    let $suffix := 
+        if(count($tokens) gt 1) 
+        then $tokens[last()]
+        else 'xml'
+    return
+        if(count($tokens) eq 1) 
+        then $tokens || '-copy.' || $suffix 
+        else (subsequence($tokens, 1, count($tokens) -1) => string-join('.')) || '-copy.' || $suffix 
 };

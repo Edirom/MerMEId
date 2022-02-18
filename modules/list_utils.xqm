@@ -91,7 +91,9 @@ declare function app:edit-form-reference($doc as node()) as element(html:form) {
 
 declare function app:copy-document-reference($doc as node()) as element(html:form) {
     let $doc-name := util:document-name($doc)
+    let $proposed-name := common:propose-filename($doc-name)
     let $title := common:get-title($doc)
+    let $proposed-title := $title || ' (Copy)'
     let $uri := concat($config:data-public-root, "/", $doc-name)
     return
         <form id="copy{$doc-name}" action="{config:link-to-app('data/copy')}"
@@ -101,10 +103,10 @@ declare function app:copy-document-reference($doc as node()) as element(html:for
             <input type="text" name="source" value="{$doc-name}" 
                 class="ajaxform_label" readonly="readonly" size="40"/>
             <label class="ajaxform_label"><b>Target filename</b></label>
-            <input type="text" name="target" value="{$doc-name}-copy.xml" 
+            <input type="text" name="target" value="{$proposed-name}" 
                 class="ajaxform_input" size="40" maxlength="36"/>
             <label class="ajaxform_label"><b>New title</b></label>
-            <input type="text" name="title" value="{$title} (Copy)" 
+            <input type="text" name="title" value="{$proposed-title}" 
                 class="ajaxform_input" size="40" maxlength="36"/>
             <label class="ajaxform_label">
                 <b>Overwrite target?</b>
@@ -117,7 +119,9 @@ declare function app:copy-document-reference($doc as node()) as element(html:for
 
 declare function app:rename-document-reference($doc as node()) as element(html:form) {
     let $doc-name := util:document-name($doc)
+    let $proposed-name := common:propose-filename($doc-name)
     let $title := common:get-title($doc)
+    let $proposed-title := $title || ' (Copy)'
     let $uri := concat($config:data-public-root, "/", $doc-name)
     return
         <form id="rename{$doc-name}" action="{config:link-to-app('data/rename')}" 
@@ -127,10 +131,10 @@ declare function app:rename-document-reference($doc as node()) as element(html:f
             <input type="text" name="source" value="{$doc-name}" 
                 class="ajaxform_label" readonly="readonly" size="40"/>
             <label class="ajaxform_label"><b>Target filename</b></label>
-            <input type="text" name="target" value="{$doc-name}-copy.xml" 
+            <input type="text" name="target" value="{$proposed-name}" 
                 class="ajaxform_input" size="40" maxlength="36"/>
             <label class="ajaxform_label"><b>New title</b></label>
-            <input type="text" name="title" value="{$title} (Copy)" 
+            <input type="text" name="title" value="{$proposed-title}" 
                 class="ajaxform_input" size="40" maxlength="36"/>
             <label class="ajaxform_label">
                 <b>Overwrite target?</b>
