@@ -11,6 +11,12 @@ declare namespace map="http://www.w3.org/2005/xpath-functions/map";
 import module namespace config="https://github.com/edirom/mermeid/config" at "config.xqm";
 import module namespace functx="http://www.functx.com";
 
+(:~
+ : Function for outputting the "Year" information on the main list page
+ : 
+ : @param $doc the MEI document to extract the information from
+ : @return the string representation of a period of time  
+ :)
 declare function common:display-date($doc as node()?) as xs:string {
     if($doc//mei:workList/mei:work/mei:creation/mei:date/(@notbefore|@notafter|@startdate|@enddate)!='') then
       concat(substring($doc//mei:workList/mei:work/mei:creation/mei:date/@notbefore,1,4),
@@ -30,6 +36,12 @@ declare function common:display-date($doc as node()?) as xs:string {
       substring($doc//mei:workList/mei:work/mei:expressionList/mei:expression[mei:creation/mei:date][1]/mei:creation/mei:date[@isodate][1]/@isodate,1,4)
 };
 
+(:~
+ : Function for outputting the "Collection" information on the main list page
+ :
+ : @param $doc the MEI document to extract the information from
+ : @return the string representation of a collection 
+ :)
 declare function common:get-edition-and-number($doc as node()?) as xs:string {
       let $c := ($doc//mei:fileDesc/mei:seriesStmt/mei:identifier[@type="file_collection"])[1] => normalize-space()
       let $no := ($doc//mei:meiHead/mei:workList/mei:work/mei:identifier[normalize-space(@label)=$c])[1] => normalize-space()
@@ -45,14 +57,37 @@ declare function common:get-edition-and-number($doc as node()?) as xs:string {
       return concat($c, ' ', $n)
 };
 
+(:~
+ : Get the composers of a work
+ : This is used for outputting the "Composer" information on the main list page
+ : as well as for crud:read()
+ :
+ : @param $doc the MEI document to extract the information from
+ : @return a string-join of the composers, an empty sequence if none are given
+ :)
 declare function common:get-composers($doc as node()?) as xs:string? {
     $doc//mei:workList/mei:work/mei:contributor/mei:persName[@role='composer'] => string-join(', ')
 };
 
+(:~
+ : Get the (main) title of a work
+ : This is used for outputting the "Title" information on the main list page
+ : as well as for crud:read()
+ :
+ : @param $doc the MEI document to extract the information from
+ : @return the (main) title 
+ :)
 declare function common:get-title($doc as node()?) as xs:string {
     ($doc//mei:workList/mei:work/mei:title[text()])[1] => normalize-space()
 };
 
+(:~
+ : Propose a new filename based on an existing one
+ : This is simply done by adding "-copy" to the basenam of the file
+ :
+ : @param $filename the existing filename
+ : @return a proposed filename 
+ :)
 declare function common:propose-filename($filename as xs:string) as xs:string {
     let $tokens := $filename => tokenize('\.')
     let $suffix := 
@@ -64,3 +99,4 @@ declare function common:propose-filename($filename as xs:string) as xs:string {
         then $tokens || '-copy.' || $suffix 
         else (subsequence($tokens, 1, count($tokens) -1) => string-join('.')) || '-copy.' || $suffix 
 };
+
