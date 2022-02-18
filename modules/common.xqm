@@ -100,3 +100,49 @@ declare function common:propose-filename($filename as xs:string) as xs:string {
         else (subsequence($tokens, 1, count($tokens) -1) => string-join('.')) || '-copy.' || $suffix 
 };
 
+(:~
+ : Add a change entry to the revisionDesc
+ :
+ : @param $document the input MEI document to add the change entry to 
+ : @param $user the user identified with this change entry
+ : @param $desc a description of the change
+ :)
+declare function common:add-change-entry-to-revisionDesc($document as document-node(), 
+    $user as xs:string, $desc as xs:string) as empty-sequence() {
+    let $log := util:log-system-out($user)
+    let $log := util:log-system-out($desc)
+    let $change := 
+        <change isodate="{current-dateTime()}" xml:id="{common:mermeid-id('change')}" 
+            xmlns="http://www.music-encoding.org/ns/mei">
+            <respStmt>
+                <resp>{$user}</resp>
+            </respStmt>
+            <changeDesc xml:id="{common:mermeid-id('changeDesc')}">
+                <p>{$desc}</p>
+            </changeDesc>
+        </change>
+    return
+        update insert $change into $document/mei:mei/mei:meiHead/mei:revisionDesc 
+};
+
+(:~
+ : Generate an ID for by prefixing an unique ID with an optional prefix
+ :
+ : @param $prefix an optional prefix for the ID
+ : @return a unique ID 
+ :)
+declare function common:mermeid-id($prefix as xs:string?) as xs:string {
+    $prefix || '_' || substring(util:uuid(),1,13)
+};
+
+(:~
+ : Update target attributes
+ :
+ :)
+declare function common:update-targets($collection as node()*, $old-identifier as xs:string, 
+    $new-identifier as xs:string) as empty-sequence() {
+    for $target in $collection//@target[contains(., $old-identifier)]
+    let $replacement := replace($target, $old-identifier, $new-identifier)
+    return 
+        update replace $target with $replacement
+};
