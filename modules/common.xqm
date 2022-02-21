@@ -8,6 +8,7 @@ module namespace common="https://github.com/edirom/mermeid/common";
 declare namespace mei="http://www.music-encoding.org/ns/mei";
 declare namespace map="http://www.w3.org/2005/xpath-functions/map";
 declare namespace err="http://www.w3.org/2005/xqt-errors";
+declare namespace util="http://exist-db.org/xquery/util";
 
 import module namespace config="https://github.com/edirom/mermeid/config" at "config.xqm";
 import module namespace functx="http://www.functx.com";

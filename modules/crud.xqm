@@ -15,6 +15,7 @@ declare namespace xmldb="http://exist-db.org/xquery/xmldb";
 declare namespace map="http://www.w3.org/2005/xpath-functions/map";
 declare namespace err="http://www.w3.org/2005/xqt-errors";
 declare namespace jb="http://exist.sourceforge.net/NS/exist/java-binding";
+declare namespace util="http://exist-db.org/xquery/util";
 
 import module namespace config="https://github.com/edirom/mermeid/config" at "config.xqm";
 import module namespace common="https://github.com/edirom/mermeid/common" at "common.xqm";
