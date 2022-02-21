@@ -113,7 +113,8 @@ declare function crud:copy($source-filename as xs:string, $target-filename as xs
     let $create-target := 
         if($source) then crud:create($source, $target-filename, $overwrite)
         else ()
-    let $adjust-mei-title := 
+    let $update-mei-document :=
+        (: add revisionDesc entry and update main title :)
         if($create-target instance of map(*) and $create-target?code = 200)
         then try { 
                 let $new-doc := doc($config:data-root || '/' || $target-filename)
