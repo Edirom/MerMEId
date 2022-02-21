@@ -110,8 +110,6 @@ declare function common:propose-filename($filename as xs:string) as xs:string {
  :)
 declare function common:add-change-entry-to-revisionDesc($document as document-node(), 
     $user as xs:string, $desc as xs:string) as empty-sequence() {
-    let $log := util:log-system-out($user)
-    let $log := util:log-system-out($desc)
     let $change := 
         <change isodate="{current-dateTime()}" xml:id="{common:mermeid-id('change')}" 
             xmlns="http://www.music-encoding.org/ns/mei">
