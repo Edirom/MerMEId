@@ -10,6 +10,7 @@ declare namespace output="http://www.w3.org/2010/xslt-xquery-serialization";
 import module namespace login="http://exist-db.org/xquery/login" at "resource:org/exist/xquery/modules/persistentlogin/login.xql";
 import module namespace config="https://github.com/edirom/mermeid/config" at "../modules/config.xqm";
 import module namespace crud="https://github.com/edirom/mermeid/crud" at "../modules/crud.xqm";
+import module namespace common="https://github.com/edirom/mermeid/common" at "../modules/common.xqm";
 import module namespace xmldb="http://exist-db.org/xquery/xmldb";
 
 import module namespace console="http://exist-db.org/xquery/console";
@@ -153,15 +154,22 @@ else if($exist:path = '/rename' and request:get-method() eq 'POST') then
     let $overwriteString := request:get-parameter('overwrite', 'false')
     let $overwrite := $overwriteString = ('1', 'yes', 'ja', 'y', 'on', 'true', 'true()') (: some string values that are considered boolean "true()" :)
     let $backend-response-copy := crud:copy($source, $target, $overwrite, $title)
-    let $backend-response-delete := 
+    let $update-references := 
         if($backend-response-copy instance of map(*) and $backend-response-copy?code = 200)
+        then common:update-targets(collection($config:data-root), $source, $target, false())
+        else console:log($backend-response-copy)
+    let $backend-response-delete := 
+        if($update-references instance of map(*) and $update-references?replacements ge 0)
         then crud:delete($source)
-        else ()
+        else console:log($update-references)
     return 
         if(request:get-header('Accept') eq 'application/json')
         then if($backend-response-delete instance of array(*)) 
             then output:stream-json(map:remove(map:merge(($backend-response-delete(1), $backend-response-copy)), 'document-node'), $backend-response-copy?code)
-            else output:stream-json($backend-response-copy, $backend-response-copy?code)
+            else (
+                output:stream-json($backend-response-copy, $backend-response-copy?code),
+                console:log($backend-response-delete)
+            )
         else output:redirect-to-main-page()
 (:~
  : create files endpoint 

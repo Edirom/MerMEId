@@ -7,6 +7,7 @@ module namespace common="https://github.com/edirom/mermeid/common";
 
 declare namespace mei="http://www.music-encoding.org/ns/mei";
 declare namespace map="http://www.w3.org/2005/xpath-functions/map";
+declare namespace err="http://www.w3.org/2005/xqt-errors";
 
 import module namespace config="https://github.com/edirom/mermeid/config" at "config.xqm";
 import module namespace functx="http://www.functx.com";
@@ -126,7 +127,7 @@ declare function common:add-change-entry-to-revisionDesc($document as document-n
 };
 
 (:~
- : Generate an ID for by prefixing an unique ID with an optional prefix
+ : Generate an ID by prefixing an unique ID with an optional prefix
  :
  : @param $prefix an optional prefix for the ID
  : @return a unique ID 
@@ -138,11 +139,44 @@ declare function common:mermeid-id($prefix as xs:string?) as xs:string {
 (:~
  : Update target attributes
  :
+ : @param $collection the collection of XML documents to look for and update references 
+ : @param $old-identifier the old identifier of the XML document 
+ : @param $new-identifier the new identifier of the XML document 
+ : @param $dry-run "true()" will perform a dry run without changing the references
+ : @return a map object with properties "old_identifier", "new_identifier", "dry_run", 
+     "replacements", "changed_documents", and "message". "replacements" and "changed_documents"
+     are their respective numbers and are negative (-1) if an error occured.   
  :)
 declare function common:update-targets($collection as node()*, $old-identifier as xs:string, 
-    $new-identifier as xs:string) as empty-sequence() {
-    for $target in $collection//@target[contains(., $old-identifier)]
-    let $replacement := replace($target, $old-identifier, $new-identifier)
-    return 
-        update replace $target with $replacement
+    $new-identifier as xs:string, $dry-run as xs:boolean) as map(*) {
+    try {
+        let $targets := $collection//@target[contains(., $old-identifier)]
+        let $documents := $targets/root() ! document-uri(.)
+        return (
+            if($dry-run) then ()
+            else (
+                for $target in $targets
+                let $replacement := replace($target, $old-identifier, $new-identifier)
+                return 
+                    update replace $target with $replacement
+            ),
+            map {
+                'old_identifier': $old-identifier,
+                'new_identifier': $new-identifier,
+                'replacements': count($targets),
+                'changed_documents': count($documents),
+                'message': 'Success',
+                'dry_run': $dry-run
+            }
+    )}
+    catch * {
+        map {
+            'old_identifier': $old-identifier,
+            'new_identifier': $new-identifier,
+            'replacements': -1,
+            'changed_documents': -1,
+            'message': $err:description,
+            'dry_run': $dry-run
+        }
+    }
 };
