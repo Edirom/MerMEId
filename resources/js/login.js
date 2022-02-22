@@ -95,8 +95,9 @@ document.getElementById("login-info").addEventListener("click", showModal, false
 document.querySelectorAll(".close-modal").forEach(el => {el.addEventListener("click", closeModal, false)});
 
 /*
- * add (main) event listener on focus change
+ * add (main) event listener on load and on focus change
  * this will trigger and propagate 
  * all changes to login form and buttons
  */
 window.addEventListener("focus", ajaxLogin);
+window.addEventListener("load", ajaxLogin);
