@@ -10,6 +10,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -19,17 +20,20 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class MermeidTest extends WebDriverSettings {
     public void enterLogin(){
-        driver.get("http://localhost:8080/index.html");
-        WebElement button = driver.findElement(By.cssSelector("button"));
-        button.click();
+        driver.get("http://localhost:8080/modules/list_files.xq");
 
-        driver.findElement(By.id("user")).sendKeys("mermeid");
-        driver.findElement(By.id("password")).sendKeys("mermeid");
+        driver.findElement(By.id("login-info")).click();
+        driver.findElement(By.id("login-modal")).click();
 
-        WebElement submit = driver.findElement(By.cssSelector("button"));
-        submit.click();
+        driver.findElement(By.name("user")).sendKeys("mermeid");
+        driver.findElement(By.name("password")).sendKeys("mermeid");
 
+        driver.findElement(By.name("remember")).click();
+        driver.findElement(By.cssSelector(".submit")).click();
 
+        //get login name
+        String loginUser = driver.findElement(By.id("login-info")).getText();
+        assertTrue(loginUser.equals("mermeid"));
     }
     @Test
     @Order(1)
@@ -81,7 +85,8 @@ public class MermeidTest extends WebDriverSettings {
             WebElement input_title = driver.findElement(By.id(id));
 
             String text =input_title.getAttribute("value");
-            System.out.println(expected_text);
+            System.out.println("Expected Text: " + expected_text);
+            System.out.println("Current Text: " + text);
             assertTrue(text.equals(expected_text));
         }
 
@@ -115,7 +120,10 @@ public class MermeidTest extends WebDriverSettings {
         setText(ids, randomString );
 
         //save changes
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.findElement(By.id("save-button-image")).click();
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.findElement(By.id("home-button-image")).click();
 
 
