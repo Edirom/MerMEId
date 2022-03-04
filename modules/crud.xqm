@@ -16,6 +16,7 @@ declare namespace map="http://www.w3.org/2005/xpath-functions/map";
 declare namespace err="http://www.w3.org/2005/xqt-errors";
 declare namespace jb="http://exist.sourceforge.net/NS/exist/java-binding";
 declare namespace util="http://exist-db.org/xquery/util";
+declare namespace sm="http://exist-db.org/xquery/securitymanager";
 
 import module namespace config="https://github.com/edirom/mermeid/config" at "config.xqm";
 import module namespace common="https://github.com/edirom/mermeid/common" at "common.xqm";
@@ -114,18 +115,14 @@ declare function crud:copy($source-filename as xs:string, $target-filename as xs
     let $create-target := 
         if($source) then crud:create($source, $target-filename, $overwrite)
         else ()
+    let $username := sm:id()//sm:real/sm:username => string()
     let $update-mei-document :=
         (: add revisionDesc entry and update main title :)
         if($create-target instance of map(*) and $create-target?code = 200)
-        then try { 
-                let $new-doc := doc($config:data-root || '/' || $target-filename)
-                let $loggedIn := login:set-user("org.exist.login", (), false())
-                return (
-                    crud:adjust-mei-title($new-doc, $new_title),
-                    common:add-change-entry-to-revisionDesc($new-doc, request:get-attribute("org.exist.login.user"), 
-                        'file copied from ' || $source-filename || ' to ' || $target-filename)
-            )}
-            catch * {util:log-system-err('an error occured: ' || $err:description)}
+        then (
+            common:set-mei-title($create-target?document-node, $create-target?title || ' (Copy)'),
+            common:add-change-entry-to-revisionDesc($create-target?document-node, $username, 'file copied from ' || $source-filename || ' to ' || $target-filename)
+        )
         else ()
     return
         if($create-target instance of map(*)) 
@@ -164,25 +161,4 @@ declare function crud:read($filename as xs:string) as map(*) {
             'message': 'file not found or permissions missing',
             'code': 404
         }
-};
-
-(:~
- : Append "copy" to the MEI title
- : Helper function for crud:copy()
- :
- : @param $doc the MEI document to change the title
- : @param $new_title an optional new title. If omitted, the string "(copy)" will be appended to the old title 
- : @return the input filepath if successfull, the empty sequence otherwise 
- :)
-declare %private function crud:adjust-mei-title($doc as document-node(), $new_title as xs:string?) as empty-sequence() {
-    try {(
-        for $title in $doc//mei:workList/mei:work[1]/mei:title[text()][1]
-        let $new_title_text :=
-            if($new_title) then $new_title
-            else concat(normalize-space($title), " (copy)")
-        return 
-            update value $title with $new_title_text
-        )
-    }
-    catch * {util:log-system-err('an error occured: ' || $err:description)}
 };

@@ -110,7 +110,7 @@ declare function common:propose-filename($filename as xs:string) as xs:string {
  : @param $desc a description of the change
  :)
 declare function common:add-change-entry-to-revisionDesc($document as document-node(), 
-    $user as xs:string, $desc as xs:string) as empty-sequence() {
+    $user as xs:string, $desc as xs:string) as map(*) {
     let $change := 
         <change isodate="{current-dateTime()}" xml:id="{common:mermeid-id('change')}" 
             xmlns="http://www.music-encoding.org/ns/mei">
@@ -122,7 +122,19 @@ declare function common:add-change-entry-to-revisionDesc($document as document-n
             </changeDesc>
         </change>
     return
-        update insert $change into $document/mei:mei/mei:meiHead/mei:revisionDesc 
+        try { 
+            update insert $change into $document/mei:mei/mei:meiHead/mei:revisionDesc,
+            map {
+                'message': 'Success',
+                'filename': util:document-name($document)
+            }
+        }
+        catch * {
+            map {
+                'message': $err:description,
+                'filename': util:document-name($document)
+            }
+        }
 };
 
 (:~
@@ -176,6 +188,36 @@ declare function common:update-targets($collection as node()*, $old-identifier a
             'changed_documents': -1,
             'message': $err:description,
             'dry_run': $dry-run
+        }
+    }
+};
+
+(:~
+ : Set the MEI title in an existing document
+ : This is used in various functions like `crud:copy()` where a (new) document 
+ : is stored first (from a template) and then the title gets altered.
+ :
+ : @param $doc the MEI document to change the title
+ : @param $new_title the new title 
+ : @return a map object with properties "message", "title", and "filename" 
+ :)
+declare function common:set-mei-title($doc as document-node(), $new_title as xs:string) as map(*) {
+    try {(
+        for $title in $doc//mei:workList/mei:work[1]/mei:title[text()][1]
+        return 
+            update value $title with $new_title
+        ),
+        map {
+            'message': 'Success',
+            'title': $new_title,
+            'filename': util:document-name($doc)
+        }
+    }
+    catch * {
+        map {
+            'message': $err:description,
+            'title': $new_title,
+            'filename': util:document-name($doc)
         }
     }
 };
