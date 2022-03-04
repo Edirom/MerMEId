@@ -116,7 +116,7 @@ The reason for this is that we need different flavours of Java and exist-db to t
 If you just do the standard
 
 ```
-docker build --tag edirom/mermeid:latest.
+docker build --tag edirom/mermeid:latest .
 ```
 
 The [official exist-db](https://hub.docker.com/r/existdb/existdb) 5.2.0 container will be used as the base image but
