@@ -6,8 +6,6 @@ declare namespace session="http://exist-db.org/xquery/session";
 declare namespace response="http://exist-db.org/xquery/response";
 declare namespace transform="http://exist-db.org/xquery/transform";
 declare namespace output="http://www.w3.org/2010/xslt-xquery-serialization";
-
-import module namespace login="http://exist-db.org/xquery/login" at "resource:org/exist/xquery/modules/persistentlogin/login.xql";
 import module namespace config="https://github.com/edirom/mermeid/config" at "../modules/config.xqm";
 import module namespace crud="https://github.com/edirom/mermeid/crud" at "../modules/crud.xqm";
 import module namespace common="https://github.com/edirom/mermeid/common" at "../modules/common.xqm";
@@ -27,7 +25,7 @@ declare variable $exist:root external;
  : @param $response-body the response body
  : @param $response-code the response status code
  :)
-declare function output:stream-json($response-body, $response-code as xs:integer) as empty-sequence() {
+declare %private function output:stream-json($response-body, $response-code as xs:integer) as empty-sequence() {
     response:set-status-code($response-code),
     response:stream(
         serialize($response-body, 
@@ -42,11 +40,22 @@ declare function output:stream-json($response-body, $response-code as xs:integer
 (:~
  : Wrapper function for redirecting to the main page
  :)
-declare function output:redirect-to-main-page() as element(exist:dispatch) {
+declare %private function output:redirect-to-main-page() as element(exist:dispatch) {
     <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
         <redirect url="{config:link-to-app('modules/list_files.xq')}"/>
     </dispatch>
 };
+
+(:~
+ : Check whether the overwrite flag is set
+ : Considered positive (string) values include '1', 'yes', 'ja', 'y', 'on', 'true', 'true()'
+ : everything else will be `false()`
+ : @return boolean true() or false() 
+ :)
+declare %private function local:overwrite() as xs:boolean {
+    let $overwriteString := request:get-parameter('overwrite', 'false')
+    return $overwriteString = ('1', 'yes', 'ja', 'y', 'on', 'true', 'true()') (: some string values that are considered boolean "true()" :)
+}; 
 
 (console:log('/data Controller'),
 if (ends-with($exist:resource, ".xml")) then
@@ -106,8 +115,7 @@ else if($exist:path = '/copy' and request:get-method() eq 'POST') then
     let $source := request:get-parameter('source', '')
     let $target := request:get-parameter('target', util:uuid() || '.xml') (: generate a unique filename if none is provided :)
     let $title := request:get-parameter('title', ()) (: empty titles will get passed on and filled in later :)
-    let $overwriteString := request:get-parameter('overwrite', 'false')
-    let $overwrite := $overwriteString = ('1', 'yes', 'ja', 'y', 'on', 'true', 'true()') (: some string values that are considered boolean "true()" :)
+    let $overwrite := local:overwrite()
     let $backend-response := crud:copy($source, $target, $overwrite, $title) 
     return 
         if(request:get-header('Accept') eq 'application/json')
@@ -151,8 +159,7 @@ else if($exist:path = '/rename' and request:get-method() eq 'POST') then
     let $source := request:get-parameter('source', '')
     let $target := request:get-parameter('target', util:uuid() || '.xml') (: generate a unique filename if none is provided :)
     let $title := request:get-parameter('title', ()) (: empty titles will get passed on and filled in later :)
-    let $overwriteString := request:get-parameter('overwrite', 'false')
-    let $overwrite := $overwriteString = ('1', 'yes', 'ja', 'y', 'on', 'true', 'true()') (: some string values that are considered boolean "true()" :)
+    let $overwrite := local:overwrite()
     let $backend-response-copy := crud:copy($source, $target, $overwrite, $title)
     let $update-references := 
         if($backend-response-copy instance of map(*) and $backend-response-copy?code = 200)
