@@ -650,7 +650,7 @@ a.help, a.help_plain, a.warning,
     display: inline-block;
     width: 11px;
     height: 11px;
-	background-image: url('../images/hint2.png');
+	background-image: url('../images/hint2.png'); /* sits on top of textual content of the HTML element */
     background-repeat: no-repeat;
     background-size: contain;
 }
