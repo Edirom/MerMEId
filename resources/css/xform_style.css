@@ -650,13 +650,13 @@ a.help, a.help_plain, a.warning,
     display: inline-block;
     width: 11px;
     height: 11px;
-	background-image: url('../images/hint2.png'); /* sits on top of textual content of the HTML element */
+	background-image: url('../images/hint2.png'); /* visible by making color of text transparent*/
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 a.help, a.help:hover, a.help:active {
-    color: transparent !important; 
+    color: transparent !important;  /* transparent to only show icon (background image) */
     text-decoration: none;
 }
 
