@@ -109,3 +109,12 @@ document.querySelector("#confirm_modal form").addEventListener("submit", modal_s
 document.querySelectorAll(".close-modal").forEach(el => {el.addEventListener("click", function(ev) {
     document.getElementById("confirm_modal").style.display = "none";}, false)
 });
+
+/*
+ * close modal on escape key press
+ */
+document.addEventListener('keydown', evt => {
+    if (evt.key === 'Escape') {
+        document.getElementById("confirm_modal").style.display = "none";
+    }
+});
