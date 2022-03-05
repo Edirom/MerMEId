@@ -347,6 +347,8 @@ form.search a.help .help_label {
 form.modal-content button {
     display: block;
     margin-top: 2ex;
+    padding: 0.5ex 2em;
+    cursor: pointer;
 }
 
 #confirm_modal_statusmessage {

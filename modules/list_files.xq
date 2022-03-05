@@ -139,8 +139,19 @@ declare function local:format-reference(
 	      <div>
 	       <a id="login-info" href="#" data-user="">Login</a></div>
 	      <div class="loginRequired" style="display:inline;">
- 	      <form id="create-file" action="{config:link-to-app('data/create')}" method="post">
-     	      <button type="submit" value="new" title="Add new file"><img src="../resources/images/new.gif" alt="Add new file"/></button>
+ 	      <form id="create-file" action="{config:link-to-app('data/create')}" 
+ 	          method="post" class="ajaxform" title="Add new file">
+ 	          <label class="ajaxform_label"><b>Filename</b></label>
+ 	          <input type="text" name="filename" value="{common:mermeid-id('file') || '.xml'}"  
+ 	              class="ajaxform_input" size="40" maxlength="36"/>
+               <label class="ajaxform_label"><b>Title</b></label>
+               <input type="text" name="title" value="" placeholder="Please enter title"
+                    class="ajaxform_input" size="40" maxlength="36"/>
+                <label class="ajaxform_label">
+                    <b>Overwrite target?</b>
+                    <input type="checkbox" name="overwrite"/>
+                </label>
+     	      <button type="submit" value="New" title="Add new file"><img src="../resources/images/new.gif" alt="Add new file"/></button>
  	      </form>
 	      </div>
 	      <div>

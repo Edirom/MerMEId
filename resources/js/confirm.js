@@ -57,8 +57,16 @@ function modal_submit_handler(ev) {
         update_statusmessage(data, "info");
         setTimeout(() => {  
             document.getElementById("confirm_modal").style.display = "none";
-            location.reload(); // instead of simply reloading the page we might update the table dynamically
-            }, 1000);
+            if(endpoint.pathname === '/data/create') {
+                // for new documents, directly redirect to the edit page 
+                window.location.href = '../forms/edit-work-case.xml?doc=' + params.get('filename');
+            }
+            else { 
+                // for all other actions, reload the list page
+                // (instead of simply reloading the page we might update the table dynamically)
+                location.reload(); 
+            }
+        }, 1000);
         
     })
     .catch(error => {

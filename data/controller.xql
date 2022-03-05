@@ -6,6 +6,7 @@ declare namespace session="http://exist-db.org/xquery/session";
 declare namespace response="http://exist-db.org/xquery/response";
 declare namespace transform="http://exist-db.org/xquery/transform";
 declare namespace output="http://www.w3.org/2010/xslt-xquery-serialization";
+declare namespace sm="http://exist-db.org/xquery/securitymanager";
 import module namespace config="https://github.com/edirom/mermeid/config" at "../modules/config.xqm";
 import module namespace crud="https://github.com/edirom/mermeid/crud" at "../modules/crud.xqm";
 import module namespace common="https://github.com/edirom/mermeid/common" at "../modules/common.xqm";
@@ -25,7 +26,7 @@ declare variable $exist:root external;
  : @param $response-body the response body
  : @param $response-code the response status code
  :)
-declare %private function output:stream-json($response-body, $response-code as xs:integer) as empty-sequence() {
+declare %private function local:stream-json($response-body, $response-code as xs:integer) as empty-sequence() {
     response:set-status-code($response-code),
     response:stream(
         serialize($response-body, 
@@ -40,7 +41,7 @@ declare %private function output:stream-json($response-body, $response-code as x
 (:~
  : Wrapper function for redirecting to the main page
  :)
-declare %private function output:redirect-to-main-page() as element(exist:dispatch) {
+declare %private function local:redirect-to-main-page() as element(exist:dispatch) {
     <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
         <redirect url="{config:link-to-app('modules/list_files.xq')}"/>
     </dispatch>
@@ -119,8 +120,8 @@ else if($exist:path = '/copy' and request:get-method() eq 'POST') then
     let $backend-response := crud:copy($source, $target, $overwrite, $title) 
     return 
         if(request:get-header('Accept') eq 'application/json')
-        then output:stream-json(map:remove($backend-response, 'document-node'), $backend-response?code)
-        else output:redirect-to-main-page()
+        then local:stream-json(map:remove($backend-response, 'document-node'), $backend-response?code)
+        else local:redirect-to-main-page()
 (:~
  : delete files endpoint 
  : For POST requests with Accept header 'application/json' the response 
@@ -133,8 +134,8 @@ else if($exist:path = '/delete' and request:get-method() eq 'POST') then
     let $backend-response := crud:delete($filename)
     return 
         if(request:get-header('Accept') eq 'application/json')
-        then output:stream-json($backend-response, $backend-response(1)?code)
-        else output:redirect-to-main-page()
+        then local:stream-json($backend-response, $backend-response(1)?code)
+        else local:redirect-to-main-page()
 (:~
  : read files endpoint 
  : For GET requests with Accept header 'application/json' the response 
@@ -146,7 +147,7 @@ else if($exist:path = '/read' and request:get-method() eq 'GET') then
     let $backend-response := crud:read($filename)
     return 
         if(request:get-header('Accept') eq 'application/json')
-        then output:stream-json(map:remove($backend-response, 'document-node'), $backend-response?code)
+        then local:stream-json(map:remove($backend-response, 'document-node'), $backend-response?code)
         else if(contains(request:get-header('Accept'), 'application/xml'))
         then $backend-response?document-node
         else ()
@@ -172,35 +173,35 @@ else if($exist:path = '/rename' and request:get-method() eq 'POST') then
     return 
         if(request:get-header('Accept') eq 'application/json')
         then if($backend-response-delete instance of array(*)) 
-            then output:stream-json(map:remove(map:merge(($backend-response-delete(1), $backend-response-copy)), 'document-node'), $backend-response-copy?code)
+            then local:stream-json(map:remove(map:merge(($backend-response-delete(1), $backend-response-copy)), 'document-node'), $backend-response-copy?code)
             else (
-                output:stream-json($backend-response-copy, $backend-response-copy?code),
+                local:stream-json($backend-response-copy, $backend-response-copy?code),
                 console:log($backend-response-delete)
             )
-        else output:redirect-to-main-page()
+        else local:redirect-to-main-page()
 (:~
  : create files endpoint 
  :
  :)
 else if($exist:path = '/create' and request:get-method() eq 'POST') then 
-    let $templatepath := request:get-parameter('template', '../forms/model/new_file.xml')
+    let $templatepath := request:get-parameter('template', $config:app-root || '/forms/model/new_file.xml')
+    let $title := request:get-parameter('title', '')
+    let $username := common:get-current-username() => string()
+    let $change-message := 'file created with MerMEId'
     let $template :=
         if(doc-available($templatepath))
-        then doc($templatepath)
+        then doc($templatepath) => common:set-mei-title-in-memory($title) => common:add-change-entry-to-revisionDesc-in-memory($username, $change-message)
         else ()
-    let $filename := request:get-parameter('filename', util:uuid() || '.xml')
-    let $store := 
+    let $filename := request:get-parameter('filename', common:mermeid-id('file') || '.xml')
+    let $overwrite := local:overwrite()
+    let $backend-response := 
         if($template and $filename) 
-        then crud:create($template, $filename, false())
+        then crud:create($template, $filename, $overwrite)
         else ()
     return
-        if($store instance of map(*))
-        then 
-            <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
-                <redirect url="{config:link-to-app('/forms/edit-work-case.xml') || '?doc=' || $filename}"/>
-            </dispatch>
-        else ()
-    
+        if(request:get-header('Accept') eq 'application/json' and $backend-response instance of map(*))
+        then local:stream-json(map:remove($backend-response, 'document-node'), $backend-response?code)
+        else local:redirect-to-main-page()
 else
 (: everything else is passed through :)
    (console:log('/data Controller: passthrough'),
