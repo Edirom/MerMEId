@@ -42,7 +42,7 @@ declare function common:display-date($doc as node()?) as xs:string {
  : Function for outputting the "Collection" information on the main list page
  :
  : @param $doc the MEI document to extract the information from
- : @return the string representation of a collection 
+ : @return the string representation of a MerMEId collection 
  :)
 declare function common:get-edition-and-number($doc as node()?) as xs:string {
       let $c := ($doc//mei:fileDesc/mei:seriesStmt/mei:identifier[@type="file_collection"])[1] => normalize-space()
@@ -60,7 +60,7 @@ declare function common:get-edition-and-number($doc as node()?) as xs:string {
 };
 
 (:~
- : Get the composers of a work
+ : Get the composers of a work.
  : This is used for outputting the "Composer" information on the main list page
  : as well as for crud:read()
  :
@@ -72,7 +72,7 @@ declare function common:get-composers($doc as node()?) as xs:string? {
 };
 
 (:~
- : Get the (main) title of a work
+ : Get the (main) title of a work.
  : This is used for outputting the "Title" information on the main list page
  : as well as for crud:read()
  :
@@ -103,13 +103,17 @@ declare function common:propose-filename($filename as xs:string) as xs:string {
 };
 
 (:~
- : Add a change entry to the revisionDesc
+ : Add a change entry to the revisionDesc of an existing persistent document stored in the eXist database.
+ : NB, this will modify the existing document in the database!
+ : For changing documents or fragments in memory, see `common:add-change-entry-to-revisionDesc-in-memory#3`
  :
  : @param $document the input MEI document to add the change entry to 
  : @param $user the user identified with this change entry
  : @param $desc a description of the change
+ : @return a map object with properties "message" and "filename". 
+    A successful operation will return "Success" as message, the error description otherwise  
  :)
-declare function common:add-change-entry-to-revisionDesc($document as document-node(), 
+declare function common:add-change-entry-to-revisionDesc-in-document($document as document-node(), 
     $user as xs:string, $desc as xs:string) as map(*) {
     let $change := 
         <change isodate="{current-dateTime()}" xml:id="{common:mermeid-id('change')}" 
@@ -135,6 +139,40 @@ declare function common:add-change-entry-to-revisionDesc($document as document-n
                 'filename': util:document-name($document)
             }
         }
+};
+
+(:~
+ : Add a change entry to the revisionDesc in memory.
+ : NB, this will _not_ modify any existing document in the database!
+ : For changing existing documents in the database, see `common:add-change-entry-to-revisionDesc-in-document#3`
+ :
+ : @param $node the input MEI document as node() or document-node() 
+ : @param $user the user identified with this change entry
+ : @param $desc a description of the change
+ : @return the modified input node 
+ :)
+declare function common:add-change-entry-to-revisionDesc-in-memory($node as node(), 
+    $user as xs:string, $desc as xs:string) as node() {
+        typeswitch($node)
+        case $elem as element(mei:revisionDesc) return
+            element { node-name($elem) } {
+                $elem/@*, for $child in $elem/node() return common:add-change-entry-to-revisionDesc-in-memory($child, $user, $desc),
+                <change isodate="{current-dateTime()}" xml:id="{common:mermeid-id('change')}" 
+                    xmlns="http://www.music-encoding.org/ns/mei">
+                    <respStmt>
+                        <resp>{$user}</resp>
+                    </respStmt>
+                    <changeDesc xml:id="{common:mermeid-id('changeDesc')}">
+                        <p>{$desc}</p>
+                    </changeDesc>
+                </change>
+            }
+        case $elem as element() return
+            element { node-name($elem) } {
+                $elem/@*, for $child in $elem/node() return common:add-change-entry-to-revisionDesc-in-memory($child, $user, $desc)
+            }
+        case document-node() return common:add-change-entry-to-revisionDesc-in-memory($node/node(), $user, $desc)
+        default return $node
 };
 
 (:~
@@ -193,15 +231,15 @@ declare function common:update-targets($collection as node()*, $old-identifier a
 };
 
 (:~
- : Set the MEI title in an existing document
- : This is used in various functions like `crud:copy()` where a (new) document 
- : is stored first (from a template) and then the title gets altered.
+ : Set the MEI title in an existing persistent document stored in the eXist database.
+ : NB, this will modify the existing document in the database!
+ : For changing documents or fragments in memory, see `common:set-mei-title-in-memory#2`
  :
  : @param $doc the MEI document to change the title
  : @param $new_title the new title 
  : @return a map object with properties "message", "title", and "filename" 
  :)
-declare function common:set-mei-title($doc as document-node(), $new_title as xs:string) as map(*) {
+declare function common:set-mei-title-in-document($doc as document-node(), $new_title as xs:string) as map(*) {
     try {(
         for $title in $doc//mei:workList/mei:work[1]/mei:title[text()][1]
         return 
@@ -220,4 +258,43 @@ declare function common:set-mei-title($doc as document-node(), $new_title as xs:
             'filename': util:document-name($doc)
         }
     }
+};
+
+(:~
+ : Set the MEI title of a MEI document in memory.
+ : NB, this will _not_ modify any existing document in the database! 
+ : For changing existing documents in the database, see `common:set-mei-title-in-document#2`
+ :
+ : @param $node the input MEI document as node() or document-node()
+ : @param $new_title the new title 
+ : @return the modified input node 
+ :)
+declare function common:set-mei-title-in-memory($node as node(), $new_title as xs:string) as node() {
+    typeswitch($node)
+    case $elem as element(mei:title) return
+        if(not($elem/preceding-sibling::mei:title) and $elem/parent::mei:work[1] and $elem/ancestor::mei:workList)
+        then 
+            element { node-name($elem) } {
+                $elem/@*, $new_title
+            }
+        else 
+            element { node-name($elem) } {
+                $elem/@*, for $child in $elem/node() return common:set-mei-title-in-memory($child, $new_title)
+            }
+    case $elem as element() return
+        element { node-name($elem) } {
+            $elem/@*, for $child in $elem/node() return common:set-mei-title-in-memory($child, $new_title)
+        }
+    case document-node() return common:set-mei-title-in-memory($node/node(), $new_title)
+    default return $node
+};
+
+(:~
+ : Get the current username
+ : Wrapper function around `sm:id#0`
+ :
+ : @return the username of the currently logged in user
+ :)
+declare function common:get-current-username() as xs:string? {
+    sm:id()//sm:real/sm:username => data()
 };
