@@ -74,8 +74,7 @@ declare function app:view-document-notes($doc as node()) as element() {
 
 
 declare function app:edit-form-reference($doc as node()) as element(html:form) {
-    <form target="_blank"
-        xmlns="http://www.w3.org/1999/xhtml"
+    <form xmlns="http://www.w3.org/1999/xhtml"
         title="Edit file" 
         action="{config:link-to-app('forms/edit-work-case.xml')}">
         <input type="hidden" name="doc" value="{util:document-name($doc)}"/>
