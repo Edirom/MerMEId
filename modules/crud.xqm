@@ -20,7 +20,6 @@ declare namespace sm="http://exist-db.org/xquery/securitymanager";
 
 import module namespace config="https://github.com/edirom/mermeid/config" at "config.xqm";
 import module namespace common="https://github.com/edirom/mermeid/common" at "common.xqm";
-import module namespace login="http://exist-db.org/xquery/login" at "resource:org/exist/xquery/modules/persistentlogin/login.xql";
 
 (:~
  : Delete files within the data directory
@@ -112,17 +111,14 @@ declare function crud:copy($source-filename as xs:string, $target-filename as xs
         if(doc-available($config:data-root || '/' || $source-filename))
         then doc($config:data-root || '/' || $source-filename)
         else ()
+    let $title := 
+        if($new_title) 
+        then $new_title
+        else common:get-title($source) || ' (Copy)'
+    let $username := common:get-current-username() => string()
+    let $change-message := 'file copied from ' || $source-filename || ' to ' || $target-filename
     let $create-target := 
-        if($source) then crud:create($source, $target-filename, $overwrite)
-        else ()
-    let $username := sm:id()//sm:real/sm:username => string()
-    let $update-mei-document :=
-        (: add revisionDesc entry and update main title :)
-        if($create-target instance of map(*) and $create-target?code = 200)
-        then (
-            common:set-mei-title($create-target?document-node, $create-target?title || ' (Copy)'),
-            common:add-change-entry-to-revisionDesc($create-target?document-node, $username, 'file copied from ' || $source-filename || ' to ' || $target-filename)
-        )
+        if($source) then crud:create($source => common:set-mei-title-in-memory($title) => common:add-change-entry-to-revisionDesc-in-memory($username, $change-message), $target-filename, $overwrite)
         else ()
     return
         if($create-target instance of map(*)) 
@@ -138,6 +134,8 @@ declare function crud:copy($source-filename as xs:string, $target-filename as xs
 (:~
  : Read a file from the data directory
  :
+ : @param $filename the filename (aka MerMEId identifier) to read
+ : @return a map object with some metadata (e.g. "title", "composer") and the complete MEI document as "document-node"
  :)
 declare function crud:read($filename as xs:string) as map(*) {
     let $doc :=
