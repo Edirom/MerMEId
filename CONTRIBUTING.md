@@ -38,7 +38,7 @@ git checkout -b issue-33
 With [Docker installed] you simply tell it to build your locally checked out branch ("issue-33") with
 
 ```sh
-docker build -t mermeid:issue-33
+docker build --tag mermeid:issue-33 .
 ```
 
 and then you run it like 
