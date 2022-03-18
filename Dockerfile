@@ -3,7 +3,7 @@
 # 1. set up the build environment and build the expath-package
 # 2. run the eXist-db
 #########################
-ARG EXISTDB_IMAGE=existdb/existdb:5.2.0
+ARG EXISTDB_IMAGE=existdb/existdb:6.0.1
 FROM openjdk:8-jdk as builder
 LABEL maintainer="Peter Stadler,Omar Siam"
 
