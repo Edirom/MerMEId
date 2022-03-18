@@ -7,12 +7,14 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -60,10 +62,15 @@ public class MermeidTest extends WebDriverSettings {
     public void setText(ArrayList<String> ids, String text ){
 
         for (String id: ids) {
-            driver.findElement(By.id(id)).clear();
-            driver.findElement(By.id(id)).sendKeys(text);
-            driver.findElement(By.id(id)).sendKeys(Keys.RETURN);
-
+            try {
+                Thread.sleep(3000);
+                WebElement inputTextElement = driver.findElement(By.id(id));
+                inputTextElement.clear();
+                inputTextElement.sendKeys(text);
+                inputTextElement.sendKeys(Keys.RETURN);
+            } catch(InterruptedException e) {
+                System.out.println("got interrupted!");
+            }
         }
     }
 
@@ -81,13 +88,21 @@ public class MermeidTest extends WebDriverSettings {
 
     public void checkText(ArrayList<String> ids, String expected_text ){
         for (String id: ids) {
-            //checkTitle
-            WebElement input_title = driver.findElement(By.id(id));
 
-            String text =input_title.getAttribute("value");
-            System.out.println("Expected Text: " + expected_text);
-            System.out.println("Current Text: " + text);
-            assertTrue(text.equals(expected_text));
+            try{
+                //checkTitle
+                WebElement input_title = driver.findElement(By.id(id));
+                String text =input_title.getAttribute("value");
+                System.out.println("Expected Text: " + expected_text);
+                System.out.println("Current Text: " + text);
+                assertTrue(text.equals(expected_text));
+            }
+            catch(NoSuchElementException e){
+                System.out.println("No Element with id: " +id);
+                assertTrue(false);
+            }
+
+
         }
 
     }
@@ -119,12 +134,16 @@ public class MermeidTest extends WebDriverSettings {
 
         setText(ids, randomString );
 
-        //save changes
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.findElement(By.id("save-button-image")).click();
+        try {
+            Thread.sleep(3000);
+            driver.findElement(By.id("save-button-image")).click();
+            Thread.sleep(3000);
+            driver.findElement(By.id("home-button-image")).click();
 
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.findElement(By.id("home-button-image")).click();
+
+        } catch(InterruptedException e) {
+            System.out.println("got interrupted!");
+        }
 
 
         //open edit view
