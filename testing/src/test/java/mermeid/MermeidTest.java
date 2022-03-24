@@ -47,6 +47,7 @@ public class MermeidTest extends WebDriverSettings {
 
         WebElement button = driver.findElement(By.cssSelector("button"));
         String buttonText = button.getText();
+        System.out.print("Test log: ");
         System.out.println(buttonText);
 
 
@@ -69,6 +70,7 @@ public class MermeidTest extends WebDriverSettings {
                 inputTextElement.sendKeys(text);
                 inputTextElement.sendKeys(Keys.RETURN);
             } catch(InterruptedException e) {
+                System.out.print("Test log: ");
                 System.out.println("got interrupted!");
             }
         }
@@ -76,12 +78,25 @@ public class MermeidTest extends WebDriverSettings {
 
     public void clickButton(ArrayList<String> ids){
         for (String id: ids) {
-            WebElement element = driver.findElement(By.cssSelector("#xf-293 > a > img"));
-            Actions builder = new Actions(driver);
-            builder.moveToElement(element).pause(500);
-            builder.moveToElement(element).perform();
+            try {
+                //WebElement element = driver.findElement(By.cssSelector("#xf-293 > a > img"));
+                WebElement element = driver.findElement(By.xpath("//*[@id=\"xf-293\"]/a/img"));
+                Actions builder = new Actions(driver);
+                builder.moveToElement(element).pause(500);
+                builder.moveToElement(element).perform();
 
-            driver.findElement(By.cssSelector(id)).click();
+                Thread.sleep(3000);
+                driver.findElement(By.cssSelector(id)).click();
+
+            } catch(InterruptedException e) {
+                System.out.print("Test log: ");
+                System.out.println("got interrupted!");
+            }
+            catch(NoSuchElementException e){
+                System.out.print("Test log: ");
+                System.out.println("No Element with id: " +id);
+                assertTrue(false);
+            }
 
         }
     }
@@ -93,11 +108,14 @@ public class MermeidTest extends WebDriverSettings {
                 //checkTitle
                 WebElement input_title = driver.findElement(By.id(id));
                 String text =input_title.getAttribute("value");
+                System.out.print("Test log: ");
                 System.out.println("Expected Text: " + expected_text);
+                System.out.print("Test log: ");
                 System.out.println("Current Text: " + text);
                 assertTrue(text.equals(expected_text));
             }
             catch(NoSuchElementException e){
+                System.out.print("Test log: ");
                 System.out.println("No Element with id: " +id);
                 assertTrue(false);
             }
@@ -142,6 +160,7 @@ public class MermeidTest extends WebDriverSettings {
 
 
         } catch(InterruptedException e) {
+            System.out.print("Test log: ");
             System.out.println("got interrupted!");
         }
 
@@ -161,7 +180,6 @@ public class MermeidTest extends WebDriverSettings {
     @Order(3)
     public void checkWorkTabPopupInputText(){
         String randomString = generatingRandomAlphabeticString();
-        System.out.println(randomString);
 
         enterLogin();
         WebElement edit = driver.findElement(By.cssSelector("[href=\"../forms/edit-work-case.xml?doc=incipit_demo.xml\"]"));
