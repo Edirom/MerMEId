@@ -35,13 +35,14 @@
                     <temp>
                         <persName/>
                         <id/>
+                        <gnd/>
                     </temp>
                 </xf:instance>
                 <!-- "onload" xforms actions -->
                 <xf:action ev:event="xforms-submit-error" ev:propagate="stop">
                     <xf:var name="code" select="event('response-status-code')"/>
-                    <xf:message>Error. Submission return code: <xf:output value="$code"
-                        /></xf:message>
+                    <xf:message>Error. Submission return code: <xf:output value="$code"/>
+                    </xf:message>
                 </xf:action>
             </xf:model>
         </xbl:implementation>
@@ -80,9 +81,11 @@
                                         origin="xxf:attribute('corresp','')"/>
                                 </xf:action>
                                 <xf:var name="name" select="normalize-space($binding)"/>
-                                <xf:var name="id" select="$binding/@codedval"/>
+                                <xf:var name="id" select="$binding/@corresp"/>
+                                <xf:var name="gnd" select="$binding/@codedval"/>
                                 <xf:setvalue ref="instance('temp')/persName" value="$name"/>
                                 <xf:setvalue ref="instance('temp')/id" value="$id"/>
+                                <xf:setvalue ref="instance('temp')/gnd" value="$gnd"/>
                                 <xxf:show dialog="person-dialog"/>
                             </xf:action>
                         </xf:trigger>
@@ -119,7 +122,7 @@
                             </xf:item>
                             <xf:itemset nodeset="instance('person-instance')//m:li/*">
                                 <xf:label ref="./*[contains(@type, 'main')]"/>
-                                <xf:value ref="./m:identifier[@auth='GND']/text()"/>
+                                <xf:value ref="./m:identifier[@label='Register-ID']/text()"/>
                             </xf:itemset>
                         </xf:select1>
                         <h:br/>&#160; <h:br/>
@@ -131,7 +134,8 @@
                                 <xf:setvalue ref="instance('temp')/persName"
                                     value="$el/*[@type='main']"/>
                                 <xf:setvalue ref="$binding" value="instance('temp')/persName"/>
-                                <xf:setvalue ref="$binding/@codedval" value="instance('temp')/id"/>
+                                <xf:setvalue ref="$binding/@codedval"
+                                    value="$el/m:identifier[@auth = 'GND']/text()"/>
                                 <xf:setvalue ref="$binding/@corresp"
                                     value="$el/m:identifier[@label = 'Register-ID']/text()"/>
                                 <xf:setvalue ref="$binding/@auth"
