@@ -22,20 +22,35 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class MermeidTest extends WebDriverSettings {
     public void enterLogin(){
+        String loginText = "";
         driver.get("http://localhost:8080/modules/list_files.xq");
 
-        driver.findElement(By.id("login-info")).click();
-        driver.findElement(By.id("login-modal")).click();
 
-        driver.findElement(By.name("user")).sendKeys("mermeid");
-        driver.findElement(By.name("password")).sendKeys("mermeid");
+        try {
+            Thread.sleep(1000);
+            loginText = driver.findElement(By.id("login-info")).getText();
+            System.out.println("Test log: login name -" +loginText);
 
-        driver.findElement(By.name("remember")).click();
-        driver.findElement(By.cssSelector(".submit")).click();
+            driver.findElement(By.id("login-info")).click();
+            driver.findElement(By.id("login-modal")).click();
 
-        //get login name
-        String loginUser = driver.findElement(By.id("login-info")).getText();
-        assertTrue(loginUser.equals("mermeid"));
+            driver.findElement(By.name("user")).sendKeys("mermeid");
+            driver.findElement(By.name("password")).sendKeys("mermeid");
+
+           // driver.findElement(By.name("remember")).click();
+            driver.findElement(By.cssSelector(".submit")).click();
+
+            Thread.sleep(3000);
+            //get login name
+            String loginUser = driver.findElement(By.id("login-info")).getText();
+            System.out.println("Test log: new login name -" +loginUser);
+            assertTrue(loginUser.equals("mermeid"));
+
+        } catch(InterruptedException e) {
+            System.out.print("Test log: ");
+            System.out.println("got interrupted!");
+        }
+
     }
     @Test
     @Order(1)
