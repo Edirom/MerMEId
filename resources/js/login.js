@@ -110,3 +110,12 @@ document.querySelectorAll(".close-modal").forEach(el => {el.addEventListener("cl
  */
 window.addEventListener("focus", ajaxLogin);
 window.addEventListener("load", ajaxLogin);
+
+/*
+ * close modal on escape key press
+ */
+document.addEventListener('keydown', evt => {
+    if (evt.key === 'Escape') {
+        document.getElementById("login-modal").style.display = "none";
+    }
+});
