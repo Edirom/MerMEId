@@ -40,7 +40,7 @@ public class MermeidTest extends WebDriverSettings {
             driver.findElement(By.name("password")).sendKeys("mermeid");
 
             //driver.findElement(By.name("remember")).click();
-            //driver.findElement(By.cssSelector(".submit")).click();
+            driver.findElement(By.cssSelector(".submit")).click();
 
             Thread.sleep(3000);
             //get login name
