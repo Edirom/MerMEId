@@ -39,8 +39,8 @@ public class MermeidTest extends WebDriverSettings {
             driver.findElement(By.name("user")).sendKeys("mermeid");
             driver.findElement(By.name("password")).sendKeys("mermeid");
 
-            driver.findElement(By.name("remember")).click();
-            driver.findElement(By.cssSelector(".submit")).click();
+            //driver.findElement(By.name("remember")).click();
+            //driver.findElement(By.cssSelector(".submit")).click();
 
             Thread.sleep(3000);
             //get login name
@@ -51,6 +51,9 @@ public class MermeidTest extends WebDriverSettings {
         } catch(InterruptedException e) {
             System.out.print("Test log: ");
             System.out.println("got interrupted!");
+        }
+        catch(NoSuchElementException e){
+            assertTrue(false);
         }
 
     }
