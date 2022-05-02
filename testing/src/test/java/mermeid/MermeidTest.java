@@ -14,13 +14,15 @@ import org.openqa.selenium.interactions.Actions;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
+
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class MermeidTest extends WebDriverSettings {
+
+
     public void enterLogin(){
         String loginText = "";
         driver.get("http://localhost:8080/modules/list_files.xq");
@@ -37,7 +39,7 @@ public class MermeidTest extends WebDriverSettings {
             driver.findElement(By.name("user")).sendKeys("mermeid");
             driver.findElement(By.name("password")).sendKeys("mermeid");
 
-           // driver.findElement(By.name("remember")).click();
+            driver.findElement(By.name("remember")).click();
             driver.findElement(By.cssSelector(".submit")).click();
 
             Thread.sleep(3000);
@@ -97,7 +99,7 @@ public class MermeidTest extends WebDriverSettings {
                 //WebElement element = driver.findElement(By.cssSelector("#xf-293 > a > img"));
                 WebElement element = driver.findElement(By.xpath("//*[@id=\"xf-293\"]/a/img"));
                 Actions builder = new Actions(driver);
-                builder.moveToElement(element).pause(500);
+                Thread.sleep(3000);
                 builder.moveToElement(element).perform();
 
                 Thread.sleep(3000);
@@ -246,6 +248,97 @@ public class MermeidTest extends WebDriverSettings {
         //check changes
         checkText(ids, randomString);
 
+        //ids to remove input text
+        ArrayList<String> removeIds = new ArrayList<String>();
+        //alternative title
+        removeIds.add("xf-239≡xf-910≡≡c⊙1");
+        //subtitle
+        removeIds.add("xf-252≡xf-1029≡≡c⊙1");
+        //uniform title
+        removeIds.add("xf-265≡xf-1148≡≡c⊙1");
+        //origanal title
+        removeIds.add("xf-278≡xf-1267≡≡c⊙1");
+        //title of sourcecode
+        removeIds.add("xf-291≡xf-1386≡≡c⊙1");
+
+
+        removeInputText(removeIds);
+
+        /*driver.findElement(By.cssSelector("#xf-239\\2261xf-910\\2261\\2261 c\\2299 1 > img")).click();
+        driver.findElement(By.cssSelector("#xf-252\\2261xf-1029\\2261\\2261 c\\2299 1 > img")).click();
+        driver.findElement(By.cssSelector("#xf-265\\2261xf-1148\\2261\\2261 c\\2299 1 > img")).click();
+        driver.findElement(By.cssSelector("#xf-278\\2261xf-1267\\2261\\2261 c\\2299 1 > img")).click();
+        driver.findElement(By.cssSelector("#xf-291\\2261xf-1386\\2261\\2261 c\\2299 1 > img")).click();*/
+
+       /* //cssSelector to remove input text
+        ArrayList<String> removeIds = new ArrayList<String>();
+        //alternative title
+        removeIds.add("#xf-239\\2261xf-910\\2261\\2261 c\\2299 1 > img");
+        //subtitle
+        removeIds.add("#xf-252\\2261xf-1029\\2261\\2261 c\\2299 1 > img");
+        //uniform title
+        removeIds.add("#xf-265\\2261xf-1148\\2261\\2261 c\\2299 1 > img");
+        //origanal title
+        removeIds.add("#xf-278\\2261xf-1267\\2261\\2261 c\\2299 1 > img");
+        //title of sourcecode
+        removeIds.add("#xf-291\\2261xf-1386\\2261\\2261 c\\2299 1 > img");
+
+        removeInputText(removeIds);*/
+
+        try {
+
+            //save changes
+            driver.findElement(By.id("save-button-image")).click();
+            Thread.sleep(3000);
+            driver.findElement(By.id("home-button-image")).click();
+            Thread.sleep(3000);
+            checkAfterRemove(removeIds);
+
+
+        } catch(InterruptedException e) {
+            System.out.print("Test log: ");
+            System.out.println("got interrupted!");
+        }
+
+
+
+
+    }
+
+    private void checkAfterRemove(ArrayList<String> removeIds) {
+        for (String id: removeIds) {
+            try {
+                Thread.sleep(3000);
+                if(driver.findElements(By.id(id)).size() != 0){
+                    System.out.println("Test log: " + "Item with id: " +id + " was not deleted");
+                    assertTrue(false);
+                }
+
+            } catch(InterruptedException e) {
+                System.out.print("Test log: ");
+                System.out.println("got interrupted!");
+            }
+        }
+    }
+
+    //
+    public void removeInputText(ArrayList<String> ids){
+        for (String id: ids) {
+            try {
+                Thread.sleep(3000);
+                driver.findElement(By.id(id)).click();
+
+            } catch(InterruptedException e) {
+                System.out.print("Test log: ");
+                System.out.println("got interrupted!");
+            }
+            catch(NoSuchElementException e){
+                System.out.print("Test log: ");
+                System.out.println("No Element with id: " +id);
+                assertTrue(false);
+            }
+
+        }
     }
 
     public String generatingRandomAlphabeticString() {
