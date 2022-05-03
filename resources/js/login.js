@@ -19,7 +19,7 @@ function showModal() {
 function closeModal() {
     if(this.classList.contains('submit')) {
         const inputs = document.getElementById("login-modal").querySelectorAll('input')
-        ajaxLogin(inputs[0].value, inputs[1].value, inputs[2].checked)
+        ajaxLogin(inputs[0].value, inputs[1].value)
     }
     document.getElementById("login-modal").style.display = "none";
 }
@@ -30,7 +30,7 @@ function closeModal() {
  * if user=logout and pass=logout, the current user gets logged out and the session invalidated
  * if user and pass are provided, the new user information is returned  
  */
-function ajaxLogin(user, pass, dur) {
+function ajaxLogin(user, pass) {
     const xhttp = new XMLHttpRequest();
     let postBody;
     xhttp.onreadystatechange = function() {
@@ -44,9 +44,6 @@ function ajaxLogin(user, pass, dur) {
     // password might be empty, so allow for empty string but reject every other undefined value
     else if(user && (typeof pass === 'string' || pass instanceof String)) {
         postBody = "user=" + user + "&password=" + pass;
-        if(dur) {
-            postBody += "&duration=P14D"
-        }
     }
     
     xhttp.open("POST", "login", true);
@@ -113,3 +110,12 @@ document.querySelectorAll(".close-modal").forEach(el => {el.addEventListener("cl
  */
 window.addEventListener("focus", ajaxLogin);
 window.addEventListener("load", ajaxLogin);
+
+/*
+ * close modal on escape key press
+ */
+document.addEventListener('keydown', evt => {
+    if (evt.key === 'Escape') {
+        document.getElementById("login-modal").style.display = "none";
+    }
+});
