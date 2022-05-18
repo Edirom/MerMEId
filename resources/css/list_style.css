@@ -264,7 +264,6 @@ a.help {
     vertical-align:text-top;
     color: #888888;
     background-color: #ffffcc;
-    border: 1px solid #888888;
     font-weight: bold;
     padding-top: 0px;
     padding-left: 2px;
@@ -272,9 +271,6 @@ a.help {
     padding-bottom: 1px;
     font-size:.8em;   
     cursor: help;
-    border-radius: 2px;
-    /* For non-CSS3 FireFox */
-    -moz-border-radius: 2px;    
 }
 
 a.help_plain {
