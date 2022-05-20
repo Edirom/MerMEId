@@ -103,7 +103,7 @@ public class MermeidTest extends WebDriverSettings {
     public void clickButton(ArrayList<String> ids){
         for (String id: ids) {
             try {
-                WebElement addTitlesButton = new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"xf-293\"]/a/img")));
+                WebElement addTitlesButton = new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"xf-293\"]/a/img")));
                 //WebElement element = driver.findElement(By.xpath("//*[@id=\"xf-293\"]/a/img"));
                 Actions builder = new Actions(driver);
                 builder.moveToElement(addTitlesButton).perform();
