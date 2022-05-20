@@ -33,7 +33,7 @@ public class MermeidTest extends WebDriverSettings {
 
         try {
             loginText = driver.findElement(By.id("login-info")).getText();
-            System.out.println("Test log: login name -" +loginText);
+            System.out.println("Function `enterLogin` log: login name -" +loginText);
 
             driver.findElement(By.id("login-info")).click();
             driver.findElement(By.id("login-modal")).click();
@@ -47,7 +47,7 @@ public class MermeidTest extends WebDriverSettings {
             // check login name
             new WebDriverWait(driver, Duration.ofSeconds(3)).until(ExpectedConditions.textToBe(By.id("login-info"), loginUser));
         } catch(org.openqa.selenium.TimeoutException e) {
-            System.out.print("Test log: ");
+            System.out.print("Function `enterLogin` log: ");
             System.out.println("Timed out waiting for element 'login-info'!");
         }
         catch(NoSuchElementException e){
@@ -64,7 +64,7 @@ public class MermeidTest extends WebDriverSettings {
 
         WebElement button = driver.findElement(By.cssSelector("button"));
         String buttonText = button.getText();
-        System.out.print("Test log: ");
+        System.out.print("Function `OpenEditPage` log: ");
         System.out.println(buttonText);
 
         assertTrue(buttonText.equals("Try MerMEId"));
@@ -82,7 +82,7 @@ public class MermeidTest extends WebDriverSettings {
                 inputTextElement.sendKeys(text);
                 inputTextElement.sendKeys(Keys.RETURN);
             } catch(org.openqa.selenium.TimeoutException e) {
-                System.out.print("Test log: ");
+                System.out.print("Function `setText` log: ");
                 System.out.println("Timed out waiting for element '" + id + "'!");
             }
         }
@@ -103,7 +103,7 @@ public class MermeidTest extends WebDriverSettings {
     public void clickButton(ArrayList<String> ids){
         for (String id: ids) {
             try {
-                WebElement addTitlesButton = new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"xf-293\"]/a/img")));
+                WebElement addTitlesButton = new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"xf-293\"]/a/img")));
                 //WebElement element = driver.findElement(By.xpath("//*[@id=\"xf-293\"]/a/img"));
                 Actions builder = new Actions(driver);
                 builder.moveToElement(addTitlesButton).perform();
@@ -112,11 +112,11 @@ public class MermeidTest extends WebDriverSettings {
                 addRow.click();
 
             } catch(org.openqa.selenium.TimeoutException e) {
-                System.out.print("Test log: ");
+                System.out.print("Function `clickButton` log: ");
                 System.out.println("Timed out waiting for element '" + id + "'!");
             }
             catch(NoSuchElementException e){
-                System.out.print("Test log: ");
+                System.out.print("Function `clickButton` log: ");
                 System.out.println("No Element with id: " +id);
                 assertTrue(false);
             }
@@ -130,14 +130,14 @@ public class MermeidTest extends WebDriverSettings {
                 WebElement input_title = new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOfElementLocated(By.id(id)));
                 //WebElement input_title = driver.findElement(By.id(id));
                 String text =input_title.getAttribute("value");
-                System.out.print("Test log: ");
+                System.out.print("Function `checkText` log: ");
                 System.out.println("Expected Text: " + expected_text);
-                System.out.print("Test log: ");
+                System.out.print("Function `checkText` log: ");
                 System.out.println("Current Text: " + text);
                 assertTrue(text.equals(expected_text));
             }
             catch(org.openqa.selenium.TimeoutException e){
-                System.out.print("Test log: ");
+                System.out.print("Function `checkText` log: ");
                 System.out.println("Timed out waiting for element '" + id + "'!");
             }
         }
@@ -291,11 +291,11 @@ public class MermeidTest extends WebDriverSettings {
                 //driver.findElement(By.id(id)).click();
 
             } catch(org.openqa.selenium.TimeoutException e) {
-                System.out.print("Test log: ");
+                System.out.print("Function `removeInputText` log: ");
                 System.out.println("Timed out waiting for element '" + id + "'!");
             }
             catch(NoSuchElementException e){
-                System.out.print("Test log: ");
+                System.out.print("Function `removeInputText` log: ");
                 System.out.println("No Element with id: " +id);
                 assertTrue(false);
             }
