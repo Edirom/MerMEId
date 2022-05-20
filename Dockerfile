@@ -3,7 +3,7 @@
 # 1. set up the build environment and build the expath-package
 # 2. run the eXist-db
 #########################
-ARG EXISTDB_IMAGE=existdb/existdb:5.2.0
+ARG EXISTDB_IMAGE=existdb/existdb:6.0.1
 FROM openjdk:8-jdk as builder
 LABEL maintainer="Peter Stadler,Omar Siam"
 
@@ -49,6 +49,13 @@ FROM ${EXISTDB_IMAGE}
 
 ENV CLASSPATH=/exist/lib/exist.uber.jar:/exist/lib/orbeon-xforms-filter.jar
 
+# add xar dependencies to the autodeploy folder 
+ADD http://exist-db.org/exist/apps/public-repo/public/shared-resources-0.9.1.xar ${EXIST_HOME}/autodeploy
+ADD http://exist-db.org/exist/apps/public-repo/public/functx-1.0.1.xar ${EXIST_HOME}/autodeploy
+
+# add our freshly build MerMEId xar to the autodeploy folder
+COPY --from=builder /opt/builder/build/*.xar ${EXIST_HOME}/autodeploy/
+
 COPY --from=builder /orbeon ${EXIST_HOME}/etc/jetty/webapps/orbeon
 COPY jetty-exist-additional-config/etc/jetty/webapps/*.xml jetty-exist-additional-config/etc/jetty/webapps/*.properties ${EXIST_HOME}/etc/jetty/webapps/
 COPY jetty-exist-additional-config/etc/jetty/webapps/portal/WEB-INF/* ${EXIST_HOME}/etc/jetty/webapps/portal/WEB-INF/
@@ -62,4 +69,3 @@ RUN ["java", "-cp", "/exist/lib/exist.uber.jar", "net.sf.saxon.Transform", "-s:/
 RUN [ "java", \
     "org.exist.start.Main", "client", "-l", \
     "--no-gui",  "--xpath", "system:get-version()" ]
-COPY --from=builder /opt/builder/build/*.xar ${EXIST_HOME}/autodeploy/
