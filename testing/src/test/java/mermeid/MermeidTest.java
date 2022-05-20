@@ -103,12 +103,13 @@ public class MermeidTest extends WebDriverSettings {
     public void clickButton(ArrayList<String> ids){
         for (String id: ids) {
             try {
-                WebElement element = driver.findElement(By.xpath("//*[@id=\"xf-293\"]/a/img"));
+                WebElement addTitlesButton = new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"xf-293\"]/a/img")));
+                //WebElement element = driver.findElement(By.xpath("//*[@id=\"xf-293\"]/a/img"));
                 Actions builder = new Actions(driver);
-                builder.moveToElement(element).perform();
+                builder.moveToElement(addTitlesButton).perform();
 
-                element = new WebDriverWait(driver, Duration.ofSeconds(3)).until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(id)));
-                element.click();
+                WebElement addRow = new WebDriverWait(driver, Duration.ofSeconds(3)).until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(id)));
+                addRow.click();
 
             } catch(org.openqa.selenium.TimeoutException e) {
                 System.out.print("Test log: ");

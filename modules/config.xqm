@@ -109,7 +109,7 @@ declare function config:set-property($key as xs:string, $value as xs:string) as 
  : @return xs:string 
  :)
 declare function config:link-to-app($relLink as xs:string?) as xs:string {
-    $config:exist-endpoint || replace(normalize-space($relLink), '^/*', '/')
+    $config:exist-endpoint || '/' || replace(normalize-space($relLink), '^/+', '')
 };
 
 (:~
@@ -119,7 +119,7 @@ declare function config:link-to-app($relLink as xs:string?) as xs:string {
  : @return xs:string 
  :)
 declare function config:link-to-app-from-orbeon($relLink as xs:string?) as xs:string {
-    $config:exist-endpoint-seen-from-orbeon || replace(normalize-space($relLink), '^/*', '/')
+    $config:exist-endpoint-seen-from-orbeon || '/' || replace(normalize-space($relLink), '^/+', '')
 };
 
 (:~
