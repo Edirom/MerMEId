@@ -32,7 +32,7 @@ jobs:
         include:
           - EXISTDB_IMAGE: existdb/existdb:6.0.1
             IMAGE_TAG_SUFFIX:
-          - EXISTDB_IMAGE: acdhch/existdb:5.2.0-java11-ShenGC
+          - EXISTDB_IMAGE: acdhch/existdb:6.0.1-java11-ShenGC
             IMAGE_TAG_SUFFIX: -java11-ShenGC
     
     steps:
