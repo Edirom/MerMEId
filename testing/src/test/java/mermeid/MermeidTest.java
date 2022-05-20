@@ -70,8 +70,8 @@ public class MermeidTest extends WebDriverSettings {
         assertTrue(buttonText.equals("Try MerMEId"));
 
         enterLogin();
-        WebElement edit = driver.findElement(By.cssSelector("[href=\"../forms/edit-work-case.xml?doc=incipit_demo.xml\"]"));
-        edit.click();
+        WebElement editButton = driver.findElement(By.xpath("//form[@action='http://localhost:8080/forms/edit-work-case.xml'][input/@value='incipit_demo.xml']/button"));
+        editButton.click();
     }
 
     public void setText(ArrayList<String> ids, String text ){
@@ -147,8 +147,8 @@ public class MermeidTest extends WebDriverSettings {
     @Order(2)
     public void checkWorkTabInputText(){
         enterLogin();
-        WebElement edit = driver.findElement(By.cssSelector("[href=\"../forms/edit-work-case.xml?doc=incipit_demo.xml\"]"));
-        edit.click();
+        WebElement editButton = driver.findElement(By.xpath("//form[@action='http://localhost:8080/forms/edit-work-case.xml'][input/@value='incipit_demo.xml']/button"));
+        editButton.click();
 
         // driver.findElement(By.id("work-tab")).click();
 
@@ -171,8 +171,8 @@ public class MermeidTest extends WebDriverSettings {
 
         //open edit view
         driver.get("http://localhost:8080/modules/list_files.xq");
-        edit = driver.findElement(By.cssSelector("[href=\"../forms/edit-work-case.xml?doc=incipit_demo.xml\"]"));
-        edit.click();
+        editButton = driver.findElement(By.xpath("//form[@action='http://localhost:8080/forms/edit-work-case.xml'][input/@value='incipit_demo.xml']/button"));
+        editButton.click();
 
         //check changes
         checkText(ids, randomString);
@@ -184,8 +184,8 @@ public class MermeidTest extends WebDriverSettings {
         String randomString = generatingRandomAlphabeticString();
 
         enterLogin();
-        WebElement edit = driver.findElement(By.cssSelector("[href=\"../forms/edit-work-case.xml?doc=incipit_demo.xml\"]"));
-        edit.click();
+        WebElement editButton = driver.findElement(By.xpath("//form[@action='http://localhost:8080/forms/edit-work-case.xml'][input/@value='incipit_demo.xml']/button"));
+        editButton.click();
 
         //ids for input text
         ArrayList<String> button_ids = new ArrayList<String>();
@@ -219,8 +219,8 @@ public class MermeidTest extends WebDriverSettings {
         saveChangesAndReturnToMainPage();
 
         //open edit view
-        edit = driver.findElement(By.cssSelector("[href=\"../forms/edit-work-case.xml?doc=incipit_demo.xml\"]"));
-        edit.click();
+        editButton = driver.findElement(By.xpath("//form[@action='http://localhost:8080/forms/edit-work-case.xml'][input/@value='incipit_demo.xml']/button"));
+        editButton.click();
 
         //check changes
         checkText(ids, randomString);
