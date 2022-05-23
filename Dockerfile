@@ -47,7 +47,7 @@ RUN ant
 #########################
 FROM ${EXISTDB_IMAGE}
 
-ENV CLASSPATH=/exist/lib/exist.uber.jar:/exist/lib/orbeon-xforms-filter.jar
+ENV CLASSPATH=/exist/lib/*
 
 # add xar dependencies to the autodeploy folder 
 ADD http://exist-db.org/exist/apps/public-repo/public/shared-resources-0.9.1.xar ${EXIST_HOME}/autodeploy
@@ -62,7 +62,7 @@ COPY jetty-exist-additional-config/etc/jetty/webapps/portal/WEB-INF/* ${EXIST_HO
 COPY --from=builder /orbeon-xforms-filter/WEB-INF/lib/orbeon-xforms-filter.jar ${EXIST_HOME}/lib/
 COPY jetty-exist-additional-config/etc/webapp/WEB-INF/*.xml ${EXIST_HOME}/etc/webapp/WEB-INF/
 COPY orbeon-additional-config/WEB-INF/resources/config/* ${EXIST_HOME}/etc/jetty/webapps/orbeon/WEB-INF/resources/config/
-RUN ["java", "-cp", "/exist/lib/exist.uber.jar", "net.sf.saxon.Transform", "-s:/exist/etc/log4j2.xml", "-xsl:/exist/etc/jetty/webapps/orbeon/WEB-INF/resources/config/log4j2-patch.xsl", "-o:/exist/etc/log4j2.xml"]
+RUN ["java", "net.sf.saxon.Transform", "-s:/exist/etc/log4j2.xml", "-xsl:/exist/etc/jetty/webapps/orbeon/WEB-INF/resources/config/log4j2-patch.xsl", "-o:/exist/etc/log4j2.xml"]
 
 # install all the default application XAR so startup is faster. See tei-publisher's Dockerfile
 # pre-populate the database by launching it once
