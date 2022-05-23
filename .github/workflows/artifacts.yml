@@ -87,7 +87,6 @@ jobs:
         with:
           context: .
           load: true
-          platforms: ${{ matrix.PLATFORMS }}
           build-args: |
            EXISTDB_IMAGE=${{ matrix.EXISTDB_IMAGE }}
           tags: ${{ steps.meta.outputs.tags }}
