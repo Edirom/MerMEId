@@ -66,6 +66,8 @@ RUN ["java", "-cp", "/exist/lib/exist.uber.jar", "net.sf.saxon.Transform", "-s:/
 
 # install all the default application XAR so startup is faster. See tei-publisher's Dockerfile
 # pre-populate the database by launching it once
-RUN [ "java", \
-    "org.exist.start.Main", "client", "-l", \
-    "--no-gui",  "--xpath", "system:get-version()" ]
+# NB, this does not work for us since we want to be able to overwrite settings (via `post-install.xql`)
+# and this is *only* possible on installation of the package!
+#RUN [ "java", \
+#    "org.exist.start.Main", "client", "-l", \
+#    "--no-gui",  "--xpath", "system:get-version()" ]
