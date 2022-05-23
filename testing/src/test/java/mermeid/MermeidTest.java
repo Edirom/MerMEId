@@ -30,25 +30,38 @@ public class MermeidTest extends WebDriverSettings {
         String loginUser = "mermeid";
         String loginPass = "mermeid";
         driver.get("http://localhost:8080/modules/list_files.xq");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
         try {
-            loginText = driver.findElement(By.id("login-info")).getText();
-            System.out.println("Function `enterLogin` log: login name -" +loginText);
+            WebElement loginTextElement = wait.until(ExpectedConditions.elementToBeClickable(By.id("login-info")));
+            System.out.print("Function `enterLogin` log: current login name - ");
+            System.out.println(loginTextElement.getText());
+            loginTextElement.click();
 
-            driver.findElement(By.id("login-info")).click();
-            driver.findElement(By.id("login-modal")).click();
+            WebElement modal = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("login-modal")));
+            //driver.findElement(By.id("login-modal")).click();
+            System.out.println("Function `enterLogin` log: login modal available");
 
-            driver.findElement(By.name("user")).sendKeys(loginUser);
-            driver.findElement(By.name("password")).sendKeys(loginPass);
+            WebElement userInput = modal.findElement(By.name("user"));
+            userInput.clear();
+            userInput.sendKeys(loginUser);
+            WebElement passwordInput = modal.findElement(By.name("password"));
+            passwordInput.clear();
+            passwordInput.sendKeys(loginPass);
 
             //driver.findElement(By.name("remember")).click();
-            driver.findElement(By.cssSelector(".submit")).click();
+            modal.findElement(By.xpath(".//button[@type='submit']")).click();
 
             // check login name
-            new WebDriverWait(driver, Duration.ofSeconds(3)).until(ExpectedConditions.textToBe(By.id("login-info"), loginUser));
+            wait.until(ExpectedConditions.textToBePresentInElement(loginTextElement, loginUser));
+            System.out.print("Function `enterLogin` log: new login name - ");
+            System.out.println(loginTextElement.getText());
         } catch(org.openqa.selenium.TimeoutException e) {
             System.out.print("Function `enterLogin` log: ");
             System.out.println("Timed out waiting for element 'login-info'!");
+            System.out.print("Function `enterLogin` log: login name - ");
+            System.out.println(driver.findElement(By.id("login-info")).getText());
+            assertTrue(false);
         }
         catch(NoSuchElementException e){
             assertTrue(false);
@@ -58,6 +71,10 @@ public class MermeidTest extends WebDriverSettings {
     @Test
     @Order(1)
     public void OpenEditPage(){
+        System.out.println("**************************");
+        System.out.println("* Test 1: `OpenEditPage` *");
+        System.out.println("**************************");
+
         String title = driver.getTitle();
         System.out.println("Title: " + title);
         assertTrue(title.equals("MerMEId – Metadata Editor and Repository for MEI Data"));
@@ -72,18 +89,28 @@ public class MermeidTest extends WebDriverSettings {
         enterLogin();
         WebElement edit = driver.findElement(By.cssSelector("[href=\"../forms/edit-work-case.xml?doc=incipit_demo.xml\"]"));
         edit.click();
+
+        try {
+            new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.titleContains("MerMEId "));
+        }
+        catch(org.openqa.selenium.TimeoutException e) {
+            System.out.print("Test `OpenEditPage` log: ");
+            System.out.println("Timed out waiting for edit page to load!");
+            assertTrue(false);
+        }
     }
 
     public void setText(ArrayList<String> ids, String text ){
         for (String id: ids) {
             try {
-                WebElement inputTextElement = new WebDriverWait(driver, Duration.ofSeconds(3)).until(ExpectedConditions.visibilityOfElementLocated(By.id(id)));
+                WebElement inputTextElement = new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOfElementLocated(By.id(id)));
                 inputTextElement.clear();
                 inputTextElement.sendKeys(text);
                 inputTextElement.sendKeys(Keys.RETURN);
             } catch(org.openqa.selenium.TimeoutException e) {
                 System.out.print("Function `setText` log: ");
                 System.out.println("Timed out waiting for element '" + id + "'!");
+                assertTrue(false);
             }
         }
     }
@@ -92,28 +119,43 @@ public class MermeidTest extends WebDriverSettings {
         // save changes
         driver.findElement(By.id("save-button-image")).click();
         // wait for the asterisk to be removed from the page title 
-        new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.not(ExpectedConditions.titleContains("*")));
+        new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.not(ExpectedConditions.titleContains("*")));
 
         // return to main list view
         driver.findElement(By.id("home-button-image")).click();
         // wait until the page title is "All documents"
-        new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.titleIs("All documents"));
+        new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.titleIs("All documents"));
     }
 
     public void clickButton(ArrayList<String> ids){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        Actions builder = new Actions(driver);
         for (String id: ids) {
+            // first, look for the plus button and hover over it
             try {
-                WebElement addTitlesButton = new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"xf-293\"]/a/img")));
-                //WebElement element = driver.findElement(By.xpath("//*[@id=\"xf-293\"]/a/img"));
-                Actions builder = new Actions(driver);
+                WebElement addTitlesButton =
+                    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@id='xf-293']/a")));
                 builder.moveToElement(addTitlesButton).perform();
+                wait.until(ExpectedConditions.visibilityOfNestedElementsLocatedBy(addTitlesButton, By.xpath("span[@class='comment']")));
 
-                WebElement addRow = new WebDriverWait(driver, Duration.ofSeconds(3)).until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(id)));
+            } catch(org.openqa.selenium.TimeoutException e) {
+                System.out.print("Function `clickButton` log: ");
+                System.out.println("Timed out waiting for hover element!");
+                System.out.println(e);
+                assertTrue(false);
+            }
+            // second, click on an entry on the popup
+            try {
+                WebElement addRow =
+                    wait.until(ExpectedConditions.elementToBeClickable(By.id(id.substring(1))));
+                builder.moveToElement(addRow).perform();
                 addRow.click();
 
             } catch(org.openqa.selenium.TimeoutException e) {
                 System.out.print("Function `clickButton` log: ");
                 System.out.println("Timed out waiting for element '" + id + "'!");
+                System.out.println(e);
+                assertTrue(false);
             }
             catch(NoSuchElementException e){
                 System.out.print("Function `clickButton` log: ");
@@ -127,7 +169,7 @@ public class MermeidTest extends WebDriverSettings {
         for (String id: ids) {
             try{
                 //checkTitle
-                WebElement input_title = new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOfElementLocated(By.id(id)));
+                WebElement input_title = new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.elementToBeClickable(By.id(id)));
                 //WebElement input_title = driver.findElement(By.id(id));
                 String text =input_title.getAttribute("value");
                 System.out.print("Function `checkText` log: ");
@@ -139,6 +181,7 @@ public class MermeidTest extends WebDriverSettings {
             catch(org.openqa.selenium.TimeoutException e){
                 System.out.print("Function `checkText` log: ");
                 System.out.println("Timed out waiting for element '" + id + "'!");
+                assertTrue(false);
             }
         }
     }
@@ -146,6 +189,10 @@ public class MermeidTest extends WebDriverSettings {
     @Test
     @Order(2)
     public void checkWorkTabInputText(){
+        System.out.println("***********************************");
+        System.out.println("* Test 2: `checkWorkTabInputText` *");
+        System.out.println("***********************************");
+
         enterLogin();
         WebElement edit = driver.findElement(By.cssSelector("[href=\"../forms/edit-work-case.xml?doc=incipit_demo.xml\"]"));
         edit.click();
@@ -181,6 +228,9 @@ public class MermeidTest extends WebDriverSettings {
     @Test
     @Order(3)
     public void checkWorkTabPopupInputText(){
+        System.out.println("****************************************");
+        System.out.println("* Test 3: `checkWorkTabPopupInputText` *");
+        System.out.println("****************************************");
         String randomString = generatingRandomAlphabeticString();
 
         enterLogin();
@@ -195,7 +245,7 @@ public class MermeidTest extends WebDriverSettings {
         button_ids.add("#xf-295≡xf-1519≡≡c");
         //uniform title
         button_ids.add("#xf-296≡xf-1570≡≡c");
-        //origanal title
+        //original title
         button_ids.add("#xf-297≡xf-1621≡≡c");
         //title of sourcecode
         button_ids.add("#xf-298≡xf-1672≡≡c");
@@ -210,7 +260,7 @@ public class MermeidTest extends WebDriverSettings {
         ids.add("xf-242≡xforms-input-1⊙1");
         //uniform title
         ids.add("xf-255≡xforms-input-1⊙1");
-        //origanal title
+        //original title
         ids.add("xf-268≡xforms-input-1⊙1");
         //title of sourcecode
         ids.add("xf-281≡xforms-input-1⊙1");
@@ -233,7 +283,7 @@ public class MermeidTest extends WebDriverSettings {
         removeIds.add("xf-252≡xf-1029≡≡c⊙1");
         //uniform title
         removeIds.add("xf-265≡xf-1148≡≡c⊙1");
-        //origanal title
+        //original title
         removeIds.add("xf-278≡xf-1267≡≡c⊙1");
         //title of sourcecode
         removeIds.add("xf-291≡xf-1386≡≡c⊙1");
@@ -254,7 +304,7 @@ public class MermeidTest extends WebDriverSettings {
         removeIds.add("#xf-252\\2261xf-1029\\2261\\2261 c\\2299 1 > img");
         //uniform title
         removeIds.add("#xf-265\\2261xf-1148\\2261\\2261 c\\2299 1 > img");
-        //origanal title
+        //original title
         removeIds.add("#xf-278\\2261xf-1267\\2261\\2261 c\\2299 1 > img");
         //title of sourcecode
         removeIds.add("#xf-291\\2261xf-1386\\2261\\2261 c\\2299 1 > img");
@@ -293,6 +343,7 @@ public class MermeidTest extends WebDriverSettings {
             } catch(org.openqa.selenium.TimeoutException e) {
                 System.out.print("Function `removeInputText` log: ");
                 System.out.println("Timed out waiting for element '" + id + "'!");
+                assertTrue(false);
             }
             catch(NoSuchElementException e){
                 System.out.print("Function `removeInputText` log: ");
