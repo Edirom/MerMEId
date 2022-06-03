@@ -3,6 +3,7 @@ xquery version "3.0" encoding "UTF-8";
 import module namespace loop="http://kb.dk/this/getlist" at "./main_loop.xqm";
 import module namespace app="http://kb.dk/this/listapp"  at "./list_utils.xqm";
 import module namespace config="https://github.com/edirom/mermeid/config" at "./config.xqm";
+import module namespace common="https://github.com/edirom/mermeid/common" at "./common.xqm";
 
 declare namespace xl="http://www.w3.org/1999/xlink";
 declare namespace request="http://exist-db.org/xquery/request";
@@ -64,44 +65,35 @@ declare function local:format-reference(
       else
 	"even"
 
-      let $date_output :=
-    	if($doc//m:workList/m:work/m:creation/m:date/(@notbefore|@notafter|@startdate|@enddate)!='') then
-    	  concat(substring($doc//m:workList/m:work/m:creation/m:date/@notbefore,1,4),
-    	  substring($doc//m:workList/m:work/m:creation/m:date/@startdate,1,4),
-    	  '-',
-    	  substring($doc//m:workList/m:work/m:creation/m:date/@enddate,1,4),
-    	  substring($doc//m:workList/m:work/m:creation/m:date/@notafter,1,4))
-        else if($doc//m:workList/m:work/m:creation/m:date/@isodate!='') then
-          substring($doc//m:workList/m:work/m:creation/m:date[1]/@isodate,1,4)
-        else if($doc//m:workList/m:work/m:expressionList/m:expression[m:creation/m:date][1]/m:creation/m:date/(@notbefore|@notafter|@startdate|@enddate)!='') then
-    	  concat(substring($doc//m:workList/m:work/m:expressionList/m:expression[m:creation/m:date][1]/m:creation/m:date/@notbefore,1,4),
-    	  substring($doc//m:workList/m:work/m:expressionList/m:expression[m:creation/m:date][1]/m:creation/m:date/@startdate,1,4),
-    	  '-',
-    	  substring($doc//m:workList/m:work/m:expressionList/m:expression[m:creation/m:date][1]/m:creation/m:date/@enddate,1,4),
-    	  substring($doc//m:workList/m:work/m:expressionList/m:expression[m:creation/m:date][1]/m:creation/m:date/@notafter,1,4))
-        else
-          substring($doc//m:workList/m:work/m:expressionList/m:expression[m:creation/m:date][1]/m:creation/m:date[@isodate][1]/@isodate,1,4)
-
 	(: for some reason the sort-key function must be called outside the actual searching to have correct work number sorting when searching within all collections :)
     let $dummy := loop:sort-key("dummy_collection", $doc, "null")
 
 	let $ref   := 
 	<tr class="result {$class}">
 	  <td nowrap="nowrap">
-	    {$doc//m:workList/m:work/m:contributor/m:persName[@role='composer']}
+	    {common:get-composers($doc)}
 	  </td>
-	  <td>{app:view-document-reference($doc)}</td>
-	  <td>{"  ",$date_output}</td>
-	  <td nowrap="nowrap">{app:get-edition-and-number($doc)}</td>
-	  <td class="tools">
+	  <td>
 	    <a target="_blank"
+           title="View" 
+           href="{config:link-to-app('modules/present.xq') || '?doc=' || util:document-name($doc)}">
+           {common:get-title($doc)}
+        </a>
+      </td>
+	  <td>{common:display-date($doc)}</td>
+	  <td nowrap="nowrap">{common:get-edition-and-number($doc)}</td>
+	  <td class="tools">
+	    <form target="_blank"
             title="View XML source" 
-            href="../data/{util:document-name($doc)}">
-	      <img src="../resources/images/xml.gif" 
-	      alt="view source" 
-	      border="0"
-              title="View source" />
-	    </a>
+            action="{config:link-to-app('data/read')}">
+            <input type="hidden" name="filename" value="{util:document-name($doc)}"/>
+            <button type="submit">
+                <img src="../resources/images/xml.gif" 
+                    alt="view source" 
+                    border="0"
+                    title="View source" />
+            </button>
+	    </form>
 	  </td>
 	  <td class="tools loginRequired">{app:edit-form-reference($doc)}</td>
 	  <td class="tools loginRequired">{app:copy-document-reference($doc)}</td>
@@ -132,10 +124,6 @@ declare function local:format-reference(
 	  href="../resources/css/login.css" 
 	  type="text/css"/>
 	  
-	  <script type="text/javascript" src="../resources/js/confirm.js">
-	  //
-	  </script>
-	  
 	  <script type="text/javascript" src="../resources/js/checkbox.js">
 	  //
 	  </script>
@@ -147,21 +135,34 @@ declare function local:format-reference(
 	</head>
 	<body class="list_files">
 	  <div class="list_header">
-	    <div style="float:right;">
-	      <a id="login-info" href="#" data-user="">Login</a>
-	      <form id="create-file" action="./create-file.xq" method="post" class="addLink"  style="display:inline;">
-    	      <input type="image" src="../resources/images/new.gif" name="button" value="new" title="Add new file"/>
-	      </form>&#160;<a href="../manual/index.html" 
-	      class="addLink"
-	      target="_blank"><img 
-	      src="../resources/images/help_light.png" 
-	      title="Help - opens the manual in a new window or tab" 
-	      alt="Help" 
-	      border="0"/></a>
+	    <div class="header_right">
+	      <div>
+	       <a id="login-info" href="#" data-user="">Login</a></div>
+	      <div class="loginRequired" style="display:inline;">
+ 	      <form id="create-file" action="{config:link-to-app('data/create')}" 
+ 	          method="post" class="ajaxform" title="Add new file">
+ 	          <label class="ajaxform_label"><b>Filename</b></label>
+ 	          <input type="text" name="filename" value="{common:mermeid-id('file') || '.xml'}"  
+ 	              class="ajaxform_input" size="40" maxlength="36"/>
+               <label class="ajaxform_label"><b>Title</b></label>
+               <input type="text" name="title" value="" placeholder="Please enter title"
+                    class="ajaxform_input" size="40" maxlength="36"/>
+                <label class="ajaxform_label">
+                    <b>Overwrite target?</b>
+                    <input type="checkbox" name="overwrite"/>
+                </label>
+     	      <button type="submit" value="New" title="Add new file"><img src="../resources/images/new.gif" alt="Add new file"/></button>
+ 	      </form>
+	      </div>
+	      <div>
+	       <form id="help-link" action="{config:link-to-app('manual/index.html')}" method="get">
+     	      <button type="submit" value="help" title="Help - opens the manual in a new window or tab"><img src="../resources/images/help_light.png" alt="Help"/></button>
+ 	      </form>
+	      </div>
 	    </div>
 	    <img src="../resources/images/mermeid_30px.png" 
             title="MerMEId - Metadata Editor and Repository for MEI Data" 
-	    alt="MerMEId Logo"/>
+            alt="MerMEId Logo"/>
 	  </div>
 
 	  <div class="filter_bar">
@@ -331,6 +332,7 @@ declare function local:format-reference(
       </div>
     }
     {doc('../login.html')/*}
+    {doc('../confirm.html')/*}
     {config:replace-properties(config:get-property('footer'))}
   </body>
 </html>

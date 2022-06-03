@@ -89,8 +89,8 @@ public class MermeidTest extends WebDriverSettings {
         assertTrue(buttonText.equals("Try MerMEId"));
 
         enterLogin();
-        WebElement edit = driver.findElement(By.cssSelector("[href=\"../forms/edit-work-case.xml?doc=incipit_demo.xml\"]"));
-        edit.click();
+        WebElement editButton = driver.findElement(By.xpath("//form[@action='http://localhost:8080/forms/edit-work-case.xml'][input/@value='incipit_demo.xml']/button"));
+        editButton.click();
 
         try {
             new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.titleContains("MerMEId "));
@@ -154,8 +154,8 @@ public class MermeidTest extends WebDriverSettings {
         Actions builder = new Actions(driver);
 
         enterLogin();
-        WebElement edit = driver.findElement(By.cssSelector("[href=\"../forms/edit-work-case.xml?doc=incipit_demo.xml\"]"));
-        edit.click();
+        WebElement editButton = driver.findElement(By.xpath("//form[@action='http://localhost:8080/forms/edit-work-case.xml'][input/@value='incipit_demo.xml']/button"));
+        editButton.click();
 
         // wait for page to have loaded
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@id='xf-293']/a")));
@@ -178,8 +178,8 @@ public class MermeidTest extends WebDriverSettings {
         saveChangesAndReturnToMainPage();
 
         // Reopen edit pane
-        edit = driver.findElement(By.cssSelector("[href=\"../forms/edit-work-case.xml?doc=incipit_demo.xml\"]"));
-        edit.click();
+        editButton = driver.findElement(By.xpath("//form[@action='http://localhost:8080/forms/edit-work-case.xml'][input/@value='incipit_demo.xml']/button"));
+        editButton.click();
         // wait for page to have loaded
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@id='xf-293']/a")));
 
@@ -203,8 +203,8 @@ public class MermeidTest extends WebDriverSettings {
         Actions builder = new Actions(driver);
 
         enterLogin();
-        WebElement edit = driver.findElement(By.cssSelector("[href=\"../forms/edit-work-case.xml?doc=incipit_demo.xml\"]"));
-        edit.click();
+        WebElement editButton = driver.findElement(By.xpath("//form[@action='http://localhost:8080/forms/edit-work-case.xml'][input/@value='incipit_demo.xml']/button"));
+        editButton.click();
 
         // hover over "add more titles"
         WebElement addTitlesButton =
@@ -243,9 +243,11 @@ public class MermeidTest extends WebDriverSettings {
 
         // Save changes and return to main menu
         saveChangesAndReturnToMainPage();
+
         // Reopen edit pane
-        edit = driver.findElement(By.cssSelector("[href=\"../forms/edit-work-case.xml?doc=incipit_demo.xml\"]"));
-        edit.click();
+        editButton = driver.findElement(By.xpath("//form[@action='http://localhost:8080/forms/edit-work-case.xml'][input/@value='incipit_demo.xml']/button"));
+        editButton.click();
+
 
         // check changes
         for (String id: changedIds) {

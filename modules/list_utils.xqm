@@ -1,7 +1,8 @@
-xquery version "1.0" encoding "UTF-8";
+xquery version "3.1" encoding "UTF-8";
 
 module namespace  app="http://kb.dk/this/listapp";
 import module namespace config="https://github.com/edirom/mermeid/config" at "./config.xqm";
+import module namespace common="https://github.com/edirom/mermeid/common" at "./common.xqm";
 
 declare namespace file="http://exist-db.org/xquery/file";
 declare namespace fn="http://www.w3.org/2005/xpath-functions";
@@ -13,6 +14,7 @@ declare namespace response="http://exist-db.org/xquery/response";
 declare namespace util="http://exist-db.org/xquery/util";
 declare namespace xl="http://www.w3.org/1999/xlink";
 declare namespace xdb="http://exist-db.org/xquery/xmldb";
+declare namespace html="http://www.w3.org/1999/xhtml";
 
 
 declare function app:options() as node()*
@@ -28,161 +30,139 @@ let $options:=
 };
 
 
+declare function app:get-publication-reference($doc as node()) as element(html:form) {
+    let $doc-name:= util:document-name($doc)
+    let $color_style := 
+        if(doc-available(concat($config:data-public-root,'/',$doc-name))) 
+        then (
+            let $dcmtime := xs:dateTime(xdb:last-modified($config:data-root, $doc-name))
+            let $pubtime := xs:dateTime(xdb:last-modified($config:data-public-root, $doc-name))
+            return
+                if($dcmtime lt $pubtime) 
+                then "publishedIsGreen"
+                else "pendingIsYellow"
+        )
+        else "unpublishedIsRed"
+    return
+        <form id="formsourcediv{$doc-name}" action="" method="post" 
+            style="display:inline;" xmlns="http://www.w3.org/1999/xhtml">
+            <div id="sourcediv{$doc-name}" style="display:inline;">
+                <input id="source{$doc-name}" type="hidden" 
+                    value="publish" name="dcm/{$doc-name}" title="file name"/>
+                <label class="{$color_style}" for='checkbox{$doc-name}'>
+                    <input id='checkbox{$doc-name}' 
+                        onclick="add_publish('sourcediv{$doc-name}', 'source{$doc-name}', 'checkbox{$doc-name}');" 
+                        type="checkbox" name="button" value="" title="publish"/>
+                </label>
+            </div>
+        </form>
+};
 
-    declare function app:get-publication-reference($doc as node() )  as node()* 
-    {
-      let $doc-name:=util:document-name($doc)
-      let $color_style := 
-	if(doc-available(concat($config:data-public-root,'/',$doc-name))) then
-	  (
-	    let $dcmtime := xs:dateTime(xdb:last-modified($config:data-root, $doc-name))
-	    let $pubtime := xs:dateTime(xdb:last-modified($config:data-public-root, $doc-name))
-	    return
-	      if($dcmtime lt $pubtime) then
-		"publishedIsGreen"
-	      else
-		"pendingIsYellow"
-           )
-         else
-	   "unpublishedIsRed"
 
-      let $form:=
-      <form id="formsourcediv{$doc-name}" action="" method="post" style="display:inline;">
-      
-	<div id="sourcediv{$doc-name}"
-             style="display:inline;">
-		
-	  <input id="source{$doc-name}" 
-	         type="hidden" 
-		 value="publish" 
-		 name="dcm/{$doc-name}" 
-		 title="file name"/>
-
-	  <label class="{$color_style}" for='checkbox{$doc-name}'>
-	    <input id='checkbox{$doc-name}'
-	    onclick="add_publish('sourcediv{$doc-name}',
-	    'source{$doc-name}',
-	    'checkbox{$doc-name}');" 
-	    type="checkbox" 
-	    name="button" 
-	    value="" 
-	    title="publish"/>
-	  </label>
-
-	</div>
-      </form>
-      return $form
-    };
-
-    declare function app:get-edition-and-number($doc as node() ) as xs:string* {
-      let $c := 
-	  $doc//m:fileDesc/m:seriesStmt/m:identifier[@type="file_collection"][1]/string()
-      let $no := $doc//m:meiHead/m:workList/m:work[1]/m:identifier[@label=$c][1]/string()
-      (: shorten very long identifiers (i.e. lists of numbers) :)
-	  let $part1 := substring($no, 1, 11)
-	  let $part2 := substring($no, 12)
-      let $delimiter := substring(concat(translate($part2,'0123456789',''),' '),1,1)
-      let $n := 
-          if (string-length($no)>11) then 
-            concat($part1,substring-before($part2,$delimiter),'...')
-          else
-            $no
-      return ($c, $n)	
-    };
-
-    declare function app:view-document-reference($doc as node()) as node() {
-      (: it is assumed that we live in the same collection 'modules' :)
-      let $ref := 
-      <a  target="_blank"
-      title="View" 
-      href="./present.xq?doc={util:document-name($doc)}">
-	{$doc//m:workList/m:work/m:title[1]/string()}
-      </a>
-      return $ref
-    };
-
-    declare function app:view-document-notes($doc as node()) as node() {
-      let $note := $doc//m:fileDesc/m:notesStmt/m:annot[@type='private_notes']/string()
-      let $n :=  
+declare function app:view-document-notes($doc as node()) as element() {
+    let $note := $doc//m:fileDesc/m:notesStmt/m:annot[@type='private_notes']/string()
+    return
         if (string-length($note)>20) then 
-            <a class="help_plain" style="font-size: inherit; width: auto;">{concat(substring($note,1,20), substring-before(substring($note,21),' '))}...<span 
-            class="comment" style="font-size: .9em; line-height: 1.2em; margin-top: 0; margin-left: -150px;">{$note}</span></a>
+            <a class="help_plain" xmlns="http://www.w3.org/1999/xhtml" 
+                style="font-size: inherit; width: auto;">{concat(substring($note,1,20), 
+                    substring-before(substring($note,21),' '))}...<span 
+                class="comment" style="font-size: .9em; line-height: 
+                    1.2em; margin-top: 0; margin-left: -150px;">{$note}</span></a>
         else
-            <span>{$note}</span>
-      return $n
-    };
-
-    
-    declare function app:edit-form-reference($doc as node()) as node() 
-    {
-      (: 
-      Beware: Partly hard coded reference here!!!
-      It still assumes that the document resides on the same host as this
-      xq script but on port 80
-
-      The old form is called edit_mei_form.xml the refactored one starts on
-      edit-work-case.xml 
-      :)
-
-      let $form-id := util:document-name($doc)
-      let $ref := <a href="../forms/edit-work-case.xml?doc={util:document-name($doc)}"><input type="image"
- 	title="Edit" 
-	src="../resources/images/edit.gif" 
-	alt="Edit" /></a>
-
-      return $ref
-
-    };
+            <span xmlns="http://www.w3.org/1999/xhtml">{$note}</span>
+};
 
 
-    declare function app:copy-document-reference($doc as node()) as node() 
-    {
-      let $form-id := util:document-name($doc)
-      let $uri     := concat($config:data-public-root, "/", util:document-name($doc))
-      let $form := 
-      <form id="copy{$form-id}" action="./copy-file.xq" method="post" style="display:inline;">
-    	<input type="hidden" value="copy" name="{util:document-name($doc)}" />
-    	<input type="image" src="../resources/images/copy.gif" name="button" value="copy" title="Copy"/>
-      </form>
-      return  $form
-    };
+declare function app:edit-form-reference($doc as node()) as element(html:form) {
+    <form xmlns="http://www.w3.org/1999/xhtml"
+        title="Edit file" 
+        action="{config:link-to-app('forms/edit-work-case.xml')}">
+        <input type="hidden" name="doc" value="{util:document-name($doc)}"/>
+        <button type="submit">
+            <img src="../resources/images/edit.gif" 
+                alt="Edit" 
+                border="0"
+                title="Edit" />
+        </button>
+    </form>
+};
 
 
-    declare function app:rename-document-reference($doc as node()) as node() 
-    {
-      let $doc-name := util:document-name($doc)
-      let $form-id  := concat("rename",$doc-name)
-      let $uri      := concat($config:data-public-root,"/",$doc-name)
-      let $form := 
-      <form id="{$form-id}" action="./rename-file.xq" method="post" style="display:inline;">
-    	<input type="hidden" name="doc" value="{$doc-name}" />
-    	<input type="hidden" name="name" value=""/>
-    	<img src="../resources/images/rename.png" name="button" value="rename" title="Rename {$doc-name}" alt="Rename" 
-    	  onclick="filename_prompt('{$form-id}','{$doc-name}',{doc-available(concat($config:data-public-root, '/', $doc-name))}); return false;"/>
-      </form>
-      return  $form
-    };
+declare function app:copy-document-reference($doc as node()) as element(html:form) {
+    let $doc-name := util:document-name($doc)
+    let $proposed-name := common:propose-filename($doc-name)
+    let $title := common:get-title($doc)
+    let $proposed-title := $title || ' (Copy)'
+    let $uri := concat($config:data-public-root, "/", $doc-name)
+    return
+        <form id="copy{$doc-name}" action="{config:link-to-app('data/copy')}"
+            xmlns="http://www.w3.org/1999/xhtml"
+            method="post" style="display:inline;" class="ajaxform" title="Copy file">
+            <label class="ajaxform_label"><b>Source filename</b></label>
+            <input type="text" name="source" value="{$doc-name}" 
+                class="ajaxform_label" readonly="readonly" size="40"/>
+            <label class="ajaxform_label"><b>Target filename</b></label>
+            <input type="text" name="target" value="{$proposed-name}" 
+                class="ajaxform_input" size="40" maxlength="36"/>
+            <label class="ajaxform_label"><b>New title</b></label>
+            <input type="text" name="title" value="{$proposed-title}" 
+                class="ajaxform_input" size="40" maxlength="36"/>
+            <label class="ajaxform_label">
+                <b>Overwrite target?</b>
+                <input type="checkbox" name="overwrite"/>
+            </label>
+            <button type="submit" value="Copy"><img src="../resources/images/copy.gif" alt="Copy"/></button>
+        </form>
+};
 
 
+declare function app:rename-document-reference($doc as node()) as element(html:form) {
+    let $doc-name := util:document-name($doc)
+    let $proposed-name := common:propose-filename($doc-name)
+    let $title := common:get-title($doc)
+    let $proposed-title := $title || ' (Copy)'
+    let $uri := concat($config:data-public-root, "/", $doc-name)
+    return
+        <form id="rename{$doc-name}" action="{config:link-to-app('data/rename')}" 
+            xmlns="http://www.w3.org/1999/xhtml"
+            method="post" style="display:inline;" class="ajaxform" title="Rename file">
+            <label class="ajaxform_label"><b>Source filename</b></label>
+            <input type="text" name="source" value="{$doc-name}" 
+                class="ajaxform_label" readonly="readonly" size="40"/>
+            <label class="ajaxform_label"><b>Target filename</b></label>
+            <input type="text" name="target" value="{$proposed-name}" 
+                class="ajaxform_input" size="40" maxlength="36"/>
+            <label class="ajaxform_label"><b>New title</b></label>
+            <input type="text" name="title" value="{$proposed-title}" 
+                class="ajaxform_input" size="40" maxlength="36"/>
+            <label class="ajaxform_label">
+                <b>Overwrite target?</b>
+                <input type="checkbox" name="overwrite"/>
+            </label>
+            <button type="submit" value="Rename"><img src="../resources/images/rename.png" alt="Rename"/></button>
+        </form>
+};
 
-    declare function app:delete-document-reference($doc as node()) as node() 
-    {
-      let $form-id := util:document-name($doc)
-      let $uri     := concat($config:data-public-root,"/",util:document-name($doc))
-      let $form := 
-    	if(doc-available($uri)) then
-        <span>
-        <img src="../resources/images/remove_disabled.gif" alt="Remove (disabled)" title="Only unpublished files may be deleted"/>
+
+declare function app:delete-document-reference($doc as node()) as element() {
+    let $doc-name := util:document-name($doc)
+    let $uri := concat($config:data-public-root,"/",util:document-name($doc))
+    return
+        if(doc-available($uri)) then
+        <span xmlns="http://www.w3.org/1999/xhtml">
+            <img src="../resources/images/remove_disabled.gif" alt="Remove (disabled)" title="Only unpublished files may be deleted"/>
         </span>
         else
-    	<form id="del{$form-id}" action="./delete-file.xq" method="post" style="display:inline;">
-        	<input type="hidden" value="delete" name="{util:document-name($doc)}" />
-        	<input 
-        	    onclick="{string-join(('show_confirm(&quot;del',$form-id,'&quot;,&quot;',$doc//m:workList/m:work/m:title[string()][1]/string(),'&quot;);return false;'),'')}" 
-        	    type="image" src="../resources/images/remove.gif" name="button" value="remove" title="Remove"/>
+    	<form id="del{$doc-name}" action="{config:link-to-app('data/delete')}" 
+    	   xmlns="http://www.w3.org/1999/xhtml"
+    	   method="post" style="display:inline;" class="ajaxform" title="Delete file">
+        	<label class="ajaxform_label"><b>Do you really want to delete the following file?</b></label>
+        	<input name="filename" value="{$doc-name}" class="ajaxform_label" readonly="readonly" size="40"/>
+        	<!--<input type="image" src="../resources/images/remove.gif" name="button" value="remove" title="Remove"/>-->
+        	<button type="submit" value="Remove"><img src="../resources/images/remove.gif" alt="Remove"/></button>
     	</form>
-      return  $form
-    };
+};
+
 
     declare function app:list-title() 
     {

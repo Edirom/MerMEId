@@ -57,22 +57,6 @@ a {
     color:black;
 }
 
-a.addLink {
-    text-decoration: none;
-}
-
-a.addLink img {
-    padding: 2px;
-    border: none;
-    vertical-align:top;
-}
-
-a.addLink:hover img {
-    padding: 1px;
-    border: 1px solid #999;
-}
-
-
 table {
     width: 100%;
 }
@@ -351,3 +335,52 @@ form.search a.help .help_label {
     white-space: nowrap;
     font-family: courier, fixed, monospace;
 }
+
+.ajaxform .ajaxform_input, .ajaxform .ajaxform_label {
+    display: none;
+}
+
+form.modal-content button {
+    display: block;
+    margin-top: 2ex;
+    padding: 0.5ex 2em;
+    cursor: pointer;
+}
+
+#confirm_modal_statusmessage {
+    display:none;
+}
+
+#confirm_modal_statusmessage.error {
+    display: block;
+    border: 1px solid red;
+    padding: 1ex;
+    color: red;
+    font-weight: bold;
+}
+
+#confirm_modal_statusmessage.info {
+    display: block;
+    border: 1px solid green;
+    padding: 1ex;
+    color: green;
+    font-weight: bold;
+}
+
+.result_table button, .header_right button {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+.header_right {
+    float: right;
+}
+
+.header_right > div {
+    display: inline;
+    padding-left:.3em;
+}
+.header_right form {
+    display: inline;
+}
+
