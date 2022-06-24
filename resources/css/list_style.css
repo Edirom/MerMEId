@@ -42,6 +42,24 @@ div.footer, p.footer {
 
 div.footer .version {
     margin-top: 12px;
+    float:right;
+}
+
+div.footer div.dev{
+    margin-top: 10px;
+}
+
+div.footer img{
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+div.footer #dcm-logo{
+    height:30px;
+}
+
+div.footer #github-contributors{
+    height: 23px;
 }
     
 
