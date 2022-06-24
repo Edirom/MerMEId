@@ -24,6 +24,27 @@ div.footer, p.footer {
     color: #888;
 }
 
+div.footer div.version{
+	float:right;
+}
+
+div.footer div.dev{
+	margin-top: 10px;
+}
+
+div.footer img{
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+div.footer #dcm-logo{
+	height:30px;
+}
+
+div.footer #github-contributors{
+	height: 23px;
+}
+
 table {
     padding:0px;
 }
