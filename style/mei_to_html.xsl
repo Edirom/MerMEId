@@ -2401,7 +2401,7 @@
 				<xsl:if test="m:title[@level='m']/text()">
 					<!-- show entry only if a title is stated -->
 					<xsl:choose>
-						<xsl:when test="m:author/text()">
+						<xsl:when test="m:author">
 							<xsl:call-template name="list_authors"/>:
 						</xsl:when>
 						<xsl:otherwise>
@@ -2441,8 +2441,9 @@
 			<xsl:when test="m:genre='article' and m:genre='book'">
 				<!-- show entry only if a title is stated -->
 				<xsl:if test="m:title[@level='a']/text()">
-					<xsl:if test="m:author/text()">
-						<xsl:call-template name="list_authors"/>:
+					<xsl:if test="m:author">
+						<xsl:call-template name="list_authors"/>
+						<xsl:text>: </xsl:text>
 					</xsl:if>
 					<xsl:apply-templates select="m:title[@level='a']" mode="bibl_title">
 						<xsl:with-param name="quotes" select="'true'"/>
@@ -2514,8 +2515,9 @@
 				<!-- show entry only if some type of title is stated -->
 				<xsl:if test="m:title/text()">
 					<xsl:if test="normalize-space(m:title[@level='a'])!=''">
-						<xsl:if test="m:author/text()">
-							<xsl:call-template name="list_authors"/>:
+						<xsl:if test="m:author">
+							<xsl:call-template name="list_authors"/>
+							<xsl:text>: </xsl:text>
 						</xsl:if>
 						<xsl:apply-templates select="m:title[@level='a']" mode="bibl_title">
 							<xsl:with-param name="quotes" select="'true'"/>
@@ -2549,12 +2551,7 @@
 					<!-- if the author is given, but no article title, put the author last -->
 					<xsl:if test="not(normalize-space(m:title[@level='a'])!='') and m:author/text()">
 						<xsl:text> (</xsl:text>
-						<xsl:for-each select="m:author">
-							<xsl:if test="position()&gt;1">
-								<xsl:text>, </xsl:text>
-							</xsl:if>
-							<xsl:apply-templates select="."/>
-						</xsl:for-each>
+						<xsl:call-template name="list_authors"/>
 						<xsl:text>)</xsl:text>
 					</xsl:if>
 					<xsl:text>. </xsl:text>
@@ -2564,8 +2561,10 @@
 			<xsl:when test="m:genre='web site'">
 				<!-- show entry only if a title or URI is stated -->
 				<xsl:if test="normalize-space(concat(m:title,m:ptr))">
-					<xsl:if test="normalize-space(m:author)!=''">
-                        <xsl:apply-templates select="m:author"/>: </xsl:if>
+					<xsl:if test="m:author">
+						<xsl:call-template name="list_authors"/>
+						<xsl:text>: </xsl:text> 
+					</xsl:if>
 					<xsl:apply-templates select="m:title[text()]" mode="bibl_title">
 						<xsl:with-param name="quotes" select="'false'"/>
 						<xsl:with-param name="italic" select="'true'"/>
@@ -2653,8 +2652,10 @@
 			</xsl:when>
 
 			<xsl:when test="m:genre='manuscript'">
-				<xsl:if test="m:author//text()">
-                    <xsl:apply-templates select="m:author"/>: </xsl:if>
+				<xsl:if test="m:author">
+					<xsl:call-template name="list_authors"/>
+					<xsl:text>: </xsl:text>
+				</xsl:if>
 				<xsl:if test="m:title//text()">
 					<xsl:apply-templates select="m:title" mode="bibl_title">
 						<xsl:with-param name="quotes" select="'false'"/>
@@ -2700,8 +2701,10 @@
 
 			<xsl:otherwise>
 				<!-- unrecognized reference types are marked with an asterisk -->
-				<xsl:if test="m:author//text()">
-                    <xsl:apply-templates select="m:author"/>: </xsl:if>
+				<xsl:if test="m:author">
+					<xsl:call-template name="list_authors"/>
+					<xsl:text>: </xsl:text>
+				</xsl:if>
 				<xsl:if test="m:title//text()">
 					<em>
                         <xsl:apply-templates select="m:title"/>
