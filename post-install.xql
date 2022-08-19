@@ -99,6 +99,43 @@ declare function local:force-xml-mime-type-xbl() as xs:string* {
     return if (exists($doc)) then xdb:store($forms-includes, $r, $doc, 'application/xml') else ()
 };
 
+(:~
+ : Helper function to recursively create a collection hierarchy. 
+ :)
+declare function local:mkcol-recursive($collection, $components) {
+    if (exists($components)) then
+        let $newColl := concat($collection, "/", $components[1])
+        return (
+            xdb:create-collection($collection, $components[1]),
+            local:mkcol-recursive($newColl, subsequence($components, 2))
+        )
+    else
+        ()
+};
+
+(:~ 
+ : Helper function to recursively create a collection hierarchy. 
+ :)
+declare function local:mkcol($collection, $path) {
+    local:mkcol-recursive($collection, tokenize($path, "/"))
+};
+
+(:~
+ : Add default index configuration to the data collection provided in $config:data-root
+ : Indices are used for searching and filtering on the main list page, 
+ : see https://github.com/Edirom/MerMEId/issues/112  
+ :)
+declare function local:add-index-configuration() as item()* {
+    let $config-path := concat("/db/system/config", $config:data-root)
+    return
+        if(doc-available(concat($config-path, '/collection.xconf'))) then ()
+        else (
+            local:mkcol("/db/system/config", $config:data-root),
+            xdb:store-files-from-pattern($config-path, $dir, "*.xconf"),
+            xdb:reindex($config:data-root)
+        )
+};
+
 (: set options provided as environment variables :)
 local:set-options(),
 local:force-xml-mime-type-xbl(),
@@ -107,6 +144,7 @@ if (local:first-run()) then
         local:create-group(),
         local:create-user(),
         local:change-group(),
+        local:add-index-configuration(),
          (: This has to be the last command otherwise the other commands will not be executed properly :) 
         local:set-admin-password()
     )

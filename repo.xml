@@ -9,6 +9,5 @@
     <copyright>true</copyright>
     <type>application</type>
     <target>mermeid</target>
-    <prepare>pre-install.xql</prepare>
     <finish>post-install.xql</finish>
 </meta>
