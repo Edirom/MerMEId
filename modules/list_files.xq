@@ -171,7 +171,35 @@ declare function local:format-reference(
 		<td class="label">Filter by: &#160;</td>
 		<td class="label">Publication status</td>
 		<td class="label">Collection</td>
-		<td class="label">Keywords</td>
+		<td class="label">Search term <a class="help">?<span class="comment">Search terms may be combined using boolean operators. Wildcards allowed. 
+                  Search is case insensitive (except for boolean operators, which must be uppercase) and will query the whole document.
+                  Some examples:<br/>
+                  <span class="help_table">
+                    <span class="help_example">
+                      <span class="help_label">carl OR nielsen</span>
+                      <span class="help_value">Boolean OR (default)</span>
+                    </span>                        
+                    <span class="help_example">
+                      <span class="help_label">carl AND nielsen</span>
+                      <span class="help_value">Boolean AND</span>
+                    </span>
+                    <span class="help_example">
+                      <span class="help_label">"carl nielsen"</span>
+                      <span class="help_value">Exact phrase</span>
+                    </span>
+                    <span class="help_example">
+                      <span class="help_label">niels*</span>
+                      <span class="help_value">Match any number of characters. Finds Niels, Nielsen and Nielsson<br/>
+                        (use only at end of word)
+                      </span>
+                    </span>
+                    <span class="help_example">
+                      <span class="help_label">niels?n</span>
+                      <span class="help_value">Match 1 character. Finds Nielsen and Nielson, but not Nielsson</span>
+                    </span>
+                  </span>
+                </span>
+              </a></td>
 	      </tr>
 	      <tr>
 		<td>&#160;</td>
@@ -217,35 +245,6 @@ declare function local:format-reference(
               <input name="query"  value='{session:get-attribute("query")}'/>
               <input type="submit" value="Search"               />
               <input type="submit" value="Clear" onclick="this.form.query.value='';this.form.submit();return true;"/>
-              <a class="help">?<span class="comment">Search terms may be combined using boolean operators. Wildcards allowed. 
-                  Search is case insensitive (except for boolean operators, which must be uppercase).
-                  Some examples:<br/>
-                  <span class="help_table">
-                    <span class="help_example">
-                      <span class="help_label">carl OR nielsen</span>
-                      <span class="help_value">Boolean OR (default)</span>
-                    </span>                        
-                    <span class="help_example">
-                      <span class="help_label">carl AND nielsen</span>
-                      <span class="help_value">Boolean AND</span>
-                    </span>
-                    <span class="help_example">
-                      <span class="help_label">"carl nielsen"</span>
-                      <span class="help_value">Exact phrase</span>
-                    </span>
-                    <span class="help_example">
-                      <span class="help_label">niels*</span>
-                      <span class="help_value">Match any number of characters. Finds Niels, Nielsen and Nielsson<br/>
-                        (use only at end of word)
-                      </span>
-                    </span>
-                    <span class="help_example">
-                      <span class="help_label">niels?n</span>
-                      <span class="help_value">Match 1 character. Finds Nielsen and Nielson, but not Nielsson</span>
-                    </span>
-                  </span>
-                </span>
-              </a>
             </form>
           </td>
         </tr>
