@@ -27,7 +27,6 @@ return $doc
 
 let $params := 
 <parameters>
-   <param name="hostname" value="{$host}"/>#
    <param name="app-root" value="{$config:app-root}"/>
    <param name="data-root" value="{$config:data-root}"/>
    <param name="doc" value="{$document}"/>
@@ -42,4 +41,3 @@ if(request:get-parameter("debug","")) then
 (<d>{$params}{doc(concat($config:app-root,"/style/",$xsl))}</d>)
 else
 transform:transform($doc,doc(concat($config:app-root,"/style/",$xsl)),$params)
- 
