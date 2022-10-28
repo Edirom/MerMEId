@@ -44,9 +44,6 @@
 	
 	<!-- preferred language in titles and other multilingual fields -->
 	<xsl:variable name="preferred_language">none</xsl:variable>
-	<!-- general MerMEId settings -->
-	<xsl:variable name="settings"
-		select="document(concat($app-root, '/properties.xml'))"/>
 	<!-- file context - i.e. collection identifier like 'CNW' -->
 	<xsl:variable name="file_context">
 		<xsl:value-of select="/m:mei/m:meiHead/m:fileDesc/m:seriesStmt/m:identifier[@type='file_collection'][1]"/>
@@ -602,8 +599,7 @@
 		<xsl:variable name="href">
 			<xsl:choose>
 				<xsl:when test="$mermeid_crossref='true'">
-					<!--<xsl:value-of select="concat($settings/dcm:parameters/dcm:server_name,'/present.xq?doc=',@target)"/>-->
-					<xsl:value-of select="config:link-to-app(concat('/modules/present.xq?doc=', @target), $settings)"/>
+					<xsl:value-of select="config:link-to-app(concat('/modules/present.xq?doc=', @target))"/>
 				</xsl:when>
 				<xsl:otherwise>
 					<xsl:value-of select="@target"/>
