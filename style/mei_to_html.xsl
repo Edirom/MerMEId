@@ -18,7 +18,7 @@
 	
 	<xsl:output method="xml" encoding="UTF-8" cdata-section-elements="" omit-xml-declaration="yes" indent="no" xml:space="default"/>
 	
-	<xsl:include href="common.xsl"/>
+	<xsl:include href="config.xsl"/>
 
 	<xsl:strip-space elements="*"/>
 
