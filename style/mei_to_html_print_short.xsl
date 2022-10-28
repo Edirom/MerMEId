@@ -23,7 +23,8 @@
 	xmlns:exsl="http://exslt.org/common" 
 	xmlns:java="http://xml.apache.org/xalan/java"
 	xmlns:zs="http://www.loc.gov/zing/srw/" 
-	xmlns:marc="http://www.loc.gov/MARC21/slim" 
+	xmlns:marc="http://www.loc.gov/MARC21/slim"
+	xmlns:config="https://github.com/edirom/mermeid/config"
 	extension-element-prefixes="exsl java" 
 	exclude-result-prefixes="m xsl exsl foo java">
 	
@@ -107,7 +108,7 @@
 		<xsl:variable name="href">
 			<xsl:choose>
 				<xsl:when test="$mermeid_crossref='true'">
-					<xsl:value-of select="concat($settings/dcm:parameters/dcm:server_name,'/present.xq?doc=',@target)"/>
+					<xsl:value-of select="config:link-to-app(concat('/modules/present.xq?doc=', @target))"/>
 				</xsl:when>
 				<xsl:otherwise>
 					<xsl:value-of select="@target"/>
@@ -128,7 +129,7 @@
 		<xsl:if test="$mermeid_crossref='true'">
 			<!-- get collection name and number from linked files -->
 			<xsl:variable name="fileName"
-				select="concat($settings/dcm:parameters/dcm:server_name,$settings/dcm:parameters/dcm:document_root,@target)"/>
+				select="concat($data-root, '/', @target)"/>
 			<xsl:variable name="linkedDoc" select="document($fileName)"/>
 			<xsl:variable name="file_context"
 				select="$linkedDoc/m:mei/m:meiHead/m:fileDesc/m:seriesStmt/m:identifier[@type='file_collection']"/>
