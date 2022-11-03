@@ -3,6 +3,7 @@
 	xmlns:foo="http://www.kb.dk/foo" xmlns:zs="http://www.loc.gov/zing/srw/" 
 	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:m="http://www.music-encoding.org/ns/mei" 
 	xmlns:local="urn:my-stuff" xmlns:dcm="http://www.kb.dk/dcm" 
+	xmlns:config="https://github.com/edirom/mermeid/config"
 	version="2.0" exclude-result-prefixes="m xsl foo local">
 
 	<!-- 
@@ -16,11 +17,12 @@
 	-->
 	
 	<xsl:output method="xml" encoding="UTF-8" cdata-section-elements="" omit-xml-declaration="yes" indent="no" xml:space="default"/>
+	
+	<xsl:include href="config.xsl"/>
 
 	<xsl:strip-space elements="*"/>
 
 	<xsl:param name="doc"/>
-	<xsl:param name="hostname"/>
 	<xsl:param name="app-root"/>
 	<xsl:param name="data-root"/>
 	<xsl:param name="language"/>
@@ -42,9 +44,6 @@
 	
 	<!-- preferred language in titles and other multilingual fields -->
 	<xsl:variable name="preferred_language">none</xsl:variable>
-	<!-- general MerMEId settings -->
-	<xsl:variable name="settings"
-		select="document(concat($app-root, '/properties.xml'))"/>
 	<!-- file context - i.e. collection identifier like 'CNW' -->
 	<xsl:variable name="file_context">
 		<xsl:value-of select="/m:mei/m:meiHead/m:fileDesc/m:seriesStmt/m:identifier[@type='file_collection'][1]"/>
@@ -600,7 +599,7 @@
 		<xsl:variable name="href">
 			<xsl:choose>
 				<xsl:when test="$mermeid_crossref='true'">
-					<xsl:value-of select="concat($settings/dcm:parameters/dcm:server_name,'/present.xq?doc=',@target)"/>
+					<xsl:value-of select="config:link-to-app(concat('/modules/present.xq?doc=', @target))"/>
 				</xsl:when>
 				<xsl:otherwise>
 					<xsl:value-of select="@target"/>
