@@ -35,13 +35,10 @@
  
 
   <xsl:template match="/">
-    <xsl:variable name="new_doc">
-      <xsl:apply-templates select="*" mode="convertEntities"/>
-    </xsl:variable>
-    <xsl:copy-of select="$new_doc"/>
+    <xsl:apply-templates/>
   </xsl:template>
 
-  <xsl:template match="m:music" mode="#all">
+  <xsl:template match="m:music">
     <xsl:element name="music" namespace="http://www.music-encoding.org/ns/mei">
       <xsl:choose>
         <!-- If no new content has been uploaded into <music>, reinstate the original content from the database. -->
@@ -60,7 +57,7 @@
   <!-- CLEANING UP MEI -->
 
   <!-- Generate a value for empty @xml:id -->
-  <xsl:template match="@xml:id[.='']" mode="#all">
+  <xsl:template match="@xml:id[.='']">
     <xsl:call-template name="fill_in_id"/>
   </xsl:template>
 
@@ -80,7 +77,7 @@
   </xsl:template>
 
   <!-- Change duplicate IDs -->
-  <xsl:template match="*[@xml:id and count(key('ids', @xml:id)) &gt; 1]" mode="#all">
+  <xsl:template match="*[@xml:id and count(key('ids', @xml:id)) &gt; 1]">
     <xsl:variable name="duplicateID" select="@xml:id"/>
     <xsl:element name="{name()}">
       <xsl:apply-templates select="@*"/>
@@ -106,7 +103,7 @@
   </xsl:template>
 
   <!-- Add xml:id to certain elements if missing -->
-  <xsl:template match="m:expression | m:item | m:bibl | m:perfRes | m:perfResList | m:castItem" mode="#all">
+  <xsl:template match="m:item | m:bibl | m:perfRes | m:perfResList | m:castItem">
     <!-- Test if perfResList is like old instrumentation -->
     <xsl:element name="{name()}" namespace="http://www.music-encoding.org/ns/mei">
       <xsl:apply-templates select="@*"/>
@@ -119,7 +116,7 @@
   <!-- Remove empty attributes -->
   <xsl:template match="@accid|@auth|@auth.uri|@cert|@codedval|@count|@enddate|@evidence|     
     @isodate|@label|@level|@mode|@n|@notafter|@notbefore|@pname|@reg|@resp|     
-    @solo|@startdate|@sym|@target|@targettype|@type|@unit|@xml:lang" mode="#all">
+    @solo|@startdate|@sym|@target|@targettype|@type|@unit|@xml:lang">
     <xsl:if test="not(normalize-space(data()) = '')">
       <xsl:sequence select="."/>
     </xsl:if>
@@ -159,9 +156,9 @@
   </xsl:template>
 
 
-  <!-- Ensure correct order of elements -->
- 
-  <!-- NB: This template only matches in the default mode which is probably never called  -->
+  <!-- 
+    Ensure correct order of elements 
+  -->
   <xsl:template match="m:biblList">
     <xsl:element name="biblList" namespace="http://www.music-encoding.org/ns/mei">
       <xsl:apply-templates select="@*"/>
@@ -171,7 +168,6 @@
     </xsl:element>
   </xsl:template>
 
-  <!-- NB: This template only matches in the default mode which is probably never called  -->
   <xsl:template match="m:manifestation">
     <xsl:element name="manifestation" namespace="http://www.music-encoding.org/ns/mei">
       <xsl:apply-templates select="@*"/>
@@ -200,7 +196,6 @@
     </xsl:element>
   </xsl:template>
 
-  <!-- NB: This template only matches in the default mode which is probably never called  -->
   <xsl:template match="m:work">
     <xsl:element name="work" namespace="http://www.music-encoding.org/ns/mei">
       <xsl:apply-templates select="@*"/>
@@ -233,8 +228,6 @@
     </xsl:element>
   </xsl:template>
 
-
-  <!-- NB: This template only matches in the default mode which is probably never called  -->
   <xsl:template match="m:expression">
     <xsl:element name="expression" namespace="http://www.music-encoding.org/ns/mei">
       <xsl:apply-templates select="@*"/>
@@ -265,18 +258,14 @@
     </xsl:element>
   </xsl:template>
   
-
   <!-- END CLEANING -->
 
-
-  <!-- Convert entities to nodes -->
-  <xsl:template match="@*|*" mode="convertEntities">
-    <xsl:copy>
-      <xsl:apply-templates select="@*|node()" mode="convertEntities"/>
-    </xsl:copy>
-  </xsl:template>
-
-  <xsl:template match="text()" mode="convertEntities" priority="1">
+  <!-- 
+    Process all text nodes that feature (escaped) tags
+    The check for tags looks for end tags (because start tags might bear attributes)
+    or empty elements.
+  -->
+  <xsl:template match="text()[matches(., '(&lt;/\w\s*&gt;)|(&lt;\w\s*/&gt;)')]">
     <xsl:call-template name="replace_nodes">
       <xsl:with-param name="text" select="."/>
     </xsl:call-template>
@@ -522,7 +511,7 @@
   </xsl:template>
   <!-- end utilities -->
 
-  <xsl:template match="m:revisionDesc" mode="convertEntities">
+  <xsl:template match="m:revisionDesc">
     <xsl:element name="revisionDesc">
       <xsl:variable name="penultimate" select="count(m:change)-1"/>
       <xsl:variable name="penultimateChange" select="m:change[$penultimate]"/>
