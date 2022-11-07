@@ -138,51 +138,6 @@
   <xsl:template match="m:titlePage[not(*)]"/>
   
   
-  <!-- Clean up double-escaped ampersands (&amp;) -->
-  <xsl:template match="text()[contains(.,'&amp;amp;')]">
-    <xsl:call-template name="cleanup_amp">
-      <xsl:with-param name="string" select="."/>
-    </xsl:call-template>
-  </xsl:template>
-
-  <xsl:template name="cleanup_amp">
-    <xsl:param name="string"/>
-    <xsl:variable name="remainder" select="substring-after($string,'&amp;amp;')"/>
-    <xsl:value-of select="substring-before($string,'&amp;amp;')"/>&amp;<xsl:choose>
-      <xsl:when test="contains($remainder,'&amp;amp;')">
-                <xsl:call-template name="cleanup_amp">
-          <xsl:with-param name="string" select="$remainder"/>
-                </xsl:call-template>
-      </xsl:when>
-      <xsl:otherwise>
-                <xsl:value-of select="$remainder"/>
-            </xsl:otherwise>
-    </xsl:choose>
-  </xsl:template>
-
-  <!-- Trying to convert &nbsp; to &#160; ... -->
-  <xsl:template match="text()[contains(.,'&amp;nbsp;')]">
-    <xsl:call-template name="cleanup_nbsp">
-      <xsl:with-param name="string" select="."/>
-    </xsl:call-template>
-  </xsl:template>
-
-  <xsl:template name="cleanup_nbsp">
-    <xsl:param name="string"/>
-    <xsl:variable name="remainder" select="substring-after($string,'&amp;nbsp;')"/>
-    <xsl:value-of select="substring-before($string,'&amp;nbsp;')"/>&#160;<xsl:choose>
-      <xsl:when test="contains($remainder,'&amp;nbsp;')">
-        <xsl:call-template name="cleanup_nbsp">
-          <xsl:with-param name="string" select="$remainder"/>
-        </xsl:call-template>
-      </xsl:when>
-      <xsl:otherwise>
-        <xsl:value-of select="$remainder"/>
-      </xsl:otherwise>
-    </xsl:choose>
-  </xsl:template>
-
-
   <!-- Delete duplicate language definitions (fixes an xforms problem) -->
   <xsl:template match="m:mei/m:meiHead/m:workList/m:work/m:langUsage/m:language[. = preceding-sibling::m:language]"/>
 
