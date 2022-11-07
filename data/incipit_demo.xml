@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../MEI/schema/4.0.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../MEI/schema/4.0.1/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei xmlns="http://www.music-encoding.org/ns/mei"
      xmlns:xl="http://www.w3.org/1999/xlink"
-     meiversion="4.0.0"
+     meiversion="4.0.1"
      xml:id="mei_95N20005">
    <meiHead>
       <fileDesc>
@@ -76,7 +78,9 @@
                   </p>
                </annot>
             </notesStmt>
-            <classification xml:id="classification_8c2dad93"/>
+            <classification xml:id="classification_8c2dad93">
+               <termList></termList>
+            </classification>
             <expressionList xml:id="expressionList_389a76cf">
                <expression xml:id="expression_23d59f2a">
                   <title xml:id="title_74168954" xml:lang="en">1. Incipit encoded in MEI:</title>
