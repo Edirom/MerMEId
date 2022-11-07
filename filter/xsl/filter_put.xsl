@@ -117,8 +117,8 @@
 
 
   <!-- Remove empty attributes -->
-  <xsl:template match="@accid|@auth|@auth-uri|@cert|@codedval|@count|@enddate|@evidence|     
-    @isodate|@mode|@n|@notafter|@notbefore|@pname|@reg|@resp|     
+  <xsl:template match="@accid|@auth|@auth.uri|@cert|@codedval|@count|@enddate|@evidence|     
+    @isodate|@label|@level|@mode|@n|@notafter|@notbefore|@pname|@reg|@resp|     
     @solo|@startdate|@sym|@target|@targettype|@type|@unit|@xml:lang" mode="#all">
     <xsl:if test="not(normalize-space(data()) = '')">
       <xsl:sequence select="."/>
