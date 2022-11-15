@@ -49,13 +49,13 @@ declare function app:getlist ($database as xs:string, $coll as xs:string, $query
         	if($query) then
                   for $doc in collection($database)/m:mei[
         	    ft:query(.,$query)
-        	    and m:meiHead/m:fileDesc/m:seriesStmt/m:identifier[.=$coll]
+        	    and m:meiHead/m:fileDesc/m:seriesStmt/m:identifier[ft:query(.,$coll)]
         	    ] 
         	  order by loop:sort-key ($coll,$doc,$sort0),loop:sort-key($coll,$doc,$sort1)
         	  return $doc 
         	else
         	  for $doc in collection($database)/m:mei[
-        	    m:meiHead/m:fileDesc/m:seriesStmt/m:identifier[.=$coll]
+        	    m:meiHead/m:fileDesc/m:seriesStmt/m:identifier[ft:query(.,$coll)]
         	    ]
         	  order by loop:sort-key ($coll,$doc,$sort0),loop:sort-key($coll,$doc,$sort1)
         	  return $doc 
