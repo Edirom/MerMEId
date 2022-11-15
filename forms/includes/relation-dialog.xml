@@ -16,7 +16,7 @@
 	
 	<xf:label>Select file to link to</xf:label>
 	<xf:select1 ref="instance('temp')/series" class="mediumshort">
-		<xf:label>Series:</xf:label>
+		<xf:label>Collection:</xf:label>
 		<xf:action ev:event="DOMActivate xforms-value-changed">
 			<xf:setvalue ref="instance('temp')/page" value="1"/>
 			<xf:dispatch name="send-query" target="source_search"></xf:dispatch>
