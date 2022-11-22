@@ -104,10 +104,26 @@ $ docker run --name my-mermeid -p 8080:8080 -d --mount type=bind,source="$(pwd)/
 
 ### Logs
 
-Orbeon logs everything to stdout, so you can access them with `docker logs my-mermeid`. Existdb writes most information into logfiles though, so in case you want to access them you should mount a host directory to `/exist/logs` like this:
+Orbeon logs everything to stdout, so you can access them with `docker logs my-mermeid`. eXist-db writes most information into logfiles though, so in case you want to access them you should mount a host directory to `/exist/logs` like this:
 ```
 $ docker run --name my-mermeid -p 8080:8080 -d --mount type=bind,source="$(pwd)/exist-logs",target=/exist/logs edirom/mermeid:develop-java11-ShenGC
 ```
+
+### Updating 
+
+#### Without a persistent data directory
+
+Without a persistent data directory you can simply pull the updated Docker image and run it as [described above](#start-a-mermeid-server-instance). 
+
+#### With a persistent data directory
+
+When you start an updated Docker image and mount your data directory to it as [described above](#persistent-data-volume), 
+only the base image including eXist-db and Orbeon will be updated but not the MerMEId app. 
+This needs to be done in a dedicated step via the eXist-db dashboard:
+  1. Download the latest MerMEId xar package from the assets section at https://github.com/Edirom/MerMEId/releases, e.g. `mermeid-2.0.0-alpha.7.xar`
+  2. Login as admin in the MerMEId or eXide app (needs to be done here due to a [bug in the eXist-db dashboard])
+  3. Open `http://localhost:8080/apps/dashboard/admin#/packagemanager` and drop the xar package in the blue section to upload and install it
+
 
 ## Building the docker image
 
@@ -138,3 +154,4 @@ docker build --build-arg EXISTDB_IMAGE=acdhch/existdb:5.2.0-java11-ShenGC --tag 
 Please note that this project is released with a [Contributor Code of Conduct][CODE_OF_CONDUCT]. By participating in this project you agree to abide by its terms.
 
 [CODE_OF_CONDUCT]: CODE_OF_CONDUCT.md
+[bug in the eXist-db dashboard]: https://github.com/eXist-db/dashboard/issues/73
