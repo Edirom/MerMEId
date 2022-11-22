@@ -119,18 +119,18 @@ If you just do the standard
 docker build --tag edirom/mermeid:latest .
 ```
 
-The [official exist-db](https://hub.docker.com/r/existdb/existdb) 5.2.0 container will be used as the base image but
+The [official exist-db](https://hub.docker.com/r/existdb/existdb) 6.0.1 container will be used as the base image but
 you can supply any image that is build using the same process instead. This is by running
 
 ```
 mvn -Pdocker -DskipTests clean package
 ```
 
-after checking out the particular version of exist 5.x to be built and changing the Dockerfile in
+after checking out the particular version of exist 6.x to be built and changing the Dockerfile in
 `exist-docker/src/main/resources-filtered/Dockerfile` as needed
 
 ```
-docker build --build-arg EXISTDB_IMAGE=acdhch/existdb:5.2.0-java11-ShenGC --tag edirom/mermeid:java11-ShenGC .
+docker build --build-arg EXISTDB_IMAGE=acdhch/existdb:6.0.1-java11-ShenGC --tag edirom/mermeid:java11-ShenGC .
 ```
 
 ## Code of Conduct
