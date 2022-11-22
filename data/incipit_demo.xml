@@ -380,7 +380,7 @@
                   </incip>
                   <creation xml:id="creation_a9b88e21"/>
                   <history xml:id="history_5b845292">
-                     <p>As MerMEId does not include a music notation editor, incipits encoded in MEI cannot be entered or edited directly in MerMEId. You can add MEI incipits, however, by uploading MEI files containing the encodings. When uploading an MEI file, MerMEId makes a copy of the first &amp;lt;score&amp;gt; element it encounters (whether in the file's header or in the &amp;lt;music&amp;gt; section) and inserts it as an incipit. If you need to make changes to the incipit, edit your MEI file and upload it again using MerMEId's 'Replace' button.</p>
+                     <p>As MerMEId does not include a music notation editor, incipits encoded in MEI cannot be entered or edited directly in MerMEId. You can add MEI incipits, however, by uploading MEI files containing the encodings. When uploading an MEI file, MerMEId makes a copy of the first 'score' element it encounters (whether in the file's header or in the 'music' section) and inserts it as an incipit. If you need to make changes to the incipit, edit your MEI file and upload it again using MerMEId's 'Replace' button.</p>
                   </history>
                   <perfMedium analog="marc:048" auth="marcmusperf" xml:id="perfMedium_5d276875"/>
                   <classification xml:id="classification_58460514">
