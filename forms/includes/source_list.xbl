@@ -539,7 +539,7 @@
             <xxf:dialog id="source_reference_dialog" appearance="full">
               <xf:label>External source description</xf:label>
               <xf:select1 ref="$temp/series" class="mediumshort">
-                <xf:label>Series:</xf:label>
+                <xf:label>Collection:</xf:label>
                 <xf:action ev:event="DOMActivate xforms-value-changed">
                   <xf:setvalue ref="$temp/page" value="1"/>
                   <xf:dispatch name="send-query" targetid="source_search"></xf:dispatch>
