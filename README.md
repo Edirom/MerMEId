@@ -109,7 +109,12 @@ Orbeon logs everything to stdout, so you can access them with `docker logs my-me
 $ docker run --name my-mermeid -p 8080:8080 -d --mount type=bind,source="$(pwd)/exist-logs",target=/exist/logs edirom/mermeid:develop-java11-ShenGC
 ```
 
-### Updating 
+### Updating
+
+A word of warning: It is always recommended to back up your data before 
+updating! eXist-db has [various ways to do a full or partial backup], at least 
+you should save the files from the `$data-dir` (defaults to 
+`/db/apps/mermeid-data`).
 
 #### Without a persistent data directory
 
@@ -155,3 +160,4 @@ Please note that this project is released with a [Contributor Code of Conduct][C
 
 [CODE_OF_CONDUCT]: CODE_OF_CONDUCT.md
 [bug in the eXist-db dashboard]: https://github.com/eXist-db/dashboard/issues/73
+[various ways to do a full or partial backup]: 
