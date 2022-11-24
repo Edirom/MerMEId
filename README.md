@@ -160,4 +160,4 @@ Please note that this project is released with a [Contributor Code of Conduct][C
 
 [CODE_OF_CONDUCT]: CODE_OF_CONDUCT.md
 [bug in the eXist-db dashboard]: https://github.com/eXist-db/dashboard/issues/73
-[various ways to do a full or partial backup]: 
+[various ways to do a full or partial backup]: https://exist-db.org/exist/apps/doc/backup
