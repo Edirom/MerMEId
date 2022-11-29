@@ -33,9 +33,17 @@ function closeModal() {
 function ajaxLogin(user, pass) {
     const xhttp = new XMLHttpRequest();
     let postBody;
+
+    // trigger page reload if login/logout via modal
+    const caller = arguments.callee.caller?.name;
+    const reload = caller === "closeModal" || caller === "showModal";
+
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             updateLoginInfo(JSON.parse(this.responseText));
+            if (reload) {
+                window.location.reload();
+            }
         }
     };
     if(user === "logout" && pass === "logout") {
