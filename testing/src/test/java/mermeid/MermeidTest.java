@@ -55,9 +55,10 @@ public class MermeidTest extends WebDriverSettings {
             modal.findElement(By.xpath(".//button[@type='submit']")).click();
 
             // check login name
-            wait.until(ExpectedConditions.textToBePresentInElement(loginTextElement, loginUser));
+            WebElement loginTextElementOnNewPage = wait.until(ExpectedConditions.elementToBeClickable(By.id("login-info")));
+            wait.until(ExpectedConditions.textToBePresentInElement(loginTextElementOnNewPage, loginUser));
             System.out.print("Function `enterLogin` log: new login name - ");
-            System.out.println(loginTextElement.getText());
+            System.out.println(loginTextElementOnNewPage.getText());
         } catch(org.openqa.selenium.TimeoutException e) {
             System.out.print("Function `enterLogin` log: ");
             System.out.println("Timed out waiting for element 'login-info'!");
