@@ -6,6 +6,7 @@ MerMEId
 [![Docker Testing](https://github.com/Edirom/MerMEId/actions/workflows/artifacts.yml/badge.svg)](https://github.com/Edirom/MerMEId/actions/workflows/artifacts.yml)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
 [![OpenSSF Best Practices](https://bestpractices.coreinfrastructure.org/projects/6926/badge)](https://bestpractices.coreinfrastructure.org/projects/6926)
+[![fair-software.eu](https://img.shields.io/badge/fair--software.eu-%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8B%20%20%E2%97%8F%20%20%E2%97%8F-yellow)](https://fair-software.eu)
 
 MerMEId is a system for the editing, handling, and (pre-)viewing of music
 metadata, based on the the [Music Encoding Initiative](http://www.music-encoding.org/) (MEI)  XML schema. 
