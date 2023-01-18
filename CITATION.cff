@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Lundberg"
+  given-names: "Sigfrid"
+- family-names: "Geertinger"
+  given-names: "Axel"
+- family-names: "Stadler"
+  given-names: "Peter"
+- family-names: "Siam"
+  given-names: "Omar"
+- family-names: "Jettka"
+  given-names: "Daniel"
+- family-names: "Wawilow"
+  given-names: "Anastasia"
+- family-names: "Richts-Matthaei"
+  given-names: "Kristina"
+title: "MerMEId"
+version: 2.0.0-alpha.8
+doi: 
+date-released: 2022-12-15
+url: "https://github.com/Edirom/MerMEId"
