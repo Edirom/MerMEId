@@ -35,8 +35,7 @@
         This will open a new document in the metadata editor.</p>
       <p><strong>Listing existing documents: </strong>Near the top of the documents list page, 
         a number of controls allow you to you choose which documents to list.
-        Use the first select box if you want to see only unpublished, modified or published documents. 
-        The second select box lets you filter documents by collection, 
+        A select box lets you filter documents by collection, 
         provided you have specified file collection information in your files. 
         You may also narrow the results using the keywords search.</p> 
       <p>Navigate through the result
@@ -58,33 +57,11 @@
         <li><strong>Rename file</strong>: Click the rename icon
           <img alt="Rename" src="../resources/images/rename.png" height="16" width="16"/> to rename a document.<br/>
           Please note that MerMEId does not update any references in other documents pointing to the renamed
-          one; in other words, links between documents are likely to be broken when renaming resources.<br/>
-          Only unpublished documents can be renamed to avoid orphaned (unreachable) documents in the
-          folder containing published documents. To rename a published document, unpublish it, rename, and
-          re-publish it. 
-        </li>
-        <li><strong>Publish file(s)</strong>: The color of the checkboxes indicates whether the document is <br/>
-          <img alt="Green" style="vertical-align:bottom;" title="published" 
-            src="../resources/images/checkbox_green.png" height="16" width="16"/> published and up to date, has been <br/>
-          <img alt="Yellow" style="vertical-align:bottom;" title="modified" 
-            src="../resources/images/checkbox_yellow.png" height="16" width="16"/> modified since last publication, or is <br/>
-          <img alt="Red" style="vertical-align:bottom;" title="unpublished" 
-            src="../resources/images/checkbox_red.png" height="16" width="16"/> unpublished.<br/>
-          To publish or unpublish documents, check the appropriate checkboxes and select the desired action from the 
-          publish menu activated by moving the cursor over the publish menu button
-          <img alt="Menu" src="../resources/images/menu.gif" height="16" width="16" style="vertical-align:bottom;"/>.<br/>
-          <strong>Publishing</strong> in this context simply means that MerMEId copies the file to a separate 
-          <a href="/storage/public/" target="_blank" title="Click to see the contents of your 'public' eXist collection">folder 
-            named 'public'</a> in your eXist database.
-            How documents placed in the public folder are further processed or made available to others is outside the scope
-            of MerMEId and entirely depends on what your system is set up to do with them.<br/>
-          <strong>Unpublishing</strong> means that MerMEId deletes the copy of the document from the public folder.
+          one; in other words, links between documents are likely to be broken when renaming resources. 
         </li>
         <li><strong>Delete file</strong>: Clicking the
           delete icon <img alt="Delete" src="../resources/images/remove.gif" height="12" width="12"/> will display a warning that
-          you are about to delete the selected document. Click 'OK' to delete, otherwise 'Cancel'. <br/>
-          Please note that only unpublished documents can be deleted. To delete a previously published document
-          you will need to unpublish it first to make sure it is deleted from the public folder as well.           
+          you are about to delete the selected document. Click 'OK' to delete, otherwise 'Cancel'.          
         </li>
       </ul>
       <h3><a name="editor" id="editor">The editor &#8211;
