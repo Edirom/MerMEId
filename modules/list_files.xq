@@ -98,7 +98,6 @@ declare function local:format-reference(
 	  <td class="tools loginRequired">{app:edit-form-reference($doc)}</td>
 	  <td class="tools loginRequired">{app:copy-document-reference($doc)}</td>
 	  <td class="tools loginRequired">{app:rename-document-reference($doc)}</td>
-	  <td class="tools loginRequired">{app:get-publication-reference($doc)}</td>
 	  <td class="tools loginRequired">{app:delete-document-reference($doc)}</td>
 	  <td nowrap="nowrap">{app:view-document-notes($doc)}</td>
 	</tr>
@@ -169,7 +168,6 @@ declare function local:format-reference(
 	    <table class="filter_block">
 	      <tr>
 		<td class="label">Filter by: &#160;</td>
-		<td class="label">Publication status</td>
 		<td class="label">Collection</td>
 		<td class="label">Search term <a class="help">?<span class="comment">Search terms may be combined using boolean operators. Wildcards allowed. 
                   Search is case insensitive (except for boolean operators, which must be uppercase) and will query the whole document.
@@ -203,25 +201,6 @@ declare function local:format-reference(
 	      </tr>
 	      <tr>
 		<td>&#160;</td>
-		<td>
-		  <form action="" method="get" id="status-selection">
-		    <input name="page" value="1" type="hidden"/>
-		    <select name="published_only" onchange="this.form.submit();">
-		      {
-  			for $alt in app:options()
-			  let $option :=
-			    if( $alt/@value eq session:get-attribute("published_only") ) then
-		               <option value="{$alt/@value/text()}" 
-			       selected="selected">
-				 {$alt/text()}
-			       </option>
-			    else
-			      $alt 
-			  return $option
-		      }
-		      </select> 
-		    </form>
-		</td>
 		<td>
 		  <form action="" method="get" id="collection-selection">
 		      <input name="page" value="1" type="hidden"/>
@@ -268,58 +247,6 @@ declare function local:format-reference(
             <th class="tools">Edit</th>
             <th class="tools">Copy</th>
             <th class="tools">Rename</th>
-            <th class="tools">	   
-              <form method="get" id="publish_form" action="./publish.xq" >
-                <div id="publish">
-                Publish 
-                <img src="../resources/images/menu.png" 
-                alt="Publishing menu" 
-                onmouseover="document.getElementById('publish_menu').style.visibility='visible'"
-                onmouseout="document.getElementById('publish_menu').style.visibility='hidden'"
-                style="vertical-align: text-top;"/>
-                <div class="popup" 
-                     id="publish_menu" 
-                     onmouseover="document.getElementById('publish_menu').style.visibility='visible'"
-                     onmouseout="document.getElementById('publish_menu').style.visibility='hidden'">
-               
-                  <button 
-                     type="submit" 
-                     onclick="document.getElementById('publishingaction').value='publish';">
-                    <img src="../resources/images/publish.png" alt="Publish"/>
-                    Publish selected files
-		  </button>
-                  <br/>
-                  <button 
-                     type="submit"
-                     onclick="document.getElementById('publishingaction').value='retract';">
-                    <img src="../resources/images/unpublish.png" alt="Unpublish"/>
-                    Unpublish selected files
-		  </button>
-                                   
-               	  <input name="publishing_action" 
-               	         type="hidden"
-                         value="publish" 
-                         id="publishingaction" />
-                  <hr/>
-                               
-                  <button type="button"
-                          onclick="check_all();">
-                    <img src="../resources/images/check_all.png" alt="Check all" title="Check all"/>
-                    Select all files
-		  </button>
-                  <br/>
-                  <button type="button"
-                          onclick="un_check_all();">
-                    <img src="../resources/images/uncheck_all.png" 
-		         alt="Uncheck all" 
-			 title="Uncheck all"/>
-                         Unselect all files
-		  </button>
-                </div>
-                </div>
-              </form>
-           	   
-            </th>
             <th class="tools">Delete</th>
             <th>Notes</th>
           </tr>

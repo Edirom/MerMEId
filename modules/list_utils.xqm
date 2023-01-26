@@ -17,48 +17,6 @@ declare namespace xdb="http://exist-db.org/xquery/xmldb";
 declare namespace html="http://www.w3.org/1999/xhtml";
 
 
-declare function app:options() as node()*
-{ 
-let $options:= 
-  (
-  <option value="">All documents</option>,
-  <option value="published">Published</option>,
-  <option value="modified">Modified</option>,
-  <option value="unpublished">Unpublished</option>)
-
-  return $options
-};
-
-
-declare function app:get-publication-reference($doc as node()) as element(html:form) {
-    let $doc-name:= util:document-name($doc)
-    let $color_style := 
-        if(doc-available(concat($config:data-public-root,'/',$doc-name))) 
-        then (
-            let $dcmtime := xs:dateTime(xdb:last-modified($config:data-root, $doc-name))
-            let $pubtime := xs:dateTime(xdb:last-modified($config:data-public-root, $doc-name))
-            return
-                if($dcmtime lt $pubtime) 
-                then "publishedIsGreen"
-                else "pendingIsYellow"
-        )
-        else "unpublishedIsRed"
-    return
-        <form id="formsourcediv{$doc-name}" action="" method="post" 
-            style="display:inline;" xmlns="http://www.w3.org/1999/xhtml">
-            <div id="sourcediv{$doc-name}" style="display:inline;">
-                <input id="source{$doc-name}" type="hidden" 
-                    value="publish" name="dcm/{$doc-name}" title="file name"/>
-                <label class="{$color_style}" for='checkbox{$doc-name}'>
-                    <input id='checkbox{$doc-name}' 
-                        onclick="add_publish('sourcediv{$doc-name}', 'source{$doc-name}', 'checkbox{$doc-name}');" 
-                        type="checkbox" name="button" value="" title="publish"/>
-                </label>
-            </div>
-        </form>
-};
-
-
 declare function app:view-document-notes($doc as node()) as element() {
     let $note := $doc//m:fileDesc/m:notesStmt/m:annot[@type='private_notes']/string()
     return
