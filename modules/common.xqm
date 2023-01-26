@@ -151,8 +151,10 @@ declare function common:add-change-entry-to-revisionDesc-in-document($document a
  : @param $desc a description of the change
  : @return the modified input node 
  :)
-declare function common:add-change-entry-to-revisionDesc-in-memory($node as node(), 
-    $user as xs:string, $desc as xs:string) as node() {
+declare function common:add-change-entry-to-revisionDesc-in-memory($nodes as node()*, 
+    $user as xs:string, $desc as xs:string) as node()* {
+      for $node in $nodes
+      return
         typeswitch($node)
         case $elem as element(mei:revisionDesc) return
             element { node-name($elem) } {
@@ -171,7 +173,7 @@ declare function common:add-change-entry-to-revisionDesc-in-memory($node as node
             element { node-name($elem) } {
                 $elem/@*, for $child in $elem/node() return common:add-change-entry-to-revisionDesc-in-memory($child, $user, $desc)
             }
-        case document-node() return common:add-change-entry-to-revisionDesc-in-memory($node/node(), $user, $desc)
+        case document-node() return document { common:add-change-entry-to-revisionDesc-in-memory($node/node(), $user, $desc) }
         default return $node
 };
 
@@ -269,24 +271,26 @@ declare function common:set-mei-title-in-document($doc as document-node(), $new_
  : @param $new_title the new title 
  : @return the modified input node 
  :)
-declare function common:set-mei-title-in-memory($node as node(), $new_title as xs:string) as node() {
-    typeswitch($node)
-    case $elem as element(mei:title) return
-        if(not($elem/preceding-sibling::mei:title) and $elem/parent::mei:work[1] and $elem/ancestor::mei:workList)
-        then 
-            element { node-name($elem) } {
-                $elem/@*, $new_title
-            }
-        else 
-            element { node-name($elem) } {
-                $elem/@*, for $child in $elem/node() return common:set-mei-title-in-memory($child, $new_title)
-            }
-    case $elem as element() return
-        element { node-name($elem) } {
-            $elem/@*, for $child in $elem/node() return common:set-mei-title-in-memory($child, $new_title)
-        }
-    case document-node() return common:set-mei-title-in-memory($node/node(), $new_title)
-    default return $node
+declare function common:set-mei-title-in-memory($nodes as node()*, $new_title as xs:string) as node()* {
+    for $node in $nodes
+    return
+      typeswitch($node)
+      case $elem as element(mei:title) return
+          if(not($elem/preceding-sibling::mei:title) and $elem/parent::mei:work[1] and $elem/ancestor::mei:workList)
+          then 
+              element { node-name($elem) } {
+                  $elem/@*, $new_title
+              }
+          else 
+              element { node-name($elem) } {
+                  $elem/@*, for $child in $elem/node() return common:set-mei-title-in-memory($child, $new_title)
+              }
+      case $elem as element() return
+          element { node-name($elem) } {
+              $elem/@*, for $child in $elem/node() return common:set-mei-title-in-memory($child, $new_title)
+          }
+      case document-node() return document { common:set-mei-title-in-memory($node/node(), $new_title) }
+      default return $node
 };
 
 (:~
