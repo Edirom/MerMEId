@@ -1655,17 +1655,20 @@
 						<xsl:choose>
 							<xsl:when test="m:head='Reviews' and $no_of_refs = 1">
 								<br/>
-                                <xsl:value-of select="$l/review"/>: </xsl:when>
+								<xsl:value-of select="$l/review"/>: </xsl:when>
 							<xsl:otherwise>
 								<br/>
-                                <xsl:value-of select="m:head"/>: </xsl:otherwise>
+								<xsl:value-of select="m:head"/>: </xsl:otherwise>
 						</xsl:choose>
-						<xsl:for-each select="m:bibl[m:title/text()]">
-							<xsl:apply-templates select=".">
-								<xsl:with-param name="compact" select="'true'"/>
-							</xsl:apply-templates>
-                            <xsl:text> </xsl:text>
-						</xsl:for-each>
+						<ul class="biblList">
+							<xsl:for-each select="m:bibl[m:title/text()]">
+								<li>
+									<xsl:apply-templates select=".">
+										<xsl:with-param name="compact" select="'true'"/>
+									</xsl:apply-templates>
+								</li>
+							</xsl:for-each>
+						</ul>
 					</xsl:if>
 				</xsl:for-each>
 

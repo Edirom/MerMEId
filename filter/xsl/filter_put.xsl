@@ -133,6 +133,9 @@
   <xsl:template match="m:rend[not(* or .//text())]"/>
   <xsl:template match="m:mei/m:meiHead//m:score[not(*)]"/>
   <xsl:template match="m:titlePage[not(*)]"/>
+  <xsl:template match="m:author[not(node())][parent::m:bibl]"/>
+  <xsl:template match="m:editor[not(node())][parent::m:bibl]"/>
+  <xsl:template match="m:biblScope[not(node())][parent::m:bibl]"/>
   
   
   <!-- Delete duplicate language definitions (fixes an xforms problem) -->
