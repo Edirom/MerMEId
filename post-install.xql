@@ -1,4 +1,4 @@
-xquery version "1.0";
+xquery version "3.1";
 
 import module namespace xdb="http://exist-db.org/xquery/xmldb";
 import module namespace util="http://exist-db.org/xquery/util";
@@ -34,10 +34,19 @@ declare function local:set-admin-password() as empty-sequence() {
     return
         
         if($opt = 'MERMEID_admin_password_file') then 
-            if(file:exists(string(environment-variable($opt)))) then sm:passwd('admin', normalize-space(file:read(normalize-space(environment-variable($opt)))))
+            if(file:exists(string(environment-variable($opt))))
+            then
+                try { sm:passwd('admin', normalize-space(file:read(normalize-space(environment-variable($opt))))) }
+                catch java:org.exist.config.ConfigurationException { util:log-system-out('encountered known error: https://github.com/eXist-db/exist/issues/4722') }
+                catch * { util:log-system-out('encountered unknown error (' || $err:code || '): ' || $err:description) }
             else util:log-system-out(concat('unable to read from file "', normalize-space(environment-variable($opt)), '"'))
-        else if($opt = 'MERMEID_admin_password') then sm:passwd('admin', string(environment-variable($opt)))
-        else ()
+        else
+            if($opt = 'MERMEID_admin_password')
+            then
+                try { sm:passwd('admin', string(environment-variable($opt))) }
+                catch java:org.exist.config.ConfigurationException { util:log-system-out('encountered known error: https://github.com/eXist-db/exist/issues/4722') }
+                catch * { util:log-system-out('encountered unknown error (' || $err:code || '): ' || $err:description) }
+            else ()
 };
 
 declare function local:first-run() as xs:boolean {
