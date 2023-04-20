@@ -284,6 +284,26 @@
 
 			<xf:group ref="instance('data-instance')/m:meiHead/m:workList/m:work">
 				<h:fieldset>
+					<h:legend>Language <h:a class="help"> ?<h:span class="comment">The langUsage element is used within the workList element to describe the languages, sublanguages, dialects, etc. represented within a work.<h:br/> It contains one or more language elements, each of which provides information about a single language.</h:span>
+					</h:a>
+					</h:legend>
+					<dcm:create nodeset="m:langUsage" label="Add language" origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:langUsage"/>
+					
+					<dcm:create ref="m:langUsage" nodeset="m:language" label="Add language" origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:langUsage/m:language"/>
+					
+					<xf:repeat nodeset="instance('data-instance')/m:meiHead/m:workList/m:work/m:langUsage/m:language" id="work-lang-repeat">
+						<h:div>
+							<h:span>Language </h:span>  
+							<xi:include href="includes/input_with_xmllang.xml" parse="xml"/>
+							<dcm:element-buttons triggers="add remove up down" nodeset="m:language" index="work-lang-repeat" origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:langUsage/m:language"/>
+							<dcm:attribute-editor ref="."/>
+						</h:div>
+					</xf:repeat>
+				</h:fieldset>
+			</xf:group>
+
+			<xf:group ref="instance('data-instance')/m:meiHead/m:workList/m:work">
+				<h:fieldset>
 					<h:legend>Relations <h:a class="help">&#160;?<h:span class="comment">Relations
 								between this work and other works or files may be specified here to
 								create links between them.<h:br/> For instance, if this work is also
