@@ -130,22 +130,29 @@
                                 <h:div class="blocklabel strong">Contributors</h:div>
                                 <xi:include href="includes/person-input.xml"/>
                             </h:div>
+                    <h:br clear="all"/>
+                    <h:div class="blocklabel strong">Description <h:a class="help"> ?<h:span class="comment">
+                        An optional description of the event, e.g. "First performance in Denmark".</h:span>
+                    </h:a>
+                        <dcm:create nodeset="m:desc" label="Add description" origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:history/m:eventList[@type='performances']/m:event/m:desc"/>
+                        <xf:repeat nodeset="m:desc" id="performance-desc-repeat">
+                            <h:div class="vertical_spacer"/>
+                            <xf:input ref="@label" class="maxlong">
+                                <xf:label>
+                                    <h:span class="blocklabel">Label <h:a class="help"> ?<h:span class="comment">An optional label
+                                        for this block of text</h:span>
+                                    </h:a>
+                                    </h:span>
+                                </xf:label>
+                            </xf:input>
+                              <dcm:element-buttons triggers="up down add remove" nodeset="m:desc" index="performance-desc-repeat" origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:history/m:eventList[@type='performances']/m:event/m:desc"/>
+                            <dcm:id/>
+                            <dcm:attribute-editor/>
                             <h:br clear="all"/>
-                            <h:div class="blocklabel strong">Description <h:a class="help">&#160;?<h:span class="comment">
-                                An optional description of the event, e.g. "First performance in Denmark".</h:span></h:a></h:div>
-                            <dcm:create
-                                nodeset="m:desc"
-                                label="Add description"
-                                origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:history/m:eventList[@type='performances']/m:event/m:desc"/>
-                            <xf:repeat nodeset="m:desc" id="performance-desc-repeat">
-                                <h:div>
-                                    <fr:tinymce ref="."/>	
-                                    <dcm:element-buttons triggers="remove" nodeset="m:desc" index="performance-desc-repeat"
-                                        origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:history/m:eventList[@type='performances']/m:event/m:desc"/>
-                                    <dcm:attribute-editor/>
-                                </h:div>
-                            </xf:repeat>
-                            <h:br clear="all"/>
+                            <fr:tinymce ref="."/>
+                            <h:div class="vertical_spacer"/>
+                        </xf:repeat></h:div>
+                    <h:br clear="all"/>
                             <!-- single evidence reference using the event's "evidence" attribute (disabled)
                                 <xf:select1 ref="@evidence" class="maxlong">
                                 <xf:label class="fixed_width">Evidence <h:a class="help">&#160;?<h:span class="comment">Pointer to a bibliographic 
