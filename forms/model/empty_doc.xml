@@ -256,7 +256,10 @@
                   <perfDuration/>
                   <extent unit=""/>
                   <notesStmt>
-                     <annot/>
+                     <annot type="links">
+                        <ptr target="" mimetype="" label=""/>
+                     </annot>
+                     <annot type="version_description" label=""/>
                   </notesStmt>
                   <classification>
                      <termList>
