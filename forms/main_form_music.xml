@@ -258,6 +258,71 @@
 					</h:fieldset>
 					
 					
+					<!-- Version information -->
+					<h:fieldset>
+						<h:legend>Version information</h:legend>
+						<h:div class="vertical_spacer"/>
+						<dcm:create nodeset="m:notesStmt" label="Add version description" origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:expressionList/m:expression/m:notesStmt"/>
+						<xf:group ref="m:notesStmt">
+							<dcm:create nodeset="m:annot[@type='version_description']" label="Add version description" origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:notesStmt/m:annot[@type='version_description']"/>
+							<xf:group ref="m:annot[@type='version_description']">
+								<h:div class="blocklabel">Version description <h:a class="help"> ?<h:span class="comment">A description that refers to this specific version of the work</h:span>
+								</h:a>
+								</h:div>
+							</xf:group>
+							<xf:repeat nodeset="m:annot[@type='version_description']" id="repeat_version_description">
+								<xf:input ref="@label" class="maxlong">
+									<xf:label>
+										<h:span class="blocklabel">Label <h:a class="help"> ?<h:span class="comment">An optional label
+											for this block of text</h:span>
+										</h:a>
+										</h:span>
+									</xf:label>
+								</xf:input>  <dcm:element-buttons-typed triggers="add up down remove" index="repeat_version_description" nodeset="m:annot[@type='version_description']" origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:expressionList/m:expression/m:notesStmt/m:annot[@type='version_description']"/>
+								<dcm:id/>
+								<dcm:attribute-editor/>
+								<fr:tinymce ref="."/>
+								<h:hr/>
+							</xf:repeat>
+							
+							<h:div class="blocklabel">Links <h:a class="help"> ?<h:span class="comment">Links to external resources (web pages, PDF
+								files etc.) related to the version in general - not about a
+								particular source.									
+							</h:span>
+							</h:a>
+							</h:div>
+							<dcm:create nodeset="m:annot[@type='links']" label="Add link" origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:expressionList/m:expression/m:notesStmt/m:annot[@type='links']"/>
+							<dcm:create ref="m:annot[@type='links']" nodeset="m:ptr" label="Add link" origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:expressionList/m:expression/m:notesStmt/m:annot[@type='links']/m:ptr"/>
+							<xf:group ref="m:annot[@type='links']">
+								<xf:repeat nodeset="m:ptr" id="version-notesstmt-annot-repeat-ptr">
+									<h:div>
+										<xf:input ref="@target" class="long">
+											<xf:label>URI <h:a class="help"> ?<h:span class="comment">Link to the resource, e.g.
+												'http://example.com/preface.pdf'<br/>
+												MerMEId interprets references without the 'http://' protocol as links to other MEI files
+												in the same database as this one; for instance, 'sonata.xml' will be resolved as a link to 
+												a file of that name in the same folder in the database, 
+												whereas 'http://example.com/sonata.xml' generates a
+												link to an external web resource.
+											</h:span>
+											</h:a>
+											</xf:label>
+										</xf:input>
+										<xf:input ref="@label">
+											<xf:label>Label <h:a class="help"> ?<h:span class="comment">A short, descriptive text which
+												may serve as the link text, e.g. 'Printed edition's preface'</h:span>
+											</h:a>
+											</xf:label>
+										</xf:input>
+										<dcm:element-buttons triggers="up down copy add remove" nodeset="m:ptr" index="version-notesstmt-annot-repeat-ptr" origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:expressionList/m:expression/m:notesStmt/m:annot[@type='links']/m:ptr"/>
+										<dcm:attribute-editor ref="."/>
+									</h:div>
+								</xf:repeat>
+							</xf:group>
+						</xf:group>
+					</h:fieldset>
+					
+														
 					<!-- Relations -->
 					<h:fieldset>
 						<h:legend>Relations <h:a class="help">&#160;?<h:span class="comment">Relations between this version and 
