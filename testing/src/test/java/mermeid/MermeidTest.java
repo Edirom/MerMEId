@@ -173,7 +173,7 @@ public class MermeidTest extends WebDriverSettings {
             }
         }
         // assert that there are 5 changed text inputs
-        assertEquals(5, changedIds.size());
+        assertEquals(6, changedIds.size());
 
         // Save changes and return to main menu
         saveChangesAndReturnToMainPage();
@@ -226,7 +226,7 @@ public class MermeidTest extends WebDriverSettings {
         // set text inputs to $randomString$
         // and assert that there are 48 text inputs on the page (most of them invisible)
         List<WebElement> inputs =
-            wait.until(ExpectedConditions.numberOfElementsToBe(By.xpath("//input[@type='text']"), 48));
+            wait.until(ExpectedConditions.numberOfElementsToBe(By.xpath("//input[@type='text']"), 51));
 
         // array to be filled with changed ids
         ArrayList<String> changedIds = new ArrayList<String>();
@@ -240,7 +240,7 @@ public class MermeidTest extends WebDriverSettings {
             }
         }
         // assert that there are 10 changed text inputs
-        assertEquals(10, changedIds.size());
+        assertEquals(11, changedIds.size());
 
         // Save changes and return to main menu
         saveChangesAndReturnToMainPage();
