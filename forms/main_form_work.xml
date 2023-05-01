@@ -94,6 +94,25 @@
 						</h:div>
 					</xf:repeat>
 
+					<xf:group ref=".[m:title[@type='varying_title']]">
+						<h:div class="blocklabel">Varying title <h:a class="help">&#160;?<h:span
+							class="comment">A varying title is a title associated with a resource
+							that is different from the title recorded as the main title, a parallel
+							title, title supplements, parallel title supplements, earlier main titles,
+							later main titles, key titles, or short titles.</h:span></h:a>
+						</h:div>
+					</xf:group>
+					<xf:repeat nodeset="m:title[@type='varying_title']" id="varying_title"
+						class="input_group">
+						<h:div>
+							<xi:include href="includes/input_with_xmllang.xml" parse="xml"/>&#160;
+							<dcm:element-buttons-typed triggers="up down move copy add remove"
+								nodeset="m:title[@type='varying_title']" index="varying_title"
+								origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:title[@type='varying_title']"/>
+							<dcm:attribute-editor ref="."/>
+						</h:div>
+					</xf:repeat>
+
 					<xf:group ref=".[m:title[@type='text_source']]">
 						<h:div class="blocklabel">Text source <h:a class="help">&#160;?<h:span
 									class="comment">The title of a textual source for a sung or
@@ -112,12 +131,31 @@
 					</xf:repeat>
 
 
+					<xf:group ref=".[m:title[@type='other']]">
+						<h:div class="blocklabel">Other <h:a class="help">&#160;?<h:span
+							class="comment">A title that cannot be described by the usual type attributes.</h:span></h:a>
+						</h:div>
+					</xf:group>
+					<xf:repeat nodeset="m:title[@type='other']" id="other"
+						class="input_group">
+						<h:div>
+							<xi:include href="includes/input_with_xmllang.xml" parse="xml"/>&#160;
+								<dcm:element-buttons-typed triggers="up down move copy add remove"
+								nodeset="m:title[@type='other']" index="other"
+								origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:title[@type='other']"/>
+							<dcm:attribute-editor ref="."/>
+						</h:div>
+					</xf:repeat>
+
+
 					<xf:group
 						ref=".[not(m:title[@type='alternative'] 
 			 and m:title[@type='subordinate'] 
 			 and	m:title[@type='uniform'] 
 			 and	m:title[@type='original'] 
-			 and	m:title[@type='text_source'])]">
+			 and	m:title[@type='varying_title']
+			 and	m:title[@type='text_source']
+			 and	m:title[@type='other'])]">
 						<h:div class="vertical_spacer"/>
 						<h:a class="popup"><h:img
 								src="{instance('parameters')/dcm:server_name}editor/images/add.gif"
@@ -148,9 +186,21 @@
 										/>
 									</h:div>
 									<h:div>
+										<dcm:create nodeset="m:title[@type='varying_title']"
+											label="Add varying title"
+											origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:title[@type='varying_title']"
+										/>
+									</h:div>
+									<h:div>
 										<dcm:create nodeset="m:title[@type='text_source']"
 											label="Add title of text source"
 											origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:title[@type='text_source']"
+										/>
+									</h:div>
+								<h:div>
+										<dcm:create nodeset="m:title[@type='other']"
+											label="Add other title"
+											origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:title[@type='other']"
 										/>
 									</h:div>
 								</h:div>
