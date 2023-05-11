@@ -31,8 +31,8 @@
 						class="input_group">
 						<h:div>
 							<xi:include href="includes/input_with_xmllang.xml" parse="xml"/>&#160;
-								<dcm:element-buttons-typed triggers="all"
-								nodeset="m:title[@type='main' or not(@type) or @type='']" index="main_titles"
+							<dcm:element-buttons-typed triggers="up down move copy"
+								nodeset="m:title[not(@type) or @type='main' or @type='']" index="main_titles"
 								origin="instance('empty-instance')/m:meiHead/m:workList/m:work/m:title[not(@type)]"/>
 							<dcm:attribute-editor ref="."/>
 						</h:div>
