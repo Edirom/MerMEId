@@ -4,14 +4,14 @@
 # 2. run the eXist-db
 #########################
 ARG EXISTDB_IMAGE=existdb/existdb:6.0.1
-FROM openjdk:8-jdk as builder
+FROM eclipse-temurin:8-jdk as builder
 LABEL maintainer="Peter Stadler,Omar Siam"
 
 ENV BUILD_HOME="/opt/builder"
 
 # installing Apache Ant
-RUN apt-get install -y --no-install-recommends apt-transport-https \
-    && apt-get update \
+RUN apt-get update \
+    && apt-get -y dist-upgrade \
     && apt-get install -y --no-install-recommends ant curl zip unzip patch git
 
 # Get and setup orbeon
