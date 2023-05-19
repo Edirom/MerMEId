@@ -11,7 +11,6 @@ ENV BUILD_HOME="/opt/builder"
 
 # installing Apache Ant
 RUN apt-get update \
-    && apt-get -y dist-upgrade \
     && apt-get install -y --no-install-recommends ant curl zip unzip patch git
 
 # Get and setup orbeon
