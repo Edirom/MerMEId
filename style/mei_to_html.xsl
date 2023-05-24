@@ -116,11 +116,14 @@
     	  </xsl:text>
 		</script>
 		
-		<!-- Include the Verovio toolkit for displaying incipits or score if needed. Use 'latest' or 'develop' -->
+		<!-- 
+			Include the Verovio toolkit for displaying incipits or score if needed.
+			see https://github.com/Edirom/MerMEId/issues/159 and 
+			https://book.verovio.org/installing-or-building-from-sources/javascript-and-webassembly.html
+		-->
 		<xsl:if test="m:meiHead/m:workList/m:work//m:incip/m:score/* or m:music//m:score/* or normalize-space(//m:incipCode[@form='pae' or @form='PAE' or @form='plaineAndEasie'])">
-			<script src="http://www.verovio.org/javascript/develop/verovio-toolkit.js" type="text/javascript">
-		    	<xsl:text>
-	    		</xsl:text>
+			<script src="https://www.verovio.org/javascript/latest/verovio-toolkit.js" type="text/javascript">
+				<xsl:text> </xsl:text>
 			</script>
 			<script type="text/javascript">
 				/* Create the Verovio toolkit instance */
