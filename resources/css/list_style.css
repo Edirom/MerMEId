@@ -1,3 +1,7 @@
+/*
+ * Main CSS file used in various places
+ */
+@import url(footer.css);
 body {   
     font-size: .8em;
     font-family: arial, helvetica, sans-serif;
@@ -30,38 +34,6 @@ div.files_list {
 div.nav_bar {
     border: none;
 }
-
-div.footer, p.footer {
-    margin: 0 -20px 20px -20px;
-    padding: 10px 20px;
-}
-
-.footer, .footer a:link, .footer a:visited, .footer a:active {
-    color: #ccc;
-}
-
-div.footer .version {
-    margin-top: 12px;
-    float:right;
-}
-
-div.footer div.dev{
-    margin-top: 10px;
-}
-
-div.footer img{
-    vertical-align: middle;
-    margin-left: 10px;
-}
-
-div.footer #dcm-logo{
-    height:30px;
-}
-
-div.footer #github-contributors{
-    height: 23px;
-}
-    
 
 h2 {
     margin-bottom: 0;
