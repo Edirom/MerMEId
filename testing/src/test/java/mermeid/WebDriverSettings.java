@@ -12,8 +12,8 @@ public class WebDriverSettings {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--no-sandbox");
-        //options.addArguments("--disable-dev-shm-usage");
-      //  options.addArguments("--headless");
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--headless");
         driver = new ChromeDriver(options);
         driver.navigate().to("http://localhost:8080/index.html");
         driver.manage().window().maximize();
