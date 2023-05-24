@@ -32,3 +32,17 @@ div.footer #dcm-logo{
 div.footer #github-contributors{
     height: 23px;
 }
+
+.footer .nav {
+    text-align:center;
+}
+
+.footer .nav ul {
+    padding:0;
+}
+
+.footer .nav li {
+    list-style-type:none;
+    margin: 0 2em;
+    display:inline;
+}
