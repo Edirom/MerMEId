@@ -23,7 +23,7 @@ public class HTMLRenderingTest extends WebDriverSettings{
     @Order(1)
     public void checkHTMLRendering(){
         System.out.println("***********************************");
-        System.out.println("* Test 4: `checkHTMLRendering` *");
+        System.out.println("* Test: `checkHTMLRendering` *");
         System.out.println("***********************************");
 
         String randomString = Common.generatingRandomAlphabeticString();

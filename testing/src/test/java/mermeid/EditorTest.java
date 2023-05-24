@@ -28,7 +28,7 @@ public class EditorTest extends WebDriverSettings {
     @Order(1)
     public void OpenEditPage(){
         System.out.println("**************************");
-        System.out.println("* Test 1: `OpenEditPage` *");
+        System.out.println("* Test: `OpenEditPage` *");
         System.out.println("**************************");
 
         String title = driver.getTitle();
@@ -60,7 +60,7 @@ public class EditorTest extends WebDriverSettings {
     @Order(2)
     public void checkWorkTabInputText(){
         System.out.println("***********************************");
-        System.out.println("* Test 2: `checkWorkTabInputText` *");
+        System.out.println("* Test: `checkWorkTabInputText` *");
         System.out.println("***********************************");
 
         String randomString = Common.generatingRandomAlphabeticString();
@@ -109,7 +109,7 @@ public class EditorTest extends WebDriverSettings {
     @Order(3)
     public void checkWorkTabPopupInputText(){
         System.out.println("****************************************");
-        System.out.println("* Test 3: `checkWorkTabPopupInputText` *");
+        System.out.println("* Test: `checkWorkTabPopupInputText` *");
         System.out.println("****************************************");
 
         String randomString = Common.generatingRandomAlphabeticString();
