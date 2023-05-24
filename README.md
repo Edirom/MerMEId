@@ -156,11 +156,11 @@ after checking out the particular version of exist 6.x to be built and changing 
 docker build --build-arg EXISTDB_IMAGE=acdhch/existdb:6.0.1-java11-ShenGC --tag edirom/mermeid:java11-ShenGC .
 ```
 
-## Legal notes
+## Running MerMEId in production
 
-The MerMEId software and source code are licensed under the [Apache License 2.0](https://github.com/Edirom/MerMEId/blob/main/LICENSE). Please be aware of its implications.
+When you run MerMEId on a production system and make it accessible from a public website, like with any other website please be advised to include an imprint page and a privacy policy that adheres to your applicable jurisdiction. Links to respective pages could for instance be included in the footer which can be configured in the ./properties.xml 
 
-When you run MerMEId in production and make it accessible from a public website, like with any other website please be advised to include an imprint page and a privacy policy that adheres to your applicable jurisdiction.
+In addition, here you can find information about running eXist-db on a production system: [eXist-db documentation](http://exist-db.org/exist/apps/doc/).
 
 ## Code of Conduct
 
