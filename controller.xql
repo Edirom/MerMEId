@@ -21,6 +21,12 @@ else if ($exist:path eq "/") then
         <redirect url="index.html"/>
     </dispatch>
 
+else if ($exist:path eq "/index.html") then
+    (: forward root path to index.xql :)
+    <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
+        <forward url="{$exist:controller}/modules/list_files.xq"/>
+    </dispatch>
+
 else if (contains($exist:path, "/orbeon/")) then
     <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
         <cache-control cache="yes"/>
