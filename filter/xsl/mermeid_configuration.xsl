@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
     xmlns:dcm="http://www.kb.dk/dcm"
     xmlns:xf="http://www.w3.org/2002/xforms"
-    version="2.0">
+    version="3.0">
     
     <xsl:param name="xslt.resources-endpoint"/>
     
@@ -10,6 +10,7 @@
     <xsl:param name="xslt.exist-endpoint-seen-from-orbeon"/>
     <xsl:param name="xslt.server-name"/>
     <xsl:param name="xslt.document-root"/>
+    <xsl:param name="xslt.footer"/>
     
     <xsl:variable name="xforms-parameters" as="element(dcm:parameters)">
         <parameters xmlns="http://www.kb.dk/dcm">
@@ -48,6 +49,9 @@
             <!-- Enable code inspector component? -->
             <code_inspector_main_switch>true</code_inspector_main_switch>
             
+            <footer>
+                <xsl:value-of select="$xslt.footer"/>
+            </footer>
             
             <!-- Some elements used internally by XForms - not for user configuration -->
             <xml_file/>
