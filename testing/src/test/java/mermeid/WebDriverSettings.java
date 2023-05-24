@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import java.util.concurrent.TimeUnit;
 
 public class WebDriverSettings {
-    public ChromeDriver driver;
+    public static ChromeDriver driver;
     @BeforeEach
     public void setUp(){
         WebDriverManager.chromedriver().setup();
