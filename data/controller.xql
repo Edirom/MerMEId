@@ -190,7 +190,10 @@ else if($exist:path = '/create' and request:get-method() eq 'POST') then
     let $change-message := 'file created with MerMEId'
     let $template :=
         if(doc-available($templatepath))
-        then doc($templatepath) => common:set-mei-title-in-memory($title) => common:add-change-entry-to-revisionDesc-in-memory($username, $change-message)
+        then doc($templatepath) => 
+            common:set-mei-title-in-memory($title) => 
+            common:add-change-entry-to-revisionDesc-in-memory($username, $change-message) =>
+            common:set-mermeid-version-info-in-memory()
         else ()
     let $filename := request:get-parameter('filename', common:mermeid-id('file') || '.xml')
     let $overwrite := local:overwrite()

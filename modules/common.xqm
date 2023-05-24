@@ -302,3 +302,35 @@ declare function common:set-mei-title-in-memory($nodes as node()*, $new_title as
 declare function common:get-current-username() as xs:string? {
     sm:id()//sm:real/sm:username => data()
 };
+
+(:~
+ : Set/Update the MerMEId version within an MEI document in memory.
+ : NB, this will _not_ modify any existing document in the database! 
+ :
+ : @param $node the input MEI document as node() or document-node()
+ : @param $new_title the new title 
+ : @return the modified input node 
+ :)
+declare function common:set-mermeid-version-info-in-memory($nodes as node()*) as node()* {
+    for $node in $nodes
+    return
+      typeswitch($node)
+      case $elem as element(mei:application) return
+          if($elem/mei:name ='MerMEId')
+          then 
+              element { node-name($elem) } {
+                  attribute version {$config:version},
+                  $elem/@* except $elem/@version,
+                  for $child in $elem/node() return common:set-mermeid-version-info-in-memory($child)
+              }
+          else 
+              element { node-name($elem) } {
+                  $elem/@*, for $child in $elem/node() return common:set-mermeid-version-info-in-memory($child)
+              }
+      case $elem as element() return
+          element { node-name($elem) } {
+              $elem/@*, for $child in $elem/node() return common:set-mermeid-version-info-in-memory($child)
+          }
+      case document-node() return document { common:set-mermeid-version-info-in-memory($node/node()) }
+      default return $node
+};
