@@ -156,6 +156,12 @@ after checking out the particular version of exist 6.x to be built and changing 
 docker build --build-arg EXISTDB_IMAGE=acdhch/existdb:6.0.1-java11-ShenGC --tag edirom/mermeid:java11-ShenGC .
 ```
 
+## Running MerMEId in production
+
+When you run MerMEId on a production system and make it accessible from a public website, like with any other website please be advised to include an imprint page and a privacy policy that adheres to your applicable jurisdiction. Links to respective pages could for instance be included in the footer which can be configured in the ./properties.xml 
+
+In addition, here you can find information about running eXist-db on a production system: [eXist-db documentation](http://exist-db.org/exist/apps/doc/).
+
 ## Code of Conduct
 
 Please note that this project is released with a [Contributor Code of Conduct][CODE_OF_CONDUCT]. By participating in this project you agree to abide by its terms.
