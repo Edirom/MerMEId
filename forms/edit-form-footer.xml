@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<h:span xmlns:h="http://www.w3.org/1999/xhtml" 
+<h:div xmlns:h="http://www.w3.org/1999/xhtml" 
     xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xf="http://www.w3.org/2002/xforms" 
     xmlns:xxf="http://orbeon.org/oxf/xml/xforms"
@@ -7,68 +7,9 @@
     xmlns:m="http://www.music-encoding.org/ns/mei"
     xmlns:dcm="http://www.kb.dk/dcm">
 
-    <!--  Footer   -->         
-              
-    <h:div class="logo">
-        <xf:trigger appearance="minimal">
-            <xf:label>
-                <h:img alt="MerMEId - logo" 
-                    title="About MerMEId" 
-                    src="{instance('parameters')/dcm:server_name}/editor/images/mermeid_12px.png"
-                    border="0"/>
-            </xf:label>
-            <xxf:show dialog="about-dialog" ev:event="DOMActivate"/>
-        </xf:trigger>
-    </h:div>
+    <!--  Footer   -->
+    <!--  Taken from properties.xml -->
 
-    
-    <xxf:dialog id="about-dialog" 
-        appearance="full" 
-        level="modal" 
-        close="true" 
-        draggable="false" 
-        visible="false">
-        
-        <h:div class="about_header">
-            <h:img src="/editor/images/mermeid_30px.png" 
-                alt="MerMEId logo" border="0" 
-                style="margin-bottom: 10px;"/>
-        </h:div>
-        
-        <h:div class="about_main">
-            
-            <!--<p style="text-align:center">
-                <xi:include href="/editor/version.txt" parse="text"/>
-            </p>-->
-            <h:p style=""> </h:p>
+    <xf:output ref="instance('parameters')/dcm:footer" mediatype="text/html"/>
 
-            <h:p>MerMEId (Metadata Editor and Repository for MEI Data) is written
-                and distributed by:</h:p>
-            
-            <h:p>Danish Centre for Music Editing (DCM)<h:br/> 
-                <h:a href="http://www.kb.dk/">Royal Danish Library</h:a><h:br/> 
-                P.O.Box 2149<h:br/> 
-                DK - 1016 Copenhagen<h:br/></h:p>
-            
-            <h:p>Authors: Sigfrid Lundberg (<h:a href="mailto:slu@kb.dk">slu@kb.dk</h:a>) 
-                &amp; Axel Teich Geertinger (<h:a href="mailto:atge@kb.dk">atge@kb.dk</h:a>)</h:p>
-            
-            <h:p>MerMEId is open-source software released under the <h:a
-            href="http://www.apache.org/licenses/LICENSE-2.0" title="See
-            Apache License 2.0" target="_blank" >Apache License version
-            2.0</h:a></h:p>
-            <h:p>The software is provided "as is". Use at own risk. Neither the authors, DCM, <h:br/>
-                nor the Royal Danish Library can be held responsible for any costs or loss of data <h:br/>
-                caused by the use of this software.</h:p>
-            
-        </h:div>
-        
-        <h:div class="about_footer">
-            <h:img src="/editor/images/dcm_logo_long_text_dark.png" alt="DCM logo" border="0"
-                    style="margin-right:30px;"/>
-            <h:a href="http://www.kb.dk/en/" 
-                title="Royal Danish Library"><h:img src="/editor/images/kb.png"
-                    alt="Royal Danish Library - Logo" border="0"/></h:a>
-        </h:div>
-    </xxf:dialog>
-</h:span>
+</h:div>

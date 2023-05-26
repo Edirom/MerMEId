@@ -34,6 +34,12 @@
             <img id="github-contributors" src="https://contrib.rocks/image?repo=Edirom/MerMEId" alt="Avatars of contributors to MerMEId in GitHub" />
         </a>
       </div>
+      <div class="nav">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+        </ul>
+      </div>
     </div>
   </footer>
 

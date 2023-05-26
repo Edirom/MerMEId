@@ -32,7 +32,7 @@ public class Common extends WebDriverSettings{
         String loginText = "";
         String loginUser = "mermeid";
         String loginPass = "mermeid";
-        driver.get("http://localhost:8080/modules/list_files.xq");
+        driver.get("http://localhost:8080/index.html");
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
         try {

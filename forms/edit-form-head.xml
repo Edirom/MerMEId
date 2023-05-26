@@ -25,6 +25,7 @@
   <h:style type="text/css" media="all"> 
     @import "/editor/style/tab_style.css"; 
     @import "/editor/style/xform_style.css";
+    @import "/editor/style/footer.css";
   </h:style>
   
   <xf:model>

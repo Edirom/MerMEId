@@ -33,14 +33,8 @@ public class EditorTest extends WebDriverSettings {
 
         String title = driver.getTitle();
         System.out.println("Title: " + title);
-        assertTrue(title.equals("MerMEId – Metadata Editor and Repository for MEI Data"));
+        assertTrue(title.equals("All documents"));
 
-        WebElement button = driver.findElement(By.cssSelector("button"));
-        String buttonText = button.getText();
-        System.out.print("Function `OpenEditPage` log: ");
-        System.out.println(buttonText);
-
-        assertTrue(buttonText.equals("Try MerMEId"));
 
         Common.enterLogin();
         WebElement editButton = driver.findElement(By.xpath("//form[@action='http://localhost:8080/forms/edit-work-case.xml'][input/@value='incipit_demo.xml']/button"));

@@ -38,12 +38,12 @@
         title="Close editor and return to file list" border="0"/></xf:label>
       <xf:action ev:event="DOMActivate">
         <xf:action if="instance('temp')/changed='true'">
-          <xf:var name="uri" select="concat(instance('parameters')/dcm:server_name,'/modules/list_files.xq')"/>
+          <xf:var name="uri" select="concat(instance('parameters')/dcm:server_name,'/index.html')"/>
           <xf:setvalue ref="instance('temp')/target_uri" value="$uri"/>
           <xxf:show dialog="exit-warning-dialog"/>
         </xf:action>	
         <xf:action if="instance('temp')/changed='false'">
-          <xf:load resource="{instance('parameters')/dcm:server_name}/modules/list_files.xq" show="replace"/>
+          <xf:load resource="{instance('parameters')/dcm:server_name}/index.html" show="replace"/>
         </xf:action>
       </xf:action>
     </xf:trigger><xf:trigger appearance="minimal">

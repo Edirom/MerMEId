@@ -1,0 +1,48 @@
+/*
+ * Dedicated CSS file for styling of footer
+ * to be used both in list view and forms
+ */
+div.footer, p.footer {
+    margin: 0 -20px 20px -20px;
+    padding: 10px 20px;
+}
+
+.footer, .footer a:link, .footer a:visited, .footer a:active {
+    color: #ccc;
+}
+
+div.footer .version {
+    margin-top: 12px;
+    float:right;
+}
+
+div.footer div.dev{
+    margin-top: 10px;
+}
+
+div.footer img{
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+div.footer #dcm-logo{
+    height:30px;
+}
+
+div.footer #github-contributors{
+    height: 23px;
+}
+
+.footer .nav {
+    text-align:center;
+}
+
+.footer .nav ul {
+    padding:0;
+}
+
+.footer .nav li {
+    list-style-type:none;
+    margin: 0 2em;
+    display:inline;
+}
