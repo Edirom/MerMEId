@@ -335,22 +335,22 @@ table.source_component_list td.label_cell {
 /* Unicode music symbols font */
 @font-face {
 	font-family: 'Bravura Text';
-	src: url('/editor/style/fonts/BravuraText.eot');
+	src: url('/resources/css/fonts/BravuraText.eot');
 	src: local('Bravura Text'), 
-	       url('/editor/style/fonts/BravuraText.eot?#iefix') format('embedded-opentype'),
-	       url('/editor/style/fonts/BravuraText.woff') format('woff'), 
-	       url('/editor/style/fonts/BravuraText.svg#BravuraText') format('svg');
+	       url('/resources/css/fonts/BravuraText.eot?#iefix') format('embedded-opentype'),
+	       url('/resources/css/fonts/BravuraText.woff') format('woff'), 
+	       url('/resources/css/fonts/BravuraText.svg#BravuraText') format('svg');
 } 
 
 /* Runic font */
 @font-face {
 	font-family: 'Hnias';
-	src: url('/editor/style/fonts/Hnias.eot');
+	src: url('/resources/css/fonts/Hnias.eot');
 	src: local('Hnias Regular'), local('Hnias'), 
-	       url('/editor/style/fonts/Hnias.eot?#iefix') format('embedded-opentype'),
-	       url('/editor/style/fonts/Hnias.ttf') format('truetype'), 
-	       url('/editor/style/fonts/Hnias.woff') format('woff'), 
-	       url('/editor/style/fonts/Hnias.svg#Hnias') format('svg');
+	       url('/resources/css/fonts/Hnias.eot?#iefix') format('embedded-opentype'),
+	       url('/resources/css/fonts/Hnias.ttf') format('truetype'), 
+	       url('/resources/css/fonts/Hnias.woff') format('woff'), 
+	       url('/resources/css/fonts/Hnias.svg#Hnias') format('svg');
 } 
 /* End embedded fonts */
 
