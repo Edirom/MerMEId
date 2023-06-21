@@ -749,9 +749,7 @@
 		</xsl:apply-templates>
 		<!-- meter, key, incipit – only relevant at this level in single movement works -->
 		<xsl:apply-templates select="m:tempo[text()]"/>
-		<xsl:if test="m:meter[normalize-space(concat(@count,@unit,@sym))]">
-			<xsl:apply-templates select="m:meter"/>
-		</xsl:if>
+		<xsl:apply-templates select="m:meter"/>
 		<xsl:apply-templates select="m:key[normalize-space(concat(@pname,@accid,@mode,string(.)))]"/>
 		<xsl:apply-templates select="m:extent"/>
 		<xsl:apply-templates select="m:incip"/>
@@ -849,9 +847,7 @@
 			</xsl:if>
 		</xsl:if>
 		<xsl:apply-templates select="m:tempo[text()]"/>
-		<xsl:if test="m:meter[normalize-space(concat(@count,@unit,@sym))]">
-			<xsl:apply-templates select="m:meter"/>
-		</xsl:if>
+		<xsl:apply-templates select="m:meter"/>
 		<xsl:apply-templates select="m:key[normalize-space(concat(@pname,@accid,@mode,string(.)))]"/>
 		<xsl:apply-templates select="m:extent"/>
 		<xsl:apply-templates select="m:incip"/>
@@ -1105,7 +1101,7 @@
 		</xsl:for-each>
 	</xsl:template>
 
-	<xsl:template match="m:meter">
+	<xsl:template match="m:meter[normalize-space(concat(@count,@unit,@sym,.))]">
 		<xsl:if test="position() = 1">
 			<span class="label">
                 <xsl:value-of select="$l/metre"/>: </span>
