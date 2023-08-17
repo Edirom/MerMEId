@@ -538,3 +538,7 @@ a:hover.help span.comment {
     }
 
 }
+
+.history.timeline p:first-child {
+    margin-top: 0px;
+}
