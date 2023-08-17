@@ -1643,7 +1643,7 @@
 					<xsl:text>). </xsl:text>
 				</xsl:if>				
 
-				<xsl:for-each select="m:desc[text()]">
+				<xsl:for-each select="m:desc[.//text()]">
 					<xsl:apply-templates/>
 					<xsl:text> </xsl:text>
 				</xsl:for-each>
