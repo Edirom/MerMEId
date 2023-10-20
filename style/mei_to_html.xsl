@@ -1535,7 +1535,7 @@
 
 		<!-- history time line -->
 		<xsl:for-each select="m:eventList[@type='history' and m:event[//text()]]">
-			<table>
+			<table class="history timeline">
 				<xsl:for-each select="m:event[//text()]">
 					<xsl:apply-templates select="." mode="performance_details"/>
 				</xsl:for-each>
@@ -1643,7 +1643,7 @@
 					<xsl:text>). </xsl:text>
 				</xsl:if>				
 
-				<xsl:for-each select="m:desc[text()]">
+				<xsl:for-each select="m:desc[.//text()]">
 					<xsl:apply-templates/>
 					<xsl:text> </xsl:text>
 				</xsl:for-each>
