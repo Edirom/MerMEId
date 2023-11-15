@@ -250,6 +250,7 @@
       <xsl:apply-templates select="m:langUsage"/>
       <xsl:apply-templates select="m:perfMedium"/>
       <xsl:apply-templates select="m:perfDuration"/>
+      <xsl:apply-templates select="m:extent"/>
       <xsl:apply-templates select="m:contents"/>
       <xsl:apply-templates select="m:context"/>
       <xsl:apply-templates select="m:biblList"/>
