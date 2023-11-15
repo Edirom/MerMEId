@@ -209,7 +209,7 @@ else
 (: everything else is passed through :)
    (console:log('/data Controller: passthrough'),
     <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
-        <cache-control cache="yes"/>
+        <cache-control cache="no"/>
         <set-attribute name="$exist:prefix" value="{$exist:prefix}"/>
         <set-attribute name="$exist:controller" value="{$exist:controller}"/>
         <set-attribute name="$exist:root" value="{$exist:root}"/>
