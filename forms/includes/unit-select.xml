@@ -67,7 +67,7 @@
                 <xf:label>vu (MEI virtual unit)</xf:label>
             </xf:item>
             <xf:action ev:event="xforms-value-changed">
-                <xf:setvalue ref=".." value="concat(@quantity, ' (height in ', @unit, ')')"></xf:setvalue>
+                <xf:setvalue ref=".." value="concat(@quantity, ' (in ', @unit, ')')"></xf:setvalue>
             </xf:action>
     </xf:select1>
 
