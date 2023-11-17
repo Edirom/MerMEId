@@ -11,7 +11,6 @@
     <xsl:param name="xslt.server-name"/>
     <xsl:param name="xslt.document-root"/>
     <xsl:param name="xslt.footer"/>
-    <xsl:param name="xslt.view-xml-url-base"/>
     
     <xsl:variable name="xforms-parameters" as="element(dcm:parameters)">
         <parameters xmlns="http://www.kb.dk/dcm">
@@ -37,11 +36,6 @@
             <document_root>
                 <xsl:value-of select="$xslt.document-root"/>
             </document_root>
-            
-            <!-- Base for CRUD Read, e.g. http://localhost:8080/data/read?filename= -->
-            <view_xml_url_base>
-                <xsl:value-of select="$xslt.view-xml-url-base"/>
-            </view_xml_url_base>
             
             <!-- Default editor settings - (boolean; set to 'true' or nothing)  -->
             <!-- Enable automatic revisionDesc (change log) entries? -->

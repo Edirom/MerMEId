@@ -17,5 +17,4 @@ return transform:transform($inputDoc, doc(request:get-attribute('transform.style
                 <param name="xslt.server-name" value="{config:get-property('exist_endpoint')}"/>
                 <param name="xslt.document-root" value="/data/"/>
                 <param name="xslt.footer" value="{$footer}"/>
-                <param name="xslt.view-xml-url-base" value="{config:link-to-app('data/read')}?filename="/>
 </parameters>, <attributes></attributes>, "method=xml media-type=application/xml")
