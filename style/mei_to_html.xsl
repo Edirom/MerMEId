@@ -851,6 +851,7 @@
 		<xsl:apply-templates select="m:meter"/>
 		<xsl:apply-templates select="m:key[normalize-space(concat(@pname,@accid,@mode,string(.)))]"/>
 		<xsl:apply-templates select="m:extent"/>
+		<xsl:apply-templates select="m:perfDuration"/>
 		<xsl:apply-templates select="m:incip"/>
 		<xsl:apply-templates select="m:contributor[m:persName]"/>
 		<xsl:apply-templates select="m:perfMedium[m:perfResList[m:perfRes or m:perfResList] or m:castList/m:castItem]" mode="subLevel"/>
