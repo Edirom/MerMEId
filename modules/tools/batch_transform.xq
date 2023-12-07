@@ -1,8 +1,5 @@
 xquery version "1.0" encoding "UTF-8";
 
-import module namespace login="http://kb.dk/this/login" at "../login.xqm";
-import module namespace config="https://github.com/edirom/mermeid/config" at "../config.xqm";
-
 declare namespace request="http://exist-db.org/xquery/request";
 declare namespace response="http://exist-db.org/xquery/response";
 declare namespace transform="http://exist-db.org/xquery/transform";
@@ -12,11 +9,16 @@ declare namespace util="http://exist-db.org/xquery/util";
 declare namespace ft="http://exist-db.org/xquery/lucene";
 declare namespace ht="http://exist-db.org/xquery/httpclient";
 declare namespace xdb="http://exist-db.org/xquery/xmldb";
+declare namespace output="http://www.w3.org/2010/xslt-xquery-serialization";
 
 declare namespace local="http://kb.dk/this/app";
 declare namespace m="http://www.music-encoding.org/ns/mei";
 
-declare option exist:serialize "method=xml media-type=text/html"; 
+import module namespace login="http://kb.dk/this/login" at "../login.xqm";
+import module namespace config="https://github.com/edirom/mermeid/config" at "../config.xqm";
+
+declare option output:method "xhtml5";
+declare option output:media-type "text/html";
 
 declare variable $coll   := request:get-parameter("coll",    "") cast as xs:string;
 declare variable $query  := request:get-parameter("query","") cast as xs:string;

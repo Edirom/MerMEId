@@ -1,10 +1,12 @@
 xquery version "1.0" encoding "UTF-8";
 
 declare namespace request="http://exist-db.org/xquery/request";
+declare namespace output="http://www.w3.org/2010/xslt-xquery-serialization";
 
 import module namespace config="https://github.com/edirom/mermeid/config" at "../config.xqm";
 
-declare option exist:serialize "method=xml media-type=text/html;charset=UTF-8";
+declare option output:method "xhtml5";
+declare option output:media-type "text/html";
 
 declare variable $coll   := request:get-parameter("coll",    "") cast as xs:string;
 declare variable $query  := request:get-parameter("query","") cast as xs:string;
