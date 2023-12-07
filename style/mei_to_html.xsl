@@ -22,7 +22,6 @@
 
 	<xsl:strip-space elements="*"/>
 
-	<xsl:param name="doc"/>
 	<xsl:param name="app-root"/>
 	<xsl:param name="data-root"/>
 	<xsl:param name="language"/>
