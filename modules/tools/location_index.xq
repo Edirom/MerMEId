@@ -1,4 +1,4 @@
-xquery version "1.0" encoding "UTF-8";
+xquery version "3.1" encoding "UTF-8";
 
 declare namespace loop="http://kb.dk/this/getlist";
 
