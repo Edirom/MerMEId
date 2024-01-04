@@ -5,14 +5,14 @@ declare namespace loop="http://kb.dk/this/getlist";
 declare namespace request="http://exist-db.org/xquery/request";
 declare namespace response="http://exist-db.org/xquery/response";
 declare namespace fn="http://www.w3.org/2005/xpath-functions";
-declare namespace file="http://exist-db.org/xquery/file";
-declare namespace util="http://exist-db.org/xquery/util";
-declare namespace ft="http://exist-db.org/xquery/lucene";
-declare namespace ht="http://exist-db.org/xquery/httpclient";
+(:declare namespace file="http://exist-db.org/xquery/file";:)
+(:declare namespace util="http://exist-db.org/xquery/util";:)
+(:declare namespace ft="http://exist-db.org/xquery/lucene";:)
+(:declare namespace ht="http://exist-db.org/xquery/httpclient";:)
 declare namespace marc="http://www.loc.gov/MARC21/slim";
 declare namespace output="http://www.w3.org/2010/xslt-xquery-serialization";
 
-declare namespace local="http://kb.dk/this/app";
+(:declare namespace local="http://kb.dk/this/app";:)
 declare namespace m="http://www.music-encoding.org/ns/mei";
 
 import module namespace config="https://github.com/edirom/mermeid/config" at "../config.xqm";
@@ -44,7 +44,6 @@ declare function loop:sort-key ($identifier as xs:string) as xs:string
 declare function loop:lookup ($location as xs:string) as xs:string
 {
   let $country_code:=substring-before($location,'-')
-  let $filename:=concat($country_code,'.xml')
   let $txt:=
     if($country_codes/m:list/m:li/m:geogName[@codedval=$country_code])
     then
@@ -86,24 +85,23 @@ declare function loop:lookup-archive ($location as xs:string, $country_code as x
                     <p>Please choose a file collection/catalogue by adding &apos;?c=[your collection name]&apos; 
                     (for instance, ?c=CNW) to the URL</p>
                   else 
-                    for $c in distinct-values(
+                    for $c in 
             		collection($database)/m:mei/m:meiHead[m:fileDesc/m:seriesStmt/m:identifier[@type="file_collection"] = $collection]/
             		m:manifestationList/m:manifestation//m:physLoc/m:repository/
-            		(m:identifier[@authority='RISM' and normalize-space(.)] | m:corpName[normalize-space(.)]) )
-                    order by normalize-space(string($c))
+            		(m:identifier[@auth='RISM' and normalize-space(.)] | m:corpName[normalize-space(.)])
+            		group by $ident := normalize-space($c)
+                    order by loop:lookup($ident)
             	    return
             		  <div>
-            		  {concat(loop:lookup($c),' &#160; ',$collection,' ')} 
+            		  {concat(loop:lookup($ident),' &#160; ',$collection,' ')} 
             		  {let $numbers :=
-            		  for $n in collection($database)/m:mei/m:meiHead[m:fileDesc/m:seriesStmt/m:identifier[@type="file_collection"] = $collection]
-                         where $n/m:manifestationList/m:manifestation//m:physLoc/m:repository/
-            		      (m:identifier[@authority='RISM' and normalize-space(.)] | m:corpName[normalize-space(.)]) = $c
-                         order by loop:sort-key($n/m:workList/m:work/m:identifier[@label=$collection]/string()) 
-                	     return $n/m:workList/m:work/m:identifier[@label=$collection]/string()
+            		  for $n in $c
+            		     let $number := $n/ancestor::m:meiHead/m:workList/m:work/m:identifier[@label=$collection] => normalize-space()
+                         order by loop:sort-key($number) 
+                	     return $number
                 	   return string-join($numbers,', ') 
                    	   } 
                 	   </div>
-
             }
     </div>
 
