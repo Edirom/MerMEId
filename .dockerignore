@@ -5,3 +5,7 @@ build
 logs
 docker-compose.yml
 .github
+*.xpr
+.idea
+*.tmp
+testing
