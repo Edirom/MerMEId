@@ -1,4 +1,4 @@
-xquery version "1.0" encoding "UTF-8";
+xquery version "3.1" encoding "UTF-8";
 
 (: Generates a list of incipits graphic files ordered by work (catalogue) number :)
 
@@ -61,15 +61,21 @@ declare function local:movement($expression) as node()
             {local:movement-title($expression)}<br/>
             {
                 for $img at $pos in $expression/m:incip/m:graphic[@targettype=$resolution and @target!='']
+                let $img.graphic.target := $expression/m:incip/m:graphic[@targettype=$resolution][$pos]/@target
+                let $img.src :=
+                    (: special treatment for relative links :)
+                    if(starts-with($img.graphic.target, 'http') or starts-with($img.graphic.target, '//'))
+                    then $img.graphic.target => string()
+                    else $config:exist-endpoint || '/data/' || $img.graphic.target
                 return
                     <div style="margin-bottom:1em;">
                     {
                         element img { 
-                            attribute src {$expression/m:incip/m:graphic[@targettype=$resolution][$pos]/@target} 
+                            attribute src {$img.src} 
                         }
                     }
                     <br/>
-                    {string($expression/m:incip/m:graphic[@targettype=$resolution][$pos]/@target)}
+                    {$img.graphic.target => string()}
                     </div>
              }
              {
