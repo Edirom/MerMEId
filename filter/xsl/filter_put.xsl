@@ -67,13 +67,23 @@
     </xsl:if>
   </xsl:template>
 
-
-  <xsl:template name="fill_in_id">
-    <xsl:variable name="generated_id" select="generate-id()"/>
-    <xsl:variable name="no_of_nodes" select="count(//*)"/>
-    <xsl:attribute name="xml:id">
-      <xsl:value-of select="concat(name(.),'_',$no_of_nodes,$generated_id)"/>
-    </xsl:attribute>
+  <xsl:template name="fill_in_id" as="attribute(xml:id)?">
+    <xsl:choose>
+      <!-- for xml:id attributes, create prefix and id for the parent element node -->
+      <xsl:when test=". instance of attribute(xml:id)">
+        <xsl:variable name="generated_id" select="generate-id(parent::*)"/>
+        <xsl:attribute name="xml:id">
+          <xsl:value-of select="concat(name(parent::*),'_',$generated_id)"/>
+        </xsl:attribute>
+      </xsl:when>
+      <!-- for element nodes, create prefix and id for the current element node -->
+      <xsl:when test=". instance of element()">
+        <xsl:variable name="generated_id" select="generate-id()"/>
+        <xsl:attribute name="xml:id">
+          <xsl:value-of select="concat(name(.),'_',$generated_id)"/>
+        </xsl:attribute>
+      </xsl:when>
+    </xsl:choose>
   </xsl:template>
 
   <!-- Change duplicate IDs -->
