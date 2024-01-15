@@ -99,7 +99,7 @@ declare function loop:lookup-archive ($location as xs:string, $country_code as x
             		     let $number := $n/ancestor::m:meiHead/m:workList/m:work/m:identifier[@label=$collection] => normalize-space()
                          order by loop:sort-key($number) 
                 	     return $number
-                	   return string-join($numbers,', ') 
+                	   return $numbers => distinct-values() => string-join(', ')
                    	   } 
                 	   </div>
             }
