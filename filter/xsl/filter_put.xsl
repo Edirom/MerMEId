@@ -500,6 +500,15 @@
       </xsl:element>
     </xsl:element>
   </xsl:template>
+  
+  <!-- 
+    Fallback template for arbitrary HTML tags that are not handled through dedicated templates.
+    Those "unknown" tags are simply removed for otherwise they would be stored unfiltered in the MEI document  
+    See https://github.com/Edirom/MerMEId/issues/193
+  -->
+  <xsl:template match="h:*">
+    <xsl:apply-templates/>
+  </xsl:template>
   <!-- end HTML -> MEI -->
 
   <!-- utilities -->
