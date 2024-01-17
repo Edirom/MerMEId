@@ -1,4 +1,4 @@
-xquery version "1.0" encoding "UTF-8";
+xquery version "3.1" encoding "UTF-8";
 
 (: Generates a list of incipits graphic files ordered by work (catalogue) number :)
 
@@ -9,13 +9,17 @@ declare namespace file="http://exist-db.org/xquery/file";
 declare namespace util="http://exist-db.org/xquery/util";
 declare namespace ft="http://exist-db.org/xquery/lucene";
 declare namespace ht="http://exist-db.org/xquery/httpclient";
+declare namespace output="http://www.w3.org/2010/xslt-xquery-serialization";
 
 declare namespace local="http://kb.dk/this/app";
 declare namespace m="http://www.music-encoding.org/ns/mei";
 
-declare option exist:serialize "method=xml media-type=text/html"; 
+import module namespace config="https://github.com/edirom/mermeid/config" at "../config.xqm";
 
-declare variable $database := "/db/dcm";
+declare option output:method "xhtml5";
+declare option output:media-type "text/html";
+
+declare variable $database := $config:data-root;
 declare variable $collection := request:get-parameter("c","");
 (: desired resolution; MerMEId supports values "lowres", "hires", and "print" :) 
 declare variable $resolution := request:get-parameter("res","lowres");
@@ -57,15 +61,21 @@ declare function local:movement($expression) as node()
             {local:movement-title($expression)}<br/>
             {
                 for $img at $pos in $expression/m:incip/m:graphic[@targettype=$resolution and @target!='']
+                let $img.graphic.target := $expression/m:incip/m:graphic[@targettype=$resolution][$pos]/@target
+                let $img.src :=
+                    (: special treatment for relative links :)
+                    if(starts-with($img.graphic.target, 'http') or starts-with($img.graphic.target, '//'))
+                    then $img.graphic.target => string()
+                    else $config:exist-endpoint || '/data/' || $img.graphic.target
                 return
                     <div style="margin-bottom:1em;">
                     {
                         element img { 
-                            attribute src {$expression/m:incip/m:graphic[@targettype=$resolution][$pos]/@target} 
+                            attribute src {$img.src} 
                         }
                     }
                     <br/>
-                    {string($expression/m:incip/m:graphic[@targettype=$resolution][$pos]/@target)}
+                    {$img.graphic.target => string()}
                     </div>
              }
              {

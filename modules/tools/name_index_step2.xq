@@ -11,13 +11,17 @@ declare namespace file="http://exist-db.org/xquery/file";
 declare namespace util="http://exist-db.org/xquery/util";
 declare namespace ft="http://exist-db.org/xquery/lucene";
 declare namespace ht="http://exist-db.org/xquery/httpclient";
+declare namespace output="http://www.w3.org/2010/xslt-xquery-serialization";
 
 declare namespace local="http://kb.dk/this/app";
 declare namespace m="http://www.music-encoding.org/ns/mei";
 
-declare option exist:serialize "method=xml media-type=text/html"; 
+import module namespace config="https://github.com/edirom/mermeid/config" at "../config.xqm";
 
-declare variable $database := "/db/dcm";
+declare option output:method "xhtml5";
+declare option output:media-type "text/html";
+
+declare variable $database := $config:data-root;
 declare variable $collection := request:get-parameter("c","");
 
 declare variable $names := 
