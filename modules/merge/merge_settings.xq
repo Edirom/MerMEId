@@ -50,7 +50,7 @@ let $formpage :=
 	      <input type="text" value="{$query}" name="query" style="width: 30em;"/><br/>&#160; 
 	      </p>
 	      <p><strong>eXist database</strong><br/>
-	      The collection /db/apps/mermeid/data/ is where MerMEId stores your files by default. /db/apps/mermeid/data-public/ usually 
+	      The collection {$database} is where MerMEId stores your files by default. {$database} usually 
 	      contains the files you have published with MerMEId.<br/>
 	      <input type="text" value="{$database}" name="db" style="width: 30em;"/><br/>&#160; 
 	      </p>

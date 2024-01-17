@@ -57,6 +57,8 @@ let $params :=
    <param name="hostname" value="{request:get-header('HOST')}"/>
    <param name="language" value="{$language}"/>
    <param name="score" value="{$score}"/>
+   <param name="app-root" value="{$config:app-root}"/>
+   <param name="data-root" value="{$config:data-root}"/>
 </parameters>
 
 let $list := loop:getlist($database,$coll,$genre,$query)
