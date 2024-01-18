@@ -34,7 +34,7 @@
             <p>This page described a workflow intended to make working with MerMEId as efficient as possible.</p>
             
             <p>MerMEId is designed for editing and storing metadata in MEI files; usually each file describes one musical work. 
-                The list shown when <a href="../modules/list_files.xq" title="MerMEId file list">entering
+                The list shown when <a href="../index.html" title="MerMEId file list">entering
             MerMEId</a> is basically a list of the MEI files stored in the database at any time.</p>
             <p>Assuming that you want to create a number of files all belonging to the same project or catalogue, 
                 we recommend the following workflow for creating the files and entering the data.</p>
@@ -95,7 +95,7 @@
             </ul>
             <h2>Content editing</h2>
             <ul>
-                <li>Add any data you want to the file (see <a href="../manual/">tutorials and other help pages</a>
+                <li>Add any data you want to the file (see <a href="../manual/index.html">tutorials and other help pages</a>
                     on how to use the editor and how to enter certain types of information).</li>
                 <li>To verify or proofread your data, use the HTML preview by clicking the document button <img alt="HTML preview" 
                     src="../resources/images/html.gif" /> to generate a human-readable HTML page from the file.</li>
@@ -106,18 +106,17 @@
             potentially very large, HTML document.</p>
             <p>The use of the tool is explained in the manual's section on <a title="Displaying multiple records" 
                 href="../manual/merge.html">Displaying or printing multiple (or all) records</a>.</p>
-            <p>By default, MerMEId will output the almost the same way as in the HTML preview only improved for printing 
-            (by unfolding all hidden sections, for instance), but you can specify another XSL transformation to customize the 
-            results for your needs. </p>
-            <p>The remaining steps to prepare a print catalogue are up to you. For the <a title="Printed CNW" target="_blank" 
-                href="https://www.mtp.dk/langset.asp?sitelan=e&amp;url=https://www.mtp.dk/details.asp?eln=203742">printed 
-                catalogue of Carl Nielsen's works</a>,
+            <p>By default, the output will be almost the same as in the HTML preview, but improved for printing 
+            (by unfolding all hidden sections, for example), but you can specify another XSL transformation to customize the 
+            results for your needs.</p>
+            <p>The remaining steps to prepare a print catalogue are up to you. For the printed catalogue of Carl Nielsen's works,
             we chose a quick but dirty approach: we simply copied the resulting HTML into a Word document which was imported 
             into InDesign for the final layout. A more elegant way would be to write a transformation from MEI to 
                 <a href="https://www.latex-project.org/" title="LaTeX" target="_blank">LaTeX</a>, for instance.</p>
         </div>
-        <p class="footer"><a href="http://www.kb.dk" title="DCM"><img style="border: 0px; vertical-align:middle;" alt="DCM Logo" src="../resources/images/dcm_logo_small_white.png"/></a> 
-            2017 Danish Centre for Music Editing | Royal Danish Library,
-            Copenhagen | <a name="www.kb.dk" id="www.kb.dk" href="http://www.kb.dk">www.kb.dk/en/nb/dcm</a></p>
-    </body>
+    <div class="footer">
+      <div>2010-2019 Danish Centre for Music Editing | Royal Danish Library, Copenhagen | <a name="https://www.kb.dk/" id="www.kb.dk" href="http://www.kb.dk" title="Det Kgl. Bibliotek">www.kb.dk</a></div>
+      <div>2020 ff. <a href="https://github.com/Edirom/MerMEId/graphs/contributors" title="See contributors to MerMEId GitHub project"> MerMEId Community</a></div>     
+    </div>
+  </body>
 </html>
