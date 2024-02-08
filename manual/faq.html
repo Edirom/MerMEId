@@ -225,7 +225,12 @@
         the 'Work' tab, add a work identifier (under 'Identifier'), enter the file collection's name
         as the list name and the desired number in the 'No.' field. If MerMEId finds a work
         identifier corresponding to the file collection defined at the 'File' tab, it regards the
-        identifier's number as the catalogue number.</p>
+        identifier's number as the catalogue number.</p>      
+      <h3 id="tiny_mce-restrictions">Can I paste any HTML tag/structure into the TINYMCE editor?</h3>
+      <p>No, since the HTML input needs to be transformed to MEI in the backend, only a limited set 
+        of HTML tags are supported. These include the tags that are accesible via the buttons of the 
+        editor like <code>&lt;em&gt;</code>, <code>&lt;span&gt;</code>, or <code>&lt;strong&gt;</code>.
+        Other HTML markup will be silently removed.</p>
       <h2>Customizing the MerMEId editor</h2>
       <h3>Can I add fields to the editor form or alter existing ones?<a name="customize"></a></h3>
       <p>In principle yes, if you know how to write <a href="http://www.orbeon.com/" target="_blank"
