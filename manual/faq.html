@@ -54,8 +54,8 @@
         <li><a href="#add_work_number">How do I make MerMEId recognize a certain number as a
             catalogue work number?</a></li>
         <li><a href="#batch_transform">Is there a way to do a 'search and replace' in all of my
-            files?</a><br />
-        </li>
+            files?</a></li>
+        <li><a href="#tiny_mce-restrictions">Can I paste any HTML tag/structure into the TINYMCE editor?</a></li>
       </ul>
       <p>Customizing the MerMEId editor</p>
       <ul>
@@ -235,6 +235,11 @@
         a script transforming all (or some) of your data. This allows you to do simple text
         replacements but also complex structural changes. See <a href="batch_transform.html">Batch
           transforming XML files in the database</a>.</p>
+      <h3 id="tiny_mce-restrictions">Can I paste any HTML tag/structure into the TINYMCE editor?</h3>
+      <p>No, since the HTML input needs to be transformed to MEI in the backend, only a limited set 
+        of HTML tags are supported. These include the tags that are accesible via the buttons of the 
+        editor like <code>&lt;em&gt;</code>, <code>&lt;span&gt;</code>, or <code>&lt;strong&gt;</code>.
+        Other HTML markup will be silently removed.</p>
       <h2>Customizing the MerMEId editor</h2>
       <h3>Can I add fields to the editor form or alter existing ones?<a name="customize"></a></h3>
       <p>In principle yes, if you know how to write <a href="http://www.orbeon.com/" target="_blank"
