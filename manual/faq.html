@@ -22,10 +22,7 @@
       <p>Installation and access </p>
       <ul>
         <li><a href="#laptop_installation">Can I install MerMEId on my laptop?</a></li>
-        <li><a href="#installation_container">Is there a simple installation container
-            available?</a></li>
-        <li><a href="#kb_hosting">Can I use The Royal Danish Library's MerMEId server for our
-            project?</a>
+        <li><a href="#edirom_hosting">Can I use The Edirom MerMEId server for our project?</a>
         </li>
         <li><a href="#number_of_installations">How many MerMEId installations do I need for my
             project?</a>
@@ -53,6 +50,7 @@
           catalogue?</a></li>
         <li><a href="#add_work_number">How do I make MerMEId recognize a certain number as a
             catalogue work number?</a></li>
+        <li><a href="#tiny_mce-restrictions">Can I paste any HTML tag/structure into the TINYMCE editor?</a></li>
       </ul>
       <p>Customizing the MerMEId editor</p>
       <ul>
@@ -80,38 +78,29 @@
       </ul> Contact<br />
       <ul>
         <li><a href="#updates">How do I stay informed about changes and updates?</a></li>
-        <li><a href="#contact">How do I get in touch with you if I have other questions?</a>
-        </li>
       </ul>
       <h2>Installation and access </h2>
       <h3>Can I install MerMEId on my laptop?<a name="laptop_installation"></a></h3>
       <p>In principle, yes. Please note, however, that MerMEId is a web application, not a desktop
-        application. This means that it needs a web server to run; the user interacts with MerMEId
-        through a web browser. It also means that installation requires the skills of a system
-        administrator to set up all the components of the web server. Technically, it is possible to
-        do it on a laptop, but usually that's not advisable, because your installation and your data
-        wouldn't be accessible from any other machine. Also, if your laptop crashes or is stolen,
-        you are likely to lose your data. Installation on a proper web server located at your
-        institution gives you much better data protection, and not least: You will be able to use
-        MerMEId and access your data from any computer that has access to your server. All you need
-        is a web browser. </p>
-      <h3>Is there a simple installation container available?<a name="installation_container"
-        ></a></h3>
-      <p>Not yet. We're working on it.</p>
-      <h3>Can I use The Royal Danish Library's MerMEId server for our project?<a name="kb_hosting"
+        application. You will need to have Docker installed on your machine to run the MerMEId container.
+        Extra care needs to be taken to persist the data within the running container, otherwise you'll 
+        loose everything you entered. See the <a href="https://github.com/Edirom/MerMEId?tab=readme-ov-file">Readme</a>, 
+        especially the section "How to use this Docker image".
+      </p>
+      <h3>Can I use The Edirom MerMEId server for our project?<a name="edirom_hosting"
         ></a>
       </h3>
-      <p>Unfortunately no. The Royal Danish Library's demo installation at <a
-          href="http://labs.kb.dk/editor/" target="_blank">labs.kb.dk/editor/</a> is meant for
+      <p>Unfortunately no. The demo installation at <a
+          href="https://mermeid.edirom.de/index.html" target="_blank">mermeid.edirom.de</a> is meant for
         demonstration only. The library cannot host other projects' data. You are welcome, on the
         other hand, to use the demo installation to try out MerMEId or even to do preliminary work
         until you have set up your own server. Note, however, that the library does not take any
         responsibility for any loss of data stored on the demo server. The data at the demo server
         are freely accessible for anyone to edit or even delete. If you are doing any serious work
         there, make sure to make local copies of your data frequently (See: <a href="#copying_data"
-          >How do I copy or move my data</a> from one MerMEId instance to another?). We are also
-        likely to clean up the server by deleting user data every now and then. If there is
-        something you would like us not to delete please let us know. </p>
+          >How do I copy or move my data</a> from one MerMEId instance to another?). Furthermore, the 
+        MerMEId demo instance is redeployed with every commit to the development branch, resulting in 
+        frequent wiping of its data.  </p>
       <h3>How many MerMEId installations do I need for my project?<a name="number_of_installations"
         ></a>
       </h3>
@@ -225,12 +214,13 @@
         the 'Work' tab, add a work identifier (under 'Identifier'), enter the file collection's name
         as the list name and the desired number in the 'No.' field. If MerMEId finds a work
         identifier corresponding to the file collection defined at the 'File' tab, it regards the
-        identifier's number as the catalogue number.</p>      
+        identifier's number as the catalogue number.</p>
       <h3 id="tiny_mce-restrictions">Can I paste any HTML tag/structure into the TINYMCE editor?</h3>
       <p>No, since the HTML input needs to be transformed to MEI in the backend, only a limited set 
         of HTML tags are supported. These include the tags that are accesible via the buttons of the 
         editor like <code>&lt;em&gt;</code>, <code>&lt;span&gt;</code>, or <code>&lt;strong&gt;</code>.
         Other HTML markup will be silently removed.</p>
+      
       <h2>Customizing the MerMEId editor</h2>
       <h3>Can I add fields to the editor form or alter existing ones?<a name="customize"></a></h3>
       <p>In principle yes, if you know how to write <a href="http://www.orbeon.com/" target="_blank"
@@ -364,27 +354,12 @@
           target="_blank">GitHub</a>. </p>
       <h2>Contact</h2>
       <h3>How do I stay informed about changes and updates?<a name="updates"></a></h3>
-      <p>We recommend that you sign up for MerMEId news. There's a subscription form at <a
-          href="https://github.com/Det-Kongelige-Bibliotek/MerMEId" target="_blank">DCM's MerMEId
-          project page</a> (in the right column). Don't worry – we will not flood your inbox with
-        mails. We will send a mail only when releasing major upgrades or if there are other
-        important MerMEId-related announcements. <br /> A list of important information about
-        releases, transformation of data, and known issues is compiled at <a
-          href="http://www.kb.dk/projekter/mermeid/" target="_blank"
-          >http://www.kb.dk/projekter/mermeid/</a>.<br /> Finally, you may also want to
-        follow the discussions about the development of the MEI schema which defines the
-        structure of the (meta-)data produced by MerMEId. The MEI community even has a <a
-          href="http://music-encoding.org/community/mei-organization/interest-groups-ig/"
-          target="_blank">special interest group concerned with cataloging and metadata</a> with its
-        own mailing list where discussions regarding the encoding of musical metadata take place.
-        Important MerMEId announcements will be posted there as well.</p>
-      <h3>How do I get in touch with you if I have other questions?<a name="contact"></a></h3>
-      <p>For general enquiries, questions about the user interface or the MEI encoding please
-        contact <a href="mailto:atge@kb.dk">Axel Teich Geertinger</a>. For questions
-        regarding installation, maintenance and updates please contact <a
-          href="mailto:slu@kb.dk">Sigfrid Lundberg</a>. For general information about the Danish
-        Centre for Music Editing please refer to our <a href="http://www.kb.dk/"
-          target="_blank">web site</a>.</p>
+      <p>We recommend that you sign up for the <a href="https://music-encoding.slack.com" target="_blank">Music 
+        Encoding Slack</a> where we host a dedicated #mermeid channel.
+        Additionally, you can keep an eye on our GitHub space at 
+        <a href="https://github.com/Edirom/MerMEId" target="_blank">github.com/Edirom/MerMEId</a> 
+        where all the issues, milestones and releases are kept.
+      </p>  
     </div>
 
     <div class="footer">
