@@ -1,22 +1,37 @@
-cff-version: 1.2.0
+cff-version: "1.2.0"
 message: "If you use this software, please cite it as below."
 authors:
 - family-names: "Lundberg"
   given-names: "Sigfrid"
 - family-names: "Geertinger"
   given-names: "Axel"
+  orcid: https://orcid.org/0000-0003-0765-7163
 - family-names: "Stadler"
   given-names: "Peter"
+  orcid: https://orcid.org/0000-0002-2544-1481
 - family-names: "Siam"
   given-names: "Omar"
 - family-names: "Jettka"
   given-names: "Daniel"
+  orcid: https://orcid.org/0000-0002-2375-2227
 - family-names: "Wawilow"
   given-names: "Anastasia"
 - family-names: "Richts-Matthaei"
   given-names: "Kristina"
+  orcid: https://orcid.org/0000-0001-8569-1995
+- family-names: "Gubsch"
+  given-names: "Clemens"
+  orcid: https://orcid.org/0009-0002-6432-2538
+- family-names: "Provaznik"
+  given-names: "Peter"
+- family-names: "Richter"
+  given-names: "Matthias"
+- family-names: "Schopper"
+  given-names: "Daniel"
 title: "MerMEId"
-version: 2.0.0-alpha.8
-doi: 
-date-released: 2022-12-15
+version: "v2.0.0"
+doi: "10.5281/zenodo.10665425"
+date-released: "2024-02-15"
 url: "https://github.com/Edirom/MerMEId"
+repository-code: "https://github.com/Edirom/MerMEId"
+license: Apache-2.0
