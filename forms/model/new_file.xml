@@ -1,122 +1,152 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
-   <meiHead>
-      <fileDesc>
-         <titleStmt>
-            <title/>
-         </titleStmt>
-         <pubStmt>
-            <respStmt>
-               <resp>Publisher</resp>
-               <corpName>
-                  <abbr/>
-                  <expan/>
-                  <address>
-                     <addrLine/>
-                     <addrLine>
-                        <ptr target="" label=""/>
-                     </addrLine>
-                  </address>
-               </corpName>
-               <persName role="editor"/>
-            </respStmt>
-            <date/>
-            <availability>
-               <useRestrict/>
-            </availability>
-         </pubStmt>
-         <seriesStmt>
-            <title/>
-            <identifier type="file_collection"/>
-         </seriesStmt>
-      </fileDesc>
-      <encodingDesc>
-         <appInfo>
-            <application version="2019">
-               <name>MerMEId</name>
-            </application>
-         </appInfo>
-         <projectDesc/>
-         <classDecls>
-            <taxonomy xml:id="DcmSourceClassification">
-               <category xml:id="DcmContentClass"/>
-               <category xml:id="DcmPresentationClass"/>
-               <category xml:id="DcmAuthorityClass"/>
-               <category xml:id="DcmScoringClass"/>
-               <category xml:id="DcmStateClass"/>
-               <category xml:id="DcmCompletenessClass"/>
-            </taxonomy>
-         </classDecls>
-      </encodingDesc>
-      <workList>
-         <work>
-            <identifier label=""/>
+<?xml-model href="https://music-encoding.org/schema/5.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0">
+  <meiHead meiversion="5.0">
+    <fileDesc>
+      <titleStmt>
+        <title/>
+      </titleStmt>
+      <pubStmt>
+        <respStmt>
+          <resp>Publisher</resp>
+          <corpName>
+            <abbr/>
+            <expan/>
+            <address>
+              <addrLine/>
+              <addrLine><ptr target="" label=""/></addrLine>
+            </address>
+          </corpName>
+          <persName role="editor"/>
+        </respStmt>
+        <date/>
+        <availability>
+          <useRestrict/>
+        </availability>
+      </pubStmt>
+      <seriesStmt>
+        <title/>
+        <identifier type="file_collection"/>
+      </seriesStmt>
+    </fileDesc>
+    <encodingDesc>
+      <appInfo>
+        <application version="2019">
+          <name>MerMEId</name>
+        </application>
+        <application version="v0.0.1-alpha" xml:id="meiLint_v0.0.1-alpha">
+          <name>meiLint.xsl</name>
+          <ptr target="https://github.com/music-encoding/encoding-tools/blob/main/meiLint/meiLint.xsl"/>
+        </application>
+        <application version="v1.0" xml:id="mei40To50.xsl">
+          <name>mei40To50.xsl</name>
+          <ptr target="https://github.com/music-encoding/encoding-tools/blob/main/mei40To50/mei40To50.xsl"/>
+        </application>
+        <application version="v0.0.1-alpha" xml:id="meiLint_v0.0.1-alpha">
+          <name>meiLint.xsl</name>
+          <ptr target="https://github.com/music-encoding/encoding-tools/blob/main/meiLint/meiLint.xsl"/>
+        </application>
+      </appInfo>
+      <projectDesc/>
+      <classDecls>
+        <taxonomy xml:id="DcmSourceClassification">
+          <category xml:id="DcmContentClass"/>
+          <category xml:id="DcmPresentationClass"/>
+          <category xml:id="DcmAuthorityClass"/>
+          <category xml:id="DcmScoringClass"/>
+          <category xml:id="DcmStateClass"/>
+          <category xml:id="DcmCompletenessClass"/>
+        </taxonomy>
+      </classDecls>
+    </encodingDesc>
+    <workList>
+      <work>
+        <identifier label=""/>
+        <title xml:lang="en"/>
+        <contributor>
+          <persName role="composer"/>
+          <corpName/>
+        </contributor>
+        <creation>
+          <date/>
+          <geogName/>
+        </creation>
+        <history>
+          <p/>
+        </history>
+        <langUsage>
+          <language xml:id="" xml:lang=""/>
+        </langUsage>
+        <expressionList>
+          <expression n="">
             <title xml:lang="en"/>
-            <contributor>
-               <persName role="composer"/>
-               <corpName/>
-            </contributor>
+            <incip/>
             <creation>
-               <date/>
-               <geogName/>
+              <date/>
+              <geogName/>
             </creation>
             <history>
-               <p/>
+              <p/>
             </history>
-            <langUsage>
-               <language xml:id="" xml:lang=""></language>
-            </langUsage>
-            <expressionList>
-               <expression n="">
-                  <title xml:lang="en"/>
-                  <incip/>
-                  <creation>
-                     <date/>
-                     <geogName/>
-                  </creation>
-                  <history>
-                     <p/>
-                  </history>
-                  <perfMedium/>
-                  <classification>
-                     <termList>
-                        <term/>
-                     </termList>
-                  </classification>
-                  <componentList/>
-                  <relationList/>
-               </expression>
-            </expressionList>
-         </work>
-      </workList>
-      <manifestationList>
-         <manifestation>
-            <identifier label=""/>
-            <titleStmt>
-               <title/>
-            </titleStmt>
+            <perfMedium/>
             <classification>
-               <termList>
-                  <term />
-               </termList>
+              <termList>
+                <term/>
+              </termList>
             </classification>
-            <itemList/>
             <componentList/>
-            <relationList>
-               <relation rel="isEmbodimentOf" target=""/>
-            </relationList>
-         </manifestation>
-      </manifestationList>
-      <revisionDesc>
-         <change isodate="">
-            <respStmt>
-               <name/>
-            </respStmt>
-            <changeDesc>
-               <p/>
-            </changeDesc>
-         </change>
-      </revisionDesc>
-   </meiHead>
-   <music/>
+            <relationList/>
+          </expression>
+        </expressionList>
+      </work>
+    </workList>
+    <manifestationList>
+      <manifestation>
+        <identifier label=""/>
+        <titleStmt>
+          <title/>
+        </titleStmt>
+        <classification>
+          <termList>
+            <term/>
+          </termList>
+        </classification>
+        <itemList/>
+        <componentList/>
+        <relationList>
+          <relation rel="isEmbodimentOf" target=""/>
+        </relationList>
+      </manifestation>
+    </manifestationList>
+    <revisionDesc>
+      <change isodate="">
+        <respStmt>
+          <name/>
+        </respStmt>
+        <changeDesc>
+          <p/>
+        </changeDesc>
+      </change>
+      <change n="2" resp="#meiLint_v0.0.1-alpha">
+        <changeDesc>
+          <p>Applied lint mode.</p>
+        </changeDesc>
+        <date isodate="2024-05-02T14:40:45+02:00"/>
+      </change>
+      <change resp="#mei40To50.xsl">
+        <changeDesc>
+          <p>Converted to MEI version 5.0 using mei40To50.xsl, version 1.0</p>
+        </changeDesc>
+        <date isodate="2024-05-02"/>
+      </change>
+      <change n="4" resp="#meiLint_v0.0.1-alpha">
+        <changeDesc>
+          <p>Applied lint mode.</p>
+        </changeDesc>
+        <date isodate="2024-05-02T14:41:27+02:00"/>
+      </change>
+    </revisionDesc>
+  </meiHead>
+  <music meiversion="5.0"/>
 </mei>
