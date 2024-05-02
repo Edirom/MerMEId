@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.1/mei-CMN.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.1/mei-CMN.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.1" xml:id="mei_d1e1">
-  <meiHead xml:id="meiHead_2eba5eec" meiversion="4.0.1">
+<?xml-model href="https://music-encoding.org/schema/5.0/mei-CMN.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.0/mei-CMN.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0" xml:id="mei_d1e1">
+  <meiHead xml:id="meiHead_2eba5eec" meiversion="5.0">
     <fileDesc xml:id="fileDesc_74536c17">
       <titleStmt xml:id="titleStmt_32f3ffd9">
         <title xml:id="title_0dd3b9c4" xml:lang="de">Comala (demonstrates advanced source descriptions)</title>
@@ -40,6 +40,18 @@
         <application version="2013" xml:id="application_65eb60bf">
           <name xml:id="name_710c1419">MerMEId</name>
           <ptr label="MerMEId project home page" target="https://github.com/Det-Kongelige-Bibliotek/MerMEId" xml:id="ptr_N20E61"/>
+        </application>
+        <application version="v0.0.1-alpha" xml:id="meiLint_v0.0.1-alpha">
+          <name>meiLint.xsl</name>
+          <ptr target="https://github.com/music-encoding/encoding-tools/blob/main/meiLint/meiLint.xsl"/>
+        </application>
+        <application version="v0.0.1-alpha" xml:id="meiLint_v0.0.1-alpha">
+          <name>meiLint.xsl</name>
+          <ptr target="https://github.com/music-encoding/encoding-tools/blob/main/meiLint/meiLint.xsl"/>
+        </application>
+        <application version="v1.0" xml:id="mei40To50.xsl">
+          <name>mei40To50.xsl</name>
+          <ptr target="https://github.com/music-encoding/encoding-tools/blob/main/mei40To50/mei40To50.xsl"/>
         </application>
         <application version="v0.0.1-alpha" xml:id="meiLint_v0.0.1-alpha">
           <name>meiLint.xsl</name>
@@ -1775,7 +1787,7 @@
         </physDesc>
         <notesStmt xml:id="notesStmt_6b4b1b64">
           <annot type="source_description" xml:id="annot_c5b93247">
-            <p>In full cloth binding stamped<rend fontstyle="italic">COMALA.</rend>in gold on front cover. Hand-written label pasted on front cover inscribed<rend fontstyle="italic">Op. 12. / Comala / Partitur.</rend>Pagination is sporadic, pages 107-162 incorrectly paginated 106-161. At the end of the music on p. 161 [recte 162] is the dating<rend fontstyle="italic">Leipzig den 11 Märtz 1846 / Königstr: N<rend rend="sup"><rend rend="underline">o</rend></rend> 16.</rend>At top of page 3 inscribed in runes ᚵᚢᚦ: ᚵᛁᚢᛅ: ᛚᚤᚴᚴᛅ: (<rend fontstyle="italic">GUD GIVE LYKKE</rend>).</p>
+            <p>In full cloth binding stamped<rend fontstyle="italic">COMALA.</rend>in gold on front cover. Hand-written label pasted on front cover inscribed<rend fontstyle="italic">Op. 12. / Comala / Partitur.</rend>Pagination is sporadic, pages 107-162 incorrectly paginated 106-161. At the end of the music on p. 161 [recte 162] is the dating<rend fontstyle="italic">Leipzig den 11 Märtz 1846 / Königstr: N<rend rend="sup"><rend rend="underline">o</rend></rend>16.</rend>At top of page 3 inscribed in runes ᚵᚢᚦ: ᚵᛁᚢᛅ: ᛚᚤᚴᚴᛅ: (<rend fontstyle="italic">GUD GIVE LYKKE</rend>).</p>
           </annot>
           <annot type="links" xml:id="annot_1aca5f62"/>
         </notesStmt>
@@ -2140,7 +2152,7 @@
             </physDesc>
             <notesStmt xml:id="notesStmt_7e4bf273">
               <annot type="source_description" xml:id="annot_e9bbbef6">
-                <p> Written in brown ink on hand-ruled paper (12 staves). Glued in a blue paper cover. Text in German.</p>
+                <p>Written in brown ink on hand-ruled paper (12 staves). Glued in a blue paper cover. Text in German.</p>
               </annot>
             </notesStmt>
           </manifestation>
@@ -2154,7 +2166,7 @@
             </physDesc>
             <notesStmt xml:id="notesStmt_f380f812">
               <annot type="source_description" xml:id="annot_2b671e22">
-                <p> Written in ink on hand-ruled paper (10 staves), oblong format. Sewn, in blue paper cover. Text in Danish. Includes the passages originally to be sung by Melicoma. Melicoma's passages later crossed out in blue crayon.</p>
+                <p>Written in ink on hand-ruled paper (10 staves), oblong format. Sewn, in blue paper cover. Text in Danish. Includes the passages originally to be sung by Melicoma. Melicoma's passages later crossed out in blue crayon.</p>
               </annot>
             </notesStmt>
           </manifestation>
@@ -2292,7 +2304,7 @@
         </physDesc>
         <notesStmt xml:id="notesStmt_f6c6828d">
           <annot type="source_description" xml:id="annot_bd9e1d8b">
-            <p> The first reprint has the plate number 926 added, indicating that the plates were engraved for and published by Horneman &amp; Erslev. In that case the plate number was probably added in 1874 (cf. Dan Fog:<rend fontstyle="italic">Musikhandel i Danmark</rend>, vol. II, p.182).</p>
+            <p>The first reprint has the plate number 926 added, indicating that the plates were engraved for and published by Horneman &amp; Erslev. In that case the plate number was probably added in 1874 (cf. Dan Fog:<rend fontstyle="italic">Musikhandel i Danmark</rend>, vol. II, p.182).</p>
           </annot>
         </notesStmt>
         <relationList xml:id="relationList_f19a70d8">
@@ -2383,7 +2395,7 @@
         </physDesc>
         <notesStmt xml:id="notesStmt_613a7434">
           <annot type="source_description" xml:id="annot_dc1b0fe789">
-            <p> Reprint by Wilhelm Hansen as a separate item with the plate number replacing the original publisher's information at the bottom of the first page.</p>
+            <p>Reprint by Wilhelm Hansen as a separate item with the plate number replacing the original publisher's information at the bottom of the first page.</p>
           </annot>
         </notesStmt>
         <relationList xml:id="relationList_28ab2b53">
@@ -2670,7 +2682,25 @@
         </changeDesc>
         <date isodate="2024-05-02T14:30:17+02:00"/>
       </change>
+      <change n="36" resp="#meiLint_v0.0.1-alpha">
+        <changeDesc>
+          <p>Applied lint mode.</p>
+        </changeDesc>
+        <date isodate="2024-05-02T16:27:50+02:00"/>
+      </change>
+      <change resp="#mei40To50.xsl">
+        <changeDesc>
+          <p>Converted to MEI version 5.0 using mei40To50.xsl, version 1.0</p>
+        </changeDesc>
+        <date isodate="2024-05-02"/>
+      </change>
+      <change n="38" resp="#meiLint_v0.0.1-alpha">
+        <changeDesc>
+          <p>Applied lint mode.</p>
+        </changeDesc>
+        <date isodate="2024-05-02T16:28:24+02:00"/>
+      </change>
     </revisionDesc>
   </meiHead>
-  <music meiversion="4.0.1"/>
+  <music meiversion="5.0"/>
 </mei>
