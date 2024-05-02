@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.1/mei-CMN.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.1/mei-CMN.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<mei xmlns="http://www.music-encoding.org/ns/mei" xmlns:xl="http://www.w3.org/1999/xlink" meiversion="4.0.1" xml:id="mei_95N20005">
-  <meiHead meiversion="4.0.1">
+<?xml-model href="https://music-encoding.org/schema/5.0/mei-CMN.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.0/mei-CMN.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" xmlns:xl="http://www.w3.org/1999/xlink" meiversion="5.0" xml:id="mei_95N20005">
+  <meiHead meiversion="5.0">
     <fileDesc>
       <titleStmt>
         <title>Incipit Demo</title>
@@ -33,6 +33,14 @@
       <appInfo>
         <application version="2016">
           <name>MerMEId</name>
+        </application>
+        <application version="v0.0.1-alpha" xml:id="meiLint_v0.0.1-alpha">
+          <name>meiLint.xsl</name>
+          <ptr target="https://github.com/music-encoding/encoding-tools/blob/main/meiLint/meiLint.xsl"/>
+        </application>
+        <application version="v1.0" xml:id="mei40To50.xsl">
+          <name>mei40To50.xsl</name>
+          <ptr target="https://github.com/music-encoding/encoding-tools/blob/main/mei40To50/mei40To50.xsl"/>
         </application>
         <application version="v0.0.1-alpha" xml:id="meiLint_v0.0.1-alpha">
           <name>meiLint.xsl</name>
@@ -69,8 +77,8 @@
           <annot label="" type="links" xml:id="annot_f463a756"/>
           <annot label="" type="general_description" xml:id="annot_4b3f6f65">
             <p>This file illustrates various ways of including incipits. Incipits are defined at the editor's 'Music' tab.
-              <lb/>Incipits encoded in MEI or Plaine And Easie Code are rendered in MerMEId with<ref target="http://verovio.org" xl:show="new" label="Verovio">Verovio</ref> . Please note that Internet Explorer requires version 10 or newer for this to work.
-              <lb/>The incipits in this sample file show the beginning of Carl Nielsen's<ref target="http://www.kb.dk/dcm/cnw/document.xq?doc=cnw0060.xml" xl:show="new" label="Romance CNW 60">Romance for Violin and Piano, CNW 60</ref> .</p>
+              <lb/>Incipits encoded in MEI or Plaine And Easie Code are rendered in MerMEId with<ref target="http://verovio.org" xl:show="new" label="Verovio">Verovio</ref>. Please note that Internet Explorer requires version 10 or newer for this to work.
+              <lb/>The incipits in this sample file show the beginning of Carl Nielsen's<ref target="http://www.kb.dk/dcm/cnw/document.xq?doc=cnw0060.xml" xl:show="new" label="Romance CNW 60">Romance for Violin and Piano, CNW 60</ref>.</p>
             <p><rend fontstyle="italic">Please note: The content of this file has been modified for demonstration purposes and does not represent accurate real-world data</rend></p>
           </annot>
         </notesStmt>
@@ -79,12 +87,12 @@
             <title xml:id="title_74168954" xml:lang="en">1. Incipit encoded in MEI:</title>
             <incip xml:id="incip_35852e2f">
               <score xml:id="score_b4c043fc">
-                <scoreDef keysig.showchange="true" meter.count="4" meter.sym="common" meter.unit="4">
+                <scoreDef keysig.cancelaccid="before" meter.count="4" meter.sym="common" meter.unit="4">
                   <staffGrp>
-                    <staffDef clef.line="2" clef.shape="G" key.mode="major" key.sig="1s" label="" lines="5" n="1" xml:id="sd1"/>
+                    <staffDef clef.line="2" clef.shape="G" key.mode="major" keysig="1s" label="" lines="5" n="1" xml:id="sd1"/>
                     <staffGrp bar.thru="true" n="1" symbol="brace">
-                      <staffDef clef.line="2" clef.shape="G" key.mode="major" key.sig="1s" label=" " lines="5" n="2" xml:id="sd2"/>
-                      <staffDef clef.line="4" clef.shape="F" key.mode="major" key.sig="1s" label="" lines="5" n="3" xml:id="sd3"/>
+                      <staffDef clef.line="2" clef.shape="G" key.mode="major" keysig="1s" label=" " lines="5" n="2" xml:id="sd2"/>
+                      <staffDef clef.line="4" clef.shape="F" key.mode="major" keysig="1s" label="" lines="5" n="3" xml:id="sd3"/>
                     </staffGrp>
                   </staffGrp>
                 </scoreDef>
@@ -383,7 +391,7 @@
             </incip>
             <creation xml:id="creation_86ec1071"/>
             <history xml:id="history_74021b98">
-              <p><ref target="http://www.iaml.info/plaine-easie-code" xl:show="new" label="IAML Plaine and Easie Code reference">Plaine and Easie Code</ref> can be entered directly at the 'Music' tab for rendering with Verovio in the HTML preview. If single-staff, single-voice incipits without any slurs, dynamics, articulation or lyrics is all you need, this is probably the most efficient way of adding incipits. Enter 'plaineAndEasie' or simply 'pae' in the code language field to have MerMEId/Verovio recognize the code correctly.</p>
+              <p><ref target="http://www.iaml.info/plaine-easie-code" xl:show="new" label="IAML Plaine and Easie Code reference">Plaine and Easie Code</ref>can be entered directly at the 'Music' tab for rendering with Verovio in the HTML preview. If single-staff, single-voice incipits without any slurs, dynamics, articulation or lyrics is all you need, this is probably the most efficient way of adding incipits. Enter 'plaineAndEasie' or simply 'pae' in the code language field to have MerMEId/Verovio recognize the code correctly.</p>
             </history>
             <perfMedium analog="marc:048" auth="marcmusperf" xml:id="perfMedium_7ec2e148"/>
             <classification xml:id="classification_f3c02a4f">
@@ -511,7 +519,19 @@
         </changeDesc>
         <date isodate="2024-05-02T14:28:02+02:00"/>
       </change>
+      <change resp="#mei40To50.xsl">
+        <changeDesc>
+          <p>Converted to MEI version 5.0 using mei40To50.xsl, version 1.0</p>
+        </changeDesc>
+        <date isodate="2024-05-02"/>
+      </change>
+      <change n="14" resp="#meiLint_v0.0.1-alpha">
+        <changeDesc>
+          <p>Applied lint mode.</p>
+        </changeDesc>
+        <date isodate="2024-05-02T14:30:21+02:00"/>
+      </change>
     </revisionDesc>
   </meiHead>
-  <music meiversion="4.0.1"/>
+  <music meiversion="5.0"/>
 </mei>

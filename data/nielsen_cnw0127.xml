@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.1/mei-CMN.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.1/mei-CMN.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.1" xml:id="mei_d1e1">
-  <meiHead meiversion="4.0.1">
+<?xml-model href="https://music-encoding.org/schema/5.0/mei-CMN.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.0/mei-CMN.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0" xml:id="mei_d1e1">
+  <meiHead meiversion="5.0">
     <fileDesc>
       <titleStmt>
         <title xml:lang="da">Erindringens Sø</title>
@@ -47,6 +47,14 @@
         <application version="2013">
           <name>MerMEId</name>
           <ptr label="MerMEId project home page" target="https://github.com/Det-Kongelige-Bibliotek/MerMEId" xml:id="ptr_N2034D"/>
+        </application>
+        <application version="v0.0.1-alpha" xml:id="meiLint_v0.0.1-alpha">
+          <name>meiLint.xsl</name>
+          <ptr target="https://github.com/music-encoding/encoding-tools/blob/main/meiLint/meiLint.xsl"/>
+        </application>
+        <application version="v1.0" xml:id="mei40To50.xsl">
+          <name>mei40To50.xsl</name>
+          <ptr target="https://github.com/music-encoding/encoding-tools/blob/main/mei40To50/mei40To50.xsl"/>
         </application>
         <application version="v0.0.1-alpha" xml:id="meiLint_v0.0.1-alpha">
           <name>meiLint.xsl</name>
@@ -515,7 +523,19 @@
         </changeDesc>
         <date isodate="2024-05-02T14:28:04+02:00"/>
       </change>
+      <change resp="#mei40To50.xsl">
+        <changeDesc>
+          <p>Converted to MEI version 5.0 using mei40To50.xsl, version 1.0</p>
+        </changeDesc>
+        <date isodate="2024-05-02"/>
+      </change>
+      <change n="32" resp="#meiLint_v0.0.1-alpha">
+        <changeDesc>
+          <p>Applied lint mode.</p>
+        </changeDesc>
+        <date isodate="2024-05-02T14:30:22+02:00"/>
+      </change>
     </revisionDesc>
   </meiHead>
-  <music meiversion="4.0.1"/>
+  <music meiversion="5.0"/>
 </mei>

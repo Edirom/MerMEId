@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.1/mei-CMN.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.1/mei-CMN.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.1" xml:id="mei_d1e1">
-  <meiHead meiversion="4.0.1">
+<?xml-model href="https://music-encoding.org/schema/5.0/mei-CMN.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.0/mei-CMN.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0" xml:id="mei_d1e1">
+  <meiHead meiversion="5.0">
     <fileDesc>
       <titleStmt>
         <title xml:lang="da">Sang bag Ploven (score included)</title>
@@ -47,6 +47,14 @@
         <application version="2013">
           <name>MerMEId</name>
           <ptr label="MerMEId project home page" target="https://github.com/Det-Kongelige-Bibliotek/MerMEId" xml:id="ptr_N20422"/>
+        </application>
+        <application version="v0.0.1-alpha" xml:id="meiLint_v0.0.1-alpha">
+          <name>meiLint.xsl</name>
+          <ptr target="https://github.com/music-encoding/encoding-tools/blob/main/meiLint/meiLint.xsl"/>
+        </application>
+        <application version="v1.0" xml:id="mei40To50.xsl">
+          <name>mei40To50.xsl</name>
+          <ptr target="https://github.com/music-encoding/encoding-tools/blob/main/mei40To50/mei40To50.xsl"/>
         </application>
         <application version="v0.0.1-alpha" xml:id="meiLint_v0.0.1-alpha">
           <name>meiLint.xsl</name>
@@ -786,22 +794,34 @@
         </changeDesc>
         <date isodate="2024-05-02T14:28:05+02:00"/>
       </change>
+      <change resp="#mei40To50.xsl">
+        <changeDesc>
+          <p>Converted to MEI version 5.0 using mei40To50.xsl, version 1.0</p>
+        </changeDesc>
+        <date isodate="2024-05-02"/>
+      </change>
+      <change n="45" resp="#meiLint_v0.0.1-alpha">
+        <changeDesc>
+          <p>Applied lint mode.</p>
+        </changeDesc>
+        <date isodate="2024-05-02T14:30:24+02:00"/>
+      </change>
     </revisionDesc>
   </meiHead>
-  <music meiversion="4.0.1">
+  <music meiversion="5.0">
     <body xml:id="m-23">
       <mdiv xml:id="m-24">
         <score xml:id="m-25">
-          <scoreDef xml:id="m-26" keysig.showchange="true" lyric.name="Times New Roman" meter.count="4" meter.sym="common" meter.unit="4" music.name="Helsinki" page.botmar="30mm" page.height="240mm" page.leftmar="20mm" page.rightmar="20mm" page.topmar="25mm" page.width="160mm" ppq="256" text.name="Times New Roman">
+          <scoreDef xml:id="m-26" keysig.cancelaccid="before" lyric.name="Times New Roman" meter.count="4" meter.sym="common" meter.unit="4" music.name="Helsinki" page.botmar="30mm" page.height="240mm" page.leftmar="20mm" page.rightmar="20mm" page.topmar="25mm" page.width="160mm" ppq="256" text.name="Times New Roman">
             <staffGrp xml:id="m-27">
-              <staffDef xml:id="m-28" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="" lines="5" n="1">
+              <staffDef xml:id="m-28" clef.line="2" clef.shape="G" key.mode="major" keysig="0" label="" lines="5" n="1">
                 <instrDef xml:id="m-30" midi.channel="1" midi.pan="26" midi.volume="100"/>
               </staffDef>
               <staffGrp xml:id="m-37" n="1" symbol="brace">
-                <staffDef xml:id="m-31" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="" lines="5" n="2">
+                <staffDef xml:id="m-31" clef.line="2" clef.shape="G" key.mode="major" keysig="0" label="" lines="5" n="2">
                   <instrDef xml:id="m-33" midi.channel="1" midi.pan="53" midi.volume="100"/>
                 </staffDef>
-                <staffDef xml:id="m-34" clef.line="4" clef.shape="F" key.mode="major" key.sig="0" label="" lines="5" n="3">
+                <staffDef xml:id="m-34" clef.line="4" clef.shape="F" key.mode="major" keysig="0" label="" lines="5" n="3">
                   <instrDef xml:id="m-36" midi.channel="1" midi.pan="53" midi.volume="100"/>
                 </staffDef>
               </staffGrp>
