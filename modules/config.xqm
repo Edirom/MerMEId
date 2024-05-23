@@ -41,6 +41,8 @@ declare variable $config:properties := doc(concat($config:app-root, "/properties
 
 declare variable $config:version := config:get-property('version');
 
+declare variable $config:meiversion := config:get-property('meiversion');
+
 declare variable $config:footer := config:replace-properties(config:get-property('footer'));
 
 (:~

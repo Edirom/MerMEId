@@ -21,10 +21,13 @@
   <!-- Enable code inspector component? -->
   <code_inspector_main_switch>true</code_inspector_main_switch>
   <data-root>/db/apps/mermeid-data</data-root>
-  <version>v. @repository.version@ for MEI 5.0</version>
+  <!-- the MerMEId app version is read from the expath-pkg.xml -->
+  <!--<version>v. @repository.version@ for MEI 5.0</version>-->
+  <!-- supported MEI version -->
+  <meiversion>5.0</meiversion>
   <footer>
     <div class="footer" xmlns="http://www.w3.org/1999/xhtml">
-      <div class="version">v. {$config:version} for MEI 5.0</div>
+      <div class="version">{$config:version} for MEI {$config:meiversion}</div>
       <div class="dev">
         2010-2019 Danish Centre for Music Editing | Royal Danish Library, Copenhagen | <a name="https://www.kb.dk/" id="www.kb.dk" href="http://www.kb.dk" title="Det Kgl. Bibliotek">www.kb.dk <img id="dcm-logo" src="/resources/images/dcm_logo_small_white.png" /></a>
       </div>
