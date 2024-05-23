@@ -51,14 +51,14 @@ declare function loop:sort-key ($identifier as xs:string) as xs:string
                     (for instance, ?c=CNW) to the URL</p>
                   else 
                     for $c in distinct-values(
-            		collection($database)/m:mei/m:meiHead[m:fileDesc/m:seriesStmt/m:identifier[@type="file_collection"] = $collection]/
+            		collection($database)/m:mei[@meiversion=$config:meiversion]/m:meiHead[m:fileDesc/m:seriesStmt/m:identifier[@type="file_collection"] = $collection]/
             		m:workList/m:work//m:eventList[@type='performances']/m:event/m:geogName[@role='place' and normalize-space(.)] )
                     order by normalize-space(string($c))
             	    return
             		  <div>
             		  {concat(normalize-space($c),' &#160; ',$collection,' ')} 
             		  {let $numbers :=
-            		  for $n in collection($database)/m:mei/m:meiHead[m:fileDesc/m:seriesStmt/m:identifier[@type="file_collection"] = $collection]
+            		  for $n in collection($database)/m:mei[@meiversion=$config:meiversion]/m:meiHead[m:fileDesc/m:seriesStmt/m:identifier[@type="file_collection"] = $collection]
                          where $n/m:workList/m:work//m:eventList[@type='performances']/m:event/m:geogName[@role='place' and normalize-space(.)] = $c
                          order by loop:sort-key($n/m:workList/m:work/m:identifier[@label=$collection]/string()) 
                 	     return $n/m:workList/m:work/m:identifier[@label=$collection]/string()

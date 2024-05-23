@@ -105,7 +105,7 @@ declare function local:movement($expression) as node()
                     (for instance, ?c=CNW) to the URL</td></tr>
                   else 
 		    
-            	    for $c in collection($database)/m:mei/m:meiHead[m:fileDesc/m:seriesStmt/m:identifier[@type="file_collection"] = $collection and m:workList/m:work//m:expression[
+            	    for $c in collection($database)/m:mei[@meiversion=$config:meiversion]/m:meiHead[m:fileDesc/m:seriesStmt/m:identifier[@type="file_collection"] = $collection and m:workList/m:work//m:expression[
             	    normalize-space(concat(m:incip/m:incipText[1]/m:p[1]/string(),m:tempo[1]/string(),m:key[1]/string()))!='' and
             	    not(descendant-or-self::*/m:incip/m:graphic[@targettype=$resolution and @target!=''])]]
                     order by local:sort-key(string($c/m:workList/m:work/m:identifier[@label=$collection])) 

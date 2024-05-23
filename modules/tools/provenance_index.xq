@@ -67,7 +67,7 @@ declare function loop:sort-key ($num as xs:string) as xs:string
                     (for instance, ?c=CNW) to the URL</p>
                   else 
                     for $c in distinct-values(
-            		collection($database)/m:mei/m:meiHead[m:fileDesc/m:seriesStmt/m:identifier[@type="file_collection"] = $collection]/
+            		collection($database)/m:mei[@meiversion=$config:meiversion]/m:meiHead[m:fileDesc/m:seriesStmt/m:identifier[@type="file_collection"] = $collection]/
             		m:manifestationList/m:manifestation//m:provenance/m:eventList/m:event/m:p
                     /string()[string-length(.) > 0])  
                     (: IF the provenance text field (paragraph) contains only a name, name inversion may be used.  :)
@@ -78,7 +78,7 @@ declare function loop:sort-key ($num as xs:string) as xs:string
             	    return
             		  <div>{concat(loop:invert-names($c),' &#160; ',$collection,' ')} 
             		  {let $numbers :=
-            		  for $n in collection($database)/m:mei/m:meiHead[m:fileDesc/m:seriesStmt/m:identifier[@type="file_collection"] = $collection]
+            		  for $n in collection($database)/m:mei[@meiversion=$config:meiversion]/m:meiHead[m:fileDesc/m:seriesStmt/m:identifier[@type="file_collection"] = $collection]
                          where $n/m:manifestationList/m:manifestation//m:provenance/m:eventList/m:event/m:p = $c
                          order by loop:sort-key(string($n/m:workList/m:work/m:identifier[@label=$collection])) 
                 	     return $n/m:workList/m:work/m:identifier[@label=$collection]/string()

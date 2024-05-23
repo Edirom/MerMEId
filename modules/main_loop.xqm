@@ -113,26 +113,26 @@ declare function loop:getlist ($database as xs:string) as node()*
           for $doc in collection($database)/m:mei[
 	    ft:query(.,$query)
 	    and m:meiHead/m:fileDesc/m:seriesStmt/m:identifier[ ft:query(.,$coll)]
-	    and loop:pubstatus(.) ] 
+	    and loop:pubstatus(.) ][@meiversion=$config:meiversion]
 	  order by loop:sort-key ($coll,$doc,$sort0),loop:sort-key($coll,$doc,$sort1)
 	  return $doc 
 	else
 	  for $doc in collection($database)/m:mei[
 	    m:meiHead/m:fileDesc/m:seriesStmt/m:identifier[ ft:query(.,$coll)]
 	    and
-	    loop:pubstatus(.) ]
+	    loop:pubstatus(.) ][@meiversion=$config:meiversion]
 	  order by loop:sort-key ($coll,$doc,$sort0),loop:sort-key($coll,$doc,$sort1)
 	  return $doc 
      else
        if($query) then
          for $doc in collection($database)/m:mei[
 	   ft:query(.,$query)
-	   and loop:pubstatus(.) ]
+	   and loop:pubstatus(.) ][@meiversion=$config:meiversion]
 	   order by loop:sort-key ("",$doc,$sort0),loop:sort-key("",$doc,$sort1)
 	 return $doc
        else
          for $doc in collection($database)/m:mei[
-           loop:pubstatus(.)]
+           loop:pubstatus(.)][@meiversion=$config:meiversion]
 	 order by loop:sort-key ("",$doc,$sort0),loop:sort-key("",$doc,$sort1)
 	 return $doc
 	      

@@ -138,23 +138,23 @@ declare function loop:getlist (
     let $list   := 
       if($coll) then 
 	if($query) then
-          for $doc in collection($database)/m:mei[m:meiHead/m:fileDesc/m:seriesStmt/m:identifier[@type="file_collection"]/string()=$coll  and ft:query(.,$query)] 
+          for $doc in collection($database)/m:mei[@meiversion=$config:meiversion][m:meiHead/m:fileDesc/m:seriesStmt/m:identifier[@type="file_collection"]/string()=$coll  and ft:query(.,$query)] 
           where loop:genre-filter($genre,$doc) 
 	  order by loop:sort-key ($doc,$sort0),loop:sort-key($doc,$sort1)
 	  return $doc 
 	else
-	  for $doc in collection($database)/m:mei[m:meiHead/m:fileDesc/m:seriesStmt/m:identifier[@type="file_collection"]/string()=$coll] 
+	  for $doc in collection($database)/m:mei[@meiversion=$config:meiversion][m:meiHead/m:fileDesc/m:seriesStmt/m:identifier[@type="file_collection"]/string()=$coll] 
           where loop:genre-filter($genre,$doc) 
 	  order by loop:sort-key ($doc,$sort0),loop:sort-key($doc,$sort1)
 	  return $doc 
         else
 	  if($query) then
-            for $doc in collection($database)/m:mei[ft:query(.,$query)]
+            for $doc in collection($database)/m:mei[@meiversion=$config:meiversion][ft:query(.,$query)]
             where loop:genre-filter($genre,$doc) 
 	    order by loop:sort-key ($doc,$sort0),loop:sort-key($doc,$sort1)
 	    return $doc
       else
-        for $doc in collection($database)/m:mei
+        for $doc in collection($database)/m:mei[@meiversion=$config:meiversion]
         where loop:genre-filter($genre,$doc)
 	order by loop:sort-key ($doc,$sort0),loop:sort-key($doc,$sort1)
 	return $doc

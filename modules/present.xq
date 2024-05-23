@@ -21,7 +21,7 @@ declare variable $display_authority_links := request:get-parameter("display_auth
 
 let $host := request:get-hostname()
 let $list := 
-for $doc in collection($config:data-root)
+for $doc in collection($config:data-root)[m:mei/@meiversion=$config:meiversion]
 where util:document-name($doc)=$document
 return $doc
 

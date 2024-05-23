@@ -33,17 +33,17 @@ declare function local:getlist (
     let $list   := 
       if($coll) then 
     	if($query) then
-          for $doc in collection($database)/m:mei[m:meiHead/m:fileDesc/m:seriesStmt/m:identifier[@type="file_collection"]/string()=$coll  and ft:query(.,$query)] 
+          for $doc in collection($database)/m:mei[@meiversion=$config:meiversion][m:meiHead/m:fileDesc/m:seriesStmt/m:identifier[@type="file_collection"]/string()=$coll  and ft:query(.,$query)] 
     	  return $doc 
     	else
-    	  for $doc in collection($database)/m:mei[m:meiHead/m:fileDesc/m:seriesStmt/m:identifier[@type="file_collection"]/string()=$coll] 
+    	  for $doc in collection($database)/m:mei[@meiversion=$config:meiversion][m:meiHead/m:fileDesc/m:seriesStmt/m:identifier[@type="file_collection"]/string()=$coll] 
     	  return $doc 
       else
           if($query) then
-            for $doc in collection($database)/m:mei[ft:query(.,$query)]
+            for $doc in collection($database)/m:mei[@meiversion=$config:meiversion][ft:query(.,$query)]
             return $doc
           else
-            for $doc in collection($database)/m:mei
+            for $doc in collection($database)/m:mei[@meiversion=$config:meiversion]
         	return $doc
 	      
     return $list

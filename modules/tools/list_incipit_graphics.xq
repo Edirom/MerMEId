@@ -103,7 +103,7 @@ declare function local:movement($expression) as node()
                     </td></tr>
                   else 
 		    
-            	    for $c in collection($database)/m:mei/m:meiHead[m:fileDesc/m:seriesStmt/m:identifier[@type="file_collection"] = $collection and m:workList/m:work//m:expression/m:incip/m:graphic[@targettype=$resolution and @target!='']]
+            	    for $c in collection($database)/m:mei[@meiversion=$config:meiversion]/m:meiHead[m:fileDesc/m:seriesStmt/m:identifier[@type="file_collection"] = $collection and m:workList/m:work//m:expression/m:incip/m:graphic[@targettype=$resolution and @target!='']]
                     order by local:sort-key(string($c/m:workList/m:work/m:identifier[@label=$collection])) 
             	    return 
             	       <div class="work" style="margin-left:2em;">

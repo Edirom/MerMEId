@@ -47,27 +47,26 @@ declare function app:getlist ($database as xs:string, $coll as xs:string, $query
     let $list   := 
         if($coll) then 
         	if($query) then
-                  for $doc in collection($database)/m:mei[
-        	    ft:query(.,$query)
-        	    and m:meiHead/m:fileDesc/m:seriesStmt/m:identifier[ft:query(.,$coll)]
-        	    ] 
+                  for $doc in collection($database)/m:mei
+                  [@meiversion=$config:meiversion]
+                  [ft:query(.,$query) and m:meiHead/m:fileDesc/m:seriesStmt/m:identifier[ft:query(.,$coll)]] 
         	  order by loop:sort-key ($coll,$doc,$sort0),loop:sort-key($coll,$doc,$sort1)
         	  return $doc 
         	else
-        	  for $doc in collection($database)/m:mei[
-        	    m:meiHead/m:fileDesc/m:seriesStmt/m:identifier[ft:query(.,$coll)]
-        	    ]
+        	  for $doc in collection($database)/m:mei
+        	  [@meiversion=$config:meiversion]
+        	  [m:meiHead/m:fileDesc/m:seriesStmt/m:identifier[ft:query(.,$coll)]]
         	  order by loop:sort-key ($coll,$doc,$sort0),loop:sort-key($coll,$doc,$sort1)
         	  return $doc 
          else
            if($query) then
-             for $doc in collection($database)/m:mei[
-    	   ft:query(.,$query)
-    	   ]
+             for $doc in collection($database)/m:mei
+             [@meiversion=$config:meiversion]
+             [ft:query(.,$query)]
     	   order by loop:sort-key ("",$doc,$sort0),loop:sort-key("",$doc,$sort1)
     	 return $doc
            else
-             for $doc in collection($database)/m:mei
+             for $doc in collection($database)/m:mei[@meiversion=$config:meiversion]
     	 order by loop:sort-key ("",$doc,$sort0),loop:sort-key("",$doc,$sort1)
 	 return $doc
 	      
@@ -135,7 +134,7 @@ declare function app:opensearch-header($total as xs:integer,
 		$coll),
      <collections>
 	{
-          for $c in distinct-values(collection($config:data-root)//m:seriesStmt/m:identifier[@type="file_collection"][string()]/string())
+          for $c in distinct-values(collection($config:data-root)/m:mei[@meiversion=$config:meiversion]//m:seriesStmt/m:identifier[@type="file_collection"][string()]/string())
              return
 		<collection>{$c}</collection>
 	}

@@ -97,7 +97,7 @@ declare function local:source($source) as node()
                     (for instance, ?c=CNW) to the URL</td></tr>
                   else 
 		    
-            	    for $c in collection($database)/m:mei/m:meiHead[m:fileDesc/m:seriesStmt/m:identifier[@type="file_collection"] = $collection and 
+            	    for $c in collection($database)/m:mei[@meiversion=$config:meiversion]/m:meiHead[m:fileDesc/m:seriesStmt/m:identifier[@type="file_collection"] = $collection and 
             	    m:manifestationList/m:manifestation//m:provenance/m:eventList/m:event/m:p[string-length(normalize-space(.)) > 0]]
                     order by local:sort-key(string($c/m:workList/m:work/m:identifier[@label=$collection])) 
             	    return 

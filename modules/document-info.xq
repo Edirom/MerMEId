@@ -24,7 +24,7 @@ let $since    := request:get-parameter("since", "2001-01-01T00:00:00+01:00") cas
 let $before   := request:get-parameter("before","2099-01-01T00:00:00+01:00") cast as xs:dateTime
 
 return
-for $doc in collection($database)
+for $doc in collection($database)[mei:mei/@meiversion=$config:meiversion]
 let $name     := util:document-name($doc)
 let $source   := concat($base-uri,$database,$name) 
 let $modified := xdb:last-modified( $database,$name)

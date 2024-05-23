@@ -109,7 +109,7 @@ declare function crud:copy($source-filename as xs:string, $target-filename as xs
     $overwrite as xs:boolean, $new_title as xs:string?) as map(*) {
     let $source :=
         if(doc-available($config:data-root || '/' || $source-filename))
-        then doc($config:data-root || '/' || $source-filename)
+        then doc($config:data-root || '/' || $source-filename)[mei:mei/@meiversion=$config:meiversion]
         else ()
     let $title := 
         if($new_title) 
@@ -140,7 +140,7 @@ declare function crud:copy($source-filename as xs:string, $target-filename as xs
 declare function crud:read($filename as xs:string) as map(*) {
     let $doc :=
         if(doc-available($config:data-root || '/' || $filename))
-        then doc($config:data-root || '/' || $filename)
+        then doc($config:data-root || '/' || $filename)[mei:mei/@meiversion=$config:meiversion]
         else ()
     return
         if($doc)

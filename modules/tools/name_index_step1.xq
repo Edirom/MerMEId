@@ -61,7 +61,7 @@ declare function loop:invert-namesAtFirstSpace ($key as xs:string) as xs:string
                     (for instance, ?c=CNW) to the URL</p>
                   else 
                     for $c in distinct-values(
-            		collection($database)/m:mei/m:meiHead[m:fileDesc/m:seriesStmt/m:identifier[@type="file_collection"] = $collection]/
+            		collection($database)/m:mei[@meiversion=$config:meiversion]/m:meiHead[m:fileDesc/m:seriesStmt/m:identifier[@type="file_collection"] = $collection]/
             		(m:manifestationList//m:persName | m:workList/m:work//m:persName)
             		/normalize-space(loop:clean-names(string()))[string-length(.) > 0])
             		(: Add exception to last clause to exclude the composer, e.g. " and not(contains(.,'Carl Nielsen'))"  :)

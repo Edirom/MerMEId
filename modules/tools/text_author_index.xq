@@ -67,7 +67,7 @@ declare function loop:sort-key ($num as xs:string) as xs:string
                     (for instance, ?c=CNW) to the URL</p>
                   else 
                     for $c in distinct-values(
-            		collection($database)/m:mei/m:meiHead[m:fileDesc/m:seriesStmt/m:identifier[@type="file_collection"] = $collection]/
+            		collection($database)/m:mei[@meiversion=$config:meiversion]/m:meiHead[m:fileDesc/m:seriesStmt/m:identifier[@type="file_collection"] = $collection]/
             		m:workList/m:work//m:contributor/m:persName[@role="author"]
                     /normalize-space(loop:clean-names(string()))[string-length(.) > 0])  
                     (: Add exception to last clause to exclude the composer, e.g. " and not(contains(.,'Carl Nielsen'))"  :)
@@ -75,7 +75,7 @@ declare function loop:sort-key ($num as xs:string) as xs:string
             	    return
             		  <div>{concat(loop:invert-names($c),' &#160; ',$collection,' ')} 
             		  {let $numbers :=
-            		  for $n in collection($database)/m:mei/m:meiHead[m:fileDesc/m:seriesStmt/m:identifier[@type="file_collection"] = $collection]
+            		  for $n in collection($database)/m:mei[@meiversion=$config:meiversion]/m:meiHead[m:fileDesc/m:seriesStmt/m:identifier[@type="file_collection"] = $collection]
                          where $n/(m:workList | m:manifestationList)/m:work//m:persName[@role="author"][normalize-space(loop:clean-names(string())) = $c]
                          (: to include only first performances:  where contains($n/(m:workList | m:manifestationList)//m:persName[not(local-name(..)='event' and count(../preceding-sibling::m:event)>0)],$c)  :)
                          order by loop:sort-key($n/m:workList/m:work/m:identifier[@label=$collection]/string()) 
