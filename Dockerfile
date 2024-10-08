@@ -4,8 +4,7 @@
 # 2. run the eXist-db
 #########################
 ARG EXISTDB_IMAGE=existdb/existdb:6.0.1
-FROM eclipse-temurin:8-jdk as builder
-LABEL maintainer="Peter Stadler,Omar Siam"
+FROM eclipse-temurin:8-jdk AS builder
 
 ENV BUILD_HOME="/opt/builder"
 
@@ -45,6 +44,8 @@ RUN ant
 # as well as orbeon and the orbeon xforms filter
 #########################
 FROM ${EXISTDB_IMAGE}
+LABEL org.opencontainers.image.authors="Peter Stadler,Omar Siam"
+LABEL org.opencontainers.image.source="https://github.com/Edirom/MerMEId"
 
 ENV CLASSPATH=/exist/lib/*
 
