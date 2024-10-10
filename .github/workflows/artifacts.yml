@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           # fetch all history to include latest tag for the git revision info
           fetch-depth: 0
@@ -55,19 +55,19 @@ jobs:
     
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           # fetch all history to include latest tag for the git revision info
           fetch-depth: 0
 
       - name: Set up QEMU
-        uses: docker/setup-qemu-action@v2
+        uses: docker/setup-qemu-action@v3
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
 
       - name: Log in to GitHub Container registry
-        uses: docker/login-action@v2
+        uses: docker/login-action@v3
         if: github.event_name != 'pull_request'
         with:
           registry: ghcr.io
@@ -75,7 +75,7 @@ jobs:
           password: ${{ secrets.VIFEBOTS_GITHUB_TOKEN }}
       
       - name: Log in to DockerHub
-        uses: docker/login-action@v2
+        uses: docker/login-action@v3
         if: github.event_name != 'pull_request'
         with:
           username: vifebot
@@ -85,7 +85,7 @@ jobs:
       # https://github.com/docker/metadata-action
       - name: Extract Docker metadata
         id: meta
-        uses: docker/metadata-action@v4
+        uses: docker/metadata-action@v5
         with:
           images: |
             ghcr.io/edirom/mermeid
@@ -98,7 +98,7 @@ jobs:
       # subsequent steps will use this image from cache
       # see https://github.com/docker/build-push-action/blob/master/docs/advanced/test-before-push.md
       - name: Build and export to Docker
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v6
         with:
           context: .
           load: true
@@ -120,7 +120,7 @@ jobs:
       # Build and push Docker image with Buildx (don't push on PR)
       # https://github.com/docker/build-push-action
       - name: Build and push Docker image
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v6
         if: github.event_name != 'pull_request'
         with:
           context: .
