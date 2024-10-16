@@ -11,3 +11,9 @@ updates:
       interval: "weekly"
     labels:
       - "dependencies"
+  - package-ecosystem: "maven"
+    directory: "testing/"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "dependencies"
