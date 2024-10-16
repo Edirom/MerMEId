@@ -71,3 +71,12 @@ RUN ["java", "net.sf.saxon.Transform", "-s:/exist/etc/log4j2.xml", "-xsl:/exist/
 #RUN [ "java", \
 #    "org.exist.start.Main", "client", "-l", \
 #    "--no-gui",  "--xpath", "system:get-version()" ]
+
+# overwrite default healthcheck and explicitly set `-ouri`
+# see https://github.com/Edirom/MerMEId/issues/222
+HEALTHCHECK CMD [ "java", \
+    "org.exist.start.Main", "client", \
+    "--no-gui",  \
+    "--user", "guest", "--password", "guest", \
+    "-ouri=xmldb:exist://localhost:8080/xmlrpc", \
+    "--xpath", "system:get-version()" ]
