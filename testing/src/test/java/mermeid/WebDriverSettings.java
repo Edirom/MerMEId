@@ -3,7 +3,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import java.util.concurrent.TimeUnit;
 
 public class WebDriverSettings {
     public static ChromeDriver driver;
@@ -17,8 +16,7 @@ public class WebDriverSettings {
         driver = new ChromeDriver(options);
         driver.navigate().to("http://localhost:8080/index.html");
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(120, TimeUnit.MILLISECONDS);
-
+        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(5));
     }
 
     @AfterEach
