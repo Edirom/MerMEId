@@ -66,6 +66,11 @@
             <langUsage>
                <language xml:id="" xml:lang=""></language>
             </langUsage>
+            <classification>
+               <termList>
+                  <term/>
+               </termList>
+            </classification>
             <expressionList>
                <expression n="">
                   <title xml:lang="en"/>
