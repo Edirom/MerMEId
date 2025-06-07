@@ -25,7 +25,7 @@
     
     <xbl:template>
       <xf:model id="editor-model">
-        <xf:instance id="data-instance" xxf:mirror="true">
+        <xf:instance xmlns="http://www.music-encoding.org/ns/mei" id="data-instance" xxf:mirror="true">
           <_/>
         </xf:instance>
         <xf:instance xmlns="http://www.music-encoding.org/ns/mei" id="taxonomy">
