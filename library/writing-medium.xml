@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Writing medium list -->
 <!-- The list is just for easy selection of commonly used values. Values are copied into an open input field in the editor.  -->  
-<writingMedium>
+<writingMedium xmlns="http://www.kb.dk/dcm">
     <value>ink</value>
     <value>black ink</value>
     <value>brown ink</value>
@@ -16,5 +16,3 @@
     <value>blue pen</value>
     <value>red pen</value>
 </writingMedium>
-
-

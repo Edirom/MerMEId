@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Source classification terms -->
 <!-- Items may be added/deleted/changed/translated, but do not change the class codes -->  
-<classification>
+<classification xmlns="http://www.kb.dk/dcm">
 
     <!-- Main type of content -->
     <select class="DcmContentClass">
@@ -166,5 +166,3 @@
     </select>
 
 </classification>
-
-

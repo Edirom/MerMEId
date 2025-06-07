@@ -28,7 +28,7 @@
                             <xf:label></xf:label>
                             <xf:value/>
                         </xf:item>
-                        <xf:itemset nodeset="xxf:instance('writing-medium-instance')/item">
+                        <xf:itemset nodeset="xxf:instance('writing-medium-instance')/dcm:item">
                             <xf:label>
                                 <xf:output value="label"/>
                             </xf:label>
@@ -54,7 +54,7 @@
                     <h:p>Select writing medium</h:p>
                     <xf:var name="medium" select="."/>
                     <h:div style="height:100%">
-                        <xf:repeat nodeset="xxf:instance('writing-medium-instance')/value" id="medium-repeat">
+                        <xf:repeat nodeset="xxf:instance('writing-medium-instance')/dcm:value" id="medium-repeat">
                             <h:div>
                                 <xf:trigger submission="replace-form-with" appearance="minimal">
                                     <xf:label>
@@ -63,7 +63,7 @@
                                     </xf:label>
                                     <xf:action ev:event="DOMActivate">
                                         <xf:action>
-                                            <xf:setvalue ref="$medium/@medium" value="xxf:instance('writing-medium-instance')/value[index('medium-repeat')]" />
+                                            <xf:setvalue ref="$medium/@medium" value="xxf:instance('writing-medium-instance')/dcm:value[index('medium-repeat')]" />
                                             <xxf:hide dialog="medium_menu"/>
                                         </xf:action>
                                     </xf:action>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Resolutions for graphics (@targettype values) -->
 <!-- MerMEId's HTML output recognizes values "lowres" and "hires" for low and high resolution incipit images -->  
-<resolutions>
+<resolutions xmlns="http://www.kb.dk/dcm">
     <item>
         <value>lowres</value>
         <label>Low resolution</label>

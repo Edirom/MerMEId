@@ -54,7 +54,7 @@
           <dcm:person-list ref="$binding"></dcm:person-list>
           
           <!-- display a warning if role is not on standard relators list -->
-          <xf:group ref=".[$role and not(xxf:instance('relators-instance')/role[.=$role])]">
+          <xf:group ref=".[$role and not(xxf:instance('relators-instance')/dcm:role[.=$role])]">
             <h:a class="help_plain">
               <h:img src="{xxf:instance('parameters')/dcm:server_name}/editor/images/warning.png"
                 alt="warning"/>
@@ -65,7 +65,7 @@
           </xf:group>
 
           <xf:select1 ref="$binding/@role" class="mediumlong">
-            <xf:itemset nodeset="xxf:instance('relators-instance')/role">
+            <xf:itemset nodeset="xxf:instance('relators-instance')/dcm:role">
               <xf:label>
                 <xf:output value="."/>
               </xf:label>

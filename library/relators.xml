@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Based on MARC relators list at http://id.loc.gov/vocabulary/relators -->
-<relators analog="http://id.loc.gov/vocabulary/relators">
+<relators analog="http://id.loc.gov/vocabulary/relators" xmlns="http://www.kb.dk/dcm">
     <role code=""/>
     <role code="act">actor</role>
     <role code="adp">adapter</role>
