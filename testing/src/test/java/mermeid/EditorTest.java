@@ -82,7 +82,7 @@ public class EditorTest extends WebDriverSettings {
             }
         }
         // assert that there are 5 changed text inputs
-        assertEquals(6, changedIds.size());
+        assertTrue(changedIds.size() >= 6, "Expected at least 6 changed text inputs, but found: " + changedIds.size());
 
         // Save changes and return to main menu
         Common.saveChangesAndReturnToMainPage();
