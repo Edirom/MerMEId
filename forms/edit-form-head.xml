@@ -360,6 +360,11 @@
     </xf:bind>            
     <!--<xf:bind nodeset="instance('data-instance')//m:revisionDesc/m:change/@isodate" type="xs:dateTime"/>-->
     
+    <xf:instance id="tempeditor">
+      <data>
+        <index/>
+      </data>
+    </xf:instance>
   </xf:model>
   
   <!-- XBL components -->
