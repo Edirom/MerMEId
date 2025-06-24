@@ -20,6 +20,24 @@
         <!--<xf:action if="instance('parameters')/dcm:automatic_log_main_switch='true'">
           <xf:setvalue ref="instance('data-instance')/m:meiHead/m:revisionDesc/m:change[last()]/@isodate" value="now()"/>
         </xf:action>-->
+        <xf:var name="nodes" 
+             select="instance('data-instance')//m:annot[@type='general_description']"/>
+        <xf:var name="count" select="count($nodes)"/>
+
+         <xf:setvalue ref="instance('tempeditor')/index" value="1"/>
+         <xf:action while="instance('tempeditor')/index &lt;= $count">
+            <!-- Get current position -->
+            <xf:var name="pos" select="instance('tempeditor')/index"/>
+            
+            <!-- Apply replacement to current annotation -->
+            <xf:setvalue
+                ref="$nodes[position() = $pos]"
+                value="replace($nodes[position() = $pos], '&amp;amp;', '&amp;')" />
+
+                 <!-- Increment counter -->
+            <xf:setvalue ref="instance('tempeditor')/index" value="$pos + 1"/>
+         </xf:action>
+                     
         <xf:dispatch name="language-update" target="form-group"/>
         <xf:send submission="save-to-file"/>
         <xf:setvalue ref="instance('temp')/changed" value="'false'"/>
