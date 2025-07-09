@@ -160,3 +160,8 @@ declare function crud:read($filename as xs:string) as map(*) {
             'code': 404
         }
 };
+
+declare function crud:list($database as xs:string) as xs:string* {
+  for $doc in collection($database)
+  return tokenize(document-uri($doc), "/")[last()]
+};

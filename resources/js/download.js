@@ -9,7 +9,7 @@ function showModal() {
 
 function downloadXmlFiles() {
     const xhr = new XMLHttpRequest();
-    xhr.open("GET", "download-xml", true); // assuming controller handles `download-xml`
+    xhr.open("GET", "/data/list", true);
     xhr.responseType = "json"; // very important!
     xhr.onload = async function () {
         if (xhr.status === 200) {
@@ -33,7 +33,13 @@ function downloadXmlFiles() {
                 progressLabel.textContent = `Downloading file ${i + 1} of ${totalFiles}`;
                 currentFileLabel.textContent = `Currently downloading: ${file}`;
 
-                let resp = await fetch(`http://localhost:8080/data/${encodeURIComponent(file)}`)
+                let resp = await fetch(`/data/read?filename=${encodeURIComponent(file)}`, {
+                    method: "GET",
+                    headers: {
+                        "Accept": "application/xml"
+                    }
+                });
+
                 let xml = await resp.text();
                 zip.file(file, xml);
 

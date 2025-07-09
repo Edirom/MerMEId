@@ -2,8 +2,6 @@ xquery version "3.0";
 
 import module namespace login="http://exist-db.org/xquery/login" at "resource:org/exist/xquery/modules/persistentlogin/login.xql";
 import module namespace util="http://exist-db.org/xquery/util";
-import module namespace config="https://github.com/edirom/mermeid/config" at "./modules/config.xqm";
-import module namespace loop="http://kb.dk/this/getlist" at "./modules/main_loop.xqm";
 declare namespace output="http://www.w3.org/2010/xslt-xquery-serialization";
                 
 declare variable $exist:path external;
@@ -11,8 +9,6 @@ declare variable $exist:resource external;
 declare variable $exist:controller external;
 declare variable $exist:prefix external;
 declare variable $exist:root external;
-
-declare variable $collection := $config:data-root;
 
 if ($exist:path eq '') then
     <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
@@ -88,17 +84,6 @@ else if ($exist:resource = 'login') then
             ), 
             string-join($serializationParameters, ' ')
         )
-
-else if ($exist:resource = 'download-xml') then
-    let $files := loop:getlist($collection)
-    
-    (: Extract filenames using util:document-name :)
-    let $fileNames := 
-        for $doc in $files
-        return util:document-name($doc)
-    let $json := serialize($fileNames, map { "method": "json" })
-    return
-        response:stream($json, "media-type=application/json")
 
 else 
 (: everything else is passed through
