@@ -9,37 +9,31 @@ function showModal() {
 
 function downloadXmlFiles() {
     const xhr = new XMLHttpRequest();
-    xhr.open("GET", "/data/list", true);
+    xhr.open("GET", "data/list", true); // assuming controller handles `download-xml`
     xhr.responseType = "json"; // very important!
     xhr.onload = async function () {
         if (xhr.status === 200) {
             const zip = new JSZip();
             const files = xhr.response; // use .responseText if not a blob
-            const filteredFiles = files.filter(f => 
-                !f.endsWith('.xql') && f !== '__contents__.xml'
-            );
-            const totalFiles = filteredFiles.length;
+            
+            const totalFiles = files.length;
 
             const progressLabel = document.getElementById("download-progress-label");
             const currentFileLabel = document.getElementById("current-file-label");
             const progressBar = document.getElementById("progress-bar");
 
             for (let i = 0; i < totalFiles; i++) {
-                const file = filteredFiles[i];
+                const file = files[i];
                 
-                if (!file.endsWith(".xml"))
-                    continue; // skip non-XML files
-
                 progressLabel.textContent = `Downloading file ${i + 1} of ${totalFiles}`;
                 currentFileLabel.textContent = `Currently downloading: ${file}`;
 
-                let resp = await fetch(`/data/read?filename=${encodeURIComponent(file)}`, {
+                let resp = await fetch(`data/read?filename=${encodeURIComponent(file)}`, {
                     method: "GET",
                     headers: {
                         "Accept": "application/xml"
                     }
                 });
-
                 let xml = await resp.text();
                 zip.file(file, xml);
 
@@ -70,6 +64,8 @@ function downloadXmlFiles() {
             });
         } else {
             console.error("Download failed:", xhr.statusText);
+            alert("Failed to download files. Please try again later.");
+            setTimeout(closeModal, 2000);
         }
     };
     xhr.send();
