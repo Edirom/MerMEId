@@ -68,7 +68,7 @@ public class EditorTest extends WebDriverSettings {
         editButton.click();
 
         // wait for page to have loaded
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@id='xf-293']/a")));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='popup' and text()=' Add more titles...']")));
 
         // set text inputs with randomString
         List<WebElement> inputs = driver.findElements(By.xpath("//input[@type='text']"));
@@ -91,7 +91,7 @@ public class EditorTest extends WebDriverSettings {
         editButton = driver.findElement(By.xpath("//form[@action='http://localhost:8080/forms/edit-work-case.xml'][input/@value='incipit_demo.xml']/button"));
         editButton.click();
         // wait for page to have loaded
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@id='xf-293']/a")));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='popup' and text()=' Add more titles...']")));
 
         // check changes
         for (String id: changedIds) {
@@ -118,7 +118,7 @@ public class EditorTest extends WebDriverSettings {
 
         // hover over "add more titles"
         WebElement addTitlesButton =
-            wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@id='xf-293']/a")));
+            wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='popup' and text()=' Add more titles...']")));
         builder.moveToElement(addTitlesButton).perform();
 
         // Add rows for additional titles

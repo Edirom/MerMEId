@@ -36,7 +36,7 @@ public class HTMLRenderingTest extends WebDriverSettings{
 
 
         // wait for page to have loaded
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@id='xf-293']/a")));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='popup' and text()=' Add more titles...']")));
 
         // set text inputs with randomString
         List<WebElement> inputs = driver.findElements(By.xpath("//input[@type='text']"));
