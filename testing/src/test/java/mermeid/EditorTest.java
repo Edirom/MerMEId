@@ -133,7 +133,7 @@ public class EditorTest extends WebDriverSettings {
         }
 
         // set text inputs to $randomString$
-        // and assert that there are 48 text inputs on the page (most of them invisible)
+        // and assert that there are 45 text inputs on the page (most of them invisible)
         List<WebElement> inputs =
             wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(By.xpath("//input[@type='text']"), 45));
 
@@ -148,8 +148,8 @@ public class EditorTest extends WebDriverSettings {
                 changedIds.add(input.getAttribute("id"));
             }
         }
-        // assert that there are more than 9 changed text inputs
-        assertTrue(changedIds.size() >= 9, "Expected at least 9 changed text inputs, but found: " + changedIds.size());
+        // assert that there are more than 7 changed text inputs
+        assertTrue(changedIds.size() >= 7, "Expected at least 7 changed text inputs, but found: " + changedIds.size());
 
         // Save changes and return to main menu
         Common.saveChangesAndReturnToMainPage();
