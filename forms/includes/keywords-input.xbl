@@ -25,10 +25,10 @@
     
     <xbl:template>
       <xf:model id="editor-model">
-        <xf:instance id="data-instance" xxf:mirror="true">
+        <xf:instance xmlns="http://www.music-encoding.org/ns/mei" id="data-instance" xxf:mirror="true">
           <_/>
         </xf:instance>
-        <xf:instance xmlns="http://www.kb.dk/dcm" id="taxonomy">
+        <xf:instance xmlns="http://www.music-encoding.org/ns/mei" id="taxonomy">
           <classification/>
         </xf:instance>
         
@@ -108,8 +108,8 @@
               <h:table class="popup_menu_table" cellpadding="0" cellspacing="0" border="0">
                   
                 <xf:repeat nodeset="instance('taxonomy')//m:taxonomy[1]/m:category" id="level1_keywords-repeat">
-                  <tr>
-                    <td style="vertical-align:top;border-bottom: 1px solid #999; margin:0; padding:5px;">
+                  <h:tr>
+                    <h:td style="vertical-align:top;border-bottom: 1px solid #999; margin:0; padding:5px;">
                       <!-- level 1 keywords  -->
                       <xf:trigger submission="replace-form-with" appearance="minimal">
                         <xf:label>
@@ -130,8 +130,8 @@
                           </xf:action>
                         </xf:action>
                       </xf:trigger>
-                    </td>
-                    <td style="vertical-align:top;border-bottom: 1px solid #999; margin:0; padding:5px;">
+                    </h:td>
+                    <h:td style="vertical-align:top;border-bottom: 1px solid #999; margin:0; padding:5px;">
                       <!-- level 2 keywords -->
                       <xf:repeat nodeset="m:category" id="category-index">
                       <xf:var value="index('category-index')" name="index"/>
@@ -155,8 +155,8 @@
                         </xf:trigger>
                         <h:br clear="all"/>
                       </xf:repeat>
-                    </td>
-                  </tr>
+                    </h:td>
+                  </h:tr>
                 </xf:repeat>
               </h:table>
               <h:br/>
