@@ -28,10 +28,13 @@ authors:
   given-names: "Matthias"
 - family-names: "Schopper"
   given-names: "Daniel"
+- family-names: "Asif"
+  given-names: "Imran"
+  orcid: https://orcid.org/0000-0002-1144-6265
 title: "MerMEId"
-version: "v2.0.0"
+version: "v2.1.0"
 doi: "10.5281/zenodo.10665425"
-date-released: "2024-02-15"
+date-released: "2025-08-13"
 url: "https://github.com/Edirom/MerMEId"
 repository-code: "https://github.com/Edirom/MerMEId"
 license: Apache-2.0
