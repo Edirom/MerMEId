@@ -160,3 +160,24 @@ declare function crud:read($filename as xs:string) as map(*) {
             'code': 404
         }
 };
+
+(:~
+ : List all files within the data directory
+ :
+ : @return an array of filenames (aka MerMEId identifiers)
+ :)
+declare function crud:list() as array(xs:string*) {
+    let $resources := xmldb:get-child-resources($config:data-root)
+    return
+    array {
+        for $file in $resources
+        let $uri := concat($config:data-root, '/', $file)
+        let $is-mei := try {
+            name(doc($uri)/*) = 'mei'
+        } catch * {
+            false()
+        }
+        where $is-mei
+        return $file
+    }
+};

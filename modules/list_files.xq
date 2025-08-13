@@ -136,7 +136,11 @@ declare function local:format-reference(
 	  <div class="list_header">
 	    <div class="header_right">
 	      <div>
-	       <a id="login-info" href="#" data-user="">Login</a></div>
+	       <a id="login-info" href="#" data-user="">Login</a>
+         <button type="button" id="download-files" value="Download All XML Files" title="Download All XML Files">
+                <img src="../resources/images/download.gif" alt="Download All XML Files" style="width: 25px;height: 22px;"/>
+            </button>
+        </div>
 	      <div class="loginRequired" style="display:inline;">
  	      <form id="create-file" action="{config:link-to-app('data/create')}" 
  	          method="post" class="ajaxform" title="Add new file">
@@ -258,6 +262,7 @@ declare function local:format-reference(
       </div>
     }
     {doc('../login.html')/*}
+    {doc('../download.html')/*}
     {doc('../confirm.html')/*}
     {config:replace-properties(config:get-property('footer'))}
   </body>

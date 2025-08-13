@@ -205,6 +205,16 @@ else if($exist:path = '/create' and request:get-method() eq 'POST') then
         if(request:get-header('Accept') eq 'application/json' and $backend-response instance of map(*))
         then local:stream-json(map:remove($backend-response, 'document-node'), $backend-response?code)
         else local:redirect-to-main-page()
+        
+(:~
+ : list files endpoint 
+ :
+ :)
+else if($exist:path = '/list' and request:get-method() eq 'GET') then 
+    let $fileNames := crud:list()
+    let $json := serialize($fileNames, map { "method": "json" })
+    return
+        response:stream($json, "media-type=application/json")
 else
 (: everything else is passed through :)
    (console:log('/data Controller: passthrough'),
