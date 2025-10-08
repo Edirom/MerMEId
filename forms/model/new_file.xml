@@ -116,6 +116,22 @@
          </manifestation>
       </manifestationList>
       <revisionDesc>
+         <change type="false">
+            <respStmt>
+              <name/>
+            </respStmt>
+            <changeDesc>
+              <p>Partial publication</p>
+            </changeDesc>
+         </change>
+         <change type="false">
+            <respStmt>
+              <name/>
+            </respStmt>
+            <changeDesc>
+              <p>Publication</p>
+            </changeDesc>
+         </change>
          <change isodate="">
             <respStmt>
                <name/>

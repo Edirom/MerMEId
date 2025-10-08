@@ -355,6 +355,7 @@
     
     
     <xf:bind nodeset="instance('data-instance')//m:perfRes/@solo" type="xs:boolean"/>
+    <xf:bind nodeset="instance('data-instance')//m:revisionDesc/m:change/@type" type="xs:boolean"/>
     <xf:bind nodeset="instance('temp')">
       <xf:bind id="counter-bind" nodeset="counter" type="xf:integer" name="counter"/>
     </xf:bind>            
