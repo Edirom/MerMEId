@@ -1,282 +1,1003 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <collection xmlns="http://www.loc.gov/MARC21/slim">
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30002514</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">UA-Kan</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-UA</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Central'naja naučnaja biblioteka im. V. I. Vernads'koho, Nacional'noj akademii nauk Ukrajiny</subfield>
-            <subfield code="c">Kyjiv</subfield>
-            <subfield code="g">UA-Kan</subfield>
-        </datafield>
-        <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Central'naja naučnaja biblioteka im. V.,  I. Vernads'koho, Nacional'noj akademii,  nauk Ukrajiny, Prospekt 40-riččja Žovtnja, 3, 03039 Kyjiv, Ukraine</subfield>
-        </datafield>
-    </record>
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30002515</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">UA-Kk</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-UA</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Biblioteka muzychnoji Akademiji im. P. I. Chajkovskoho</subfield>
-            <subfield code="c">Kyjiv</subfield>
-            <subfield code="g">UA-Kk</subfield>
-        </datafield>
-        <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Biblioteka Gosudarstvennoy Konservatoriy imeni P. I. Chaykovskovo</subfield>
-        </datafield>
-        <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Biblioteka Gosudarstvennoj konservatorii im. P. I. Čajkovskogo</subfield>
-        </datafield>
-        <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Biblioteka muzytschnoi Akademii im. P. I. Čajkovskogo</subfield>
-        </datafield>
-    </record>
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30005667</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">UA-Km</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-UA</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Spilka kompozytoriv Ukrainy, Centr. "Muz. inform"</subfield>
-            <subfield code="c">Kyjiv</subfield>
-            <subfield code="g">UA-Km</subfield>
-        </datafield>
-        <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Music Information Centre of the Ukraine Composers Union</subfield>
-        </datafield>
-    </record>
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30078247</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">UA-Knbuv</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">UA</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Nacional'na biblioteka Ukrajiny imeni V. I. Vernads'koho</subfield>
-            <subfield code="c">Kyjiv</subfield>
-            <subfield code="g">UA-Knbuv</subfield>
-        </datafield>
-        <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Національна бібліотека України імені В. І. Вернадського (НБУВ)</subfield>
-        </datafield>
-        <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Vernadsky National Library of Ukraine</subfield>
-        </datafield>
-        <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Nacional'na biblioteka Ukrajiny imeni V.,  I. Vernads'koho, Prospekt 40-riččja Žovtnja, 3, 03039 Kyjiv, Ukraine</subfield>
-            <subfield code="u">http://www.nbuv.gov.ua/</subfield>
-        </datafield>
-    </record>
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30002524</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">UA-LV</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-UA</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Derzhavna konservatoiya im. M. Lysenka</subfield>
-            <subfield code="c">L'viv</subfield>
-            <subfield code="g">UA-LV</subfield>
-        </datafield>
-        <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">M. Lysenko State Conservatory of Musik, Library</subfield>
-        </datafield>
-        <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Biblioteka Vyshchoho muzychnoho instytutu im. M. Lysenka</subfield>
-        </datafield>
-        <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Bibliothek der Lysenko-Hochschule für Musik</subfield>
-        </datafield>
-        <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Derzhavna konservatoiya im. M. Lysenka, ul. O. Nyzhankivskogo, 5, 290005 L'viv, Ukraine</subfield>
-        </datafield>
-    </record>
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30006597</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">UA-LVa</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-UA</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Central State Historical Archives of Ukraine</subfield>
-            <subfield code="c">L'viv</subfield>
-            <subfield code="g">UA-LVa</subfield>
-        </datafield>
-    </record>
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30006598</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">UA-LVm</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-UA</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Istorichni muzei Biblioteka</subfield>
-            <subfield code="c">L'viv</subfield>
-            <subfield code="g">UA-LVm</subfield>
-        </datafield>
-        <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Historical Museum Library</subfield>
-        </datafield>
-    </record>
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30006650</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">UA-LVmu</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-UA</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">The Section of the Lviv Art Gallery - The Museum of Art of the Ancient Ukrainian Book</subfield>
-            <subfield code="c">L'viv</subfield>
-            <subfield code="g">UA-LVmu</subfield>
-        </datafield>
-    </record>
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30005697</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">UA-LVs</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-UA</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">L'vivska naukova biblioteka im. V. Stefanyka NAN Ukrainy</subfield>
-            <subfield code="c">L'viv</subfield>
-            <subfield code="g">UA-LVs</subfield>
-        </datafield>
-        <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">L'viv Stefanyk Scientific Library</subfield>
-        </datafield>
-        <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Instytut Ossolińskiego</subfield>
-        </datafield>
-        <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Biblioteka Publiczna fundacji M. Ossolińskiego</subfield>
-        </datafield>
-    </record>
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30006358</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">UA-LVu</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-UA</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Naukowa Biblioteka L'wiws'koho nacional'noho uniwersytetu im. Ivana Franka</subfield>
-            <subfield code="c">L'viv</subfield>
-            <subfield code="g">UA-LVu</subfield>
-        </datafield>
-        <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Naukowa Biblioteka L'wiws'koho, nacional'noho uniwersytetu im. Ivana, Franka, vul. Dragomanova, 5, 79601 L'viv, Ukraine</subfield>
-            <subfield code="u">http://library.lnu.edu.ua/bibl/</subfield>
-        </datafield>
-    </record>
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30002531</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">UA-O</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-UA</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Biblioteka Derzhavnoji Konservatoriji im. A. W. Nezhdanovoji</subfield>
-            <subfield code="c">Odessa</subfield>
-            <subfield code="g">UA-O</subfield>
-        </datafield>
-        <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Biblioteka Gosudarstvennoy Konservatoriy imeni A. V. Nezhdanovoy</subfield>
-        </datafield>
-        <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Biblioteka Gosudarstvennoj konservatorii im. A. V. Neždanovoj</subfield>
-        </datafield>
-    </record>
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30005704</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">UA-Oan</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-UA</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Derzhavna Naukova Biblioteka im. M. Hor'koho</subfield>
-            <subfield code="c">Odessa</subfield>
-            <subfield code="g">UA-Oan</subfield>
-        </datafield>
-        <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Biblioteka nazionalnoi Akademii nauk</subfield>
-        </datafield>
-    </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51008146</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052320.0</controlfield>
+      <controlfield tag="008">240801||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">313488379</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q4496334</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">UA-CHnum</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">36.23208301074126</subfield>
+         <subfield code="f">49.99109685591625</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-UA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Charkivs'kyj nacional'nyj universytet mystectv imeni Ivana Kotljarevs'koho, Biblioteka</subfield>
+         <subfield code="c">Charkiv</subfield>
+         <subfield code="g">UA-CHnum</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Majdan Konstytuciji, 11/13</subfield>
+         <subfield code="b">Charkiv</subfield>
+         <subfield code="d">Ukraine</subfield>
+         <subfield code="e">61003</subfield>
+         <subfield code="m">bka_khnum@ukr.net</subfield>
+         <subfield code="u">https://numlib.kh.ua/</subfield>
+         <subfield code="u">https://num.kharkiv.ua/en/</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Харківський національний університет мистецтв імені Івана Котляревського, Бібліотека</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Kharkiv National Kotlyarevsky University of Arts</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Kharkiv National I. P. Kotlyarevsky University of Arts</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Kharkiv National University of Arts named after I. P. Kotlyarevsky</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Kharkiv Conservatory</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Charkiv</subfield>
+         <subfield code="0">places/50004364</subfield>
+      </datafield>
+      <datafield tag="680" ind1="1" ind2=" ">
+         <subfield code="a">The library's collection includes rare books and sheet music from the late 19th and early 20th centuries. A separate collection of books and sheet music by I. Miklashevskyi (1882-1959) is kept, which contains many rare old editions. In total, the library has more than 200 rare and valuable items.</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30002514</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052013.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">157584407</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q592734</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">UA-Kan</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">30.518491333158767</subfield>
+         <subfield code="f">50.404339225653764</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-UA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Nacional'na biblioteka Ukrajiny imeni V. I. Vernads'koho</subfield>
+         <subfield code="c">Kyjiv</subfield>
+         <subfield code="g">UA-Kan</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Holosijivs'kyj prospekt, 3 (Голосіївський пр., 3)</subfield>
+         <subfield code="b">03039, Kyjiv (Київ)</subfield>
+         <subfield code="d">Ukraine</subfield>
+         <subfield code="m">service@nbuv.gov.ua</subfield>
+         <subfield code="u">http://nbuv.gov.ua/</subfield>
+         <subfield code="z">tel: +38 / (044) / 524-81-36</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Central'naja naučnaja biblioteka im. V. I. Vernads'koho, Nacional'noj akademii nauk Ukrajiny</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">Національна бібліотека України імені В. І. Вернадського</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">National Library of Ukraine Named after V. I. Vernads'koho</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Kyjiv</subfield>
+         <subfield code="0">places/3903525</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 7</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30002515</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052013.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">138548762</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q1515426</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">UA-Kk</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">30.525324869053154</subfield>
+         <subfield code="f">50.44871424304969</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-UA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Nacional'na muzyčna akademija Ukrajiny imeni Petra Čajkovs'koho, Biblioteka</subfield>
+         <subfield code="c">Kyjiv</subfield>
+         <subfield code="g">UA-Kk</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">vul. Architektora Horodec'koho, 1-3/11 (вул. Архітектора Городецького, 1-3/11)</subfield>
+         <subfield code="b">02000, Kyjiv (Київ)</subfield>
+         <subfield code="d">Ukraine</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Київська консерваторія</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Kyiv Conservatory</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">Національна музична академія України імені Петра Чайковського, Бібліотека</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">National Music Academy of Ukraine Named after Peter Tchaikovsky, Library</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Kyjiv</subfield>
+         <subfield code="0">places/3903525</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30005667</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052041.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">147491754</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q635378</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">UA-Km</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-UA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Nacional'na spilka kompozytoriv Ukrajiny, Muzyčnyj fond</subfield>
+         <subfield code="c">Kyjiv</subfield>
+         <subfield code="g">UA-Km</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">vul. V. Čornovola, 2, of. 100 (вул. В.Чорновола, 2, оф. 100, цокольний поверх)</subfield>
+         <subfield code="b">01135, Kyjiv (Київ)</subfield>
+         <subfield code="d">Ukraine</subfield>
+         <subfield code="m">muzfond@silver.com.ua</subfield>
+         <subfield code="u">https://composersukraine.org/index.php?id=9</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Spilka kompozytoriv Ukrainy, Centr. "Muz. inform"</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Music Information Centre of Ukraine Composers Union</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">Національна спілка композиторів України, Музичний Фонд</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">National Union of Composers of Ukraine, Music Collection</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Kyjiv</subfield>
+         <subfield code="0">places/3903525</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30078247</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250626115909.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">157584407</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q592734</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">UA-Knbuv</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">30.510800795907965</subfield>
+         <subfield code="f">50.440912318795455</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-UA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Nacional'na biblioteka Ukrajiny imeni V. I. Vernads'koho (NBUV), viddil muzyčnych fondiv</subfield>
+         <subfield code="c">Kyjiv</subfield>
+         <subfield code="g">UA-Knbuv</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Korpus No. 2, vul. Volodimirs'ka 62, 3rd poverch, k. 305 (Корпус №2, вул. Володимирська 62, 3-й поверх, к. 305.)</subfield>
+         <subfield code="b">01033, Kyjiv (Київ)</subfield>
+         <subfield code="d">Ukraine</subfield>
+         <subfield code="u">http://www.nbuv.gov.ua/node/66</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Національна бібліотека Української Держави (1918)</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Національна бібліотека України у місті Києві при Українській Академії Наук (1919)</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Всенародна (Національна) бібліотека України при Всеукраїнській Академії Наук у м. Києві (1919–1920)</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Всенародна бібліотека України в Києві (1920–1934)</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Державна бібліотека Всеукраїнської Академії Наук (1934–1936)</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Бібліотека Академії Наук  УРСР (1936–1948)</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Державна публічна бібліотека УРСР (1948–1965)</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Центральна наукова бібліотека АН УРСР (1965–1988)</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Центральна наукова бібліотека ім. В. І. Вернадського АН УРСР (1988–1996)</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Національна бібліотека України імені В. І. Вернадського (з 1996 р.)</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">Національна бібліотека України імені В. І. Вернадського (НБУВ), відділ музичних фондів</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">Vernadsky National Library of Ukraine, Music Department</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">Vernadsky National Library of Ukraine Named after V. I. Vernadsky, Music Department</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Kyjiv</subfield>
+         <subfield code="0">places/3903525</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 213</subfield>
+      </datafield>
+      <datafield tag="678" ind1="1" ind2=" ">
+         <subfield code="a">Seit ihrer Gründung im Jahre 1918 hat die ukrainische Nationalbibliothek ihren Namen zehnmal gewechselt oder wechseln müssen. Hier sind die oben angegebenen ukrainischen Namen im Deutschen widergegeben:  Nationalbibliothek des ukrainischen Staates (1918); Nationalbibliothek der Ukraine in Kiew an der Ukrainischen Akademie der Wissenschaften (1919); Die Allvolks-(National-)Bibliothek der Ukraine an der Allukrainischen Akademie der Wissenschaften in Kiew (1919–1920); Nationalbibliothek der Ukraine in Kiew (1920–1934); Staatsbibliothek der Allukrainischen Akademie der Wissenschaften (1934–1936); Bibliothek der Akademie der Wissenschaften der Ukrainischen SSR (1936–1948); Staatliche Öffentliche Bibliothek der Ukrainischen SSR (1948–1965); Zentrale Wissenschaftliche Bibliothek der Akademie der Wissenschaften der Ukrainischen SSR (1965–1988); Zentrale Wissenschaftliche Bibliothek benannt nach W. I. Wernadskij der Akademie der Wissenschaften der Ukrainischen SSR (1988–1996); V. I. Wernadskij-Nationalbibliothek der Ukraine (seit 1996).</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30002524</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052013.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">303776185</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q1992023</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">UA-LV</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">24.03233413037421</subfield>
+         <subfield code="f">49.837085753950085</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-UA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">L'vivs'ka nacional'na muzyčna akademija imeni Mykoly Lysenka, Biblioteka</subfield>
+         <subfield code="c">L'viv</subfield>
+         <subfield code="g">UA-LV</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Vul. O. Hyžankivs'koho, bud. 5 (вул. О. Нижанківського, буд. 5)</subfield>
+         <subfield code="b">79000, L'viv (Львів)</subfield>
+         <subfield code="d">Ukraine</subfield>
+         <subfield code="m">lnma@lnma.edu.ua</subfield>
+         <subfield code="m">olgaosadcia@gmail.com</subfield>
+         <subfield code="u">https://lnma.edu.ua/</subfield>
+         <subfield code="z">contact: Ol'ga Pavlivna Osadcja</subfield>
+         <subfield code="z">tel: +38 (032) 259 07 51</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Львівська консерваторія</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Lviv Conservatory</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">Львівська національна музична академія імені Миколи Лисенка, Бібліотека</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">Lviv National Music Academy Named after Mykola Lysenko, Library</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">L'viv</subfield>
+         <subfield code="0">places/3900094</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30006597</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052049.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">124863831</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q12168439</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">UA-LVa</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">24.03486372678756</subfield>
+         <subfield code="f">49.83934056992847</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-UA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Central'nyj Deržavnyj Istoryčnyj Archiv Ukrajiny, u m. L'vovi</subfield>
+         <subfield code="c">L'viv</subfield>
+         <subfield code="g">UA-LVa</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+         <subfield code="a">Archive</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">pl. Soborna, 3-a (пл. Соборна, 3-а)</subfield>
+         <subfield code="b">79008, m. L'viv (м. Львів)</subfield>
+         <subfield code="d">Ukraine</subfield>
+         <subfield code="m">tsdial@arch.gov.ua</subfield>
+         <subfield code="u">https://tsdial.archives.gov.ua/index.html</subfield>
+         <subfield code="z">tel: +380 / (032) 235-45-08</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">Центральний Державний Історичний Архів України, у м. Львові</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">Central State Historical Archives of Ukraine in Lviv</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">L'viv</subfield>
+         <subfield code="0">places/3900094</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30006598</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052049.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">144884671</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q4271084</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">UA-LVm</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">24.032799456847727</subfield>
+         <subfield code="f">49.842203746963335</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-UA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">L'vivs'kyj istoryčnyj muzej, Biblioteka</subfield>
+         <subfield code="c">L'viv</subfield>
+         <subfield code="g">UA-LVm</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+         <subfield code="a">Museum</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">pl. Rynok, 6 (пл. Ринок, 6)</subfield>
+         <subfield code="b">79008, L'viv (Львів)</subfield>
+         <subfield code="d">Ukraine</subfield>
+         <subfield code="m">lhm@mail.lviv.ua</subfield>
+         <subfield code="u">http://www.lhm.lviv.ua/viddily/biblioteka.html</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">Львівський історичний музей, Бібліотека</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">Lviv Historical Museum, Library</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">L'viv</subfield>
+         <subfield code="0">places/3900094</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30006650</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052049.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">UA-LVmu</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">24.02767748935708</subfield>
+         <subfield code="f">49.837913271168766</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-UA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Muzej staroukrajins'koji knygy</subfield>
+         <subfield code="c">L'viv</subfield>
+         <subfield code="g">UA-LVmu</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+         <subfield code="a">Museum</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">vul. Kopernika, 15 (вул. Коперника, 15)</subfield>
+         <subfield code="b">79000, m. L'viv (м. Львів)</subfield>
+         <subfield code="d">Ukraine</subfield>
+         <subfield code="u">http://lvivgallery.org.ua/museums/muzey-staroukrayinskoyi-knygy</subfield>
+         <subfield code="z">tel: +38 032 261-30-12</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">Музей староукраїнської книги</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">Львівська Національна Галерея Мистецтв імені Бориса Возницького</subfield>
+         <subfield code="w">t</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">The Section of the Lviv Art Gallery - The Museum of Art of the Ancient Ukrainian Book</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">L'viv</subfield>
+         <subfield code="0">places/3900094</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007033</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052312.0</controlfield>
+      <controlfield tag="008">230120||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">125866570</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q2037262</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">UA-LVnm</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">24.0279308690929</subfield>
+         <subfield code="f">49.84300612283339</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-UA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Nacional'nyj muzej u L'vovi im. A. Šeptyc'koho</subfield>
+         <subfield code="c">L'viv</subfield>
+         <subfield code="g">UA-LVnm</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+         <subfield code="a">Museum</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">пр. Свободи, 20</subfield>
+         <subfield code="a">pr. Svobody, 20</subfield>
+         <subfield code="b">Львів, 79000</subfield>
+         <subfield code="b">L'viv 79000</subfield>
+         <subfield code="c">L'vivs'ka oblast'</subfield>
+         <subfield code="d">Ukraine</subfield>
+         <subfield code="u">https://nml.com.ua/en/</subfield>
+         <subfield code="z">tel: +380 / 32 / 235-88-56</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">Національний музей у Львові ім. А. Шептицького</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">Andrey Sheptytsky National Museum in Lviv</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">L'viv</subfield>
+         <subfield code="0">places/3900094</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30005697</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052041.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">149762227</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q958032</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">UA-LVs</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">24.026018779930173</subfield>
+         <subfield code="f">49.83620499601414</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-UA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">L'vivs'ka nacional'na naukova biblioteka Ukrajiny imeni V. Stefanyka</subfield>
+         <subfield code="c">L'viv</subfield>
+         <subfield code="g">UA-LVs</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Vul. Bibliotečna, 2 (вул. Бібліотечна, 2)</subfield>
+         <subfield code="b">79000, m. L'viv (м. Львів)</subfield>
+         <subfield code="d">Ukraine</subfield>
+         <subfield code="m">library@lsl.lviv.ua</subfield>
+         <subfield code="m">fvvz@ukr.net</subfield>
+         <subfield code="m">oklarysa@gmail.com</subfield>
+         <subfield code="u">https://www.lsl.lviv.ua/index.php/uk/golovna2/</subfield>
+         <subfield code="u">http://www.lsl.lviv.ua/index.php/uk/pro-biblioteku/struktura-biblioteki/instytut-doslidzhen-bibliotechnyh-mystetskyh-resursiv/</subfield>
+         <subfield code="z">contact: director Vasyl Fershtei (fvvz@ukr.net)</subfield>
+         <subfield code="z">contact: Larysa Kupchynska (oklarysa@gmail.com)</subfield>
+         <subfield code="z">tel: +380 / (032) / 261-63-72 (Vasyl Fershtei)</subfield>
+         <subfield code="z">tel: +380 / (032) / 261-55-20 (Larysa Kupchynska)</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Інститут досліджень бібліотечних мистецьких ресурсів</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">відділ наукових досліджень творів образотворчого та музичного мистецтва</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Instytut doslidžen' bibliotečnych mystec'kych resursiv</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Viddil naukovych doslidžen' tvoriv obrazotvorčoho ta muzyčnoho mistectva</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">L'viv Stefanyk Scientific Library</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Instytut Ossolińskiego</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Biblioteka Publiczna fundacji M. Ossolińskiego</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">Львівська національна наукова бібліотека України імені В. Стефаника</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">L'viv National Scientific Library of Ukraine Named after V. Stefanyk</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">L'viv</subfield>
+         <subfield code="0">places/3900094</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 174</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30006358</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052047.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">165272567</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q19057116</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">UA-LVu</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">24.030642382892278</subfield>
+         <subfield code="f">49.83408764969975</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-UA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Naukova Biblioteka L'vivs'koho nacional'noho universytetu imeni Ivana Franka</subfield>
+         <subfield code="c">L'viv</subfield>
+         <subfield code="g">UA-LVu</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Vul. Drahomanova, 5 (вул. Драгоманова, 5)</subfield>
+         <subfield code="b">79601, L'viv (Львів)</subfield>
+         <subfield code="d">Ukraine</subfield>
+         <subfield code="m">library@lnu.edu.ua</subfield>
+         <subfield code="m">oleksandr.sedlyar@lnu.edu.ua</subfield>
+         <subfield code="u">https://lnulibrary.lviv.ua/</subfield>
+         <subfield code="z">contact: Oleksandr Sedlyar</subfield>
+         <subfield code="z">tel. and fax: +380 / (032) / 275–60–01</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">Наукова бібліотека Львівського національного університету імені Івана Франка</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">Scientific Library of the Ivan Franko National University of Lviv</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">L'viv</subfield>
+         <subfield code="0">places/3900094</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 302</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30002531</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052013.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q4331411</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">UA-O</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">30.72502649109366</subfield>
+         <subfield code="f">46.482900683924775</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-UA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Odes'ka nacional'na muzyčna akademija imeni A. V. Neždanovoji (ONMA), Biblioteka</subfield>
+         <subfield code="c">Odesa</subfield>
+         <subfield code="g">UA-O</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">vul. Novosel's'koho, 63 (вул. Новосельського, 63)</subfield>
+         <subfield code="b">Odesa (Одеса)</subfield>
+         <subfield code="d">Ukraine</subfield>
+         <subfield code="m">muse@odma.edu.ua</subfield>
+         <subfield code="u">https://odma.edu.ua/</subfield>
+         <subfield code="z">tel: +380 / (048) 726-78-76</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Одеська консерваторія</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Odes'ka konservatorija</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Odessa Conservatory</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">Одеська національна музична академія імені А. В. Нежданової (ОНМА), Бібліотека</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">Odessa National Music Academy Named after A. V. Nezhdanova (ONMA), Library</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Odesa</subfield>
+         <subfield code="0">places/3902433</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30005704</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052041.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">309145857939223021555</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q12135215</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">UA-Oan</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">30.725864850311567</subfield>
+         <subfield code="f">46.49133293884075</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-UA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Odes'ka nacional'na naukova biblioteka</subfield>
+         <subfield code="c">Odesa</subfield>
+         <subfield code="g">UA-Oan</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">vul. Pastera, 13 (вул. Пастера, 13)</subfield>
+         <subfield code="b">65023, Odesa (Одеса)</subfield>
+         <subfield code="d">Ukraine</subfield>
+         <subfield code="m">ognb@ukr.net</subfield>
+         <subfield code="u">http://odnb.odessa.ua/</subfield>
+         <subfield code="z">tel: +38 (048) 723-02-52</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Derzhavna naukova biblioteka im. M. Hor'koho</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">Одеська національна наукова бібліотека</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">Odesa National Scientific Library</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Odesa</subfield>
+         <subfield code="0">places/3902433</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007034</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052312.0</controlfield>
+      <controlfield tag="008">230120||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">139869756</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q12100412</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">UA-Tda</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">25.583074933500097</subfield>
+         <subfield code="f">49.540602281912086</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-UA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Deržavnyj archiv ternopil'ckoji oblasti</subfield>
+         <subfield code="c">Ternopil'</subfield>
+         <subfield code="g">UA-Tda</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+         <subfield code="a">Archive</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">вул. Карпенка, 2</subfield>
+         <subfield code="a">vul. Karpenka, 2</subfield>
+         <subfield code="b">46018 м. Тернопіль</subfield>
+         <subfield code="b">46018 m. Ternopil'</subfield>
+         <subfield code="c">Ternopil'c'ka oblast'</subfield>
+         <subfield code="d">Ukraine</subfield>
+         <subfield code="m">archive_te@arch.gov.ua</subfield>
+         <subfield code="u">https://te.archives.gov.ua/index.php</subfield>
+         <subfield code="z">tel: +380 / 352 / 52-44-95</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">Державний архів тернопільської області</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">State Archive of Ternopil Oblast</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Ternopil'</subfield>
+         <subfield code="0">places/11271</subfield>
+      </datafield>
+   </record>
 </collection>
-

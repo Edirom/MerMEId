@@ -1,129 +1,2697 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <collection xmlns="http://www.loc.gov/MARC21/slim">
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30003846</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">ZA-Csa</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XC-ZA</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">National Library of South Africa</subfield>
-            <subfield code="c">Cape Town</subfield>
-            <subfield code="g">ZA-Csa</subfield>
-        </datafield>
-        <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">South African Library</subfield>
-        </datafield>
-        <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">National Library of South Africa, 5 Queen Victoria Street, 8000 Cape Town, South Africa</subfield>
-            <subfield code="u">http://www.nlsa.ac.za/NLSA/</subfield>
-        </datafield>
-    </record>
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30080131</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">ZA-STusa</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">ZA</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Die Universiteit Stellenbosch Argief</subfield>
-            <subfield code="c">Stellenbosch</subfield>
-            <subfield code="g">ZA-STusa</subfield>
-        </datafield>
-        <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">The Stellenbosch University Archives</subfield>
-        </datafield>
-        <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Die Universiteit Stellenbosch Argief, Wilcocksgebou, Hoek v. Ryneveld en,  Victoria Straat, Privaatsak X1, 7602 Stellenbosch, South Africa</subfield>
-            <subfield code="u">http://www.sun.ac.za/afrikaans/entities/archives/Pages/default.aspx</subfield>
-        </datafield>
-    </record>
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30080130</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">ZA-STusdm</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">ZA</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Universiteit van Stellenbosch, Dokumentasiesentrum vir Musiek</subfield>
-            <subfield code="c">Stellenbosch</subfield>
-            <subfield code="g">ZA-STusdm</subfield>
-        </datafield>
-        <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Stellenbosch University, Documentation Centre for Music</subfield>
-        </datafield>
-        <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Universiteit van Stellenbosch,,  Dokumentasiesentrum vir Musiek, Departement Musiek, Neethlingstraat, Privaatsak X1, 7602 Stellenbosch, South Africa</subfield>
-            <subfield code="u">http://www.domus.ac.za/afrikaans/</subfield>
-        </datafield>
-    </record>
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30080129</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">ZA-STusmb</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">ZA</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Universiteit van Stellenbosch, Musiek Biblioteek</subfield>
-            <subfield code="c">Stellenbosch</subfield>
-            <subfield code="g">ZA-STusmb</subfield>
-        </datafield>
-        <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Stellenbosch University, Music Library</subfield>
-        </datafield>
-        <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Universiteit van Stellenbosch, Musiek,  Biblioteek, Konservatorium, Neethlingstraat, Privaatsak X5036, 7599 Stellenbosch, South Africa</subfield>
-            <subfield code="u">http://library.sun.ac.za/Afrikaans/libraries/music/about/Pages/default.aspx</subfield>
-        </datafield>
-    </record>
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30080132</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">ZA-STussv</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">ZA</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Universiteit van Stellenbosch, Biblioteek: Spesiale Versamelings</subfield>
-            <subfield code="c">Stellenbosch</subfield>
-            <subfield code="g">ZA-STussv</subfield>
-        </datafield>
-        <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Stellenbosch University, Library: Special Collections</subfield>
-        </datafield>
-        <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Universiteit van Stellenbosch,,  Biblioteek: Spesiale Versamelings, JS Gericke Biblioteek, JS Marais Plein, Privaatsak X5036, 7599 Stellenbosch, South Africa</subfield>
-            <subfield code="u">http://library.sun.ac.za/Afrikaans/libraries/jsg/Pages/default.aspx</subfield>
-        </datafield>
-    </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007967</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250902085633.0</controlfield>
+      <controlfield tag="008">240528||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-Anahecs</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">26.845894073911182</subfield>
+         <subfield code="f">-32.785868133515535</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">The National Heritage and Cultural Studies Centre (NAHECS), Library</subfield>
+         <subfield code="c">Alice</subfield>
+         <subfield code="g">ZA-Anahecs</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Postal Address:</subfield>
+         <subfield code="a">Private Bag X1322</subfield>
+         <subfield code="b">Alice</subfield>
+         <subfield code="c">Eastern Cape</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">5700</subfield>
+         <subfield code="m">mmaamoe@ufh.ac.za</subfield>
+         <subfield code="u">https://www.ufh.ac.za/faculties/social-sciences/centres/nahecs</subfield>
+         <subfield code="z">contact: Mosoabuli Maamoe</subfield>
+         <subfield code="z">tel: +27 / 40 602 2050</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Physical Address:</subfield>
+         <subfield code="a">Main Campus</subfield>
+         <subfield code="b">Alice</subfield>
+         <subfield code="c">Eastern Cape</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">5700</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Alice</subfield>
+         <subfield code="0">places/50020914</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/UFH</subfield>
+         <subfield code="z">Directory of South African Music Collections: University of Fort Hare: NAHECS</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007969</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052318.0</controlfield>
+      <controlfield tag="008">240529||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-BFarca</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">26.186941000347876</subfield>
+         <subfield code="f">-29.107005195479676</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Archive for Contemporary Affairs (ARCA)</subfield>
+         <subfield code="c">Bloemfontein</subfield>
+         <subfield code="g">ZA-BFarca</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Archive</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Postal Address:</subfield>
+         <subfield code="a">P.O. Box 2320</subfield>
+         <subfield code="b">Bloemfontein</subfield>
+         <subfield code="c">Free State</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">9300</subfield>
+         <subfield code="m">mestileld@ufs.ac.za</subfield>
+         <subfield code="u">https://www.ufs.ac.za/library/libraries-divisions/archive-for-contemporary-affairs-home</subfield>
+         <subfield code="z">contact: Mr. L.D. Mestile</subfield>
+         <subfield code="z">tel: +27 / 51 401 2418</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Physical Address:</subfield>
+         <subfield code="a">205 Nelson Mandela Drive</subfield>
+         <subfield code="a">Park West</subfield>
+         <subfield code="b">Bloemfontein</subfield>
+         <subfield code="c">Free State</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">9301</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Argief vir Eietydse Aangeleenthede (INEG)</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Bloemfontein</subfield>
+         <subfield code="0">places/50014792</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/ARCA</subfield>
+         <subfield code="z">Directory of South African Music Collections: Archive for Contemporary Affairs (ARCA) = Argief vir Eietydse Aangeleenthede (INEG)</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007971</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052318.0</controlfield>
+      <controlfield tag="008">240529||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-BFmd</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">26.190869209837505</subfield>
+         <subfield code="f">-29.11084401603918</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Universty of the Free State, Music Department</subfield>
+         <subfield code="c">Bloemfontein</subfield>
+         <subfield code="g">ZA-BFmd</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Postal Address:</subfield>
+         <subfield code="a">P O Box 339</subfield>
+         <subfield code="a">Faculty of the Humanities</subfield>
+         <subfield code="a">Internal Box 36</subfield>
+         <subfield code="b">Bloemfontein</subfield>
+         <subfield code="c">Free State</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">9300</subfield>
+         <subfield code="m">matildiewium@gmail.com</subfield>
+         <subfield code="u">https://www.ufs.ac.za/humanities/departments-and-divisions/odeion-school-of-music-home</subfield>
+         <subfield code="z">contact: Matildie Thom Wium (Music Department)</subfield>
+         <subfield code="z">tel: +27 / 51 401 2328</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Physical Address:</subfield>
+         <subfield code="a">205 Nelson Mandela Drive</subfield>
+         <subfield code="a">Park West</subfield>
+         <subfield code="b">Bloemfontein</subfield>
+         <subfield code="c">Free State</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">9301</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Bloemfontein</subfield>
+         <subfield code="0">places/50014792</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/ufs-mus</subfield>
+         <subfield code="z">Directory of South African Music Collections: Universty of the Free State: Music Department</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007970</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052318.0</controlfield>
+      <controlfield tag="008">240529||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">141679392</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q31739513</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-BFnaln</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">26.216237144041624</subfield>
+         <subfield code="f">-29.116578732294077</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Nasionale Afrikaanse Letterkundige Museum (NALN)</subfield>
+         <subfield code="c">Bloemfontein</subfield>
+         <subfield code="g">ZA-BFnaln</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+         <subfield code="a">Museum</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Postal Address:</subfield>
+         <subfield code="a">Private Bag X20543</subfield>
+         <subfield code="b">Bloemfontein</subfield>
+         <subfield code="c">Free State</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">9300</subfield>
+         <subfield code="m">simes.w@sacr.fs.gov.za</subfield>
+         <subfield code="z">contact: Wyno Simes</subfield>
+         <subfield code="z">tel: +27 / 51 405 4013</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Physical Address:</subfield>
+         <subfield code="a">Cnr. Pres. Brand- and Miriam Makeba Street</subfield>
+         <subfield code="b">Bloemfontein</subfield>
+         <subfield code="c">Free State</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">9301</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Bloemfontein</subfield>
+         <subfield code="0">places/50014792</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/NALN</subfield>
+         <subfield code="z">Directory of South African Music Collections: NALN</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007972</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052319.0</controlfield>
+      <controlfield tag="008">240529||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">168040705</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q2227247</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-BFwmbr</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">26.208935791703247</subfield>
+         <subfield code="f">-29.14022992122561</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">War Museum of the Boer Republics</subfield>
+         <subfield code="c">Bloemfontein</subfield>
+         <subfield code="g">ZA-BFwmbr</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+         <subfield code="a">Museum</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Postal Address:</subfield>
+         <subfield code="a">P.O. Box 34061</subfield>
+         <subfield code="b">Bloemfontein</subfield>
+         <subfield code="c">Free State</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">9325</subfield>
+         <subfield code="m">vicky@anglo-boer.co.za</subfield>
+         <subfield code="u">https://wmbr.org.za/</subfield>
+         <subfield code="z">contact: Vicky Heunis</subfield>
+         <subfield code="z">tel: +27 / 51 447 3447</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Physical Address:</subfield>
+         <subfield code="a">Monument Road</subfield>
+         <subfield code="b">Bloemfontein</subfield>
+         <subfield code="c">Free State</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">9301</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Anglo-Boer War Museum</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Bloemfontein</subfield>
+         <subfield code="0">places/50014792</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/anglo-boer-war-museum</subfield>
+         <subfield code="z">Directory of South African Music Collections: War Museum of the Boer Republics</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007984</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052319.0</controlfield>
+      <controlfield tag="008">240529||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">125479003</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q17091874</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-BRFsamro</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">28.029974339081456</subfield>
+         <subfield code="f">-26.194394755488435</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Southern African Music Rights Organisation (SAMRO)</subfield>
+         <subfield code="c">Braamfontein (City of Johannesburg)</subfield>
+         <subfield code="g">ZA-BRFsamro</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Postal Address:</subfield>
+         <subfield code="a">P.O. Box 31609</subfield>
+         <subfield code="b">Braamfontein (City of Johannesburg)</subfield>
+         <subfield code="c">Gauteng</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">2017</subfield>
+         <subfield code="m">samrofoundation@samro.org.za</subfield>
+         <subfield code="m">samroscores@samro.org.za</subfield>
+         <subfield code="u">https://www.samro.org.za/</subfield>
+         <subfield code="z">tel: +27 / 11 712 8000</subfield>
+         <subfield code="z">fax: +27 / 86 683 5976</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Physical Address:</subfield>
+         <subfield code="a">20 De Korte Street</subfield>
+         <subfield code="b">Braamfontein (City of Johannesburg)</subfield>
+         <subfield code="c">Gauteng</subfield>
+         <subfield code="d">South Africa</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Braamfontein</subfield>
+         <subfield code="0">places/50020919</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/SAMRO</subfield>
+         <subfield code="z">Directory of South African Music Collections: SAMRO</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007937</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052318.0</controlfield>
+      <controlfield tag="008">240517||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">142241787</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q25614998</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-Cjgl</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">18.416627295080033</subfield>
+         <subfield code="f">-33.930447775087906</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Jacob Gitlin Library</subfield>
+         <subfield code="c">Cape Town</subfield>
+         <subfield code="g">ZA-Cjgl</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Gardens Community Centre</subfield>
+         <subfield code="a">88 Hatfield Street, Gardens</subfield>
+         <subfield code="b">Cape Town</subfield>
+         <subfield code="c">Western Cape</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">8001</subfield>
+         <subfield code="m">jacqui@gitlinlibrary.co.za</subfield>
+         <subfield code="u">http://gitlinlibrary.co.za/activeconnect/default.html</subfield>
+         <subfield code="z">contact: Jacqui Rodgers (Head Librarian)</subfield>
+         <subfield code="z">tel: +27 / 21 / 462 5088</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Cape Town</subfield>
+         <subfield code="0">places/3901904</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/Gitlin</subfield>
+         <subfield code="z">Directory of South African Music Collections: Jacob Gitlin Library</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003846</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052025.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">141489945</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">10004459-1</subfield>
+         <subfield code="2">DNB</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q211497</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-Csa</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">18.418462522212742</subfield>
+         <subfield code="f">-33.925057814635416</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">National Library of South Africa (NLSA)</subfield>
+         <subfield code="c">Cape Town</subfield>
+         <subfield code="g">ZA-Csa</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Postal Address:</subfield>
+         <subfield code="a">P.O. Box 496</subfield>
+         <subfield code="b">Cape Town</subfield>
+         <subfield code="c">Western Cape</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">8000</subfield>
+         <subfield code="u">https://www.nlsa.ac.za/</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Physical Address:</subfield>
+         <subfield code="a">5 Queen Victoria Street</subfield>
+         <subfield code="b">Cape Town</subfield>
+         <subfield code="c">Western Cape</subfield>
+         <subfield code="d">South Africa</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">South African Library</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Cape Town</subfield>
+         <subfield code="0">places/3901904</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/NLSA</subfield>
+         <subfield code="z">Directory of South African Music Collections: National Library of South Africa (NLSA)</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007963</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052318.0</controlfield>
+      <controlfield tag="008">240528||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-Debml</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">30.981282322766027</subfield>
+         <subfield code="f">-29.867357138696477</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">University of KwaZulu-Natal (UKZN), Eleanor Bonnar Music Library</subfield>
+         <subfield code="c">Durban</subfield>
+         <subfield code="g">ZA-Debml</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">244 King George V Avenue</subfield>
+         <subfield code="b">Durban</subfield>
+         <subfield code="c">KwaZulu-Natal</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">4041</subfield>
+         <subfield code="m">ngcobon16@ukzn.ac.za</subfield>
+         <subfield code="u">https://music.ukzn.ac.za/Facilities/Music-Library</subfield>
+         <subfield code="z">contact: Nonjabulo Ngcobo</subfield>
+         <subfield code="z">tel: +27 / 31 260 3827</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Durban</subfield>
+         <subfield code="0">places/50012769</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/UKZN</subfield>
+         <subfield code="z">Directory of South African Music Collections: University of KwaZulu-Natal (UKZN): Eleanor Bonnar Music Library</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007964</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052318.0</controlfield>
+      <controlfield tag="008">240528||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">133690097</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-Dkcl</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">31.00472376188822</subfield>
+         <subfield code="f">-29.835181386326994</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">University of KwaZulu-Natal, Killie Campbell Library</subfield>
+         <subfield code="c">Durban</subfield>
+         <subfield code="g">ZA-Dkcl</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">220 Gladys Mazibuko Road</subfield>
+         <subfield code="b">Durban</subfield>
+         <subfield code="c">KwaZulu-Natal</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">4001</subfield>
+         <subfield code="m">campbellcollections@ukzn.ac.za</subfield>
+         <subfield code="u">https://campbell.ukzn.ac.za/</subfield>
+         <subfield code="z">tel: +27 / 31 260 1718</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Durban</subfield>
+         <subfield code="0">places/50012769</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/UKZN-Killie-Campbell</subfield>
+         <subfield code="z">Directory of South African Music Collections: University of KwaZulu-Natal: Killie Campbell Library</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007962</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052318.0</controlfield>
+      <controlfield tag="008">240528||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-Dptl</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">31.026835352042966</subfield>
+         <subfield code="f">-29.859168064246216</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Playhouse Theatre Library</subfield>
+         <subfield code="c">Durban</subfield>
+         <subfield code="g">ZA-Dptl</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Postal Address:</subfield>
+         <subfield code="a">P.O. Box 5353</subfield>
+         <subfield code="b">Durban</subfield>
+         <subfield code="c">Kwa-Zulu Natal</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">4000</subfield>
+         <subfield code="m">librarian@playhousecompany.com</subfield>
+         <subfield code="u">http://playhousecompany.com/</subfield>
+         <subfield code="z">contact: Khululiwe Mfayela</subfield>
+         <subfield code="z">tel:  +27 / 31 369 9470</subfield>
+         <subfield code="z">fax: +27 / 31 306 2166</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Physical Address:</subfield>
+         <subfield code="a">231 Anton Lembede Street</subfield>
+         <subfield code="b">Durban</subfield>
+         <subfield code="c">Kwa-Zulu Natal</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">4041</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Durban</subfield>
+         <subfield code="0">places/50012769</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/playhouse-theatre</subfield>
+         <subfield code="z">Directory of South African Music Collections: Playhouse Theatre, Durban</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007936</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052318.0</controlfield>
+      <controlfield tag="008">240517||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-Gmm</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">19.557774623922487</subfield>
+         <subfield code="f">-34.03438486417009</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Genadendal Mission Museum</subfield>
+         <subfield code="c">Genadendal</subfield>
+         <subfield code="g">ZA-Gmm</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+         <subfield code="a">Museum</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Postal Address:</subfield>
+         <subfield code="a">PO Box 137</subfield>
+         <subfield code="b">Genadendal</subfield>
+         <subfield code="c">Western Cape</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">7235</subfield>
+         <subfield code="m">genadendalmuseum@gmail.com</subfield>
+         <subfield code="u">https://www.facebook.com/GenadendalMissionMuseum/</subfield>
+         <subfield code="z">contact: Ms Judith Balie (Curator)</subfield>
+         <subfield code="z">tel: +27 / 28 / 251 8582</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Physical Address:</subfield>
+         <subfield code="a">Church Square</subfield>
+         <subfield code="b">Genadendal</subfield>
+         <subfield code="c">Western Cape</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">7234</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Genadendal</subfield>
+         <subfield code="0">places/50020889</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/Genadendal</subfield>
+         <subfield code="z">Directory of South African Music Collections: Genadendal Mission Museum</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007979</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052319.0</controlfield>
+      <controlfield tag="008">240529||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">141655342</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q1419926</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-Jbcml</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">28.009809225307553</subfield>
+         <subfield code="f">-26.18625794802943</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">South African Broadcasting Corporation (SABC), Music Library</subfield>
+         <subfield code="c">Johannesburg</subfield>
+         <subfield code="g">ZA-Jbcml</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Postal Address:</subfield>
+         <subfield code="a">P.O. Box 931</subfield>
+         <subfield code="a">Auckland Park</subfield>
+         <subfield code="b">Johannesburg</subfield>
+         <subfield code="c">Gauteng</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">2006</subfield>
+         <subfield code="m">lombards@sabc.co.za</subfield>
+         <subfield code="u">https://www.sabc.co.za/sabc/</subfield>
+         <subfield code="z">contact: Suzette Lombard (Principal Music Librarian)</subfield>
+         <subfield code="z">tel: +27 / 11 714 2110</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Physical Address:</subfield>
+         <subfield code="a">Radiopark Studio Building</subfield>
+         <subfield code="a">Cnr Kingsway and Henley Road</subfield>
+         <subfield code="a">Auckland Park</subfield>
+         <subfield code="b">Johannesburg</subfield>
+         <subfield code="c">Gauteng</subfield>
+         <subfield code="d">South Africa</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Johannesburg</subfield>
+         <subfield code="0">places/3900695</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/SABCMusLib</subfield>
+         <subfield code="z">Directory of South African Music Collections: SABC Music Library</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007980</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052319.0</controlfield>
+      <controlfield tag="008">240529||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">141655342</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q1419926</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-Jbcra</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">28.009809225307553</subfield>
+         <subfield code="f">-26.18625794802943</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">South African Broadcasting Corporation (SABC), Radio Archives</subfield>
+         <subfield code="c">Johannesburg</subfield>
+         <subfield code="g">ZA-Jbcra</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Archive</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Postal Address:</subfield>
+         <subfield code="a">P.O. Box 931</subfield>
+         <subfield code="a">Auckland Park</subfield>
+         <subfield code="b">Johannesburg</subfield>
+         <subfield code="c">Gauteng</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">2006</subfield>
+         <subfield code="m">raserokapp@sabc.co.za</subfield>
+         <subfield code="u">https://www.sabc.co.za/sabc/</subfield>
+         <subfield code="z">contact: Peter Raseroka</subfield>
+         <subfield code="z">tel: +27 / 11 714 4671</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Physical Address:</subfield>
+         <subfield code="a">Radiopark Building</subfield>
+         <subfield code="a">Cnr Kingsway and Henley Road</subfield>
+         <subfield code="a">Auckland Park</subfield>
+         <subfield code="b">Johannesburg</subfield>
+         <subfield code="c">Gauteng</subfield>
+         <subfield code="d">South Africa</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Johannesburg</subfield>
+         <subfield code="0">places/3900695</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/SABCRadio</subfield>
+         <subfield code="z">Directory of South African Music Collections: SABC Radio Archives</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007977</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052319.0</controlfield>
+      <controlfield tag="008">240529||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">144213872</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q6217148</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-Jcl</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">28.03852558555228</subfield>
+         <subfield code="f">-26.204716360576352</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Johannesburg City Library</subfield>
+         <subfield code="c">Johannesburg</subfield>
+         <subfield code="g">ZA-Jcl</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Postal Address:</subfield>
+         <subfield code="a">Library Services</subfield>
+         <subfield code="a">Harold Strange Library of African Studies</subfield>
+         <subfield code="a">Beyers Naudé Square</subfield>
+         <subfield code="b">Johannesburg</subfield>
+         <subfield code="c">Gauteng</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">2001</subfield>
+         <subfield code="m">sithembilemk@joburg.org.za</subfield>
+         <subfield code="u">https://joburg.org.za/</subfield>
+         <subfield code="z">contact: Sithembile Mkhize</subfield>
+         <subfield code="z">tel: +27 / 11 407 7703</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Physical Address:</subfield>
+         <subfield code="a">Harold Strange Library of African Studies</subfield>
+         <subfield code="a">First Floor, Central Library</subfield>
+         <subfield code="a">Beyers Naudé Square</subfield>
+         <subfield code="b">Johannesburg</subfield>
+         <subfield code="c">Gauteng</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">2001</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Johannesburg Public Library</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Johannesburg</subfield>
+         <subfield code="0">places/3900695</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/Jhb-Lib</subfield>
+         <subfield code="z">Directory of South African Music Collections: Johannesburg Public Library</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007985</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052319.0</controlfield>
+      <controlfield tag="008">240529||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q124299972</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-Jujl</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">27.998849989842107</subfield>
+         <subfield code="f">-26.183415420896864</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">University of Johannesburg Library, Archives and Special Collections</subfield>
+         <subfield code="c">Johannesburg</subfield>
+         <subfield code="g">ZA-Jujl</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Archive</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Postal Address:</subfield>
+         <subfield code="a">University of Johannesburg Library and Information Centre</subfield>
+         <subfield code="a">Auckland Park</subfield>
+         <subfield code="b">Johannesburg</subfield>
+         <subfield code="c">Gauteng</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">2006</subfield>
+         <subfield code="m">riettez@uj.ac.za</subfield>
+         <subfield code="u">https://www.uj.ac.za/library/information-resources/special-collections/about-us/</subfield>
+         <subfield code="z">contact: Riette Zaaiman</subfield>
+         <subfield code="z">tel: +27 / 11 559 6882</subfield>
+         <subfield code="z">fax: +27 / 11 726 7723</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Physical Address:</subfield>
+         <subfield code="a">Auckland Park Kingsway Campus Library</subfield>
+         <subfield code="a">Cnr Kingsway and University Road</subfield>
+         <subfield code="b">Johannesburg</subfield>
+         <subfield code="c">Gauteng</subfield>
+         <subfield code="d">South Africa</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Johannesburg</subfield>
+         <subfield code="0">places/3900695</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/UJ</subfield>
+         <subfield code="z">Directory of South African Music Collections: University of Johannesburg</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007988</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052319.0</controlfield>
+      <controlfield tag="008">240529||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">130584979</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-Juwhp</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">28.029506224997377</subfield>
+         <subfield code="f">-26.19072010438266</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">University of the Witwatersrand (Wits), Historical Papers</subfield>
+         <subfield code="c">Johannesburg</subfield>
+         <subfield code="g">ZA-Juwhp</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Postal Address:</subfield>
+         <subfield code="a">William Cullen Library, University of the Witwatersrand</subfield>
+         <subfield code="a">Private Bag X1, P.O. WITS</subfield>
+         <subfield code="b">Johannesburg</subfield>
+         <subfield code="c">Gauteng</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">2050</subfield>
+         <subfield code="m">gabriele.mohale@wits.ac.za</subfield>
+         <subfield code="u">http://historicalpapers-atom.wits.ac.za/</subfield>
+         <subfield code="z">contact: Gabriele Mohale</subfield>
+         <subfield code="z">tel: +27 / 11 717 1940</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Physical Address:</subfield>
+         <subfield code="a">Room 2, Ground Floor</subfield>
+         <subfield code="a">William Cullen Library, East Campus</subfield>
+         <subfield code="b">Johannesburg</subfield>
+         <subfield code="c">Gauteng</subfield>
+         <subfield code="d">South Africa</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Johannesburg</subfield>
+         <subfield code="0">places/3900695</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/wits</subfield>
+         <subfield code="z">Directory of South African Music Collections: University of the Witwatersrand (Wits): Historical Papers</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007960</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052318.0</controlfield>
+      <controlfield tag="008">240528||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">132311645</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-KIM</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">24.765537148270298</subfield>
+         <subfield code="f">-28.740311891542035</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Kimberley Africana Library</subfield>
+         <subfield code="c">Kimberley</subfield>
+         <subfield code="g">ZA-KIM</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Postal address:</subfield>
+         <subfield code="a">P.O. Box 627</subfield>
+         <subfield code="b">Kimberley</subfield>
+         <subfield code="c">Northern Cape</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">8300</subfield>
+         <subfield code="m">sjames@solplaatje.org.za</subfield>
+         <subfield code="z">contact: Shirley James</subfield>
+         <subfield code="z">tel: +27 / 53 830 6247</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Physical address:</subfield>
+         <subfield code="a">63-65 Dutoitspan Road</subfield>
+         <subfield code="b">Kimberley</subfield>
+         <subfield code="c">Northern Cape</subfield>
+         <subfield code="d">South Africa</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Kimberley (Northern Cape)</subfield>
+         <subfield code="0">places/50020911</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/KimberleyAfricana</subfield>
+         <subfield code="z">Directory of South African Music Collections: Kimberley Africana Library</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007968</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052318.0</controlfield>
+      <controlfield tag="008">240528||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-MTH</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">28.750817306245672</subfield>
+         <subfield code="f">-31.60352993088238</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Walter Sisulu University, Department of Music Education</subfield>
+         <subfield code="c">Mthatha</subfield>
+         <subfield code="g">ZA-MTH</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Postal Address:</subfield>
+         <subfield code="a">Private Bag X1</subfield>
+         <subfield code="b">Mthatha</subfield>
+         <subfield code="c">Eastern Cape</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">5117</subfield>
+         <subfield code="m">ngomakutala@gmail.com</subfield>
+         <subfield code="u">https://www.wsu.ac.za/index.php/en/</subfield>
+         <subfield code="z">contact: Ms Ngoma</subfield>
+         <subfield code="z">tel: +27 / 47 502 2041</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Physical Address:</subfield>
+         <subfield code="a">Nelson Mandela Drive</subfield>
+         <subfield code="b">Mthatha</subfield>
+         <subfield code="c">Eastern Cape</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">5117</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Mthatha</subfield>
+         <subfield code="0">places/50020915</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/WSU</subfield>
+         <subfield code="z">Directory of South African Music Collections: Walter Sisulu University</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007966</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052318.0</controlfield>
+      <controlfield tag="008">240528||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">146484918</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q6051762</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-Milam</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">26.514251809955322</subfield>
+         <subfield code="f">-33.31446302830153</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">International Library of African Music (ILAM)</subfield>
+         <subfield code="c">Makhanda</subfield>
+         <subfield code="g">ZA-Milam</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Postal Address:</subfield>
+         <subfield code="a">P.O. Box 94</subfield>
+         <subfield code="b">Makhanda</subfield>
+         <subfield code="c">Eastern Cape</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">6140</subfield>
+         <subfield code="m">l.watkins@ru.ac.za</subfield>
+         <subfield code="u">https://www.ru.ac.za/ilam/</subfield>
+         <subfield code="z">contact: Lee Watkins</subfield>
+         <subfield code="z">tel: +27 / 46 603 8557</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Physical Address:</subfield>
+         <subfield code="a">Prince Alfred Street</subfield>
+         <subfield code="b">Makhanda</subfield>
+         <subfield code="c">Eastern Cape</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">6139</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Makhanda</subfield>
+         <subfield code="0">places/50020913</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/ilam</subfield>
+         <subfield code="z">Directory of South African Music Collections: ILAM</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007965</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052318.0</controlfield>
+      <controlfield tag="008">240528||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">151008009</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q6972462</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-Mml</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">26.509341851504445</subfield>
+         <subfield code="f">-33.3105914211025</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Amazwi South African Museum of Literature</subfield>
+         <subfield code="c">Makhanda</subfield>
+         <subfield code="g">ZA-Mml</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+         <subfield code="a">Museum</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Postal Address:</subfield>
+         <subfield code="a">Private Bag 1019</subfield>
+         <subfield code="b">Makhanda</subfield>
+         <subfield code="c">Eastern Cape</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">6139</subfield>
+         <subfield code="m">info@amazwi.museum</subfield>
+         <subfield code="u">https://amazwi.museum/</subfield>
+         <subfield code="z">tel:  +27 / 46 622 7042</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Physical Address:</subfield>
+         <subfield code="a">25A Worcester Street</subfield>
+         <subfield code="b">Makhanda</subfield>
+         <subfield code="c">Eastern Cape</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">6139</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Makhanda</subfield>
+         <subfield code="0">places/50020913</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/amazwi</subfield>
+         <subfield code="z">Directory of South African Music Collections: Amazwi South African Museum of Literature</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007961</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052318.0</controlfield>
+      <controlfield tag="008">240528||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-POT</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">27.0985641538533</subfield>
+         <subfield code="f">-26.691318833471836</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">North West University, Music Library</subfield>
+         <subfield code="c">Potchefstroom</subfield>
+         <subfield code="g">ZA-POT</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Physical Address:</subfield>
+         <subfield code="a">Conservatory</subfield>
+         <subfield code="a">Music Library</subfield>
+         <subfield code="a">Main Campus</subfield>
+         <subfield code="b">Potchefstroom</subfield>
+         <subfield code="c">North West</subfield>
+         <subfield code="d">South Africa</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Postal Address:</subfield>
+         <subfield code="a">Ferdinand Postma Library</subfield>
+         <subfield code="a">Private Bag X05</subfield>
+         <subfield code="b">Noordbrug</subfield>
+         <subfield code="c">North West</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">2522</subfield>
+         <subfield code="m">Martin.Nokoane@nwu.ac.za</subfield>
+         <subfield code="u">https://library.nwu.ac.za/music-library</subfield>
+         <subfield code="z">contact: Martin Nokoane</subfield>
+         <subfield code="z">tel: +27 / 18 299 2783</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Potchefstroom</subfield>
+         <subfield code="0">places/50020912</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/NWU</subfield>
+         <subfield code="z">Directory of South African Music Collections: North West University Potchefstroom</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007974</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052319.0</controlfield>
+      <controlfield tag="008">240529||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q77930373</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-Pea</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">28.174535735350492</subfield>
+         <subfield code="f">-25.775195055981893</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Erfenisstigting Argief</subfield>
+         <subfield code="c">Pretoria</subfield>
+         <subfield code="g">ZA-Pea</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Archive</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Postal Address:</subfield>
+         <subfield code="a">P.O. Box 1514</subfield>
+         <subfield code="a">Groenkloof</subfield>
+         <subfield code="b">Pretoria</subfield>
+         <subfield code="c">Gauteng</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">0027</subfield>
+         <subfield code="m">argief@es.org.za</subfield>
+         <subfield code="m">Zabeth@kultuurtuiste.org.za</subfield>
+         <subfield code="u">https://es.org.za/es-argief/</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Physical Address:</subfield>
+         <subfield code="a">Erfenissentrum</subfield>
+         <subfield code="a">Voortrekkermonument-terrein Eeufeesweg</subfield>
+         <subfield code="b">Pretoria</subfield>
+         <subfield code="c">Gauteng</subfield>
+         <subfield code="d">South Africa</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Pretoria</subfield>
+         <subfield code="0">places/50020918</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/ErfenisArch</subfield>
+         <subfield code="z">Directory of South African Music Collections: Erfenisstigting Argief</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007975</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052319.0</controlfield>
+      <controlfield tag="008">240529||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q77930373</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-Peb</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">28.174535735350492</subfield>
+         <subfield code="f">-25.775195055981893</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Erfenisstigting Biblioteek</subfield>
+         <subfield code="c">Pretoria</subfield>
+         <subfield code="g">ZA-Peb</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Postal Address:</subfield>
+         <subfield code="a">P.O. Box 1514</subfield>
+         <subfield code="a">Groenkloof</subfield>
+         <subfield code="b">Pretoria</subfield>
+         <subfield code="c">Gauteng</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">0027</subfield>
+         <subfield code="m">bib@es.org.za</subfield>
+         <subfield code="m">Meisie@kultuurtuiste.org.za</subfield>
+         <subfield code="u">https://es.org.za/en/home/</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Physical Address:</subfield>
+         <subfield code="a">Erfenissentrum</subfield>
+         <subfield code="a">Voortrekkermonument-terrein Eeufeesweg</subfield>
+         <subfield code="b">Pretoria</subfield>
+         <subfield code="c">Gauteng</subfield>
+         <subfield code="d">South Africa</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Pretoria</subfield>
+         <subfield code="0">places/50020918</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/ErfenisBib</subfield>
+         <subfield code="z">Directory of South African Music Collections: Erfenisstigting Biblioteek</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007976</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052319.0</controlfield>
+      <controlfield tag="008">240529||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">148602860</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q3091665</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-Pfak</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">28.17653957868871</subfield>
+         <subfield code="f">-25.775598684111355</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Federasie van Afrikaanse Kultuurvereniginge (FAK)</subfield>
+         <subfield code="c">Pretoria</subfield>
+         <subfield code="g">ZA-Pfak</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Postal Address:</subfield>
+         <subfield code="a">P.O. Box 2655</subfield>
+         <subfield code="a">Brooklyn Square</subfield>
+         <subfield code="b">Pretoria</subfield>
+         <subfield code="c">Gauteng</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">0075</subfield>
+         <subfield code="m">fak@fak.org.za</subfield>
+         <subfield code="u">https://fak.org.za/</subfield>
+         <subfield code="z">tel: +27 / 12 301 1777</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Physical Address:</subfield>
+         <subfield code="a">Voortrekkermonumentterrein Eeufeeslaan</subfield>
+         <subfield code="a">Groenkloof</subfield>
+         <subfield code="b">Pretoria</subfield>
+         <subfield code="c">Gauteng</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">0075</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Pretoria</subfield>
+         <subfield code="0">places/50020918</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/FAK</subfield>
+         <subfield code="z">Directory of South African Music Collections: Federasie van Afrikaanse Kultuurvereniginge (FAK)</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007982</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052319.0</controlfield>
+      <controlfield tag="008">240529||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q305314</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-Pndfcl</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">28.18013438993467</subfield>
+         <subfield code="f">-25.757771160758505</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">South African National Defence Force (SANDF), Central Library</subfield>
+         <subfield code="c">Pretoria</subfield>
+         <subfield code="g">ZA-Pndfcl</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Postal Address:</subfield>
+         <subfield code="a">Private Bag X172</subfield>
+         <subfield code="b">Pretoria</subfield>
+         <subfield code="c">Gauteng</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">0001</subfield>
+         <subfield code="m">sandflib@mweb.co.za</subfield>
+         <subfield code="u">http://www.dod.mil.za/</subfield>
+         <subfield code="z">contact: Morris Mabasa</subfield>
+         <subfield code="z">tel: +27 / 12 355 1698</subfield>
+         <subfield code="z">fax: +27 / 12 355 2090</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Physical Address:</subfield>
+         <subfield code="a">Army Office Building</subfield>
+         <subfield code="a">Cnr Dequar Rd and Potgieter Street</subfield>
+         <subfield code="b">Pretoria</subfield>
+         <subfield code="c">Gauteng</subfield>
+         <subfield code="d">South Africa</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Pretoria</subfield>
+         <subfield code="0">places/50020918</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/SANDFLib</subfield>
+         <subfield code="z">Directory of South African Music Collections: South African National Defence Force (SANDF) Central Library</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007983</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052319.0</controlfield>
+      <controlfield tag="008">240529||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q305314</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-Pndfds</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-ES</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">South African National Defence Force (SANDF), Documentation Services</subfield>
+         <subfield code="c">Pretoria</subfield>
+         <subfield code="g">ZA-Pndfds</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Postal Address:</subfield>
+         <subfield code="a">Department of Defence</subfield>
+         <subfield code="a">Command and Management Information Systems Division DoD Archives</subfield>
+         <subfield code="a">Private Bag X289</subfield>
+         <subfield code="b">Pretoria</subfield>
+         <subfield code="c">Gauteng</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">0001</subfield>
+         <subfield code="m">archive@dod.mil.za</subfield>
+         <subfield code="u">http://www.dod.mil.za/</subfield>
+         <subfield code="z">tel: +27 / 12 670 8127 (ask for reading room and enquiries)</subfield>
+         <subfield code="z">fax: +27 / 12 670 8001</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Physical Address:</subfield>
+         <subfield code="a">Department of Defence</subfield>
+         <subfield code="a">Command and Management Information Systems Division Documentation Centre</subfield>
+         <subfield code="a">42 Saturnus Road</subfield>
+         <subfield code="b">Pretoria</subfield>
+         <subfield code="c">Gauteng</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">0157</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Pretoria</subfield>
+         <subfield code="0">places/50020918</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/SANDFDoc</subfield>
+         <subfield code="z">Directory of South African Music Collections: South African National Defence Force (SANDF) Documentation Services</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007978</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052319.0</controlfield>
+      <controlfield tag="008">240529||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">123860624</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-Pnfvsa</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">28.21398782551273</subfield>
+         <subfield code="f">-25.74291981333827</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">National Film, Video and Sound Archives (NFVSA)</subfield>
+         <subfield code="c">Pretoria</subfield>
+         <subfield code="g">ZA-Pnfvsa</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Archive</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Postal Address:</subfield>
+         <subfield code="a">Private Bag X236</subfield>
+         <subfield code="b">Pretoria</subfield>
+         <subfield code="c">Gauteng</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">0001</subfield>
+         <subfield code="m">ChristopherG@dac.gov.za</subfield>
+         <subfield code="u">https://www.nationalarchives.gov.za/</subfield>
+         <subfield code="z">contact: Christopher Grové</subfield>
+         <subfield code="z">tel: +27 / 12 441 3169</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Physical Address:</subfield>
+         <subfield code="a">239 Vermeulen Street</subfield>
+         <subfield code="b">Pretoria</subfield>
+         <subfield code="c">Gauteng</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">0083</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Pretoria</subfield>
+         <subfield code="0">places/50020918</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/NFVSA</subfield>
+         <subfield code="z">Directory of South African Music Collections: National Film, Video and Sound Archives (NFVSA)</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007986</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052319.0</controlfield>
+      <controlfield tag="008">240529||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q7896158</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-Pupl</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">28.230483653817338</subfield>
+         <subfield code="f">-25.75530660337355</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">University of Pretoria Library</subfield>
+         <subfield code="c">Pretoria</subfield>
+         <subfield code="g">ZA-Pupl</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Postal Address:</subfield>
+         <subfield code="a">Faculty Library for Humanities</subfield>
+         <subfield code="a">Department of Library Services</subfield>
+         <subfield code="b">Pretoria</subfield>
+         <subfield code="c">Gauteng</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">0002</subfield>
+         <subfield code="m">sam.makgalemele@up.ac.za</subfield>
+         <subfield code="u">https://www.up.ac.za/article/2749206/libraries</subfield>
+         <subfield code="z">contact: Sam Makgalemele</subfield>
+         <subfield code="z">tel: +27 / 12 420 4787</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Physical Address:</subfield>
+         <subfield code="a">Merensky 2 Library, Level 5 (Old Merensky)</subfield>
+         <subfield code="a">Lynnwood Road, Main Campus (Hatfield)</subfield>
+         <subfield code="b">Pretoria</subfield>
+         <subfield code="c">Gauteng</subfield>
+         <subfield code="d">South Africa</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Pretoria</subfield>
+         <subfield code="0">places/50020918</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/UP</subfield>
+         <subfield code="z">Directory of South African Music Collections: University of Pretoria Library</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007987</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052319.0</controlfield>
+      <controlfield tag="008">240529||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">133722537</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q65558030</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-Pusal</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">28.199273124981314</subfield>
+         <subfield code="f">-25.76766037734051</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">University of South Africa (UNISA), Library Archives and Special Collections</subfield>
+         <subfield code="c">Pretoria</subfield>
+         <subfield code="g">ZA-Pusal</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Archive</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Postal Address:</subfield>
+         <subfield code="a">Unisa Library Archives, Anton Lembede Building PD 2-3</subfield>
+         <subfield code="a">P.O. Box 392</subfield>
+         <subfield code="b">Pretoria</subfield>
+         <subfield code="c">Gauteng</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">0003</subfield>
+         <subfield code="m">avdwesth@unisa.ac.za</subfield>
+         <subfield code="u">https://www.unisa.ac.za/sites/corporate/default/Library/Library-services/Archival-and-special-collections</subfield>
+         <subfield code="z">contact: Anri van der Westhuizen</subfield>
+         <subfield code="z">tel: +27 / 12 429 2560</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Physical Address:</subfield>
+         <subfield code="a">Unisa Library Archives, Anton Lembede Library Building Level 2</subfield>
+         <subfield code="a">Preller Street, Muckleneuk Campus</subfield>
+         <subfield code="b">Pretoria</subfield>
+         <subfield code="c">Gauteng</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">0003</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Pretoria</subfield>
+         <subfield code="0">places/50020918</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/UNISA</subfield>
+         <subfield code="z">Directory of South African Music Collections: UNISA Library Archives</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007939</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052318.0</controlfield>
+      <controlfield tag="008">240517||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-Rastl</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">18.46045642391791</subfield>
+         <subfield code="f">-33.95714688690667</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">University of Cape Town (UCT), African Studies Library</subfield>
+         <subfield code="c">Rondebosch (Municipality of Cape Town)</subfield>
+         <subfield code="g">ZA-Rastl</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Postal address:</subfield>
+         <subfield code="a">Private Bag X3</subfield>
+         <subfield code="b">Rondebosch (Municipality of Cape Town)</subfield>
+         <subfield code="c">Western Cape</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">7701</subfield>
+         <subfield code="u">https://lib.uct.ac.za/</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Physical Address:</subfield>
+         <subfield code="a">Chancellor Oppenheimer Library</subfield>
+         <subfield code="a">Upper Campus</subfield>
+         <subfield code="b">Rondebosch (Municipality of Cape Town)</subfield>
+         <subfield code="c">Western Cape</subfield>
+         <subfield code="d">South Africa</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Rondebosch</subfield>
+         <subfield code="0">places/50020888</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/UCTLib-Afr-Studies</subfield>
+         <subfield code="z">Directory of South African Music Collections: University of Cape Town (UCT): African Studies Library</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51008498</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052322.0</controlfield>
+      <controlfield tag="008">250204||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-Rbml</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">18.469607938894015</subfield>
+         <subfield code="f">-33.956654191448905</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="b">ger</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">WH Bell Music Library</subfield>
+         <subfield code="c">Rondebosch (Municipality of Cape Town)</subfield>
+         <subfield code="g">ZA-Rbml</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Baxter Rd</subfield>
+         <subfield code="b">Rondebosch (Municipality of Cape Town)</subfield>
+         <subfield code="c">Western Cape</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">7700</subfield>
+         <subfield code="m">lib-music@uct.ac.za</subfield>
+         <subfield code="u">https://lib.uct.ac.za/libraries-collections/wh-bell-music-library</subfield>
+         <subfield code="z">tel: +27 / 21 650 7135</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Rondebosch</subfield>
+         <subfield code="0">places/50020888</subfield>
+      </datafield>
+      <datafield tag="680" ind1="1" ind2=" ">
+         <subfield code="a">WH Bell Music Library is the first completely self-contained, functionally-designed music library in Africa and serves the South African College of Music and the Centre for Theatre, Dance &amp; Performance Studies.</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007055</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052312.0</controlfield>
+      <controlfield tag="008">230125||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-Rulspc</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">18.46075819583336</subfield>
+         <subfield code="f">-33.95801995987933</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">University of Cape Town Libraries, Special Collections</subfield>
+         <subfield code="c">Rondebosch (Municipality of Cape Town)</subfield>
+         <subfield code="g">ZA-Rulspc</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Postal address:</subfield>
+         <subfield code="a">Private Bag x 3</subfield>
+         <subfield code="b">Rondebosch (Municipality of Cape Town)</subfield>
+         <subfield code="c">Western Cape</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">7701</subfield>
+         <subfield code="m">lib-spcoll@uct.ac.za</subfield>
+         <subfield code="u">https://lib.uct.ac.za/libraries-collections/special-collections</subfield>
+         <subfield code="z">tel: +27 / (021) / 650-4089</subfield>
+         <subfield code="z">fax: +27 / (021) / 689-7568</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Rondebosch</subfield>
+         <subfield code="0">places/50020888</subfield>
+      </datafield>
+      <datafield tag="680" ind1="1" ind2=" ">
+         <subfield code="a">Access to materials: Special Collections remains in recovery after the fire and researchers should contact the department to find out about access to relevant materials. Currently, there is only limited reference service available.</subfield>
+      </datafield>
+      <datafield tag="680" ind1="1" ind2=" ">
+         <subfield code="a">Jagger Recovery Project at Special Collections: The University of Cape Town Libraries Special Collections consists of published and archival holdings considered significant to the institution. It was previously housed in the Jagger Library, until it was destroyed by fire in April 2021. Special Collections remains in recovery to rebuild and restore its world-renowned collections. Visit the Jagger Recovery page to learn more about our progress after the Jagger Library fire and recovery.</subfield>
+      </datafield>
+      <datafield tag="680" ind1="1" ind2=" ">
+         <subfield code="a">Before the fire, our collections consisted of printed and audio-visual materials on African studies and a wide array of other specialised subjects, as well as over 1600 sub-collections of unique manuscripts and personal papers. The collection of books and pamphlets exceeded 85000 items on African Studies alone. The collection of African films was amongst the most extensive in the world, with over 3500 films available for viewing and research.</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://lib.uct.ac.za/jagger-recovery</subfield>
+         <subfield code="z">Jagger Recovery page</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007938</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052318.0</controlfield>
+      <controlfield tag="008">240517||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-STngka</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">18.863702237408024</subfield>
+         <subfield code="f">-33.939544573199576</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">NG Kerk in Suid-Afrika, Argief</subfield>
+         <subfield code="c">Stellenbosch</subfield>
+         <subfield code="g">ZA-STngka</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Archive</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Postal Address:</subfield>
+         <subfield code="a">P.O. Box 34</subfield>
+         <subfield code="b">Stellenbosch</subfield>
+         <subfield code="c">Western Cape</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">7599</subfield>
+         <subfield code="m">argief@kaapkerk.co.za</subfield>
+         <subfield code="u">https://www.kerkargief.co.za/</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Physical Address:</subfield>
+         <subfield code="a">Kerkargiefgebou</subfield>
+         <subfield code="a">1 Noordwal-West</subfield>
+         <subfield code="b">Stellenbosch</subfield>
+         <subfield code="c">Western Cape</subfield>
+         <subfield code="d">South Africa</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Dutch Reformed Church in South Africa</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Stellenbosch</subfield>
+         <subfield code="0">places/3905636</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://www.kerkargief.co.za/vindmiddels/</subfield>
+         <subfield code="z">under "musiek versameling" a clickable link to a finding aid for the music archival material available in the church archives</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/NG-Argief</subfield>
+         <subfield code="z">Directory of South African Music Collections: NG Kerk in Suid-Afrika: Argief</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007994</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052319.0</controlfield>
+      <controlfield tag="008">240604||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-STtp</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">18.864432695526652</subfield>
+         <subfield code="f">-33.930993110235335</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Africa Open Institute for Music, Research and Innovation - Tamássy-Pauw public library</subfield>
+         <subfield code="c">Stellenbosch</subfield>
+         <subfield code="g">ZA-STtp</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">7 Joubert Street</subfield>
+         <subfield code="a">Pieter Okkers House</subfield>
+         <subfield code="a">Stellenbosch University</subfield>
+         <subfield code="b">Stellenbosch</subfield>
+         <subfield code="c">Western Cape</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="m">empauw@gmail.com</subfield>
+         <subfield code="u">https://aoinstitute.ac.za/</subfield>
+         <subfield code="u">https://aoinstitute.ac.za/project/esther-marie-pauw/</subfield>
+         <subfield code="z">contact: Dr Esther Marie Pauw</subfield>
+         <subfield code="z">tel: +27 / 72 250 7476</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">Stellenbosch University</subfield>
+         <subfield code="w">t</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Stellenbosch</subfield>
+         <subfield code="0">places/3905636</subfield>
+      </datafield>
+      <datafield tag="680" ind1="1" ind2=" ">
+         <subfield code="a">The Tamássy-Pauw public library is privately owned by Dr Esther Marie Pauw. She curates the Tamássy-Pauw collection, possibly the largest collection of flute-related sheet music in Africa, at Pieter Okkers House, the home of Africa Open Institute.</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/Tamassy-Pauw</subfield>
+         <subfield code="z">Directory of South African Music Collections: Private Collection: Stellenbosch: Tamássy-Pauw flute music</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30080131</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052129.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-STusa</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">18.862789085569887</subfield>
+         <subfield code="f">-33.933787320526896</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Die Universiteit Stellenbosch Argief</subfield>
+         <subfield code="c">Stellenbosch</subfield>
+         <subfield code="g">ZA-STusa</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Archive</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Postal address:</subfield>
+         <subfield code="a">Private Bag X1</subfield>
+         <subfield code="b">Stellenbosch</subfield>
+         <subfield code="c">Western Cape</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">7602</subfield>
+         <subfield code="m">breedtk@sun.ac.za</subfield>
+         <subfield code="u">http://www.sun.ac.za/afrikaans/entities/archives/Pages/default.aspx</subfield>
+         <subfield code="z">contact: Mrs Karlien Breedt</subfield>
+         <subfield code="z">tel: +27 / 21 / 808 2314</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Physical Address:</subfield>
+         <subfield code="a">Wilcocks Building</subfield>
+         <subfield code="a">Cnr. Ryneveld and Victoria Street</subfield>
+         <subfield code="b">Stellenbosch</subfield>
+         <subfield code="c">Western Cape</subfield>
+         <subfield code="d">South Africa</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">The Stellenbosch University Archives</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Stellenbosch</subfield>
+         <subfield code="0">places/3905636</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/SU-Archives</subfield>
+         <subfield code="z">Directory of South African Music Collections: Stellenbosch University Archives</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007056</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052312.0</controlfield>
+      <controlfield tag="008">230125||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-STusb</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">18.863994851054613</subfield>
+         <subfield code="f">-33.93328716634835</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Universiteit Stellenbosch Biblioteek</subfield>
+         <subfield code="c">Stellenbosch</subfield>
+         <subfield code="g">ZA-STusb</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Postal address:</subfield>
+         <subfield code="a">Private Bag X5036</subfield>
+         <subfield code="b">Stellenbosch</subfield>
+         <subfield code="c">Western Cape</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">7599</subfield>
+         <subfield code="u">http://library.sun.ac.za/en-za/Pages/Home.aspx</subfield>
+         <subfield code="z">tel: +27 / 21 / 808 4883</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">Stellenbosch University Library​</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Stellenbosch</subfield>
+         <subfield code="0">places/3905636</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30080130</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052129.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-STusdm</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">18.866153913938376</subfield>
+         <subfield code="f">-33.934295093168416</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Universiteit van Stellenbosch, Dokumentasiesentrum vir Musiek (DOMUS)</subfield>
+         <subfield code="c">Stellenbosch</subfield>
+         <subfield code="g">ZA-STusdm</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Departement Musiek, Neethlingstraat</subfield>
+         <subfield code="a">Konservatorium</subfield>
+         <subfield code="b">Stellenbosch</subfield>
+         <subfield code="c">Western Cape</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">7602</subfield>
+         <subfield code="m">santiedj@sun.ac.za</subfield>
+         <subfield code="u">https://libguides.sun.ac.za/domus</subfield>
+         <subfield code="z">contact: Santie de Jongh</subfield>
+         <subfield code="z">tel: +27 / (0)21 / 808 2597</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Stellenbosch University, Documentation Centre for Music (DOMUS)</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Stellenbosch</subfield>
+         <subfield code="0">places/3905636</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/DOMUSColl</subfield>
+         <subfield code="z">Directory of South African Music Collections: Stellenbosch University Library and Information Service: DOMUS</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30080129</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052129.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-STusmb</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">18.866143185102068</subfield>
+         <subfield code="f">-33.93428619168574</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Universiteit van Stellenbosch, Musiek Biblioteek</subfield>
+         <subfield code="c">Stellenbosch</subfield>
+         <subfield code="g">ZA-STusmb</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Konservatorium, Neethlingstraat</subfield>
+         <subfield code="b">Stellenbosch</subfield>
+         <subfield code="c">Western Cape</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">7599</subfield>
+         <subfield code="u">http://library.sun.ac.za/en-za/Libraries/Music/Pages/default.aspx</subfield>
+         <subfield code="z">tel: +27 / 21 / 808 2337</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Stellenbosch University, Music Library</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Stellenbosch</subfield>
+         <subfield code="0">places/3905636</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/DOMUSColl</subfield>
+         <subfield code="z">Directory of South African Music Collections: Stellenbosch University Library and Information Service: DOMUS</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30080132</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052129.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-STussv</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">18.8640144952311</subfield>
+         <subfield code="f">-33.93318196999826</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Universiteit van Stellenbosch Biblioteek, Spesiale Versamelings</subfield>
+         <subfield code="c">Stellenbosch</subfield>
+         <subfield code="g">ZA-STussv</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Postal address:</subfield>
+         <subfield code="a">Private Bag X5036</subfield>
+         <subfield code="b">Stellenbosch</subfield>
+         <subfield code="c">Western Cape</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">7599</subfield>
+         <subfield code="m">hmbuys@sun.ac.za</subfield>
+         <subfield code="u">http://library.sun.ac.za/en-za/Research/SC/Pages/About.aspx</subfield>
+         <subfield code="z">contact: Ms Marieta Buys</subfield>
+         <subfield code="z">tel: +27 / 21 / 808 4930</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Physical Address:</subfield>
+         <subfield code="a">Special Collections Division Upper Level</subfield>
+         <subfield code="a">Stellenbosch University Library</subfield>
+         <subfield code="b">Stellenbosch</subfield>
+         <subfield code="c">Western Cape</subfield>
+         <subfield code="d">South Africa</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Stellenbosch University Library: Special Collections</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Stellenbosch</subfield>
+         <subfield code="0">places/3905636</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/SU-Lib</subfield>
+         <subfield code="z">Directory of South African Music Collections: Stellenbosch University Library and Information Service: Special Collections</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007973</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052319.0</controlfield>
+      <controlfield tag="008">240529||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">139874779</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q7565751</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-SWmmh</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">28.0426216605129</subfield>
+         <subfield code="f">-26.16369401766035</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Ditsong National Museum of Military History</subfield>
+         <subfield code="c">Saxonwold (City of Johannesburg)</subfield>
+         <subfield code="g">ZA-SWmmh</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+         <subfield code="a">Museum</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Postal Address:</subfield>
+         <subfield code="a">P.O. Box 52090</subfield>
+         <subfield code="b">Saxonwold (City of Johannesburg)</subfield>
+         <subfield code="c">Gauteng</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">2132</subfield>
+         <subfield code="m">milmus@ditsong.org.za</subfield>
+         <subfield code="u">https://ditsong.org.za/en/our-museums/museum-of-military-history/</subfield>
+         <subfield code="z">contact: Sandi Mackenzie</subfield>
+         <subfield code="z">tel: +27 / 87 086 7019</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Physical Address:</subfield>
+         <subfield code="a">Erlswold Way</subfield>
+         <subfield code="b">Saxonwold (City of Johannesburg)</subfield>
+         <subfield code="c">Gauteng</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">2132</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Saxonwold</subfield>
+         <subfield code="0">places/50020917</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/DitsongMilHist</subfield>
+         <subfield code="z">Directory of South African Music Collections: Ditsong National Museum of Military History</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007956</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052318.0</controlfield>
+      <controlfield tag="008">240524||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ZA-Uhs</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">23.1241986454704</subfield>
+         <subfield code="f">-33.65648593488108</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-ZA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Uniondale High School</subfield>
+         <subfield code="c">Uniondale</subfield>
+         <subfield code="g">ZA-Uhs</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Postal Address:</subfield>
+         <subfield code="a">P.O. Box 32</subfield>
+         <subfield code="b">Uniondale</subfield>
+         <subfield code="c">Western Cape</subfield>
+         <subfield code="d">South Africa</subfield>
+         <subfield code="e">6460</subfield>
+         <subfield code="m">uniondale.comb@wcgschools.gov.za</subfield>
+         <subfield code="z">contact: Mrs. Rochelle Janse van Rensburg</subfield>
+         <subfield code="z">tel: +27 / 44 752 1033</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Physical Address:</subfield>
+         <subfield code="a">Victoria Street</subfield>
+         <subfield code="b">Uniondale</subfield>
+         <subfield code="c">Western Cape</subfield>
+         <subfield code="d">South Africa</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Uniondale</subfield>
+         <subfield code="0">places/50020902</subfield>
+      </datafield>
+      <datafield tag="856" ind1="1" ind2=" ">
+         <subfield code="u">https://libguides.sun.ac.za/SAMusicCollections/hs-union</subfield>
+         <subfield code="z">Directory of South African Music Collections: Uniondale High School</subfield>
+      </datafield>
+   </record>
 </collection>
-

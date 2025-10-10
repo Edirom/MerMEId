@@ -1,135 +1,422 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <collection xmlns="http://www.loc.gov/MARC21/slim">
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30002536</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">LT-V</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-LT</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Lietuvos muzikos ir teatro akademija, biblioteka</subfield>
-            <subfield code="c">Vilnius</subfield>
-            <subfield code="g">LT-V</subfield>
-        </datafield>
-        <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Lithuanian Academy of Music and Theatre, Library</subfield>
-        </datafield>
-        <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Biblioteka Gosudarstvennoj konservatorii Litovskoj SSR</subfield>
-        </datafield>
-        <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Lietuvos muzikos akademijos biblioteka</subfield>
-        </datafield>
-        <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Lietuvos muzikos ir teatro akademija,, biblioteka, 118 kab., Tilto 16, 01101 Vilnius, Lithuania</subfield>
-            <subfield code="u">http://lmta.lt</subfield>
-        </datafield>
-    </record>
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30003742</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">LT-Va</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-LT</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Lietuvos mokslų akademija Vrublevskių biblioteka</subfield>
-            <subfield code="c">Vilnius</subfield>
-            <subfield code="g">LT-Va</subfield>
-        </datafield>
-        <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Lietuvos mokslų akademija biblioteka</subfield>
-        </datafield>
-        <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Lithuanian Academy of Sciences, Library</subfield>
-        </datafield>
-        <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Lietuvos mokslų akademija, vrublevskių biblioteka, Žygimantų 1/8, 01102 Vilnius, Lithuania</subfield>
-            <subfield code="u">http://www.mab.lt/</subfield>
-        </datafield>
-    </record>
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30070234</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">LT-Vb</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-LT</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Šv. Pranciškaus ir Šv. Bernardino vienuolynas</subfield>
-            <subfield code="c">Vilnius</subfield>
-            <subfield code="g">LT-Vb</subfield>
-        </datafield>
-        <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Šv. Pranciškaus ir Šv. Bernardino,  vienuolynas, Maironio g. 10, 01124 Vilnius, Lithuania</subfield>
-            <subfield code="u">http://www.ofm.lt/bendruomenes/vilnius</subfield>
-        </datafield>
-    </record>
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30005763</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">LT-Vn</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-LT</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Lietuvos nacionalinė Martyno Mažvydo biblioteka, muzikos skyrius</subfield>
-            <subfield code="c">Vilnius</subfield>
-            <subfield code="g">LT-Vn</subfield>
-        </datafield>
-        <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Martynas Mažvydas National Library of Lithuania, Music Department</subfield>
-        </datafield>
-        <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Lietuvos nacionalinė Martyno Mažvydo, biblioteka, muzikos skyrius, Gedimino pr. 51, 01504 Vilnius, Lithuania</subfield>
-            <subfield code="u">http://www.lnb.lt</subfield>
-        </datafield>
-    </record>
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30005764</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">LT-Vu</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-LT</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Vilniaus universiteto biblioteka</subfield>
-            <subfield code="c">Vilnius</subfield>
-            <subfield code="g">LT-Vu</subfield>
-        </datafield>
-        <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Vilnius University Library</subfield>
-        </datafield>
-        <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Vilniaus universiteto biblioteka, Universiteto g. 3, 01122 Vilnius, Lithuania</subfield>
-            <subfield code="u">http://www.mb.vu.lt/</subfield>
-        </datafield>
-    </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30002536</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052013.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">LT-V</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">25.2813443</subfield>
+         <subfield code="f">54.6894906</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-LT</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Lietuvos muzikos ir teatro akademija, biblioteka</subfield>
+         <subfield code="c">Vilnius</subfield>
+         <subfield code="g">LT-V</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Lietuvos muzikos ir teatro akademija,, biblioteka, 118 kab., Tilto 16, 01101 Vilnius, Lithuania</subfield>
+         <subfield code="u">http://lmta.lt</subfield>
+      </datafield>
+      <datafield tag="410" ind1="2" ind2=" ">
+         <subfield code="a">Lithuanian Academy of Music and Theatre, Library</subfield>
+      </datafield>
+      <datafield tag="410" ind1="2" ind2=" ">
+         <subfield code="a">Biblioteka Gosudarstvennoj konservatorii Litovskoj SSR</subfield>
+      </datafield>
+      <datafield tag="410" ind1="2" ind2=" ">
+         <subfield code="a">Lietuvos muzikos akademijos biblioteka</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Vilnius</subfield>
+         <subfield code="0">places/3901112</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003742</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052024.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">LT-Va</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">25.2875165</subfield>
+         <subfield code="f">54.6883871</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-LT</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Lietuvos mokslų akademija Vrublevskių biblioteka</subfield>
+         <subfield code="c">Vilnius</subfield>
+         <subfield code="g">LT-Va</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Lietuvos mokslų akademija, vrublevskių biblioteka, Žygimantų 1/8, 01102 Vilnius, Lithuania</subfield>
+         <subfield code="u">http://www.mab.lt/</subfield>
+      </datafield>
+      <datafield tag="410" ind1="2" ind2=" ">
+         <subfield code="a">Lietuvos mokslų akademija biblioteka</subfield>
+      </datafield>
+      <datafield tag="410" ind1="2" ind2=" ">
+         <subfield code="a">Lithuanian Academy of Sciences, Library</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Vilnius</subfield>
+         <subfield code="0">places/3901112</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30070234</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052104.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">LT-Vb</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">25.2929056</subfield>
+         <subfield code="f">54.6825108</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-LT</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Šv. Pranciškaus ir Šv. Bernardino vienuolynas</subfield>
+         <subfield code="c">Vilnius</subfield>
+         <subfield code="g">LT-Vb</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Šv. Pranciškaus ir Šv. Bernardino,  vienuolynas, Maironio g. 10, 01124 Vilnius, Lithuania</subfield>
+         <subfield code="u">http://www.ofm.lt/bendruomenes/vilnius</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Vilnius</subfield>
+         <subfield code="0">places/3901112</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007682</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052316.0</controlfield>
+      <controlfield tag="008">240115||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">126196092</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">3012080-9</subfield>
+         <subfield code="2">DNB</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">LT-Vliti</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">25.305841577768884</subfield>
+         <subfield code="f">54.69489946036872</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-LT</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Lietuvių literatūros ir tautosakos institutas</subfield>
+         <subfield code="c">Vilnius</subfield>
+         <subfield code="g">LT-Vliti</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Antakalnio g. 6</subfield>
+         <subfield code="b">10308 Vilnius</subfield>
+         <subfield code="d">Lithuania</subfield>
+         <subfield code="m">direk@llti.lt</subfield>
+         <subfield code="u">https://www.llti.lt/</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">Institute of Lithuanian Literature and Folklore</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Vilnius</subfield>
+         <subfield code="0">places/3901112</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51000010</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052234.0</controlfield>
+      <controlfield tag="008">161121||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">263094646</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">1242174-1</subfield>
+         <subfield code="2">DNB</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">LT-Vlma</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">25.320652712355937</subfield>
+         <subfield code="f">54.728369329866815</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-LT</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Lietuvos literatūros ir meno archyvas</subfield>
+         <subfield code="c">Vilnius</subfield>
+         <subfield code="g">LT-Vlma</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+         <subfield code="a">Archive</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">O. Milašiaus 19</subfield>
+         <subfield code="b">10102 Vilnius</subfield>
+         <subfield code="d">Lithuania</subfield>
+         <subfield code="m">llma@archyvai.lt</subfield>
+         <subfield code="u">https://llma.archyvai.lrv.lt/lt/</subfield>
+         <subfield code="z">tel no: +370 / 5 / 265 2624</subfield>
+         <subfield code="z">fax: +370 / 5 / 265 2624</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">Lithuanian Archives of Literature and Art</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Vilnius</subfield>
+         <subfield code="0">places/3901112</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51003516</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052250.0</controlfield>
+      <controlfield tag="008">191120||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">312927592</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q16459028</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">LT-Vlvia</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">25.273212</subfield>
+         <subfield code="f">54.681582</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-LT</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Lietuvos valstybės istorijos archyvas</subfield>
+         <subfield code="c">Vilnius</subfield>
+         <subfield code="g">LT-Vlvia</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+         <subfield code="a">Archive</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Mindaugo g. 8</subfield>
+         <subfield code="b">Vilnius</subfield>
+         <subfield code="d">Lithuania</subfield>
+         <subfield code="e">03107</subfield>
+         <subfield code="m">istorijos.archyvas@lvia.lt</subfield>
+         <subfield code="u">http://www.archyvai.lt/lt/lvia_naujienos.html</subfield>
+         <subfield code="u">http://www.archyvai.lt/en/archives/historicalarchives.html</subfield>
+         <subfield code="z">tel: +370 / 5 / 219 5320</subfield>
+         <subfield code="z">fax: +370 / 5 / 278 43 69</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Lithuanian State Historical Archives</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Vilnius</subfield>
+         <subfield code="0">places/3901112</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30005763</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052042.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">2913154387449030970008</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">LT-Vn</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">25.263681511897413</subfield>
+         <subfield code="f">54.69058203598293</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-LT</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Lietuvos nacionalinė Martyno Mažvydo biblioteka, muzikos skyrius</subfield>
+         <subfield code="c">Vilnius</subfield>
+         <subfield code="g">LT-Vn</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Gedimino pr. 51</subfield>
+         <subfield code="b">01504 Vilnius</subfield>
+         <subfield code="d">Lithuania</subfield>
+         <subfield code="m">zivile.casaite@lnb.lt</subfield>
+         <subfield code="u">https://www.lnb.lt/</subfield>
+         <subfield code="z">contact: Živilė Časaitė</subfield>
+         <subfield code="z">tel: +370 / 5 2398677</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Martynas Mažvydas National Library of Lithuania, Music Department</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Vilnius</subfield>
+         <subfield code="0">places/3901112</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 127</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30005764</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052042.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">LT-Vu</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">25.2864707</subfield>
+         <subfield code="f">54.6824086</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-LT</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Vilniaus universiteto biblioteka</subfield>
+         <subfield code="c">Vilnius</subfield>
+         <subfield code="g">LT-Vu</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Vilniaus universiteto biblioteka, Universiteto g. 3, 01122 Vilnius, Lithuania</subfield>
+         <subfield code="u">http://www.mb.vu.lt/</subfield>
+      </datafield>
+      <datafield tag="410" ind1="2" ind2=" ">
+         <subfield code="a">Vilnius University Library</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Vilnius</subfield>
+         <subfield code="0">places/3901112</subfield>
+      </datafield>
+   </record>
 </collection>
-

@@ -1,68 +1,450 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <collection xmlns="http://www.loc.gov/MARC21/slim">
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30005722</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">RA-BAc</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-AR</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Teatro Colón</subfield>
-            <subfield code="c">Buenos Aires</subfield>
-            <subfield code="g">RA-BAc</subfield>
-        </datafield>
-        <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Teatro Colón, RA-Buenos Aires</subfield>
-        </datafield>
-    </record>
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30061578</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">RA-BAn</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XD-AR</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Biblioteca Nacional</subfield>
-            <subfield code="c">Buenos Aires</subfield>
-            <subfield code="g">RA-BAn</subfield>
-        </datafield>
-        <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Biblioteca Nacional, Ciudad de Buenos Aires, Argentinien</subfield>
-            <subfield code="u">http://www.bn.gov.ar/</subfield>
-        </datafield>
-    </record>
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30076513</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">RA-SCc</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XD-AR</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Convento de Santa Catalina, Archivo</subfield>
-            <subfield code="c">Santa Catalina (Córdoba)</subfield>
-            <subfield code="g">RA-SCc</subfield>
-        </datafield>
-        <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Convento de Santa Catalina, Archivo, Obispo Trejo, s/n Ń 5012, X5825 Santa Catalina, Argentinien</subfield>
-        </datafield>
-    </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51002920</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052247.0</controlfield>
+      <controlfield tag="008">190412||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RA-AGmmf</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">-64.445947</subfield>
+         <subfield code="f">-31.651249</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XD-AR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Museo Manuel de Falla</subfield>
+         <subfield code="c">Alta Gracia</subfield>
+         <subfield code="g">RA-AGmmf</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+         <subfield code="a">Other</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Pellegrini 1011</subfield>
+         <subfield code="b">Alta Gracia</subfield>
+         <subfield code="c">Córdoba</subfield>
+         <subfield code="d">Argentina</subfield>
+         <subfield code="m">museomanueldefalla@altagracia.gov.ar</subfield>
+         <subfield code="u">http://culturaviva.gob.ar/</subfield>
+         <subfield code="z">tel: +54 / 3547 / 429292</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Manuel de Falla Museum</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Alta Gracia</subfield>
+         <subfield code="0">places/4000134</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30005722</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052041.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RA-BAc</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">-58.383100</subfield>
+         <subfield code="f">-34.601023</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-AR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Teatro Colón</subfield>
+         <subfield code="c">Buenos Aires</subfield>
+         <subfield code="g">RA-BAc</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Teatro Colón, Cerrito 628, Buenos Aires, Argentina</subfield>
+         <subfield code="u">http://www.teatrocolon.org.ar/</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Buenos Aires</subfield>
+         <subfield code="0">places/3900372</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30080963</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052134.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RA-BAinm</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">-58.374076</subfield>
+         <subfield code="f">-34.614949</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XD-AR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Instituto Nacional de Musicología “Carlos Vega”</subfield>
+         <subfield code="c">Buenos Aires</subfield>
+         <subfield code="g">RA-BAinm</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Instituto Nacional de Musicología,  “Carlos Vega”, México 564, 1097 Buenos Aires, Argentina</subfield>
+         <subfield code="u">http://www.inmcv.gob.ar/</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Buenos Aires</subfield>
+         <subfield code="0">places/3900372</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51009028</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250908120229.0</controlfield>
+      <controlfield tag="008">250908||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q21114973</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RA-BAmcrr</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">-58.40643710892828</subfield>
+         <subfield code="f">-34.59390933832447</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Museo Casa Ricardo Rojas</subfield>
+         <subfield code="c">Buenos Aires</subfield>
+         <subfield code="g">RA-BAmcrr</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+         <subfield code="a">Museum</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Charcas 2837</subfield>
+         <subfield code="b">Cdad. Autónoma de Buenos Aires</subfield>
+         <subfield code="d">Argentina</subfield>
+         <subfield code="e">C1425BMG</subfield>
+         <subfield code="m">informacion@casadericardorojas.gob.ar</subfield>
+         <subfield code="u">https://museorojas.cultura.gob.ar/</subfield>
+         <subfield code="z">tel: +54 / 1148244039</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Buenos Aires</subfield>
+         <subfield code="0">places/3900372</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30061578</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052102.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RA-BAn</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">-58.398040</subfield>
+         <subfield code="f">-34.584439</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XD-AR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Biblioteca Nacional Mariano Moreno</subfield>
+         <subfield code="c">Buenos Aires</subfield>
+         <subfield code="g">RA-BAn</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Biblioteca Nacional Mariano Moreno, Agüero 2502, 1425 Buenos Aires, Argentina</subfield>
+         <subfield code="u">http://www.bn.gov.ar/</subfield>
+      </datafield>
+      <datafield tag="410" ind1="2" ind2=" ">
+         <subfield code="a">Audioteca-Mediateca</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Buenos Aires</subfield>
+         <subfield code="0">places/3900372</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30076513</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052110.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RA-Ccsc</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">-31.416203</subfield>
+         <subfield code="f">-64.185807</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XD-AR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Convento de Santa Catalina, Archivo</subfield>
+         <subfield code="c">Córdoba</subfield>
+         <subfield code="g">RA-Ccsc</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Obispo Trejo 44, Centro</subfield>
+         <subfield code="b">Córdoba</subfield>
+         <subfield code="c">Provincia de Córdoba</subfield>
+         <subfield code="d">Argentina</subfield>
+         <subfield code="e">X5000 IYB</subfield>
+         <subfield code="m">misericordia61@uolsinectis.com.ar</subfield>
+         <subfield code="u">http://www.op.org.ar/?page_id=202</subfield>
+         <subfield code="z">tel no: +54 / (0351) / 421 6503</subfield>
+         <subfield code="z">fax: +54 / (0351) / 422 6758</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Córdoba (Argentina)</subfield>
+         <subfield code="0">places/4000144</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51001614</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052240.0</controlfield>
+      <controlfield tag="008">180517||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RA-Ccsj</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XD-AR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Archivo Histórico Convento San Jorge (AHCSJ)</subfield>
+         <subfield code="c">Córdoba</subfield>
+         <subfield code="g">RA-Ccsj</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+         <subfield code="a">Archive</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Entre Ríos 130</subfield>
+         <subfield code="b">Córdoba</subfield>
+         <subfield code="d">Argentina</subfield>
+         <subfield code="m">historiasuncion@gmail.com</subfield>
+         <subfield code="u">http://ofm.org.ar/acceso-banco-de-datos-biblioteca-provincial-fray-mamerto-esquiu/</subfield>
+         <subfield code="z">+54 / 011 15 55897596</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Córdoba (Argentina)</subfield>
+         <subfield code="0">places/4000144</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 1122</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51000008</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052234.0</controlfield>
+      <controlfield tag="008">161117||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RA-Cff</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">-64.19019242111682</subfield>
+         <subfield code="f">-31.43684241375329</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XD-AR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Universidad Nacional de Córdoba, Facultad de Filosofía y Humanidades, Biblioteca "Elma Kohlmeyer de Estrabou"</subfield>
+         <subfield code="c">Córdoba</subfield>
+         <subfield code="g">RA-Cff</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Pabellón Agustín Tosco – Módulo “C”, Ciudad Universitaria</subfield>
+         <subfield code="b">Córdoba</subfield>
+         <subfield code="c">Provincia de Córdoba</subfield>
+         <subfield code="d">Argentina</subfield>
+         <subfield code="e">X5000 HUA</subfield>
+         <subfield code="m">biblio@ffyh.unc.edu.ar</subfield>
+         <subfield code="u">http://www.ffyh.unc.edu.ar/biblioteca/</subfield>
+         <subfield code="z">tel no: +54 / (0351) / 4334196</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 91</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30080964</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052134.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RA-Mfad</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">-68.879606</subfield>
+         <subfield code="f">-32.880792</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XD-AR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Universidad Nacional de Cuyo, Facultad de Artes y Diseño</subfield>
+         <subfield code="c">Mendoza</subfield>
+         <subfield code="g">RA-Mfad</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Universidad Nacional de Cuyo, Facultad,  de Artes y Diseño, Centro Universitario, M5502JMA Mendoza, Argentina</subfield>
+         <subfield code="u">http://fad.uncuyo.edu.ar/index.php</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Mendoza</subfield>
+         <subfield code="0">places/3905766</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51002935</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052247.0</controlfield>
+      <controlfield tag="008">190423||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RA-Rcampos</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XD-AR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Colección privada Carlos Fabián Campos</subfield>
+         <subfield code="c">Rosario</subfield>
+         <subfield code="g">RA-Rcampos</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Private collection Carlos Fabián Campos</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Rosario</subfield>
+         <subfield code="0">places/4000135</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 3</subfield>
+      </datafield>
+   </record>
 </collection>
-

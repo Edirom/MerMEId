@@ -1,322 +1,853 @@
 <?xml version="1.0" encoding="UTF-8"?>
-   <collection xmlns="http://www.loc.gov/MARC21/slim">
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30005940</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">M-B</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-MT</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">St. Helene Collegiate Church</subfield>
-            <subfield code="c">Birkirkara</subfield>
-            <subfield code="g">M-B</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">St. Helene Collegiate Church, Birkirkara, Malta</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30005938</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">M-C</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-MT</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Parish Church</subfield>
-            <subfield code="c">Cospicua</subfield>
-            <subfield code="g">M-C</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Parish Church, Cospicua, Malta</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30005948</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">M-Gca</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-MT</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Cathedral Archive</subfield>
-            <subfield code="c">Schlettau</subfield>
-            <subfield code="g">M-Gca</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Cathedral Archive, Vittoria, Gozo</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30005949</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">M-Ggauci</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-MT</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Gozo, Mgr. G. B. Gauci Private Collection</subfield>
-            <subfield code="c">Schlettau</subfield>
-            <subfield code="g">M-Ggauci</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Gozo, Mgr. G. B. Gauci Private, Collection, Gozo</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30005939</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">M-Lpc</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-MT</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Parish Church</subfield>
-            <subfield code="c">Lija</subfield>
-            <subfield code="g">M-Lpc</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Parish Church, Lija, Malta</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30005614</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">M-MDca</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-MT</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Cathedral Museum Archives</subfield>
-            <subfield code="c">Mdina</subfield>
-            <subfield code="g">M-MDca</subfield>
-         </datafield>
-         <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Museum of the Cathedral</subfield>
-         </datafield>
-         <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Cathedral's museum archives</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Cathedral Museum Archives, Mdina</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30005942</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">M-MDcp</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-MT</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Carmelite Priory</subfield>
-            <subfield code="c">Mdina</subfield>
-            <subfield code="g">M-MDcp</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Carmelite Priory, Mdina, Malta</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30005937</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">M-MEpc</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-MT</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Parish Church</subfield>
-            <subfield code="c">Mellieha</subfield>
-            <subfield code="g">M-MEpc</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Parish Church, Mellieha, Malta</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30005943</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">M-Ra</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-MT</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Archconfraternity of the blessed sacrament</subfield>
-            <subfield code="c">Rabat</subfield>
-            <subfield code="g">M-Ra</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Archconfraternity of the blessed, sacrament, Rabat, Malta</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30005944</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">M-Rsd</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-MT</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">St. Dominic Convent</subfield>
-            <subfield code="c">Rabat</subfield>
-            <subfield code="g">M-Rsd</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">St. Dominic Convent, Rabat, Malta</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30005941</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">M-S</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-MT</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">San Filippo</subfield>
-            <subfield code="c">Senglea</subfield>
-            <subfield code="g">M-S</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">San Filippo, Senglea, Malta</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30005946</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">M-Vchl</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-MT</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Commissariat of the Holy Land, Archives</subfield>
-            <subfield code="c">Valletta</subfield>
-            <subfield code="g">M-Vchl</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Commissariat of the Holy Land, Archives, Valletta, Malta</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30005947</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">M-Vcp</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-MT</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Carmelite Priory</subfield>
-            <subfield code="c">Valletta</subfield>
-            <subfield code="g">M-Vcp</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Carmelite Priory, Valletta, Malta</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30004689</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">M-Vnl</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-MT</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">National Library</subfield>
-            <subfield code="c">Valletta</subfield>
-            <subfield code="g">M-Vnl</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30005945</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">M-Vsa</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-MT</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">St. Augustin Convent</subfield>
-            <subfield code="c">Valletta</subfield>
-            <subfield code="g">M-Vsa</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">St. Augustin Convent, Valletta, Malta</subfield>
-         </datafield>
-      </record>
-   </collection>
-
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30005940</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052043.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">M-B</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-MT</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">St. Helene Collegiate Church</subfield>
+         <subfield code="c">Birkirkara</subfield>
+         <subfield code="g">M-B</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">St. Helene Collegiate Church, Birkirkara, Malta</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Birkirkara</subfield>
+         <subfield code="0">places/3904628</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30005938</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052043.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">M-C</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">14.5208802</subfield>
+         <subfield code="f">35.8730542</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-MT</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Parish Church</subfield>
+         <subfield code="c">Cospicua</subfield>
+         <subfield code="g">M-C</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Parish Church, Cospicua, Malta</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Cospicua</subfield>
+         <subfield code="0">places/3904626</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30005948</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052043.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">M-Gca</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-MT</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Cathedral Archive</subfield>
+         <subfield code="c">Gozo (Victoria Rabat)</subfield>
+         <subfield code="g">M-Gca</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+         <subfield code="a">Archive</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30005949</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052043.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">M-Ggauci</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-MT</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Mgr. G. B. Gauci Private Collection</subfield>
+         <subfield code="c">Gozo</subfield>
+         <subfield code="g">M-Ggauci</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30005939</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052043.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">M-Lpc</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">14.4433122</subfield>
+         <subfield code="f">35.890874</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-MT</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Parish Church</subfield>
+         <subfield code="c">Lija</subfield>
+         <subfield code="g">M-Lpc</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Parish Church, Lija, Malta</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Lija</subfield>
+         <subfield code="0">places/3904627</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30005614</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052040.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">M-MDca</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">14.403209</subfield>
+         <subfield code="f">35.886102</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-MT</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Archives of the Metropolitan Cathedral</subfield>
+         <subfield code="c">Mdina</subfield>
+         <subfield code="g">M-MDca</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+         <subfield code="a">Archive</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">11, Ange’s Palace</subfield>
+         <subfield code="a">Villegaignon Street</subfield>
+         <subfield code="b">Mdina</subfield>
+         <subfield code="d">Malta</subfield>
+         <subfield code="m">archives@metropolitanchapter.com</subfield>
+         <subfield code="u">https://www.metropolitanchapter.com/mdina-metropolitan-archives/</subfield>
+         <subfield code="z">tel: +356 / 21 450 303</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Cathedral Archives</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Cathedral Archives Malta</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Cathedral Museum Archives</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Mdina</subfield>
+         <subfield code="0">places/3904559</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 137</subfield>
+      </datafield>
+      <datafield tag="680" ind1="1" ind2=" ">
+         <subfield code="a">The "Cathedral Archives" and the "Cathedral Museum" are different institutions.</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51001806</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052241.0</controlfield>
+      <controlfield tag="008">180903||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">M-MDcm</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">14.404052</subfield>
+         <subfield code="f">35.886040</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-MT</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Metropolitan Cathedral Museum</subfield>
+         <subfield code="c">Mdina</subfield>
+         <subfield code="g">M-MDcm</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+         <subfield code="a">Other</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Triq San Pawl</subfield>
+         <subfield code="b">Mdina</subfield>
+         <subfield code="d">Malta</subfield>
+         <subfield code="m">reception.museum@metropolitanchapter.com</subfield>
+         <subfield code="u">https://www.metropolitanchapter.com/mdina-cathedral-museum/</subfield>
+         <subfield code="z">tel: +356 / 21 454 697</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Mdina</subfield>
+         <subfield code="0">places/3904559</subfield>
+      </datafield>
+      <datafield tag="680" ind1="1" ind2=" ">
+         <subfield code="a">The Cathedral Museum has a set of 6 enormous graduals written for Bishop Martin Royas in 1573 and some manuscript music of Karm Psaila (1871–1961), for example Sonatine for mandolin dated 1893.</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30005942</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052043.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">M-MDcp</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-MT</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Carmelite Priory</subfield>
+         <subfield code="c">Mdina</subfield>
+         <subfield code="g">M-MDcp</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Carmelite Priory, Mdina, Malta</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Mdina</subfield>
+         <subfield code="0">places/3904559</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30005937</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052043.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">M-MEpc</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">14.360868</subfield>
+         <subfield code="f">35.960822</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-MT</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Parish Church</subfield>
+         <subfield code="c">Mellieha</subfield>
+         <subfield code="g">M-MEpc</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Parish Church, Mellieha, Malta</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Mellieha</subfield>
+         <subfield code="0">places/3904625</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30005943</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052043.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">M-Ra</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">-6.83272</subfield>
+         <subfield code="f">34.015049</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-MT</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Archconfraternity of the blessed sacrament</subfield>
+         <subfield code="c">Rabat</subfield>
+         <subfield code="g">M-Ra</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Archconfraternity of the blessed, sacrament, Rabat, Malta</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Rabat</subfield>
+         <subfield code="0">places/3904630</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51001808</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052241.0</controlfield>
+      <controlfield tag="008">180903||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">M-Rmsp</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-MT</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Missionary Society of St Paul</subfield>
+         <subfield code="c">Rabat</subfield>
+         <subfield code="g">M-Rmsp</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">St Agatha's Motherhouse</subfield>
+         <subfield code="b">Rabat, RBT 2020</subfield>
+         <subfield code="d">Malta</subfield>
+         <subfield code="m">stagatha@mssp.org.mt</subfield>
+         <subfield code="u">http://missionarysocietyofstpaul.org/</subfield>
+         <subfield code="z">tel: +356 / 21.459.222, 21.454.503</subfield>
+         <subfield code="z">fax: +356 / 21.450.196</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Rabat</subfield>
+         <subfield code="0">places/3904630</subfield>
+      </datafield>
+      <datafield tag="680" ind1="1" ind2=" ">
+         <subfield code="a">The Missionary Society of St Paul has 18 fragments of an unknown 17th-century Italian cantata, as well as 20th-century manuscripts.</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51001809</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052241.0</controlfield>
+      <controlfield tag="008">180903||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">101144928788854441415</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">M-Rna</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">14.401408</subfield>
+         <subfield code="f">35.881922</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-MT</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">National Archives of Malta</subfield>
+         <subfield code="c">Rabat</subfield>
+         <subfield code="g">M-Rna</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+         <subfield code="a">Archive</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Hospital Street</subfield>
+         <subfield code="b">Rabat, RBT 1043</subfield>
+         <subfield code="d">Malta</subfield>
+         <subfield code="m">customercare.archives@gov.mt</subfield>
+         <subfield code="u">https://nationalarchives.gov.mt/default.aspx</subfield>
+         <subfield code="z">tel: +356 / 2145 9863</subfield>
+         <subfield code="z">fax: +356 / 2145 0078</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Rabat</subfield>
+         <subfield code="0">places/3904630</subfield>
+      </datafield>
+      <datafield tag="680" ind1="1" ind2=" ">
+         <subfield code="a">The National Archives of Malta have a Guidonian hand in an 18th-century manuscript, with a tonary on the same sheet.</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30005944</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052043.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">M-Rsd</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">-6.83272</subfield>
+         <subfield code="f">34.015049</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-MT</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">St. Dominic Convent</subfield>
+         <subfield code="c">Rabat</subfield>
+         <subfield code="g">M-Rsd</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">St. Dominic Convent, Rabat, Malta</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Rabat</subfield>
+         <subfield code="0">places/3904630</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30080818</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052133.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">M-Rwm</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-MT</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Wignacourt Collegiate Museum</subfield>
+         <subfield code="c">Rabat</subfield>
+         <subfield code="g">M-Rwm</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Wignacourt Collegiate Museum, Parish Square, College Street, Rabat RBT 1400, Malta</subfield>
+         <subfield code="u">http://www.wignacourtmuseum.com/</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Rabat</subfield>
+         <subfield code="0">places/3904630</subfield>
+      </datafield>
+      <datafield tag="680" ind1=" " ind2=" ">
+         <subfield code="a">There is a notated psalter, the 'Wignacourt Psalter'.</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30005941</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052043.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">M-S</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-MT</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">San Filippo</subfield>
+         <subfield code="c">Senglea</subfield>
+         <subfield code="g">M-S</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">San Filippo, Senglea, Malta</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Senglea</subfield>
+         <subfield code="0">places/3904629</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30005946</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052043.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">M-Vchl</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">14.514106</subfield>
+         <subfield code="f">35.89779</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-MT</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Commissariat of the Holy Land, Archives</subfield>
+         <subfield code="c">Valletta</subfield>
+         <subfield code="g">M-Vchl</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Commissariat of the Holy Land, Archives, Valletta, Malta</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Valletta</subfield>
+         <subfield code="0">places/3904274</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30005947</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052043.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">M-Vcp</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">14.514106</subfield>
+         <subfield code="f">35.89779</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-MT</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Carmelite Priory</subfield>
+         <subfield code="c">Valletta</subfield>
+         <subfield code="g">M-Vcp</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Carmelite Priory, Valletta, Malta</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Valletta</subfield>
+         <subfield code="0">places/3904274</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30004689</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052032.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">M-Vnl</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">14.513466</subfield>
+         <subfield code="f">35.898305</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-MT</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">National Library of Malta</subfield>
+         <subfield code="c">Valletta</subfield>
+         <subfield code="g">M-Vnl</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">36 Old Treasury Street</subfield>
+         <subfield code="b">Valletta, VLT 1410</subfield>
+         <subfield code="d">Malta</subfield>
+         <subfield code="m">customercare.nlm@gov.mt</subfield>
+         <subfield code="u">https://www.maltalibraries.gov.mt</subfield>
+         <subfield code="z">tel: +356 / 2123 6585</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Valletta</subfield>
+         <subfield code="0">places/3904274</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30005945</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052043.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">M-Vsa</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-MT</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">St. Augustin Convent</subfield>
+         <subfield code="c">Valletta</subfield>
+         <subfield code="g">M-Vsa</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">St. Augustin Convent, Valletta, Malta</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Valletta</subfield>
+         <subfield code="0">places/3904274</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51000591</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052238.0</controlfield>
+      <controlfield tag="008">180111||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">148474375</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">M-Vsj</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">14.512296</subfield>
+         <subfield code="f">35.898060</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-MT</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">St John's Co-Cathedral and Museum</subfield>
+         <subfield code="c">Valletta</subfield>
+         <subfield code="g">M-Vsj</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Republic St</subfield>
+         <subfield code="b">Valletta</subfield>
+         <subfield code="d">Malta</subfield>
+         <subfield code="u">https://www.stjohnscocathedral.com/mt/</subfield>
+         <subfield code="z">tel: +356 / 2122 0536</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Valletta</subfield>
+         <subfield code="0">places/3904274</subfield>
+      </datafield>
+   </record>
+</collection>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51003551</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052251.0</controlfield>
+      <controlfield tag="008">191127||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">152432508</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">596145857125922922413</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">PNG-Bpngs</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Institute of Papua New Guinea Studies (IPNGS), Music Archive</subfield>
+         <subfield code="c">Boroko</subfield>
+         <subfield code="g">PNG-Bpngs</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+         <subfield code="a">Archive</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">P.O. Box 1432</subfield>
+         <subfield code="b">Boroko 111</subfield>
+         <subfield code="d">Papua New Guinea</subfield>
+         <subfield code="m">ipngs.office@gmail.com</subfield>
+         <subfield code="z">tel: +675 / 325-4644</subfield>
+         <subfield code="z">fax: +675 / 325-0531</subfield>
+         <subfield code="z">contact: Dr. Don Niles</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Boroko</subfield>
+         <subfield code="0">places/4000188</subfield>
+      </datafield>
+      <datafield tag="670" ind1="1" ind2=" ">
+         <subfield code="a">RussellP 2019</subfield>
+         <subfield code="0">publications/41002391</subfield>
+      </datafield>
+   </record>
+</collection>

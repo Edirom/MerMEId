@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30080976</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052134.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">CR-SJahm</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XD-CR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Archivo Histórico Musical</subfield>
+         <subfield code="c">San José</subfield>
+         <subfield code="g">CR-SJahm</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Archivo Histórico Musical, Sede "Rodrigo Facio Brenes" Montes de,  Oca, 2060 San José, Costa Rica</subfield>
+         <subfield code="u">http://archivomusical.ucr.ac.cr/</subfield>
+      </datafield>
+      <datafield tag="410" ind1="2" ind2=" ">
+         <subfield code="a">Escuela de Artes Musicales de la Universidad de Costa Rica</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">San Jose</subfield>
+         <subfield code="0">places/3901673</subfield>
+      </datafield>
+   </record>
+</collection>

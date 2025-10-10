@@ -1,48 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <collection xmlns="http://www.loc.gov/MARC21/slim">
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30079705</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">AND-AVan</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">AD</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Arxiu Nacional d’Andorra</subfield>
-            <subfield code="c">Andorra la Vella</subfield>
-            <subfield code="g">AND-AVan</subfield>
-        </datafield>
-        <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Arxiu Nacional d’Andorra, Edifici Prada Casadet, Prada Casadet, 8-12, AD500 Andorra la Vella, Andorra</subfield>
-            <subfield code="u">http://www.cultura.ad/arxiu-nacional-andorra</subfield>
-        </datafield>
-    </record>
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30079706</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">AND-AVbn</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">AD</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Biblioteca Nacional d’Andorra</subfield>
-            <subfield code="c">Andorra la Vella</subfield>
-            <subfield code="g">AND-AVbn</subfield>
-        </datafield>
-        <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Biblioteca Nacional dâAndorra, (Casa Bauró), Placeta de Sant Esteve, s/n., AD500 Andorra la Vella, Andorra</subfield>
-            <subfield code="u">http://www.cultura.ad/biblioteca-nacional-2</subfield>
-        </datafield>
-    </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30079705</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052126.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q17301374</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">AND-AVan</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">1.5230007977589812</subfield>
+         <subfield code="f">42.50575926038156</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-AD</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Arxiu Nacional d’Andorra</subfield>
+         <subfield code="c">Andorra la Vella</subfield>
+         <subfield code="g">AND-AVan</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Edifici Prada Casadet</subfield>
+         <subfield code="a">Prada Casadet, 8-12</subfield>
+         <subfield code="b">Andorra la Vella</subfield>
+         <subfield code="d">Andorra</subfield>
+         <subfield code="e">AD500</subfield>
+         <subfield code="u">https://www.cultura.ad/arxiu-nacional-d-andorra</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Andorra la Vella</subfield>
+         <subfield code="0">places/3905574</subfield>
+      </datafield>
+      <datafield tag="680" ind1="1" ind2=" ">
+         <subfield code="a">The documents preserved in the Arxiu Nacional d'Andorra (National Archives of Andorra) integrates different types of document collections: 1.- collection or holdings of the Administració central (central government) or Consell General i Govern (Government and Parliament); 2.- collection or holdings of the Administració local (local government) including the sections of comuns, quarts i veïnats (common places, quarters and neighbourhoods); 3.- collection or holdings of the Administració eclesiàstica (Ecclesiastical Administration); 4.- legal holdings (from the Tribunal de Corts or Jury Court; Tribunal de Batlles or Mayor/Magistrates Court; Jutjat d'Apel·lacions or Court of Appeals, Tribunal Administratiu or Administrative Court, and Tribunal Fiscal i Consell Superior de Justícia or Fiscal Court and the High Council of Justice); 5.- collection of notarial protocols (notaries); 6.- fons d'Institucions públiques i parapúbliques (FEDA), or public and para-public (national) collections; 7.- family and heritage collections; 8.- personal (audio-visual and photographic) collections; 9.- associations' and foundations' collections; 10.- collections of political parties and trade unions; 11.- collections of companies and business corporations; 12.- cartographic collection; 13.- ethnographic collection; and 14.- foreign holdings that contain information about Andorra.</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30079706</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052126.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">151433588</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">AND-ENbn</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="z">AND-AVbn</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">1.5834677972973343</subfield>
+         <subfield code="f">42.53705466830589</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-AD</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Biblioteca Nacional d’Andorra</subfield>
+         <subfield code="c">Encamp</subfield>
+         <subfield code="g">AND-ENbn</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Hotel Rosaleda</subfield>
+         <subfield code="a">Avinguda François Mitterrand, 13</subfield>
+         <subfield code="b">AD200 Encamp</subfield>
+         <subfield code="d">Andorra</subfield>
+         <subfield code="m">bncultura.gov@andorra.ad</subfield>
+         <subfield code="u">https://www.cultura.ad/coneix-biblioteca-nacional</subfield>
+         <subfield code="z">tel: +376 826 445</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Encamp</subfield>
+         <subfield code="0">places/50020092</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 105</subfield>
+      </datafield>
+      <datafield tag="680" ind1="1" ind2=" ">
+         <subfield code="a">The National Library of Andorra moved from Andorra la Vella to Encamp in mid-2020. The former RISM library siglum AND-AVbn was changed to AND-ENbn.</subfield>
+      </datafield>
+      <datafield tag="680" ind1="1" ind2=" ">
+         <subfield code="a">The general collection of the Biblioteca Nacional (National Library) comprises all material published or printed in the country, the material concerning the country that is published outside of Andorra and works published abroad by Andorran authors. The scope of the Pyrenees and the relationship with neighbouring countries is also present. The service of the Dipòsit legal (Legal Deposit) and the Llei 9/2003, del 12 de juny (Law 9/2003, of 12 June), concerning the cultural heritage of Andorra, ensure the development of the national bibliographic collection. In addition, the library draws from institutional exchanges, donations from individuals and institutions, and the acquisition of all materials not admitted by copyright (not entering in the library through the Legal Deposit) or not forming part of the library collection of old and rare. The section of Fons modern (modern collections) is made up of different materials, published from 1961: monographs, periodicals, sheet music, sheets and brochures, programs, catalogues, cartographic material, etc. The library also guards a collection of important graphic materials, consisting of posters, prints (engravings) and postcards. Stand together coloured engravings of the last quarter of the nineteenth century, most significant of the Romantic era. The audio-visual section contains material in various media, most of which is in the process of cataloguing. It emphasizes the jazz collection for the variety of topics and the quality of the performers. There are also documentaries and reports on the country, some of them of local production. The old and rare collection consists of all documents published prior to 1960, as well as editions sold out and rare and curious documents that are difficult to find in the market. The age of the items (exemplars) back with some exceptions, in the early nineteenth century. Stand first editions and descriptions and graphic documentation provided by some papers in the second half of the nineteenth and early twentieth century, especially travel books.</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51002082</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052243.0</controlfield>
+      <controlfield tag="008">181217||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">AND-Oap</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">1.532847</subfield>
+         <subfield code="f">42.556871</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Arxiu Parroquial d'Ordino</subfield>
+         <subfield code="c">Ordino</subfield>
+         <subfield code="g">AND-Oap</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+         <subfield code="a">Archive</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">la placeta, s/n</subfield>
+         <subfield code="b">Ordino</subfield>
+         <subfield code="d">Andorra</subfield>
+         <subfield code="e">AD300</subfield>
+         <subfield code="z">tel: +376 / 878 173</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Ordino</subfield>
+         <subfield code="0">places/4000109</subfield>
+      </datafield>
+   </record>
 </collection>
-
