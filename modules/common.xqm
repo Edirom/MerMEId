@@ -152,14 +152,14 @@ declare function common:add-change-entry-to-revisionDesc-in-document($document a
  : @return the modified input node 
  :)
 declare function common:add-change-entry-to-revisionDesc-in-memory($nodes as node()*, 
-    $user as xs:string, $desc as xs:string) as node()* {
+    $user as xs:string, $desc as xs:string, $status as xs:string) as node()* {
       for $node in $nodes
       return
         typeswitch($node)
         case $elem as element(mei:revisionDesc) return
             element { node-name($elem) } {
-                $elem/@*, for $child in $elem/node() return common:add-change-entry-to-revisionDesc-in-memory($child, $user, $desc),
-                <change isodate="{current-dateTime()}" xml:id="{common:mermeid-id('change')}" 
+                $elem/@*, for $child in $elem/node() return common:add-change-entry-to-revisionDesc-in-memory($child, $user, $desc, $status),
+                <change isodate="{current-dateTime()}" status="{$status}" xml:id="{common:mermeid-id('change')}" 
                     xmlns="http://www.music-encoding.org/ns/mei">
                     <respStmt>
                         <resp>{$user}</resp>
@@ -171,9 +171,9 @@ declare function common:add-change-entry-to-revisionDesc-in-memory($nodes as nod
             }
         case $elem as element() return
             element { node-name($elem) } {
-                $elem/@*, for $child in $elem/node() return common:add-change-entry-to-revisionDesc-in-memory($child, $user, $desc)
+                $elem/@*, for $child in $elem/node() return common:add-change-entry-to-revisionDesc-in-memory($child, $user, $desc, $status)
             }
-        case document-node() return document { common:add-change-entry-to-revisionDesc-in-memory($node/node(), $user, $desc) }
+        case document-node() return document { common:add-change-entry-to-revisionDesc-in-memory($node/node(), $user, $desc, $status) }
         default return $node
 };
 

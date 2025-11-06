@@ -117,8 +117,9 @@ declare function crud:copy($source-filename as xs:string, $target-filename as xs
         else common:get-title($source) || ' (Copy)'
     let $username := common:get-current-username() => string()
     let $change-message := 'file copied from ' || $source-filename || ' to ' || $target-filename
+    let $status := 'draft'
     let $create-target := 
-        if($source) then crud:create($source => common:set-mei-title-in-memory($title) => common:add-change-entry-to-revisionDesc-in-memory($username, $change-message), $target-filename, $overwrite)
+        if($source) then crud:create($source => common:set-mei-title-in-memory($title) => common:add-change-entry-to-revisionDesc-in-memory($username, $change-message, $status), $target-filename, $overwrite)
         else ()
     return
         if($create-target instance of map(*)) 

@@ -54,7 +54,7 @@
           <catchwords analog="" class="" copyof="" corresp="" follows="" label="" n="" next="" precedes="" prev="" resp="" sameas="" synch="" translit="" type="" xml:base="" xml:id="" xml:lang=""/>
           <category analog="" auth="" auth.uri="" class="" codedval="" copyof="" corresp="" data="" follows="" label="" n="" next="" precedes="" prev="" resp="" sameas="" synch="" type="" xml:base="" xml:id=""/>
           <cb class="" copyof="" corresp="" facs="" follows="" label="" n="" next="" precedes="" prev="" resp="" sameas="" source="" synch="" type="" xml:base="" xml:id=""/>
-          <change analog="" class="" copyof="" corresp="" enddate="" follows="" isodate="" label="" n="" next="" notafter="" notbefore="" precedes="" prev="" resp="" sameas="" startdate="" synch="" type="" xml:base="" xml:id=""/>
+          <change analog="" class="" copyof="" corresp="" enddate="" follows="" isodate="" label="" n="" next="" notafter="" notbefore="" precedes="" prev="" resp="" sameas="" startdate="" status="" synch="" type="" xml:base="" xml:id=""/>
           <changeDesc analog="" class="" copyof="" corresp="" follows="" label="" n="" next="" precedes="" prev="" resp="" sameas="" synch="" translit="" type="" xml:base="" xml:id="" xml:lang=""/>
           <choice class="" copyof="" corresp="" follows="" label="" n="" next="" precedes="" prev="" resp="" sameas="" synch="" type="" xml:base="" xml:id=""/>
           <classDecls analog="" class="" copyof="" corresp="" follows="" label="" n="" next="" precedes="" prev="" resp="" sameas="" synch="" type="" xml:base="" xml:id=""/>
