@@ -1,48 +1,199 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <collection xmlns="http://www.loc.gov/MARC21/slim">
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30077317</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">V-CVasv</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">VA</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Archivio Segreto Vaticano</subfield>
-            <subfield code="c">Città del Vaticano</subfield>
-            <subfield code="g">V-CVasv</subfield>
-        </datafield>
-        <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Archivio Segreto Vaticano, Cortile del Belvedere, 00120  Città del Vaticano, Vatican City State</subfield>
-            <subfield code="u">http://www.archiviosegretovaticano.va/</subfield>
-        </datafield>
-    </record>
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30077306</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">V-CVbav</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">VA</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Biblioteca Apostolica Vaticana</subfield>
-            <subfield code="c">Città del Vaticano</subfield>
-            <subfield code="g">V-CVbav</subfield>
-        </datafield>
-        <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Biblioteca Apostolica Vaticana, 00120 Città del Vaticano, Vatican City State</subfield>
-            <subfield code="u">http://bav.vatican.va/</subfield>
-        </datafield>
-    </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30077317</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052115.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">154227577</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q536580</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">V-CVaav</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="z">I-Rasv</subfield>
+         <subfield code="z">V-CVasv</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">12.454869768992076</subfield>
+         <subfield code="f">41.904908134172466</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-VA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Archivio Apostolico Vaticano</subfield>
+         <subfield code="c">Città del Vaticano</subfield>
+         <subfield code="g">V-CVaav</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Archive</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Cortile del Belvedere</subfield>
+         <subfield code="b">Città del Vaticano</subfield>
+         <subfield code="d">Vatican City State</subfield>
+         <subfield code="e">00120</subfield>
+         <subfield code="m">archivio@aav.va</subfield>
+         <subfield code="u">http://www.archivioapostolicovaticano.va/content/aav/it.html</subfield>
+         <subfield code="z">tel: +39 06 69883314</subfield>
+         <subfield code="z">fax: +39 06 69885574</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Archivum Apostolicum Vaticanum</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Archivio Segreto Vaticano</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Città del Vaticano</subfield>
+         <subfield code="0">places/3900386</subfield>
+      </datafield>
+      <datafield tag="680" ind1="1" ind2=" ">
+         <subfield code="a">On 22 October 2019 Pope Francis, with his Apostolic Letter in the form of a motu proprio entitled “Historical experience”, restored the original name of "Vatican Apostolic Archives". The former RISM siglum V-CVasv was adapted to this. It is now called V-CVaav.</subfield>
+      </datafield>
+      <datafield tag="680" ind1="1" ind2=" ">
+         <subfield code="a">The siglum I-Rasv was used in previous RISM publications but is now invalid.</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51004831</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052258.0</controlfield>
+      <controlfield tag="008">210126||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">140242735</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">V-CVaspf</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">12.458969568948953</subfield>
+         <subfield code="f">41.89982775046296</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-VA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Archivio Storico di Propaganda Fide</subfield>
+         <subfield code="c">Città del Vaticano</subfield>
+         <subfield code="g">V-CVaspf</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+         <subfield code="a">Archive</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Via Urbano VIII, 16</subfield>
+         <subfield code="b">Città del Vaticano</subfield>
+         <subfield code="d">Stato della Città del Vaticano</subfield>
+         <subfield code="e">00120</subfield>
+         <subfield code="m">arch.storico@propagandafide.va</subfield>
+         <subfield code="u">http://www.archiviostoricopropaganda.va/content/archiviostoricopropagandafide/it.html</subfield>
+         <subfield code="z">tel: +39 / 06 698 71 523</subfield>
+         <subfield code="z">fax: +39 / 06 698 85 633</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">Congregazione per l'evangelizzazione dei popoli</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Città del Vaticano</subfield>
+         <subfield code="0">places/3900386</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 4</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30077306</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052115.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">IT-RM1360</subfield>
+         <subfield code="2">ISIL</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">146085455</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q213678</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">V-CVbav</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="z">I-Rvat</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">12.454925716873914</subfield>
+         <subfield code="f">41.90472931264457</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-VA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Biblioteca Apostolica Vaticana</subfield>
+         <subfield code="c">Città del Vaticano</subfield>
+         <subfield code="g">V-CVbav</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Cortile del Belvedere</subfield>
+         <subfield code="b">Città del Vaticano</subfield>
+         <subfield code="d">Vatican City State</subfield>
+         <subfield code="e">00120</subfield>
+         <subfield code="u">https://www.vaticanlibrary.va/it/</subfield>
+         <subfield code="z">tel: +39 06 69879411</subfield>
+         <subfield code="z">fax: +39 06 69884795</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">Bibliotheca Apostolica Vaticana</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Città del Vaticano</subfield>
+         <subfield code="0">places/3900386</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 4246</subfield>
+      </datafield>
+      <datafield tag="680" ind1="1" ind2=" ">
+         <subfield code="a">The siglum I-Rvat was used for the Biblioteca Apostolica Vaticana in previous RISM publications, but is now invalid.</subfield>
+      </datafield>
+   </record>
 </collection>
-
