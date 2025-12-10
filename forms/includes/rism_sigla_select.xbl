@@ -182,7 +182,7 @@
                   <xf:action ev:event="DOMActivate">
                     <xf:setvalue ref="$binding" value="instance('temp')/archive_code"></xf:setvalue>
                     <!-- Set auth.uri attribute using controlfield 001 -->
-                    <xf:setvalue ref="$binding/@auth.uri" value="concat('https://rism.online/institutions/', instance('rism-sigla-instance')//marc:record[marc:datafield[@tag='110']/marc:subfield[@code='g']=instance('temp')/archive_code]/marc:controlfield[@tag='001'])"/>
+                    <xf:setvalue ref="$binding/@auth.uri" value="concat('https://rism.online/', instance('rism-sigla-instance')//marc:record[marc:datafield[@tag='110']/marc:subfield[@code='g']=instance('temp')/archive_code]/marc:controlfield[@tag='001'])"/>
                     <!-- Update repository elements when OK is clicked -->
                     <xf:setvalue ref="$repository/m:corpName" value="instance('rism-sigla-instance')//marc:record[marc:datafield[@tag='110']/marc:subfield[@code='g']=instance('temp')/archive_code]/marc:datafield[@tag='110']/marc:subfield[@code='a']"/>
                     <xf:setvalue ref="$repository/m:geogName" value="instance('rism-sigla-instance')//marc:record[marc:datafield[@tag='110']/marc:subfield[@code='g']=instance('temp')/archive_code]/marc:datafield[@tag='110']/marc:subfield[@code='c']"/>

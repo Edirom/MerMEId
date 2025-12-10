@@ -1,586 +1,1193 @@
 <?xml version="1.0" encoding="UTF-8"?>
-   <collection xmlns="http://www.loc.gov/MARC21/slim">
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30003888</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">IR-Ha</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XB-IR</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Bibliothèque de Madrisa Aćhond</subfield>
-            <subfield code="c">Hamadan</subfield>
-            <subfield code="g">IR-Ha</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30003889</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">IR-Hi</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XB-IR</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Bibliothèque de I'timadiyya (I'timad al-Dowla)</subfield>
-            <subfield code="c">Hamadan</subfield>
-            <subfield code="g">IR-Hi</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30003890</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">IR-Iu</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XB-IR</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Bibliothèque Centrale de l'Université</subfield>
-            <subfield code="c">Isfahan</subfield>
-            <subfield code="g">IR-Iu</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30003891</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">IR-Ka</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XB-IR</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Bibliothèque privée de Hasan-e-'Atifi</subfield>
-            <subfield code="c">Kašan</subfield>
-            <subfield code="g">IR-Ka</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30003892</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">IR-Kr</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XB-IR</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Bibliothèque de Ayat Allah Muhammad Husayn Radawi</subfield>
-            <subfield code="c">Kašan</subfield>
-            <subfield code="g">IR-Kr</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30003893</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">IR-Maq</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XB-IR</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Bibliothèque de Astan-e-Quds</subfield>
-            <subfield code="c">Méchhed</subfield>
-            <subfield code="g">IR-Maq</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30003894</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">IR-Mf</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XB-IR</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Bibliothèque de Farhang (Dr. 'Ali Šari'ati)</subfield>
-            <subfield code="c">Méchhed</subfield>
-            <subfield code="g">IR-Mf</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30003895</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">IR-Mg</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XB-IR</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Bibliothèque de Game' Gowharšad</subfield>
-            <subfield code="c">Méchhed</subfield>
-            <subfield code="g">IR-Mg</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30003896</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">IR-Ml</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XB-IR</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Bibliothèque de Faculté des Lettres et des Sciences Humaines</subfield>
-            <subfield code="c">Méchhed</subfield>
-            <subfield code="g">IR-Ml</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30003897</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">IR-Mt</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XB-IR</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Bibliothèque de Faculté de la Théologie Islamique (Ilahiyyat)</subfield>
-            <subfield code="c">Méchhed</subfield>
-            <subfield code="g">IR-Mt</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30003898</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">IR-Qa</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XB-IR</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Bibliothèque de Astana Muqaddasa</subfield>
-            <subfield code="c">Qum</subfield>
-            <subfield code="g">IR-Qa</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30003899</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">IR-Qf</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XB-IR</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Bibliothèque de Faydiyya</subfield>
-            <subfield code="c">Qum</subfield>
-            <subfield code="g">IR-Qf</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30003900</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">IR-Qg</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XB-IR</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Bibliothèque de Ayat Allah Golpayegani</subfield>
-            <subfield code="c">Qum</subfield>
-            <subfield code="g">IR-Qg</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30003901</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">IR-Qm</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XB-IR</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Bibliothèque de Masgid-e-A'zam</subfield>
-            <subfield code="c">Qum</subfield>
-            <subfield code="g">IR-Qm</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30003902</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">IR-Qn</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XB-IR</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Bibliothèque de Ayat Allah Mar'aši Nagafi</subfield>
-            <subfield code="c">Qum</subfield>
-            <subfield code="g">IR-Qn</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30003903</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">IR-Rn</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XB-IR</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Bibliothèque Nationale (Melli)</subfield>
-            <subfield code="c">Rasht</subfield>
-            <subfield code="g">IR-Rn</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Bibliothèque Nationale (Mell¯i), IR-Rasht (Rašt), Iran</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30003904</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">IR-Sh</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XB-IR</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Bibliothèque de Hafiziyya</subfield>
-            <subfield code="c">Shiraz</subfield>
-            <subfield code="g">IR-Sh</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30003905</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">IR-Sp</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XB-IR</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Bibliothèque Publique (Ayat Allah Dastgab)</subfield>
-            <subfield code="c">Shiraz</subfield>
-            <subfield code="g">IR-Sp</subfield>
-         </datafield>
-         <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Bibliothèque Publique</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30003906</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">IR-TAn</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XB-IR</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Bibliothèque Nationale (Melli)</subfield>
-            <subfield code="c">Tabriz</subfield>
-            <subfield code="g">IR-TAn</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30003907</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">IR-Td</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XB-IR</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Bibliothèque de Loghat-Nama Dehkhodâ (Logatname Dehćhoda)</subfield>
-            <subfield code="c">Teheran</subfield>
-            <subfield code="g">IR-Td</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30003908</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">IR-Tm</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XB-IR</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Bibliothèque de Malik</subfield>
-            <subfield code="c">Teheran</subfield>
-            <subfield code="g">IR-Tm</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30003909</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">IR-Tn</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XB-IR</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Bibliothèque Nationale (Melli)</subfield>
-            <subfield code="c">Teheran</subfield>
-            <subfield code="g">IR-Tn</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30003910</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">IR-Tp</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XB-IR</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Bibliothèque du parlement (Maglis-e-Šowra)</subfield>
-            <subfield code="c">Teheran</subfield>
-            <subfield code="g">IR-Tp</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30003911</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">IR-Tpi</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XB-IR</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Bibliothèque privée de Golšan-e-Ibrahimi</subfield>
-            <subfield code="c">Teheran</subfield>
-            <subfield code="g">IR-Tpi</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30003912</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">IR-Tpn</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XB-IR</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Bibliothèque privée de Dr. Yusuf-e-Nayyiri</subfield>
-            <subfield code="c">Teheran</subfield>
-            <subfield code="g">IR-Tpn</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30003913</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">IR-Tps</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XB-IR</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Bibliothèque privée de Mehdi Sadri</subfield>
-            <subfield code="c">Teheran</subfield>
-            <subfield code="g">IR-Tps</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30003914</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">IR-Tpt</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XB-IR</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Bibliothèque privée de Muhit-e-Tabataba'i</subfield>
-            <subfield code="c">Teheran</subfield>
-            <subfield code="g">IR-Tpt</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30003915</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">IR-Tr</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XB-IR</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Bibliothèque Royale (Saltanati)</subfield>
-            <subfield code="c">Teheran</subfield>
-            <subfield code="g">IR-Tr</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30003916</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">IR-Ts</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XB-IR</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Bibliothèque de Sénat</subfield>
-            <subfield code="c">Teheran</subfield>
-            <subfield code="g">IR-Ts</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30003917</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">IR-Tss</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XB-IR</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Bibliothèque de Sepahsalar</subfield>
-            <subfield code="c">Teheran</subfield>
-            <subfield code="g">IR-Tss</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30003918</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">IR-Tu</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XB-IR</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Bibliothèque Centrale de l'Université de Teheran</subfield>
-            <subfield code="c">Teheran</subfield>
-            <subfield code="g">IR-Tu</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30003919</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">IR-Yw</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XB-IR</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Bibliothèque de Waziri</subfield>
-            <subfield code="c">Yazd</subfield>
-            <subfield code="g">IR-Yw</subfield>
-         </datafield>
-      </record>
-   </collection>
-
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003888</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052025.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">IR-Ha</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">48.5162472</subfield>
+         <subfield code="f">34.8065</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-IR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Bibliothèque de Madrisa Aćhond</subfield>
+         <subfield code="c">Hamadan</subfield>
+         <subfield code="g">IR-Ha</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Hamadan</subfield>
+         <subfield code="0">places/3904017</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003889</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052025.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">IR-Hi</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">48.5162472</subfield>
+         <subfield code="f">34.8065</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-IR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Bibliothèque de I'timadiyya (I'timad al-Dowla)</subfield>
+         <subfield code="c">Hamadan</subfield>
+         <subfield code="g">IR-Hi</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Hamadan</subfield>
+         <subfield code="0">places/3904017</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003890</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052025.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">IR-Iu</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">51.679192</subfield>
+         <subfield code="f">32.65139</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-IR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Bibliothèque Centrale de l'Université</subfield>
+         <subfield code="c">Isfahan</subfield>
+         <subfield code="g">IR-Iu</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Isfahan</subfield>
+         <subfield code="0">places/3024187</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003891</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052025.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">IR-Ka</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-IR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Bibliothèque privée de Hasan-e-'Atifi</subfield>
+         <subfield code="c">Kašan</subfield>
+         <subfield code="g">IR-Ka</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Kasan</subfield>
+         <subfield code="0">places/3024072</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003892</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052025.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">IR-Kr</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-IR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Bibliothèque de Ayat Allah Muhammad Husayn Radawi</subfield>
+         <subfield code="c">Kašan</subfield>
+         <subfield code="g">IR-Kr</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Kasan</subfield>
+         <subfield code="0">places/3024072</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003893</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052025.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">IR-Maq</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-IR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Bibliothèque de Astan-e-Quds</subfield>
+         <subfield code="c">Méchhed</subfield>
+         <subfield code="g">IR-Maq</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Méchhed</subfield>
+         <subfield code="0">places/3904018</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003894</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052025.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">IR-Mf</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-IR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Bibliothèque de Farhang (Dr. 'Ali Šari'ati)</subfield>
+         <subfield code="c">Méchhed</subfield>
+         <subfield code="g">IR-Mf</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Méchhed</subfield>
+         <subfield code="0">places/3904018</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003895</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052025.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">IR-Mg</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-IR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Bibliothèque de Game' Gowharšad</subfield>
+         <subfield code="c">Méchhed</subfield>
+         <subfield code="g">IR-Mg</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Méchhed</subfield>
+         <subfield code="0">places/3904018</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003896</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052025.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">IR-Ml</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-IR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Bibliothèque de Faculté des Lettres et des Sciences Humaines</subfield>
+         <subfield code="c">Méchhed</subfield>
+         <subfield code="g">IR-Ml</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Méchhed</subfield>
+         <subfield code="0">places/3904018</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003897</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052025.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">IR-Mt</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-IR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Bibliothèque de Faculté de la Théologie Islamique (Ilahiyyat)</subfield>
+         <subfield code="c">Méchhed</subfield>
+         <subfield code="g">IR-Mt</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Méchhed</subfield>
+         <subfield code="0">places/3904018</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003898</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052025.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">IR-Qa</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-IR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Bibliothèque de Astana Muqaddasa</subfield>
+         <subfield code="c">Qum</subfield>
+         <subfield code="g">IR-Qa</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Qum</subfield>
+         <subfield code="0">places/3904019</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003899</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052025.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">IR-Qf</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-IR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Bibliothèque de Faydiyya</subfield>
+         <subfield code="c">Qum</subfield>
+         <subfield code="g">IR-Qf</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Qum</subfield>
+         <subfield code="0">places/3904019</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003900</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052025.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">IR-Qg</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-IR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Bibliothèque de Ayat Allah Golpayegani</subfield>
+         <subfield code="c">Qum</subfield>
+         <subfield code="g">IR-Qg</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Qum</subfield>
+         <subfield code="0">places/3904019</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003901</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052025.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">IR-Qm</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-IR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Bibliothèque de Masgid-e-A'zam</subfield>
+         <subfield code="c">Qum</subfield>
+         <subfield code="g">IR-Qm</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Qum</subfield>
+         <subfield code="0">places/3904019</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003902</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052025.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">IR-Qn</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-IR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Bibliothèque de Ayat Allah Mar'aši Nagafi</subfield>
+         <subfield code="c">Qum</subfield>
+         <subfield code="g">IR-Qn</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Qum</subfield>
+         <subfield code="0">places/3904019</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003903</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052025.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">IR-Rn</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">49.5833333</subfield>
+         <subfield code="f">37.2833333</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-IR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Bibliothèque Nationale (Melli)</subfield>
+         <subfield code="c">Rasht</subfield>
+         <subfield code="g">IR-Rn</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Bibliothèque Nationale (Mell¯i), IR-Rasht (Rašt), Iran</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Rasht</subfield>
+         <subfield code="0">places/3904020</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003904</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052025.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">IR-Sh</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">52.5333333</subfield>
+         <subfield code="f">29.6166667</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-IR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Bibliothèque de Hafiziyya</subfield>
+         <subfield code="c">Shiraz</subfield>
+         <subfield code="g">IR-Sh</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Shiraz</subfield>
+         <subfield code="0">places/3904021</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003905</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052025.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">IR-Sp</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-IR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Bibliothèque Publique (Ayat Allah Dastgab)</subfield>
+         <subfield code="c">Shiraz</subfield>
+         <subfield code="g">IR-Sp</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="410" ind1="2" ind2=" ">
+         <subfield code="a">Bibliothèque Publique</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Shiraz</subfield>
+         <subfield code="0">places/3904021</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003906</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052025.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">IR-TAn</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">46.290119</subfield>
+         <subfield code="f">38.080978</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-IR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Bibliothèque Nationale (Melli)</subfield>
+         <subfield code="c">Tabriz</subfield>
+         <subfield code="g">IR-TAn</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Tabriz</subfield>
+         <subfield code="0">places/3904022</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003907</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052025.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">IR-Td</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-IR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Bibliothèque de Loghat-Nama Dehkhodâ (Logatname Dehćhoda)</subfield>
+         <subfield code="c">Teheran</subfield>
+         <subfield code="g">IR-Td</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Teheran</subfield>
+         <subfield code="0">places/3904023</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003908</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052025.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">IR-Tm</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">51.4230556</subfield>
+         <subfield code="f">35.6961111</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-IR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Bibliothèque de Malik</subfield>
+         <subfield code="c">Teheran</subfield>
+         <subfield code="g">IR-Tm</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Teheran</subfield>
+         <subfield code="0">places/3904023</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003909</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052025.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">IR-Tn</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-IR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Bibliothèque Nationale (Melli)</subfield>
+         <subfield code="c">Teheran</subfield>
+         <subfield code="g">IR-Tn</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Teheran</subfield>
+         <subfield code="0">places/3904023</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003910</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052025.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">IR-Tp</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">51.4230556</subfield>
+         <subfield code="f">35.6961111</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-IR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Bibliothèque du parlement (Maglis-e-Šowra)</subfield>
+         <subfield code="c">Teheran</subfield>
+         <subfield code="g">IR-Tp</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Teheran</subfield>
+         <subfield code="0">places/3904023</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003911</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052025.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">IR-Tpi</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">51.4230556</subfield>
+         <subfield code="f">35.6961111</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-IR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Bibliothèque privée de Golšan-e-Ibrahimi</subfield>
+         <subfield code="c">Teheran</subfield>
+         <subfield code="g">IR-Tpi</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Teheran</subfield>
+         <subfield code="0">places/3904023</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003912</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052025.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">IR-Tpn</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">51.4230556</subfield>
+         <subfield code="f">35.6961111</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-IR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Bibliothèque privée de Dr. Yusuf-e-Nayyiri</subfield>
+         <subfield code="c">Teheran</subfield>
+         <subfield code="g">IR-Tpn</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Teheran</subfield>
+         <subfield code="0">places/3904023</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003913</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052025.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">IR-Tps</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">51.4230556</subfield>
+         <subfield code="f">35.6961111</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-IR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Bibliothèque privée de Mehdi Sadri</subfield>
+         <subfield code="c">Teheran</subfield>
+         <subfield code="g">IR-Tps</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Teheran</subfield>
+         <subfield code="0">places/3904023</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003914</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052025.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">IR-Tpt</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">51.4230556</subfield>
+         <subfield code="f">35.6961111</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-IR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Bibliothèque privée de Muhit-e-Tabataba'i</subfield>
+         <subfield code="c">Teheran</subfield>
+         <subfield code="g">IR-Tpt</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Teheran</subfield>
+         <subfield code="0">places/3904023</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003915</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052025.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">IR-Tr</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">51.4230556</subfield>
+         <subfield code="f">35.6961111</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-IR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Bibliothèque Royale (Saltanati)</subfield>
+         <subfield code="c">Teheran</subfield>
+         <subfield code="g">IR-Tr</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Teheran</subfield>
+         <subfield code="0">places/3904023</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003916</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052025.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">IR-Ts</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">51.4230556</subfield>
+         <subfield code="f">35.6961111</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-IR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Bibliothèque de Sénat</subfield>
+         <subfield code="c">Teheran</subfield>
+         <subfield code="g">IR-Ts</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Teheran</subfield>
+         <subfield code="0">places/3904023</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003917</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052025.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">IR-Tss</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">51.4230556</subfield>
+         <subfield code="f">35.6961111</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-IR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Bibliothèque de Sepahsalar</subfield>
+         <subfield code="c">Teheran</subfield>
+         <subfield code="g">IR-Tss</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Teheran</subfield>
+         <subfield code="0">places/3904023</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003918</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052025.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">IR-Tu</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-IR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Bibliothèque Centrale de l'Université de Teheran</subfield>
+         <subfield code="c">Teheran</subfield>
+         <subfield code="g">IR-Tu</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Teheran</subfield>
+         <subfield code="0">places/3904023</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003919</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052025.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">IR-Yw</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">54.36068</subfield>
+         <subfield code="f">31.89661</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-IR</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Bibliothèque de Waziri</subfield>
+         <subfield code="c">Yazd</subfield>
+         <subfield code="g">IR-Yw</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Yazd</subfield>
+         <subfield code="0">places/3904024</subfield>
+      </datafield>
+   </record>
+</collection>

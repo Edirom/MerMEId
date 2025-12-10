@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003869</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250804075704.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">KSA-Mah</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="z">AS-Mah</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-SA</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Sheikh Arif Hikmat Library</subfield>
+         <subfield code="c">Al-Madīnah</subfield>
+         <subfield code="g">KSA-Mah</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Al-Madīnah</subfield>
+         <subfield code="0">places/3904007</subfield>
+      </datafield>
+   </record>
+</collection>

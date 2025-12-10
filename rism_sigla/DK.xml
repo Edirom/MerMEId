@@ -1,528 +1,1334 @@
 <?xml version="1.0" encoding="UTF-8"?>
-   <collection xmlns="http://www.loc.gov/MARC21/slim">
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30001334</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">DK-A</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-DK</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Statsbiblioteket</subfield>
-            <subfield code="c">Århus</subfield>
-            <subfield code="g">DK-A</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Statsbiblioteket, Universitetsparken, 8000 Århus, Denmark</subfield>
-            <subfield code="u">http://www.statsbiblioteket.dk/</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30001335</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">DK-Ch</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-DK</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Brødremenigheden</subfield>
-            <subfield code="c">Christiansfeld</subfield>
-            <subfield code="g">DK-Ch</subfield>
-         </datafield>
-         <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Herrnhutgemeinde</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Brødremenigheden, Kongensgade 9, 6070 Christiansfeld, Denmark</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30001336</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">DK-CHlarsen</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-DK</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Privatbibliotek Jens Peter Larsen</subfield>
-            <subfield code="c">Charlottenlund</subfield>
-            <subfield code="g">DK-CHlarsen</subfield>
-         </datafield>
-         <datafield tag="580" ind1=" " ind2=" ">
-            <subfield code="x">DK-Kv</subfield>
-            <subfield code="0">30001350</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30001338</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">DK-Dschoenbaum</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-DK</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Privatbibliotek Dr. Camillo Schoenbaum</subfield>
-            <subfield code="c">Dragør</subfield>
-            <subfield code="g">DK-Dschoenbaum</subfield>
-         </datafield>
-         <datafield tag="580" ind1=" " ind2=" ">
-            <subfield code="x">DK-Kk</subfield>
-            <subfield code="0">30001344</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30001340</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">DK-Hfog</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-DK</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Dan Fogs samlinger</subfield>
-            <subfield code="c">Hellerup</subfield>
-            <subfield code="g">DK-Hfog</subfield>
-         </datafield>
-         <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Dan Fog private music collection</subfield>
-         </datafield>
-         <datafield tag="580" ind1=" " ind2=" ">
-            <subfield code="x">DK-Kk</subfield>
-            <subfield code="0">30001344</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30002957</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">DK-Kar</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-DK</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Det Arnamagnæanske Institut</subfield>
-            <subfield code="c">København</subfield>
-            <subfield code="g">DK-Kar</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30001341</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">DK-Kc</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-DK</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Carl Claudius musikhistoriske Samling</subfield>
-            <subfield code="c">København</subfield>
-            <subfield code="g">DK-Kc</subfield>
-         </datafield>
-         <datafield tag="580" ind1=" " ind2=" ">
-            <subfield code="x">DK-Km</subfield>
-            <subfield code="0">30001346</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Carl Claudius musikhistoriske Samling, Åbenrå 30, 1124 København K, Denmark</subfield>
-            <subfield code="u">http://www.natmus.dk/</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30005669</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">DK-Kd</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-DK</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Dansk Musik Informations Center</subfield>
-            <subfield code="c">København</subfield>
-            <subfield code="g">DK-Kd</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30001343</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">DK-Kh</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-DK</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Københavns Kommunes Biblioteker, Hovedbiblioteket</subfield>
-            <subfield code="c">København</subfield>
-            <subfield code="g">DK-Kh</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Københavns Kommunes Biblioteker,,  Hovedbiblioteket, Kultorvet 2, 1175 København K., Denmark</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30001344</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">DK-Kk</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-DK</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Det Kongelige Bibliotek</subfield>
-            <subfield code="c">København</subfield>
-            <subfield code="g">DK-Kk</subfield>
-         </datafield>
-         <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Nationalbibliotek og Københavns Universitetsbibliotek</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Det Kongelige Bibliotek, Søren Kierkegaards Plads 1, Postfach 2149, 1016 København K, Denmark</subfield>
-            <subfield code="u">http://www.kb.dk/</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30001346</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">DK-Km</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-DK</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Musikmuseet</subfield>
-            <subfield code="c">Frederiksberg</subfield>
-            <subfield code="g">DK-Km</subfield>
-         </datafield>
-         <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Musikhistorisk Museum og Carl Claudius samlings, Bibliotek</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Musikmuseet, Rosenørns Allé 22, 1970 Frederiksberg C, Denmark</subfield>
-            <subfield code="u">http://natmus.dk/musikmuseet/</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30001345</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">DK-Kmk</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-DK</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Det Kongelige danske Musikkonservatoriums Bibliotek</subfield>
-            <subfield code="c">København</subfield>
-            <subfield code="g">DK-Kmk</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Det Kongelige danske,  Musikkonservatoriums Bibliotek, Niels Brocksgade 1, 1553  København V., Denmark</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30003644</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">DK-Kr</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-DK</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Danmarks Radios Nodebibliotek</subfield>
-            <subfield code="c">København</subfield>
-            <subfield code="g">DK-Kr</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Danmarks Radios Nodebibliotek, Islands Brygge 81, 2300 København S, Denmark</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30001347</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">DK-Ks</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-DK</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Edition S - Samfundet til Udgivelse af Dansk musik</subfield>
-            <subfield code="c">Frederiksberg</subfield>
-            <subfield code="g">DK-Ks</subfield>
-         </datafield>
-         <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Society for Publication of Danish Music</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Edition S - Samfundet til Udgivelse af,  Dansk musik, Worsaaesvej 19, 5. sal, 1972 Frederiksberg C, Denmark</subfield>
-            <subfield code="u">http://www.edition-s.dk/</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30001348</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">DK-Kt</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-DK</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Teatermuseet</subfield>
-            <subfield code="c">København</subfield>
-            <subfield code="g">DK-Kt</subfield>
-         </datafield>
-         <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Teaterhistorisk Museum</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Teatermuseet, Christiansborg Ridebane 10 og 18, 1218 København K, Denmark</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30001349</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">DK-Ku</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-DK</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Det Kongelige Bibliotek Fiolstræde</subfield>
-            <subfield code="c">København</subfield>
-            <subfield code="g">DK-Ku</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Det Kongelige Bibliotek Fiolstræde, Fiolstræde 1, 1171 København K, Denmark</subfield>
-            <subfield code="u">http://www.kb.dk/da/kb/bygninger/fiolstraede</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30001350</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">DK-Kv</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-DK</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Musikvidenskabeligt Institut Københavns Universitet, Bibliotek</subfield>
-            <subfield code="c">København</subfield>
-            <subfield code="g">DK-Kv</subfield>
-         </datafield>
-         <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Kobenhavns Universitets Musikvidenskabelige Institut</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Musikvidenskabeligt Institut Københavns,  Universitet, Bibliotek, Klerkegade 2, 1308 København K, Denmark</subfield>
-            <subfield code="u">http://musikvidenskab.ku.dk/</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30002828</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">DK-N</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-DK</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Herlufsholm Skoles Bibliotek</subfield>
-            <subfield code="c">Næstved</subfield>
-            <subfield code="g">DK-N</subfield>
-         </datafield>
-         <datafield tag="580" ind1=" " ind2=" ">
-            <subfield code="x">DK-Ou</subfield>
-            <subfield code="0">30001352</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30001351</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">DK-Ol</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-DK</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Landsarkivet for Fyen</subfield>
-            <subfield code="c">Odense</subfield>
-            <subfield code="g">DK-Ol</subfield>
-         </datafield>
-         <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Karen Brahes Bibliotek</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Landsarkivet for Fyen, Jernbanegade 36, 5000 Odense, Denmark</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30001352</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">DK-Ou</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-DK</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Syddansk Universitetsbibliotek</subfield>
-            <subfield code="c">Odense</subfield>
-            <subfield code="g">DK-Ou</subfield>
-         </datafield>
-         <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Universitetsbibliotek, Musikafdelingen</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Syddansk Universitetsbibliotek, Campusvej 55, 5230 Odense M, Denmark</subfield>
-            <subfield code="u">http://www.sdu.dk/sdub/</subfield>
-         </datafield>
-         <datafield tag="710" ind1="2" ind2=" ">
-            <subfield code="a">Centralbiblioteket, Stiftsbiblioteket, Odense</subfield>
-            <subfield code="0">30077464</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30001353</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">DK-Rk</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-DK</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Ribe Katedralskoles- og Stiftsbibliotek</subfield>
-            <subfield code="c">Ribe</subfield>
-            <subfield code="g">DK-Rk</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Ribe Katedralskoles- og Stiftsbibliotek, Puggaardsgade, 6760 Ribe, Denmark</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30001354</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">DK-Sa</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-DK</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Sorø Akademi, Biblioteket</subfield>
-            <subfield code="c">Sorø</subfield>
-            <subfield code="g">DK-Sa</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Sorø Akademi, Biblioteket, 4180 Sorø, Denmark</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30001355</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">DK-Tv</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-DK</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Valdemars Slot</subfield>
-            <subfield code="c">Tåsinge</subfield>
-            <subfield code="g">DK-Tv</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Valdemars Slot, Tåsinge, 5700 Svendborg, Denmark</subfield>
-         </datafield>
-      </record>
-   </collection>
-
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30001334</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052003.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">122583218</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">DK-A</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">10.2031135</subfield>
+         <subfield code="f">56.1689962</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-DK</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Det Kongelige Bibliotek - Aarhus</subfield>
+         <subfield code="c">Aarhus</subfield>
+         <subfield code="g">DK-A</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Victor Albecks Vej 1</subfield>
+         <subfield code="b">Aarhus C</subfield>
+         <subfield code="d">Denmark</subfield>
+         <subfield code="e">8000</subfield>
+         <subfield code="u">http://www.statsbiblioteket.dk/</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Tidl. Statsbiblioteket</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Aarhus</subfield>
+         <subfield code="0">places/3900837</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 524</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30001336</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052003.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">DK-CHlarsen</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-DK</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Privatbibliotek Jens Peter Larsen</subfield>
+         <subfield code="c">Charlottenlund</subfield>
+         <subfield code="g">DK-CHlarsen</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Charlottenlund</subfield>
+         <subfield code="0">places/3903171</subfield>
+      </datafield>
+      <datafield tag="580" ind1=" " ind2=" ">
+         <subfield code="x">DK-Kv</subfield>
+         <subfield code="0">institutions/30001350</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30001335</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052003.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">DK-Ch</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-DK</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Brødremenigheden</subfield>
+         <subfield code="c">Christiansfeld</subfield>
+         <subfield code="g">DK-Ch</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Brødremenigheden, Kongensgade 9, 6070 Christiansfeld, Denmark</subfield>
+      </datafield>
+      <datafield tag="410" ind1="2" ind2=" ">
+         <subfield code="a">Herrnhutgemeinde</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Christiansfeld</subfield>
+         <subfield code="0">places/3900149</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 1097</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30001338</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052003.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">DK-Dschoenbaum</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-DK</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Privatbibliotek Dr. Camillo Schoenbaum</subfield>
+         <subfield code="c">Dragør</subfield>
+         <subfield code="g">DK-Dschoenbaum</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Dragør</subfield>
+         <subfield code="0">places/3903172</subfield>
+      </datafield>
+      <datafield tag="580" ind1="1" ind2=" ">
+         <subfield code="x">DK-Kk</subfield>
+         <subfield code="0">institutions/30001344</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 19</subfield>
+      </datafield>
+      <datafield tag="700" ind1="1" ind2=" ">
+         <subfield code="a">Schoenbaum, Camillo</subfield>
+         <subfield code="d">1925-1981</subfield>
+         <subfield code="0">people/30027720</subfield>
+         <subfield code="4">asn</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51000580</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052238.0</controlfield>
+      <controlfield tag="008">180108||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">125345224</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">DK-HAha</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">9.495539</subfield>
+         <subfield code="f">55.232378</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-DK</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Historisk Arkiv</subfield>
+         <subfield code="c">Haderslev</subfield>
+         <subfield code="g">DK-HAha</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+         <subfield code="a">Archive</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Arkiv og kontor:</subfield>
+         <subfield code="a">Kløvervej 87B</subfield>
+         <subfield code="b">Haderslev</subfield>
+         <subfield code="c">Syddanmark</subfield>
+         <subfield code="d">Denmark</subfield>
+         <subfield code="e">6100</subfield>
+         <subfield code="m">arkiv@haderslev.dk</subfield>
+         <subfield code="u">https://historiehaderslev.dk/historisk-arkiv/</subfield>
+         <subfield code="z">tel: +45 / 74 34 78 00</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Læsesalen:</subfield>
+         <subfield code="a">Bispebroen 3</subfield>
+         <subfield code="b">Haderslev</subfield>
+         <subfield code="c">Syddanmark</subfield>
+         <subfield code="d">Denmark</subfield>
+         <subfield code="e">6100</subfield>
+         <subfield code="m">arkiv@haderslev.dk</subfield>
+         <subfield code="u">https://historiehaderslev.dk/historisk-arkiv/</subfield>
+         <subfield code="z">tel: +45 / 74 34 78 08</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Haderslev</subfield>
+         <subfield code="0">places/3902452</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30001340</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052003.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">DK-Hfog</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-DK</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Dan Fogs samlinger</subfield>
+         <subfield code="c">Hellerup</subfield>
+         <subfield code="g">DK-Hfog</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="410" ind1="2" ind2=" ">
+         <subfield code="a">Dan Fog private music collection</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Hellerup</subfield>
+         <subfield code="0">places/3901324</subfield>
+      </datafield>
+      <datafield tag="580" ind1=" " ind2=" ">
+         <subfield code="x">DK-Kk</subfield>
+         <subfield code="0">institutions/30001344</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30002957</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052017.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">DK-Kar</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-DK</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Det Arnamagnæanske Institut</subfield>
+         <subfield code="c">København</subfield>
+         <subfield code="g">DK-Kar</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">København</subfield>
+         <subfield code="0">places/3900414</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30001341</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052003.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">DK-Kc</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-DK</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Carl Claudius musikhistoriske Samling</subfield>
+         <subfield code="c">København</subfield>
+         <subfield code="g">DK-Kc</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Carl Claudius musikhistoriske Samling, Åbenrå 30, 1124 København K, Denmark</subfield>
+         <subfield code="u">http://www.natmus.dk/</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">København</subfield>
+         <subfield code="0">places/3900414</subfield>
+      </datafield>
+      <datafield tag="580" ind1=" " ind2=" ">
+         <subfield code="x">DK-Km</subfield>
+         <subfield code="0">institutions/30001346</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 237</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30005669</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052041.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">DK-Kd</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-DK</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Dansk Musik Informations Center</subfield>
+         <subfield code="c">København</subfield>
+         <subfield code="g">DK-Kd</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">København</subfield>
+         <subfield code="0">places/3900414</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30001343</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052003.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">DK-Kh</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">12.5683371</subfield>
+         <subfield code="f">55.6760968</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-DK</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Københavns Kommunes Biblioteker, Hovedbiblioteket</subfield>
+         <subfield code="c">København</subfield>
+         <subfield code="g">DK-Kh</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Københavns Kommunes Biblioteker,,  Hovedbiblioteket, Kultorvet 2, 1175 København K., Denmark</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">København</subfield>
+         <subfield code="0">places/3900414</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 37</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30001344</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052003.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">DK-800021</subfield>
+         <subfield code="2">ISIL</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">138525910</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q867885</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">DK-Kk</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">12.582680257673282</subfield>
+         <subfield code="f">55.67339637495354</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-DK</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Det Kongelige Bibliotek på Slotsholmen - Den Sorte Diamant</subfield>
+         <subfield code="c">København</subfield>
+         <subfield code="g">DK-Kk</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Søren Kierkegaards Plads 1</subfield>
+         <subfield code="b">1221 København K</subfield>
+         <subfield code="d">Denmark</subfield>
+         <subfield code="m">kb@kb.dk</subfield>
+         <subfield code="u">https://www.kb.dk/</subfield>
+         <subfield code="u">https://www.kb.dk/en/find-materials/guides/music</subfield>
+         <subfield code="z">tel: +45 / 33 47 47 47</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Musiksamlingen</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Danmarks Nationalbibliotek</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Københavns Universitetsbibliotek</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">København</subfield>
+         <subfield code="0">places/3900414</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 7362</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30001346</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052003.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">DK-Km</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-DK</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Musikmuseet</subfield>
+         <subfield code="c">Frederiksberg</subfield>
+         <subfield code="g">DK-Km</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Musikmuseet, Rosenørns Allé 22, 1970 Frederiksberg C, Denmark</subfield>
+         <subfield code="u">http://natmus.dk/musikmuseet/</subfield>
+      </datafield>
+      <datafield tag="410" ind1="2" ind2=" ">
+         <subfield code="a">Musikhistorisk Museum og Carl Claudius samlings, Bibliotek</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Frederiksberg</subfield>
+         <subfield code="0">places/3022869</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 463</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30001345</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052003.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">DK-Kmk</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">12.5683371</subfield>
+         <subfield code="f">55.6760968</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-DK</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Det Kongelige danske Musikkonservatoriums Bibliotek</subfield>
+         <subfield code="c">København</subfield>
+         <subfield code="g">DK-Kmk</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Det Kongelige danske,  Musikkonservatoriums Bibliotek, Niels Brocksgade 1, 1553  København V., Denmark</subfield>
+         <subfield code="u">https://www.dkdm.dk/Om-DKDM/Faciliteter/Biblioteket</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">København</subfield>
+         <subfield code="0">places/3900414</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 374</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003644</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052023.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">DK-Kr</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">12.5683371</subfield>
+         <subfield code="f">55.6760968</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-DK</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Danmarks Radios Nodebibliotek</subfield>
+         <subfield code="c">København</subfield>
+         <subfield code="g">DK-Kr</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Danmarks Radios Nodebibliotek, Islands Brygge 81, 2300 København S, Denmark</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">København</subfield>
+         <subfield code="0">places/3900414</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51000582</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052238.0</controlfield>
+      <controlfield tag="008">180108||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">155553387</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q15303921</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">DK-Kra</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">12.582679956116264</subfield>
+         <subfield code="f">55.673401980534486</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-DK</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Rigsarkivet, København</subfield>
+         <subfield code="c">København</subfield>
+         <subfield code="g">DK-Kra</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+         <subfield code="a">Archive</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">The Research Reading Room:</subfield>
+         <subfield code="a">The Black Diamond, Søren Kierkegaards Plads 1</subfield>
+         <subfield code="b">1221 København K</subfield>
+         <subfield code="d">Denmark</subfield>
+         <subfield code="m">mailbox@sa.dk</subfield>
+         <subfield code="u">https://www.rigsarkivet.dk/</subfield>
+         <subfield code="z">tel: +45 / 33 92 33 10</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Statens Arkiver</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">The Danish National Archives</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Landsarkivet for Sjælland</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">København</subfield>
+         <subfield code="0">places/3900414</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30001347</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052003.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">DK-Ks</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-DK</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Edition S - Samfundet til Udgivelse af Dansk musik</subfield>
+         <subfield code="c">Frederiksberg</subfield>
+         <subfield code="g">DK-Ks</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Edition S - Samfundet til Udgivelse af,  Dansk musik, Worsaaesvej 19, 5. sal, 1972 Frederiksberg C, Denmark</subfield>
+         <subfield code="u">http://www.edition-s.dk/</subfield>
+      </datafield>
+      <datafield tag="410" ind1="2" ind2=" ">
+         <subfield code="a">Society for Publication of Danish Music</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Frederiksberg</subfield>
+         <subfield code="0">places/3022869</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51000583</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052238.0</controlfield>
+      <controlfield tag="008">180108||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">256749101</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">DK-Ksmk</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">12.578361</subfield>
+         <subfield code="f">55.688614</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-DK</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Statens Museum for Kunst</subfield>
+         <subfield code="c">København</subfield>
+         <subfield code="g">DK-Ksmk</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+         <subfield code="a">Other</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Sølvgade 48-50</subfield>
+         <subfield code="b">København K</subfield>
+         <subfield code="c">Hovedstaden</subfield>
+         <subfield code="d">Denmark</subfield>
+         <subfield code="e">1307</subfield>
+         <subfield code="u">http://www.smk.dk/</subfield>
+         <subfield code="z">tel: + 45 / 3374 8494</subfield>
+         <subfield code="z">fax: +45 / 3374 8404</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">København</subfield>
+         <subfield code="0">places/3900414</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30001348</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052003.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">DK-Kt</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">12.5683371</subfield>
+         <subfield code="f">55.6760968</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-DK</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Teatermuseet</subfield>
+         <subfield code="c">København</subfield>
+         <subfield code="g">DK-Kt</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Teatermuseet, Christiansborg Ridebane 10 og 18, 1218 København K, Denmark</subfield>
+      </datafield>
+      <datafield tag="410" ind1="2" ind2=" ">
+         <subfield code="a">Teaterhistorisk Museum</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">København</subfield>
+         <subfield code="0">places/3900414</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 10</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30001349</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052003.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">DK-Ku</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">12.5732858</subfield>
+         <subfield code="f">55.6801149</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-DK</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Det Kongelige Bibliotek Fiolstræde</subfield>
+         <subfield code="c">København</subfield>
+         <subfield code="g">DK-Ku</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Det Kongelige Bibliotek Fiolstræde, Fiolstræde 1, 1171 København K, Denmark</subfield>
+         <subfield code="u">http://www.kb.dk/da/kb/bygninger/fiolstraede</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">København</subfield>
+         <subfield code="0">places/3900414</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 20</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30001350</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052003.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">DK-Kv</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-DK</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Musikvidenskabeligt Institut Københavns Universitet, Bibliotek</subfield>
+         <subfield code="c">København</subfield>
+         <subfield code="g">DK-Kv</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Musikvidenskabeligt Institut Københavns,  Universitet, Bibliotek, Klerkegade 2, 1308 København K, Denmark</subfield>
+         <subfield code="u">http://musikvidenskab.ku.dk/</subfield>
+      </datafield>
+      <datafield tag="410" ind1="2" ind2=" ">
+         <subfield code="a">Kobenhavns Universitets Musikvidenskabelige Institut</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">København</subfield>
+         <subfield code="0">places/3900414</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 266</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30002828</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052016.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">DK-N</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-DK</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Herlufsholm Skoles Bibliotek</subfield>
+         <subfield code="c">Næstved</subfield>
+         <subfield code="g">DK-N</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Næstved</subfield>
+         <subfield code="0">places/3903613</subfield>
+      </datafield>
+      <datafield tag="580" ind1=" " ind2=" ">
+         <subfield code="x">DK-Ou</subfield>
+         <subfield code="0">institutions/30001352</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30001351</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052003.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">DK-Ol</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">10.40237</subfield>
+         <subfield code="f">55.403756</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-DK</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Landsarkivet for Fyen</subfield>
+         <subfield code="c">Odense</subfield>
+         <subfield code="g">DK-Ol</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Landsarkivet for Fyen, Jernbanegade 36, 5000 Odense, Denmark</subfield>
+      </datafield>
+      <datafield tag="410" ind1="2" ind2=" ">
+         <subfield code="a">Karen Brahes Bibliotek</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Odense</subfield>
+         <subfield code="0">places/3902394</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 8</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30001352</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052003.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">DK-Ou</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-DK</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Syddansk Universitetsbibliotek</subfield>
+         <subfield code="c">Odense</subfield>
+         <subfield code="g">DK-Ou</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Syddansk Universitetsbibliotek, Campusvej 55, 5230 Odense M, Denmark</subfield>
+         <subfield code="u">http://www.sdu.dk/sdub/</subfield>
+      </datafield>
+      <datafield tag="410" ind1="2" ind2=" ">
+         <subfield code="a">Universitetsbibliotek, Musikafdelingen</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Odense</subfield>
+         <subfield code="0">places/3902394</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 570</subfield>
+      </datafield>
+      <datafield tag="710" ind1="2" ind2=" ">
+         <subfield code="a">Centralbiblioteket, Stiftsbiblioteket, Odense</subfield>
+         <subfield code="0">institutions/30077464</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30001353</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052003.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">DK-Rk</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-DK</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Ribe Katedralskoles- og Stiftsbibliotek</subfield>
+         <subfield code="c">Ribe</subfield>
+         <subfield code="g">DK-Rk</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Ribe Katedralskoles- og Stiftsbibliotek, Puggaardsgade, 6760 Ribe, Denmark</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Ribe</subfield>
+         <subfield code="0">places/3903173</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 3</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30001354</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052003.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">DK-Sa</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-DK</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Sorø Akademi, Biblioteket</subfield>
+         <subfield code="c">Sorø</subfield>
+         <subfield code="g">DK-Sa</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Sorø Akademi, Biblioteket, 4180 Sorø, Denmark</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Sorø</subfield>
+         <subfield code="0">places/3903174</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 348</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51005278</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052301.0</controlfield>
+      <controlfield tag="008">210615||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">143933120</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q144515</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">DK-THflb</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">-6.778051430295578</subfield>
+         <subfield code="f">62.007267611312884</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-DK</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Føroya Landsbókasavn</subfield>
+         <subfield code="c">Tórshavn</subfield>
+         <subfield code="g">DK-THflb</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">J.C. Svabos gøta 16</subfield>
+         <subfield code="a">Postboks 61</subfield>
+         <subfield code="b">Tórshavn</subfield>
+         <subfield code="c">Føroyar</subfield>
+         <subfield code="d">Danmark</subfield>
+         <subfield code="e">110</subfield>
+         <subfield code="m">lbs@landsbokasavnid.fo</subfield>
+         <subfield code="u">https://landsbokasavnid.fo/</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">National Library of the Faroe Islands</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Tórshavn</subfield>
+         <subfield code="0">places/50004412</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30001355</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052003.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">DK-Tv</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">10.654144</subfield>
+         <subfield code="f">55.023236</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-DK</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Valdemars Slot</subfield>
+         <subfield code="c">Tåsinge</subfield>
+         <subfield code="g">DK-Tv</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Valdemars Slot, Tåsinge, 5700 Svendborg, Denmark</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Tåsinge</subfield>
+         <subfield code="0">places/3903175</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 108</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51000581</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052238.0</controlfield>
+      <controlfield tag="008">180108||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">158277784</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">DK-Vra</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">9.407148</subfield>
+         <subfield code="f">56.452944</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-DK</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Rigsarkivet, Viborg</subfield>
+         <subfield code="c">Viborg</subfield>
+         <subfield code="g">DK-Vra</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+         <subfield code="a">Archive</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Ll. Sct. Hans Gade 5</subfield>
+         <subfield code="b">Viborg</subfield>
+         <subfield code="c">Midtjylland</subfield>
+         <subfield code="d">Denmark</subfield>
+         <subfield code="e">8800</subfield>
+         <subfield code="m">mailbox@sa.dk</subfield>
+         <subfield code="u">https://www.sa.dk/da/brug-arkivet/besoeg-en-laesesal/rigsarkivets-laesesal-viborg/</subfield>
+         <subfield code="z">tel: +45/ 33 92 33 10</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">The Danish National Archives</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Landsarkivet for Nørrejylland</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Viborg</subfield>
+         <subfield code="0">places/4000057</subfield>
+      </datafield>
+   </record>
+</collection>

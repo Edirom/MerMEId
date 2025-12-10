@@ -1,406 +1,1007 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <collection xmlns="http://www.loc.gov/MARC21/slim">
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30002113</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">RO-Ab</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-RO</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Biblioteca Centrală Universitară, Cluj, Filiala Bethlen</subfield>
-            <subfield code="c">Aiud</subfield>
-            <subfield code="g">RO-Ab</subfield>
-         </datafield>
-         <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Biblioteca Documentară Bethlan</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30002114</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">RO-AJ</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-RO</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Biblioteca Naţională, Filiala Batthyaneum</subfield>
-            <subfield code="c">Alba Iulia</subfield>
-            <subfield code="g">RO-AJ</subfield>
-         </datafield>
-         <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Biblioteca Centrală de Stat, Filiala Batthyaneum</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30002115</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">RO-Ba</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">RO</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Biblioteca Academiei Române</subfield>
-            <subfield code="c">Bucureşti</subfield>
-            <subfield code="g">RO-Ba</subfield>
-         </datafield>
-         <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Biblioteca Academiei Republicii Socialiste România</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30002116</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">RO-Ban</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-RO</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Arhivele Naţionale ale României</subfield>
-            <subfield code="c">Bucureşti</subfield>
-            <subfield code="g">RO-Ban</subfield>
-         </datafield>
-         <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Arhivele Statului</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30002117</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">RO-Bn</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-RO</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Biblioteca Naţională a României</subfield>
-            <subfield code="c">Bucureşti</subfield>
-            <subfield code="g">RO-Bn</subfield>
-         </datafield>
-         <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Biblioteca Centrală de Stat</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30005721</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">RO-BRbn</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-RO</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Evangelische Kirche A.B. Kronstadt, Archiv und Bibliothek der Honterusgemeinde</subfield>
-            <subfield code="c">Braşov</subfield>
-            <subfield code="g">RO-BRbn</subfield>
-         </datafield>
-         <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Biserica Neagră</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Evangelische Kirche A.B. Kronstadt,,  Archiv und Bibliothek der,  Honterusgemeinde, Curtea Johannes Honterus 2, 500025 Braşov, Romania</subfield>
-            <subfield code="u">http://www.honterusgemeinde.ro/</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30002118</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">RO-BRm</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-RO</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Biblioteca Judeţeană</subfield>
-            <subfield code="c">Braşov</subfield>
-            <subfield code="g">RO-BRm</subfield>
-         </datafield>
-         <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Biblioteca Municipală</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30006345</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">RO-Ca</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-RO</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Biblioteca Academiei Romane - Filiala Cluj-Napoca</subfield>
-            <subfield code="c">Cluj-Napoca</subfield>
-            <subfield code="g">RO-Ca</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Biblioteca Academiei Romane - Filiala, Cluj-Napoca, str. Mihail Kogalniceanu, nr. 12-14, 400015 Cluj-Napoca, Romania</subfield>
-            <subfield code="u">http://www.acad-cluj.ro/biblioteca_academiei_romane.php</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30006180</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">RO-Cgd</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-RO</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Academia de Musiza Gheorghe Dima</subfield>
-            <subfield code="c">Cluj-Napoca</subfield>
-            <subfield code="g">RO-Cgd</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30002119</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">RO-Cu</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-RO</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Biblioteca Centrală Universitară</subfield>
-            <subfield code="c">Cluj-Napoca</subfield>
-            <subfield code="g">RO-Cu</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30002120</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">RO-J</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-RO</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Biblioteca Centrală Universitară "M. Eminescu"</subfield>
-            <subfield code="c">Iaşi</subfield>
-            <subfield code="g">RO-J</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30077389</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">RO-MCcsm</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-RO</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Csíki Székely múzeum</subfield>
-            <subfield code="c">Miercurea Ciuc</subfield>
-            <subfield code="g">RO-MCcsm</subfield>
-         </datafield>
-         <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">formerly: Complexul muzeal Judeţean Harghita</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30002121</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">RO-O</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-RO</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Arhivele Naţionale ale României, Direcţiei Judeţene</subfield>
-            <subfield code="c">Oradea</subfield>
-            <subfield code="g">RO-O</subfield>
-         </datafield>
-         <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Arhivele Statului, Filiala Oradea</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30002122</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">RO-Sa</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-RO</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Arhivele Naţionale ale României, Direcţiei Judeţene</subfield>
-            <subfield code="c">Sibiu</subfield>
-            <subfield code="g">RO-Sa</subfield>
-         </datafield>
-         <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Filiala Arhivelor statului</subfield>
-         </datafield>
-         <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Arhivele Statului, Filiala Sibiu</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Arhivele Naţionale ale României,, Direcţiei Judeţene, Str. Arhivelor nr.3, 550164 Sibiu, Romania</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30002123</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">RO-Sb</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-RO</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Biblioteca Muzeului Bruckenthal</subfield>
-            <subfield code="c">Sibiu</subfield>
-            <subfield code="g">RO-Sb</subfield>
-         </datafield>
-         <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Muzeul Brukenthal</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30005698</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">RO-Se</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-RO</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Landeskonsistorium der evangelischen Kirchen A.B. in Rumänien, Archiv</subfield>
-            <subfield code="c">Sibiu</subfield>
-            <subfield code="g">RO-Se</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Landeskonsistorium der evangelischen, Kirchen A.B. in Rumänien, Archiv, Str. General Magheru 4, 2400 Sibiu, Romania</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30005699</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">RO-Srk</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-RO</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Römisch-katholische Kirche</subfield>
-            <subfield code="c">Sibiu</subfield>
-            <subfield code="g">RO-Srk</subfield>
-         </datafield>
-         <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Römisch-katholische Kirche, Piata Mare 2, 2400  Sibiu, Romania</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30005765</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">RO-TMj</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-RO</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Biblioteca Judeţeană</subfield>
-            <subfield code="c">Tîrgu-Mureş</subfield>
-            <subfield code="g">RO-TMj</subfield>
-         </datafield>
-      </record>
-      <record>
-         <leader>00000nz  a2200169   4500</leader>
-         <controlfield tag="001">30002124</controlfield>
-         <controlfield tag="003">RISM</controlfield>
-         <controlfield tag="005">20160216</controlfield>
-         <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-         <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">RO-TMt</subfield>
-         </datafield>
-         <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XA-RO</subfield>
-         </datafield>
-         <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Biblioteca Teleki Bolyai</subfield>
-            <subfield code="c">Tîrgu-Mureş</subfield>
-            <subfield code="g">RO-TMt</subfield>
-         </datafield>
-         <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">Biblioteca Documentară Teleki</subfield>
-         </datafield>
-         <datafield tag="580" ind1=" " ind2=" ">
-            <subfield code="x">RO-TMj</subfield>
-            <subfield code="0">30005765</subfield>
-         </datafield>
-      </record>
-   </collection>
- 
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30002114</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052010.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RO-AJ</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">23.580099</subfield>
+         <subfield code="f">46.076691</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-RO</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Biblioteca Naţională, Filiala Batthyaneum</subfield>
+         <subfield code="c">Alba Iulia</subfield>
+         <subfield code="g">RO-AJ</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="410" ind1="2" ind2=" ">
+         <subfield code="a">Biblioteca Centrală de Stat, Filiala Batthyaneum</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Alba Iulia</subfield>
+         <subfield code="0">places/3902449</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30002113</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052010.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RO-Ab</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-RO</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Biblioteca Centrală Universitară, Cluj, Filiala Bethlen</subfield>
+         <subfield code="c">Aiud</subfield>
+         <subfield code="g">RO-Ab</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="410" ind1="2" ind2=" ">
+         <subfield code="a">Biblioteca Documentară Bethlan</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Aiud</subfield>
+         <subfield code="0">places/3903361</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30005721</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052041.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RO-BRbn</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-RO</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Evangelische Kirche A.B. Kronstadt, Archiv und Bibliothek der Honterusgemeinde</subfield>
+         <subfield code="c">Braşov</subfield>
+         <subfield code="g">RO-BRbn</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Evangelische Kirche A.B. Kronstadt,,  Archiv und Bibliothek der,  Honterusgemeinde, Curtea Johannes Honterus 2, 500025 Braşov, Romania</subfield>
+         <subfield code="u">http://www.honterusgemeinde.ro/</subfield>
+      </datafield>
+      <datafield tag="410" ind1="2" ind2=" ">
+         <subfield code="a">Biserica Neagră</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Braşov</subfield>
+         <subfield code="0">places/3903362</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30002118</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052010.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RO-BRm</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">25.5870422</subfield>
+         <subfield code="f">45.6457639</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-RO</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Biblioteca Judeţeană</subfield>
+         <subfield code="c">Braşov</subfield>
+         <subfield code="g">RO-BRm</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="410" ind1="2" ind2=" ">
+         <subfield code="a">Biblioteca Municipală</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Braşov</subfield>
+         <subfield code="0">places/3903362</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 3</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30002115</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052010.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">157698046</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RO-Ba</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">26.090346</subfield>
+         <subfield code="f">44.446436</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-RO</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Biblioteca Academiei Române</subfield>
+         <subfield code="c">Bucureşti</subfield>
+         <subfield code="g">RO-Ba</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Calea Victoriei 125, Sector 1</subfield>
+         <subfield code="b">Bucureşti</subfield>
+         <subfield code="d">Romania</subfield>
+         <subfield code="e">010071</subfield>
+         <subfield code="m">biblacad@biblacad.ro</subfield>
+         <subfield code="u">http://www.biblacad.ro/</subfield>
+         <subfield code="z">tel: +40 / 021.212.82.84</subfield>
+         <subfield code="z">fax: +40 / 021.212.58.56</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Biblioteca Academiei Republicii Socialiste România</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">București</subfield>
+         <subfield code="0">places/3900625</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30002116</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052010.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RO-Ban</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">26.091958</subfield>
+         <subfield code="f">44.4342012</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-RO</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Arhivele Naţionale ale României</subfield>
+         <subfield code="c">Bucureşti</subfield>
+         <subfield code="g">RO-Ban</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="410" ind1="2" ind2=" ">
+         <subfield code="a">Arhivele Statului</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">București</subfield>
+         <subfield code="0">places/3900625</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 1</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51004482</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052256.0</controlfield>
+      <controlfield tag="008">201028||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">310521084</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q12736099</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RO-Bmnge</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">26.088543856619346</subfield>
+         <subfield code="f">44.4486380849168</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-RO</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Muzeul Național George Enescu</subfield>
+         <subfield code="c">București</subfield>
+         <subfield code="g">RO-Bmnge</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+         <subfield code="a">Archive</subfield>
+         <subfield code="a">Museum</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Calea Victoriei, nr. 141, sector 1</subfield>
+         <subfield code="b">București, 010071</subfield>
+         <subfield code="d">Romania</subfield>
+         <subfield code="m">office@georgeenescu.ro</subfield>
+         <subfield code="u">https://www.georgeenescu.ro/</subfield>
+         <subfield code="z">tel: +40 / 0747.290.104</subfield>
+         <subfield code="z">fax: +40 / 21.312.91.82</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">The National Museum "George Enescu"</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">București</subfield>
+         <subfield code="0">places/3900625</subfield>
+      </datafield>
+      <datafield tag="700" ind1="1" ind2=" ">
+         <subfield code="a">Enescu, George</subfield>
+         <subfield code="d">1881-1955</subfield>
+         <subfield code="0">people/30075173</subfield>
+         <subfield code="4">asn</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30002117</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052010.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RO-Bn</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">26.1006765</subfield>
+         <subfield code="f">44.4335324</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-RO</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Biblioteca Naţională a României</subfield>
+         <subfield code="c">Bucureşti</subfield>
+         <subfield code="g">RO-Bn</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="410" ind1="2" ind2=" ">
+         <subfield code="a">Biblioteca Centrală de Stat</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">București</subfield>
+         <subfield code="0">places/3900625</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 3</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30006345</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052047.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RO-Ca</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">23.59989</subfield>
+         <subfield code="f">46.777248</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-RO</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Biblioteca Academiei Romane - Filiala Cluj-Napoca</subfield>
+         <subfield code="c">Cluj-Napoca</subfield>
+         <subfield code="g">RO-Ca</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Biblioteca Academiei Romane - Filiala, Cluj-Napoca, str. Mihail Kogalniceanu, nr. 12-14, 400015 Cluj-Napoca, Romania</subfield>
+         <subfield code="u">http://www.acad-cluj.ro/biblioteca_academiei_romane.php</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Cluj-Napoca</subfield>
+         <subfield code="0">places/3903363</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30006180</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052045.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RO-Cgd</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">23.59989</subfield>
+         <subfield code="f">46.777248</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-RO</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Academia de Musiza Gheorghe Dima</subfield>
+         <subfield code="c">Cluj-Napoca</subfield>
+         <subfield code="g">RO-Cgd</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Cluj-Napoca</subfield>
+         <subfield code="0">places/3903363</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30002119</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052010.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RO-Cu</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">23.584861</subfield>
+         <subfield code="f">46.767050</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-RO</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Biblioteca Centrală Universitară "Lucian Blaga"</subfield>
+         <subfield code="c">Cluj-Napoca</subfield>
+         <subfield code="g">RO-Cu</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Str. Clinicilor, nr. 2</subfield>
+         <subfield code="b">Cluj-Napoca</subfield>
+         <subfield code="d">Romania</subfield>
+         <subfield code="e">400006</subfield>
+         <subfield code="u">https://www.bcucluj.ro/en/resursele-bibliotecii/cat/csnote</subfield>
+         <subfield code="z">tel: +40 / (0)264 / 597092</subfield>
+         <subfield code="z">fax: +40 / (0)264 / 597633</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Lucian Blaga Központi Egyetemi Könyvtár</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">“Lucian Blaga” Central University Library</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Cluj-Napoca</subfield>
+         <subfield code="0">places/3903363</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 1</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51008130</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052320.0</controlfield>
+      <controlfield tag="008">240722||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q18542264</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RO-DO</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">26.391579804733894</subfield>
+         <subfield code="f">47.958427793394236</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-RO</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Muzeul Memorial "George Enescu"</subfield>
+         <subfield code="c">Dorohoi</subfield>
+         <subfield code="g">RO-DO</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+         <subfield code="a">Museum</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Str. George Enescu, nr. 81</subfield>
+         <subfield code="b">Dorohoi</subfield>
+         <subfield code="c">Județul Botoșani</subfield>
+         <subfield code="d">Romania</subfield>
+         <subfield code="e">715200</subfield>
+         <subfield code="m">enescu@muzeubt.ro</subfield>
+         <subfield code="u">https://www.muzeubt.ro/sectii/muzeul-memorial-george-enescu-dorohoi</subfield>
+         <subfield code="z">tel: +40 / 0231 615450</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">The George Enescu Memorial Museum</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Dorohoi</subfield>
+         <subfield code="0">places/50021003</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51006078</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052306.0</controlfield>
+      <controlfield tag="008">220121||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RO-Ggfl</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">25.60335999813782</subfield>
+         <subfield code="f">46.72209662411896</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-RO</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Gyulafehérvári Főegyházmegyei Levéltár Gyergyószentmiklósi Gyűjtőlevéltára, Gyergyószentmiklós</subfield>
+         <subfield code="c">Gyergyószentmiklós; Gheorgheni</subfield>
+         <subfield code="g">RO-Ggfl</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+         <subfield code="a">Archive</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">str. Márton Áron, nr. 9</subfield>
+         <subfield code="b">Gheorgheni</subfield>
+         <subfield code="d">Romania</subfield>
+         <subfield code="e">535500</subfield>
+         <subfield code="u">https://gyfl.ro/</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">Arhiva Arhidiecezană Romano-Catolică de Alba Iulia, Arhiva de Colecţie din Gheorgheni</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">Archbishopric Archive Alba Iulia, coll. Gheorgheni</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Gheorgheni</subfield>
+         <subfield code="0">places/50019160</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30002120</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052010.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RO-J</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">27.5755499</subfield>
+         <subfield code="f">47.1702197</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-RO</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Biblioteca Centrală Universitară "M. Eminescu"</subfield>
+         <subfield code="c">Iaşi</subfield>
+         <subfield code="g">RO-J</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Iaşi</subfield>
+         <subfield code="0">places/3903364</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30077389</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052115.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RO-MCcsm</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-RO</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Csíki Székely múzeum</subfield>
+         <subfield code="c">Miercurea Ciuc</subfield>
+         <subfield code="g">RO-MCcsm</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="410" ind1="2" ind2=" ">
+         <subfield code="a">formerly: Complexul muzeal Judeţean Harghita</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Miercurea Ciuc</subfield>
+         <subfield code="0">places/3020317</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30002121</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052010.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RO-O</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">21.9211111</subfield>
+         <subfield code="f">47.0722222</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-RO</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Arhivele Naţionale ale României, Direcţiei Judeţene</subfield>
+         <subfield code="c">Oradea</subfield>
+         <subfield code="g">RO-O</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="410" ind1="2" ind2=" ">
+         <subfield code="a">Arhivele Statului, Filiala Oradea</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Oradea</subfield>
+         <subfield code="0">places/3902537</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30002122</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052010.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RO-Sa</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">24.143259</subfield>
+         <subfield code="f">45.787441</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-RO</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Arhivele Naţionale ale României, Direcţiei Judeţene</subfield>
+         <subfield code="c">Sibiu</subfield>
+         <subfield code="g">RO-Sa</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Arhivele Naţionale ale României,, Direcţiei Judeţene, Str. Arhivelor nr.3, 550164 Sibiu, Romania</subfield>
+      </datafield>
+      <datafield tag="410" ind1="2" ind2=" ">
+         <subfield code="a">Filiala Arhivelor statului</subfield>
+      </datafield>
+      <datafield tag="410" ind1="2" ind2=" ">
+         <subfield code="a">Arhivele Statului, Filiala Sibiu</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Sibiu</subfield>
+         <subfield code="0">places/3900409</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 62</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30002123</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052010.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RO-Sb</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">24.143259</subfield>
+         <subfield code="f">45.787441</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-RO</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Biblioteca Muzeului Bruckenthal</subfield>
+         <subfield code="c">Sibiu</subfield>
+         <subfield code="g">RO-Sb</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="410" ind1="2" ind2=" ">
+         <subfield code="a">Muzeul Brukenthal</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Sibiu</subfield>
+         <subfield code="0">places/3900409</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 25</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30005698</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052041.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RO-Se</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">21.9401693</subfield>
+         <subfield code="f">47.0585584</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-RO</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Landeskonsistorium der evangelischen Kirchen A.B. in Rumänien, Archiv</subfield>
+         <subfield code="c">Sibiu</subfield>
+         <subfield code="g">RO-Se</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Landeskonsistorium der evangelischen, Kirchen A.B. in Rumänien, Archiv, Str. General Magheru 4, 2400 Sibiu, Romania</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Sibiu</subfield>
+         <subfield code="0">places/3900409</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 160</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30005699</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052041.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RO-Srk</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">24.1524982</subfield>
+         <subfield code="f">45.7966585</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-RO</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Römisch-katholische Kirche</subfield>
+         <subfield code="c">Sibiu</subfield>
+         <subfield code="g">RO-Srk</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Römisch-katholische Kirche, Piata Mare 2, 2400  Sibiu, Romania</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Sibiu</subfield>
+         <subfield code="0">places/3900409</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 24</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30005765</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052042.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RO-TMj</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-RO</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Biblioteca Judeţeană</subfield>
+         <subfield code="c">Tîrgu-Mureş</subfield>
+         <subfield code="g">RO-TMj</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Tîrgu-Mureş</subfield>
+         <subfield code="0">places/3903365</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30002124</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052010.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RO-TMt</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-RO</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Biblioteca Teleki Bolyai</subfield>
+         <subfield code="c">Tîrgu-Mureş</subfield>
+         <subfield code="g">RO-TMt</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="410" ind1="2" ind2=" ">
+         <subfield code="a">Biblioteca Documentară Teleki</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Tîrgu-Mureş</subfield>
+         <subfield code="0">places/3903365</subfield>
+      </datafield>
+      <datafield tag="580" ind1=" " ind2=" ">
+         <subfield code="x">RO-TMj</subfield>
+         <subfield code="0">institutions/30005765</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 1</subfield>
+      </datafield>
+   </record>
+</collection>

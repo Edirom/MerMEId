@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51008270</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052321.0</controlfield>
+      <controlfield tag="008">241001||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">158937820</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q18410752</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RSM-SMbs</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">12.446277888319855</subfield>
+         <subfield code="f">43.936290627068416</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XA-SM</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Biblioteca di Stato e Beni Librari della Repubblica di San Marino</subfield>
+         <subfield code="c">Città di San Marino</subfield>
+         <subfield code="g">RSM-SMbs</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Contrada Omerelli, 13</subfield>
+         <subfield code="b">Città di San Marino</subfield>
+         <subfield code="d">San Marino</subfield>
+         <subfield code="e">47890</subfield>
+         <subfield code="m">bibliotecadistato@pa.sm</subfield>
+         <subfield code="u">https://www.bibliotecadistato.sm/on-line/home.html</subfield>
+         <subfield code="z">tel: +378 / 0549 / 882248</subfield>
+         <subfield code="z">fax: +378 / 0549 / 882295</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Città di San Marino</subfield>
+         <subfield code="0">places/50021118</subfield>
+      </datafield>
+   </record>
+</collection>

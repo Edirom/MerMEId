@@ -1,54 +1,193 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <collection xmlns="http://www.loc.gov/MARC21/slim">
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30080504</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">RC-TCmdac</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XB-TW</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Music Digital Archive Center (MDAC)</subfield>
-            <subfield code="c">Taipei City</subfield>
-            <subfield code="g">RC-TCmdac</subfield>
-        </datafield>
-        <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">National Taiwan Normal University (NTNU)</subfield>
-        </datafield>
-        <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Music Digital Archive Center (MDAC), Daan District, No. 162, Sect. 1, Heping East Rd., Taipei City 10644, Republic of China</subfield>
-            <subfield code="u">http://goo.gl/6x6Y7C</subfield>
-        </datafield>
-    </record>
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30080505</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">RC-TCtmi</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XB-TW</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Taiwan Music Institute</subfield>
-            <subfield code="c">Taipei City</subfield>
-            <subfield code="g">RC-TCtmi</subfield>
-        </datafield>
-        <datafield tag="410" ind1="2" ind2=" ">
-            <subfield code="a">National Center for Traditional Arts</subfield>
-        </datafield>
-        <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Taiwan Music Institute, Zhongzheng District, No.26, Hangzhou N. Road, Taipei City 100, Republic of China</subfield>
-            <subfield code="u">http://englishtmi.ncfta.gov.tw/home</subfield>
-        </datafield>
-    </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51007868</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052318.0</controlfield>
+      <controlfield tag="008">240409||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RC-NTCfjac</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Fu Jen Academia Catholica</subfield>
+         <subfield code="c">New Taipei City</subfield>
+         <subfield code="g">RC-NTCfjac</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">4F, Zong Zhuozhang Memorial Building (DG)</subfield>
+         <subfield code="a">Fu Jen Catholic University</subfield>
+         <subfield code="a">No.510, Zhongzheng Rd., Xinzhuang Dist.,</subfield>
+         <subfield code="b">New Taipei City 242062</subfield>
+         <subfield code="d">Taiwan (R.O.C.)</subfield>
+         <subfield code="m">FJAC@mail.fju.edu.tw</subfield>
+         <subfield code="u">http://www.fjac.fju.edu.tw/</subfield>
+         <subfield code="z">tel: +886 / 2 2905 3111</subfield>
+         <subfield code="z">fax: +886 / 2 2905 2170</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">New Taipei City</subfield>
+         <subfield code="0">places/50020812</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51005802</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052304.0</controlfield>
+      <controlfield tag="008">211110||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">138005199</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">Q6978831</subfield>
+         <subfield code="2">WKP</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RC-TACso</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">National Taiwan Symphony Orchestra</subfield>
+         <subfield code="c">Taichung City</subfield>
+         <subfield code="g">RC-TACso</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Performer</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">738-2 Chung-Cheng Rd. Wufeng</subfield>
+         <subfield code="b">Taichung 413 TAIWAN, R.O.C.</subfield>
+         <subfield code="d">Republic of China</subfield>
+         <subfield code="u">https://en.ntso.gov.tw/home/en-us</subfield>
+         <subfield code="z">tel: +886-4-23391141</subfield>
+         <subfield code="z">fax: +886-4-23399072</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">國立臺灣交響樂團</subfield>
+      </datafield>
+      <datafield tag="510" ind1="2" ind2=" ">
+         <subfield code="a">Guólì Táiwān Jiāoxiǎng Yuètuán</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Taichung City</subfield>
+         <subfield code="0">places/50004466</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 123</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30080504</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052131.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RC-TCdacm</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">121.527280</subfield>
+         <subfield code="f">25.026461</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Digital Archive Center for Music (DACM)</subfield>
+         <subfield code="c">Taipei City</subfield>
+         <subfield code="g">RC-TCdacm</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Archive</subfield>
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Daan District, No. 162, Sect. 1, Heping East Rd.</subfield>
+         <subfield code="b">Taipei City</subfield>
+         <subfield code="d">Republic of China</subfield>
+         <subfield code="e">10644</subfield>
+         <subfield code="m">tz_chia@ntnu.edu.tw</subfield>
+         <subfield code="u">https://en.ntnu.edu.tw/p-centerdacm.php</subfield>
+         <subfield code="z">contact: Tzu-Chia Tseng</subfield>
+         <subfield code="z">tel: +886-2-77491692</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">National Taiwan Normal University (NTNU)</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Taipei City</subfield>
+         <subfield code="0">places/3905688</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 12</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30080505</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052131.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">RC-TCtmi</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Taiwan Music Institute</subfield>
+         <subfield code="c">Taipei City</subfield>
+         <subfield code="g">RC-TCtmi</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Taiwan Music Institute, Zhongzheng District, No.26, Hangzhou N. Road, Taipei City 100, Republic of China</subfield>
+         <subfield code="u">http://englishtmi.ncfta.gov.tw/home</subfield>
+      </datafield>
+      <datafield tag="410" ind1="2" ind2=" ">
+         <subfield code="a">National Center for Traditional Arts</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Taipei City</subfield>
+         <subfield code="0">places/3905688</subfield>
+      </datafield>
+      <datafield tag="667" ind1=" " ind2=" ">
+         <subfield code="a">Published sources: 98</subfield>
+      </datafield>
+   </record>
 </collection>
-

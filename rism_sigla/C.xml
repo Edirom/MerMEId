@@ -1,101 +1,666 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <collection xmlns="http://www.loc.gov/MARC21/slim">
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30005768</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">C-HABc</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XD-CU</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Centro de Investigacion y Desarrollo de la Música Cubana</subfield>
-            <subfield code="c">La Habana</subfield>
-            <subfield code="g">C-HABc</subfield>
-        </datafield>
-        <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Centro de Investigacion y Desarrollo de, la Música Cubana, C-La Habana</subfield>
-        </datafield>
-    </record>
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30005727</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">C-HABin</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XD-CU</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Instituto Nacional de la Música</subfield>
-            <subfield code="c">La Habana</subfield>
-            <subfield code="g">C-HABin</subfield>
-        </datafield>
-    </record>
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30005767</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">C-HABm</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XD-CU</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Museo Nacional de la Música, Archivo</subfield>
-            <subfield code="c">La Habana</subfield>
-            <subfield code="g">C-HABm</subfield>
-        </datafield>
-        <datafield tag="622" ind1=" " ind2=" ">
-            <subfield code="e">Museo Nacional de la Música, Archivo, C-La Habana</subfield>
-        </datafield>
-    </record>
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30003249</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">C-HABn</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XD-CU</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Biblioteca Nacional</subfield>
-            <subfield code="c">La Habana</subfield>
-            <subfield code="g">C-HABn</subfield>
-        </datafield>
-    </record>
-    <record>
-        <leader>00000nz  a2200169   4500</leader>
-        <controlfield tag="001">30003250</controlfield>
-        <controlfield tag="003">RISM</controlfield>
-        <controlfield tag="005">20160216</controlfield>
-        <controlfield tag="008">160216n||az|||||||##########||||||||||||</controlfield>
-        <datafield tag="040" ind1=" " ind2=" ">
-            <subfield code="a">C-HABse</subfield>
-        </datafield>
-        <datafield tag="043" ind1=" " ind2=" ">
-            <subfield code="c">XD-CU</subfield>
-        </datafield>
-        <datafield tag="110" ind1="2" ind2=" ">
-            <subfield code="a">Biblioteca de la Sociedad Económica de Amigos del País</subfield>
-            <subfield code="c">La Habana</subfield>
-            <subfield code="g">C-HABse</subfield>
-        </datafield>
-    </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51001785</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052241.0</controlfield>
+      <controlfield tag="008">180828||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">C-Gci</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">-75.207913</subfield>
+         <subfield code="f">20.141415</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XD-CU</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Centro de Información y Documentación Musical Rafael Inciarte</subfield>
+         <subfield code="c">Guantanamo</subfield>
+         <subfield code="g">C-Gci</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Archive</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Other</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Centro de Información y Documentación Musical Rafael Inciarte, Donato Mármol 452, Martí y Máximo Gómez, Guantanamo, Cuba</subfield>
+         <subfield code="b">Guantanamo</subfield>
+         <subfield code="d">Cuba</subfield>
+         <subfield code="e">CP 95100</subfield>
+         <subfield code="m">inciarte@gtmo.cult.cu</subfield>
+      </datafield>
+      <datafield tag="670" ind1="1" ind2=" ">
+         <subfield code="a">OrtegaA 2018</subfield>
+         <subfield code="0">publications/41001609</subfield>
+      </datafield>
+      <datafield tag="678" ind1="1" ind2=" ">
+         <subfield code="a">founded in 1999</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30005768</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052042.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">147886433</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">C-HABc</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">-82.396921</subfield>
+         <subfield code="f">23.123463</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XD-CU</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Centro de Investigacion y Desarrollo de la Música Cubana (CIDMUC)</subfield>
+         <subfield code="c">La Habana</subfield>
+         <subfield code="g">C-HABc</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+         <subfield code="a">Other</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Calle G #505, e/ 21 y 23</subfield>
+         <subfield code="a">Plaza de la Revolución</subfield>
+         <subfield code="b">La Habana</subfield>
+         <subfield code="d">Cuba</subfield>
+         <subfield code="e">CP 10040</subfield>
+         <subfield code="m">cidmuc@cubarte.cult.cu</subfield>
+         <subfield code="u">http://dcubamusica.cult.cu/directorio/intitucion/centro-de-investigacion-y-desarrollo-de-la-musica-cubana/</subfield>
+         <subfield code="z">tel: +53 / (7) / 830 8015</subfield>
+         <subfield code="z">tel: +53 / (7) / 830 4290</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">La Habana</subfield>
+         <subfield code="0">places/3901001</subfield>
+      </datafield>
+      <datafield tag="670" ind1="1" ind2=" ">
+         <subfield code="a">OrtegaA 2018</subfield>
+         <subfield code="0">publications/41001609</subfield>
+      </datafield>
+      <datafield tag="678" ind1="1" ind2=" ">
+         <subfield code="a">CIDMUC is a research institution founded in 1978</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30081004</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052134.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">C-HABca</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">-82.395566</subfield>
+         <subfield code="f">23.144062</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XD-CU</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Casa de las Américas, Colección de Música de la Biblioteca</subfield>
+         <subfield code="c">La Habana</subfield>
+         <subfield code="g">C-HABca</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Casa de las Américas, Colección de,  Música de la Biblioteca, Calle 3ra. esquina G, CP. 10 400, La Habana, Cuba</subfield>
+         <subfield code="u">http://www.casadelasamericas.org/index.php</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">La Habana</subfield>
+         <subfield code="0">places/3901001</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51000543</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052237.0</controlfield>
+      <controlfield tag="008">171205||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">C-HABgpm</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XD-CU</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Gabinete de Patrimonio Musical Esteban Salas</subfield>
+         <subfield code="c">La Habana</subfield>
+         <subfield code="g">C-HABgpm</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+         <subfield code="a">Other</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Edificio Santo Domingo</subfield>
+         <subfield code="a">Calle Obispo entre Mercaderes y San Ignacio,</subfield>
+         <subfield code="b">La Habana Vieja</subfield>
+         <subfield code="d">Cuba</subfield>
+         <subfield code="e">CP 10200</subfield>
+         <subfield code="m">gabinete@estebansalas.ohc.cu</subfield>
+         <subfield code="u">http://gabinete.cubava.cu/</subfield>
+         <subfield code="z">tel: +53 / 7 / 8639469</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">La Habana</subfield>
+         <subfield code="0">places/3901001</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30005727</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052041.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">C-HABin</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">-82.388557</subfield>
+         <subfield code="f">23.1168</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XD-CU</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Instituto Nacional de la Música</subfield>
+         <subfield code="c">La Habana</subfield>
+         <subfield code="g">C-HABin</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">La Habana</subfield>
+         <subfield code="0">places/3901001</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30005767</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052042.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">C-HABm</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">-82.355552</subfield>
+         <subfield code="f">23.143696</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XD-CU</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Museo Nacional de la Música, Biblioteca y Archivo "Odilio Urfé"</subfield>
+         <subfield code="c">La Habana</subfield>
+         <subfield code="g">C-HABm</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Museo Nacional de la Música, Biblioteca,  y Archivo "Odilio Urfé", Vieja, Obrapía No. 509 e/ Bernaza y Villegas, La Habana 10100, Cuba</subfield>
+         <subfield code="u">http://www.museomusica.cult.cu/biblioteca_archivos.php</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">La Habana</subfield>
+         <subfield code="0">places/3901001</subfield>
+      </datafield>
+      <datafield tag="670" ind1="1" ind2=" ">
+         <subfield code="a">OrtegaA 2018</subfield>
+         <subfield code="0">publications/41001609</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003249</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052019.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">C-HABn</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">-82.383358</subfield>
+         <subfield code="f">23.123811</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XD-CU</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Biblioteca Nacional de Cuba José Martí, Departamento de Música</subfield>
+         <subfield code="c">La Habana</subfield>
+         <subfield code="g">C-HABn</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Biblioteca Nacional de Cuba José Martí, Plaza de la Revolución, Ave. Independencia y 20 de Mayo, Apartado Postal 6670, La Habana, Cuba</subfield>
+         <subfield code="b">La Habana</subfield>
+         <subfield code="m">bdgital@bnjm.cu</subfield>
+         <subfield code="u">http://www.bnjm.cu/index.htm</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">La Habana</subfield>
+         <subfield code="0">places/3901001</subfield>
+      </datafield>
+      <datafield tag="670" ind1="1" ind2=" ">
+         <subfield code="a">OrtegaA 2018</subfield>
+         <subfield code="0">publications/41001609</subfield>
+      </datafield>
+      <datafield tag="680" ind1="1" ind2=" ">
+         <subfield code="a">Collection Raventós</subfield>
+      </datafield>
+      <datafield tag="680" ind1="1" ind2=" ">
+         <subfield code="a">Collection García-Montes</subfield>
+      </datafield>
+      <datafield tag="680" ind1="1" ind2=" ">
+         <subfield code="a">Collection Alberto Muguercia</subfield>
+      </datafield>
+      <datafield tag="700" ind1="1" ind2=" ">
+         <subfield code="a">García-Montes, Frank</subfield>
+         <subfield code="d">19/20</subfield>
+         <subfield code="0">people/41013204</subfield>
+         <subfield code="4">dnr</subfield>
+      </datafield>
+      <datafield tag="700" ind1="1" ind2=" ">
+         <subfield code="a">Muguercia Muguercia, Alberto</subfield>
+         <subfield code="d">1928-1987</subfield>
+         <subfield code="0">people/41013207</subfield>
+         <subfield code="4">dnr</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30003250</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052019.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">C-HABse</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="2" ind2=" ">
+         <subfield code="d">-82.388557</subfield>
+         <subfield code="f">23.1168</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XD-CU</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Biblioteca de la Sociedad Económica de Amigos del País</subfield>
+         <subfield code="c">La Habana</subfield>
+         <subfield code="g">C-HABse</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">La Habana</subfield>
+         <subfield code="0">places/3901001</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30080986</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052134.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">C-PRal</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XD-CU</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Centro de Documentación e Información Musical Argeliers León</subfield>
+         <subfield code="c">Pinar del Río</subfield>
+         <subfield code="g">C-PRal</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+         <subfield code="a">Documentation center</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Pinar del Río</subfield>
+         <subfield code="0">places/3905771</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30081005</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052134.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">C-REmm</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">-79.544291</subfield>
+         <subfield code="f">22.495564</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XD-CU</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Museo de la Música Casa de Alejandro García Caturla</subfield>
+         <subfield code="c">Remedios</subfield>
+         <subfield code="g">C-REmm</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Museo de la Música Casa de Alejandro,  García Caturla, Camilo Cienfuegos No. 5, Remedios, Villa Clara, Cuba</subfield>
+         <subfield code="b">Remedios</subfield>
+         <subfield code="d">Cuba</subfield>
+         <subfield code="e">CP 52700</subfield>
+         <subfield code="u">http://www.ecured.cu/Museo_Casa_de_Alejandro_Garc%C3%ADa_Caturla</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Remedios</subfield>
+         <subfield code="0">places/3905775</subfield>
+      </datafield>
+      <datafield tag="670" ind1="1" ind2=" ">
+         <subfield code="a">OrtegaA 2018</subfield>
+         <subfield code="0">publications/41001609</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30081002</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052134.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">C-SCbp</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">-75.828004</subfield>
+         <subfield code="f">20.021184</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XD-CU</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Biblioteca Provincial Elvira Cape, Fondo de libros raros y valiosos</subfield>
+         <subfield code="c">Santiago de Cuba</subfield>
+         <subfield code="g">C-SCbp</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Biblioteca Provincial Elvira Cape, Fondo,  de libros raros y valiosos, Heredia # 259 e/ Carnicería y San Félix, Santiago de Cuba, Cuba</subfield>
+         <subfield code="b">Santiago de Cuba</subfield>
+         <subfield code="d">Cuba</subfield>
+         <subfield code="e">90100</subfield>
+         <subfield code="m">bcape@cultstgo.cult.cu</subfield>
+         <subfield code="u">http://www.ecured.cu/Biblioteca_Provincial_Elvira_Cape</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Santiago de Cuba</subfield>
+         <subfield code="0">places/3905770</subfield>
+      </datafield>
+      <datafield tag="670" ind1="1" ind2=" ">
+         <subfield code="a">OrtegaA 2018</subfield>
+         <subfield code="0">publications/41001609</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30080977</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052134.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">C-SCmb</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XD-CU</subfield>
+      </datafield>
+      <datafield tag="110" ind1="2" ind2=" ">
+         <subfield code="a">Museo Emilio Bacardí Moreau</subfield>
+         <subfield code="c">Santiago de Cuba</subfield>
+         <subfield code="g">C-SCmb</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Museo Emilio Bacardí Moreau, Esquina Aguilera y Pio Rosado s/n, 90100 Santiago de Cuba, Cuba</subfield>
+      </datafield>
+      <datafield tag="551" ind1=" " ind2=" ">
+         <subfield code="a">Santiago de Cuba</subfield>
+         <subfield code="0">places/3905770</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30081003</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052134.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">C-SCmm</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">-75.803528</subfield>
+         <subfield code="f">20.027417</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XD-CU</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Museo de la Música Pablo Hernández Balaguer</subfield>
+         <subfield code="c">Santiago de Cuba</subfield>
+         <subfield code="g">C-SCmm</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+         <subfield code="a">Other</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Museo de la Música Pablo Hernández Balaguer, Avenida Manduley 155/5 y 7, Reparto Vista Alegre, Santiago de Cuba, Cuba</subfield>
+         <subfield code="b">Santiago de Cuba</subfield>
+         <subfield code="d">Cuba</subfield>
+         <subfield code="e">CP 90100</subfield>
+         <subfield code="m">cppatrien@cultstgo.cult.cu</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Santiago de Cuba</subfield>
+         <subfield code="0">places/3905770</subfield>
+      </datafield>
+      <datafield tag="670" ind1="1" ind2=" ">
+         <subfield code="a">OrtegaA 2018</subfield>
+         <subfield code="0">publications/41001609</subfield>
+      </datafield>
+      <datafield tag="678" ind1="1" ind2=" ">
+         <subfield code="a">Museum founded in 2015</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/30080987</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052134.0</controlfield>
+      <controlfield tag="008">161109||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">C-SGrpl</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XD-CU</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Museo de la Música “Rodrigo Prats Llorens”</subfield>
+         <subfield code="c">Sagua la Grande</subfield>
+         <subfield code="g">C-SGrpl</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Library</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Museo de la Música “Rodrigo Prats,  Llorens”, Calle Solís No. 170 e/ Martí y Maceo, Sagua la Grande, Villa Clara, Cuba</subfield>
+         <subfield code="b">Sagua la Grande</subfield>
+         <subfield code="d">Cuba</subfield>
+         <subfield code="e">CP 52300</subfield>
+         <subfield code="m">mumusica@cenit.cult.cu</subfield>
+         <subfield code="u">http://www.ecured.cu/Museo_Rodrigo_Prats_Llorens</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Sagua la Grande</subfield>
+         <subfield code="0">places/3905772</subfield>
+      </datafield>
+      <datafield tag="670" ind1="1" ind2=" ">
+         <subfield code="a">OrtegaA 2018</subfield>
+         <subfield code="0">publications/41001609</subfield>
+      </datafield>
+   </record>
 </collection>
-
-

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51008244</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052321.0</controlfield>
+      <controlfield tag="008">240924||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">GH-Lkna</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">-0.18111943429948962</subfield>
+         <subfield code="f">5.649297740890479</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XC-GH</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">J. H. Kwabena Nketia Archives</subfield>
+         <subfield code="c">Legon (Accra)</subfield>
+         <subfield code="g">GH-Lkna</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Archive</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="b">Legon (Accra)</subfield>
+         <subfield code="d">Ghana</subfield>
+         <subfield code="m">joboateng@ug.edu.gh</subfield>
+         <subfield code="u">https://ias.ug.edu.gh/content/jh-kwabena-nketia-archives</subfield>
+         <subfield code="z">contact: Judith Opoku-Boateng</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">University of Ghana, Institute of African Studies</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Legon</subfield>
+         <subfield code="0">places/50021101</subfield>
+      </datafield>
+   </record>
+</collection>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51000405</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052237.0</controlfield>
+      <controlfield tag="008">170809||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ARM-Yakm</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">44.513252</subfield>
+         <subfield code="f">40.190255</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-AM</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Aram Khachaturian museum</subfield>
+         <subfield code="c">Yerevan</subfield>
+         <subfield code="g">ARM-Yakm</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+         <subfield code="a">Other</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">3 Zarobyan St</subfield>
+         <subfield code="b">Yerevan</subfield>
+         <subfield code="d">Armenia</subfield>
+         <subfield code="e">0009</subfield>
+         <subfield code="m">a_khachaturyan@mail.ru</subfield>
+         <subfield code="u">http://akhachaturianmuseum.am/?lg=en</subfield>
+         <subfield code="z">tel: +374 / (10) / 589418</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51002682</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052246.0</controlfield>
+      <controlfield tag="008">190218||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">153334639</subfield>
+         <subfield code="2">VIAF</subfield>
+      </datafield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ARM-Ym</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">44.520861</subfield>
+         <subfield code="f">40.191952</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-AM</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Matenadaran</subfield>
+         <subfield code="c">Yerevan</subfield>
+         <subfield code="g">ARM-Ym</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Mashtots Avenue 53 (Մաշտոցի պողոտա 53)</subfield>
+         <subfield code="b">Yerevan 0009 (Երևան 0009)</subfield>
+         <subfield code="d">Armenia</subfield>
+         <subfield code="m">matenadaran.press@matenadaran.am</subfield>
+         <subfield code="u">http://www.matenadaran.am/?id=127&amp;lng=4#.XGqwlKJKipo</subfield>
+         <subfield code="z">tel: +374 / 94615690</subfield>
+      </datafield>
+      <datafield tag="510" ind1="1" ind2=" ">
+         <subfield code="a">Մատենադարան</subfield>
+      </datafield>
+      <datafield tag="510" ind1="1" ind2=" ">
+         <subfield code="a">Mesrop Mashtots Institute of Ancient Manuscripts</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Yerevan</subfield>
+         <subfield code="0">places/3902184</subfield>
+      </datafield>
+   </record>
+   <record>
+      <leader>00000nz  a2200000nc 4500</leader>
+      <controlfield tag="001">institutions/51003180</controlfield>
+      <controlfield tag="003">DE-633</controlfield>
+      <controlfield tag="005">20250620052249.0</controlfield>
+      <controlfield tag="008">190816||||z|||a|||||||||||||||||n||||||d</controlfield>
+      <datafield tag="024" ind1="7" ind2=" ">
+         <subfield code="a">ARM-Ymla</subfield>
+         <subfield code="q">siglum</subfield>
+         <subfield code="2">rism</subfield>
+      </datafield>
+      <datafield tag="034" ind1="1" ind2=" ">
+         <subfield code="d">44.514362</subfield>
+         <subfield code="f">40.179015</subfield>
+      </datafield>
+      <datafield tag="040" ind1=" " ind2=" ">
+         <subfield code="a">DE-633</subfield>
+         <subfield code="c">DE-633</subfield>
+         <subfield code="e">rismg</subfield>
+      </datafield>
+      <datafield tag="043" ind1=" " ind2=" ">
+         <subfield code="c">XB-AM</subfield>
+      </datafield>
+      <datafield tag="110" ind1="1" ind2=" ">
+         <subfield code="a">Ełiše Č'arenc'i Anvan Krakanut'yan ew Arvesti T'angaran</subfield>
+         <subfield code="c">Yerevan</subfield>
+         <subfield code="g">ARM-Ymla</subfield>
+      </datafield>
+      <datafield tag="368" ind1=" " ind2=" ">
+         <subfield code="a">Institution</subfield>
+         <subfield code="a">Library</subfield>
+         <subfield code="a">Other</subfield>
+      </datafield>
+      <datafield tag="371" ind1=" " ind2=" ">
+         <subfield code="a">Arami 1</subfield>
+         <subfield code="b">Yerevan 1</subfield>
+         <subfield code="d">Armenia</subfield>
+         <subfield code="e">0010</subfield>
+         <subfield code="m">gatmuseum@mail.ru</subfield>
+         <subfield code="u">https://www.gatmuseum.am/en/</subfield>
+         <subfield code="z">tel: +374 / 10 / 520611</subfield>
+         <subfield code="z">fax: +374 / 10 / 581651</subfield>
+      </datafield>
+      <datafield tag="410" ind1=" " ind2=" ">
+         <subfield code="a">Yeghishe Charents Museum of Literature and Art</subfield>
+      </datafield>
+      <datafield tag="551" ind1="1" ind2=" ">
+         <subfield code="a">Yerevan</subfield>
+         <subfield code="0">places/3902184</subfield>
+      </datafield>
+   </record>
+</collection>
