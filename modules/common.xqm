@@ -158,7 +158,9 @@ declare function common:add-change-entry-to-revisionDesc-in-memory($nodes as nod
         typeswitch($node)
         case $elem as element(mei:revisionDesc) return
             element { node-name($elem) } {
-                $elem/@*, for $child in $elem/node() return common:add-change-entry-to-revisionDesc-in-memory($child, $user, $desc, $status),
+                attribute status { if(empty($elem/@status)) then $status else string($elem/@status) },
+                $elem/@* except $elem/@status,
+                for $child in $elem/node() return common:add-change-entry-to-revisionDesc-in-memory($child, $user, $desc, $status),
                 <change isodate="{current-dateTime()}" status="{$status}" xml:id="{common:mermeid-id('change')}" 
                     xmlns="http://www.music-encoding.org/ns/mei">
                     <respStmt>
