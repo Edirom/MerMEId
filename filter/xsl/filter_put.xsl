@@ -536,6 +536,7 @@
 
   <xsl:template match="m:revisionDesc">
     <xsl:element name="revisionDesc">
+      <xsl:copy-of select="@*"/>
       <xsl:variable name="penultimate" select="count(m:change)-1"/>
       <xsl:variable name="penultimateChange" select="m:change[$penultimate]"/>
       <xsl:variable name="penultimateDay" select="concat($penultimateChange/@isodate[not(contains(.,'T'))],substring-before($penultimateChange/@isodate,'T'))"/>

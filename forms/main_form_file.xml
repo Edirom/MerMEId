@@ -327,6 +327,42 @@
 				<h:legend>File change history
 					<dcm:attribute-editor ref="."/>
 				</h:legend>
+				<xf:select1 ref="@status">
+						<xf:label>Status of the file: </xf:label>
+						<xf:item>
+							<xf:label/>
+							<xf:value/>
+						</xf:item>
+						<xf:item>
+							<xf:label>Draft</xf:label>
+							<xf:value>draft</xf:value>
+						</xf:item>
+						<xf:item>
+							<xf:label>Proposed</xf:label>
+							<xf:value>proposed</xf:value>
+						</xf:item>
+						<xf:item>
+							<xf:label>Candidate</xf:label>
+							<xf:value>candidate</xf:value>
+						</xf:item>
+						<xf:item>
+							<xf:label>Approved</xf:label>
+							<xf:value>approved</xf:value>
+						</xf:item>
+						<xf:item>
+							<xf:label>Published</xf:label>
+							<xf:value>published</xf:value>
+						</xf:item>
+						<xf:item>
+							<xf:label>Withdrawn</xf:label>
+							<xf:value>withdrawn</xf:value>
+						</xf:item>
+						<xf:item>
+							<xf:label>Embargoed</xf:label>
+							<xf:value>embargoed</xf:value>
+						</xf:item>
+				</xf:select1>
+				
 				<h:div class="vertical_spacer"/>
 				<h:span class="fixed_width_long">
                     <h:b>Date and time</h:b><!--<h:a class="help">&#160;?<h:span class="comment">Use date
