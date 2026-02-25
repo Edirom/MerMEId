@@ -431,6 +431,8 @@
                                                                     <xf:output value="@count"/>
                                                                     <xf:output value="."/>
                                                                     <xf:group ref=".[@codedval!='']"> (<xf:output value="@codedval"/>)</xf:group>
+                                                                    <!-- Display of soloists in expression components -->
+                                                                    <xf:output value="if (@solo='true') then 'solo' else ''"/>
                                                                 </h:span>
                                                             </xf:label>
                                                             <xf:action ev:event="DOMActivate">
@@ -564,6 +566,8 @@
                                                         <xf:output value="@count"/>
                                                         <xf:output value="."/>
                                                         <xf:group ref=".[@codedval!='']"> (<xf:output value="@codedval"/>)</xf:group>
+                                                        <!-- Display of soloist in component list -->
+                                                        <xf:output value="if (@solo='true') then 'solo' else ''"/>
                                                     </h:span>
                                                 </xf:label>
                                                 <xf:action ev:event="DOMActivate">
@@ -645,7 +649,7 @@
                                                 <xf:label><h:img src="{instance('parameters')/dcm:server_name}/editor/images/yes.png" alt="yes" title="Click to remove this role"/>
                                                     <!-- Roles cannot be edited at this level - only added or omitted -->
                                                     <h:span>
-                                                        <xf:output value="m:role//text()[1]"/>
+                                                        <xf:output value="m:role/m:name[1]/string()"/>
                                                     </h:span>
                                                 </xf:label>
                                                 <xf:action ev:event="DOMActivate">
@@ -657,7 +661,7 @@
                                             <xf:trigger appearance="minimal">
                                                 <xf:label><h:img src="{instance('parameters')/dcm:server_name}/editor/images/no.png" alt="no" title="Click to add this role"/>
                                                     <h:span class="disabled">
-                                                        <xf:output value="m:role//text()[1]"/>
+                                                        <xf:output value="m:role/m:name[1]/string()"/>
                                                     </h:span>
                                                 </xf:label>
                                                 <xf:action ev:event="DOMActivate">
@@ -697,7 +701,7 @@
                                         <xf:trigger appearance="minimal">
                                             <xf:label><h:img src="{instance('parameters')/dcm:server_name}/editor/images/yes.png" alt="yes" title="Click to remove this role"/>
                                                 <h:span>
-                                                    <xf:output value="m:role//text()[1]"/>
+                                                    <xf:output value="m:role/m:name[1]/string()"/>
                                                 </h:span>
                                             </xf:label>
                                             <xf:action ev:event="DOMActivate">
