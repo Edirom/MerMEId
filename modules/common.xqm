@@ -152,19 +152,19 @@ declare function common:add-change-entry-to-revisionDesc-in-document($document a
  : @return the modified input node 
  :)
 declare function common:add-change-entry-to-revisionDesc-in-memory($nodes as node()*, 
-    $user as xs:string, $desc as xs:string, $status as xs:string) as node()* {
+    $user as xs:string, $desc as xs:string, $status as xs:string, $doc-status as xs:string) as node()* {
       for $node in $nodes
       return
         typeswitch($node)
         case $elem as element(mei:revisionDesc) return
             element { node-name($elem) } {
-                attribute status { if(empty($elem/@status)) then $status else string($elem/@status) },
+                attribute status { if(empty($elem/@status)) then $status else if ($doc-status) then $doc-status else string($elem/@status) },
                 $elem/@* except $elem/@status,
-                for $child in $elem/node() return common:add-change-entry-to-revisionDesc-in-memory($child, $user, $desc, $status),
+                for $child in $elem/node() return common:add-change-entry-to-revisionDesc-in-memory($child, $user, $desc, $status, $doc-status),
                 <change isodate="{current-dateTime()}" status="{$status}" xml:id="{common:mermeid-id('change')}" 
                     xmlns="http://www.music-encoding.org/ns/mei">
                     <respStmt>
-                        <resp>{$user}</resp>
+                        <name>{$user}</name>
                     </respStmt>
                     <changeDesc xml:id="{common:mermeid-id('changeDesc')}">
                         <p>{$desc}</p>
@@ -173,9 +173,9 @@ declare function common:add-change-entry-to-revisionDesc-in-memory($nodes as nod
             }
         case $elem as element() return
             element { node-name($elem) } {
-                $elem/@*, for $child in $elem/node() return common:add-change-entry-to-revisionDesc-in-memory($child, $user, $desc, $status)
+                $elem/@*, for $child in $elem/node() return common:add-change-entry-to-revisionDesc-in-memory($child, $user, $desc, $status, $doc-status)
             }
-        case document-node() return document { common:add-change-entry-to-revisionDesc-in-memory($node/node(), $user, $desc, $status) }
+        case document-node() return document { common:add-change-entry-to-revisionDesc-in-memory($node/node(), $user, $desc, $status, $doc-status) }
         default return $node
 };
 

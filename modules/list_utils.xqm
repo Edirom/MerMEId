@@ -65,6 +65,16 @@ declare function app:copy-document-reference($doc as node()) as element(html:for
             <label class="ajaxform_label"><b>New title</b></label>
             <input type="text" name="title" value="{$proposed-title}" 
                 class="ajaxform_input" size="40" maxlength="36"/>
+			<label class="ajaxform_label"><b>Document status</b></label>
+            <select name="doc-status" class="ajaxform_input">
+              <option value="draft">Draft</option>
+              <option value="candidate">Candidate</option>
+              <option value="proposed">Proposed</option>
+              <option value="approved">Approved</option>
+              <option value="published">Published</option>
+              <option value="withdrawn">Withdrawn</option>
+              <option value="embargoed">Embargoed</option>
+            </select>
             <label class="ajaxform_label">
                 <b>Overwrite target?</b>
                 <input type="checkbox" name="overwrite"/>

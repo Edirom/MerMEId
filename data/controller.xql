@@ -117,7 +117,8 @@ else if($exist:path = '/copy' and request:get-method() eq 'POST') then
     let $target := request:get-parameter('target', util:uuid() || '.xml') (: generate a unique filename if none is provided :)
     let $title := request:get-parameter('title', ()) (: empty titles will get passed on and filled in later :)
     let $overwrite := local:overwrite()
-    let $backend-response := crud:copy($source, $target, $overwrite, $title) 
+    let $doc-status := request:get-parameter('doc-status', ())
+    let $backend-response := crud:copy($source, $target, $overwrite, $title, $doc-status) 
     return 
         if(request:get-header('Accept') eq 'application/json')
         then local:stream-json(map:remove($backend-response, 'document-node'), $backend-response?code)
@@ -189,11 +190,12 @@ else if($exist:path = '/create' and request:get-method() eq 'POST') then
     let $username := common:get-current-username() => string()
     let $change-message := 'file created with MerMEId'
     let $status := 'draft'
+    let $doc-status := 'draft'
     let $template :=
         if(doc-available($templatepath))
         then doc($templatepath) => 
             common:set-mei-title-in-memory($title) => 
-            common:add-change-entry-to-revisionDesc-in-memory($username, $change-message, $status) =>
+            common:add-change-entry-to-revisionDesc-in-memory($username, $change-message, $status, $doc-status) =>
             common:set-mermeid-version-info-in-memory()
         else ()
     let $filename := request:get-parameter('filename', common:mermeid-id('file') || '.xml')
