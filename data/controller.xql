@@ -163,7 +163,7 @@ else if($exist:path = '/rename' and request:get-method() eq 'POST') then
     let $target := request:get-parameter('target', util:uuid() || '.xml') (: generate a unique filename if none is provided :)
     let $title := request:get-parameter('title', ()) (: empty titles will get passed on and filled in later :)
     let $overwrite := local:overwrite()
-    let $backend-response-copy := crud:copy($source, $target, $overwrite, $title)
+    let $backend-response-copy := crud:copy($source, $target, $overwrite, $title, ())
     let $update-references := 
         if($backend-response-copy instance of map(*) and $backend-response-copy?code = 200)
         then common:update-targets(collection($config:data-root), $source, $target, false())
