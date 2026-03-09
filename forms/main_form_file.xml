@@ -327,6 +327,7 @@
 				<h:legend>File change history
 					<dcm:attribute-editor ref="."/>
 				</h:legend>
+				<h:span>Status of the file: </h:span>
 				<xf:select1 ref="@status">
 					<xf:itemset nodeset="xxf:instance('att.docStatus-instance')/dcm:valItem">
 						<xf:label>
