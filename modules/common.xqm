@@ -149,16 +149,18 @@ declare function common:add-change-entry-to-revisionDesc-in-document($document a
  : @param $node the input MEI document as node() or document-node() 
  : @param $user the user identified with this change entry
  : @param $desc a description of the change
+ : @param $status the status of the change entry
+ : @param $doc-status the status of the document to be encoded within `revisionDesc/@status`
  : @return the modified input node 
  :)
 declare function common:add-change-entry-to-revisionDesc-in-memory($nodes as node()*, 
-    $user as xs:string, $desc as xs:string, $status as xs:string, $doc-status as xs:string) as node()* {
+    $user as xs:string, $desc as xs:string, $status as xs:string, $doc-status as xs:string?) as node()* {
       for $node in $nodes
       return
         typeswitch($node)
         case $elem as element(mei:revisionDesc) return
             element { node-name($elem) } {
-                attribute status { if(empty($elem/@status)) then $status else if ($doc-status) then $doc-status else string($elem/@status) },
+                attribute status { (($doc-status, $elem/string(@status), $status)[.])[1] }, (: use the first non-empty value :)
                 $elem/@* except $elem/@status,
                 for $child in $elem/node() return common:add-change-entry-to-revisionDesc-in-memory($child, $user, $desc, $status, $doc-status),
                 <change isodate="{current-dateTime()}" status="{$status}" xml:id="{common:mermeid-id('change')}" 
