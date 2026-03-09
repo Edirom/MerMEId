@@ -328,39 +328,12 @@
 					<dcm:attribute-editor ref="."/>
 				</h:legend>
 				<xf:select1 ref="@status">
-						<xf:label>Status of the file: </xf:label>
-						<xf:item>
-							<xf:label/>
-							<xf:value/>
-						</xf:item>
-						<xf:item>
-							<xf:label>Draft</xf:label>
-							<xf:value>draft</xf:value>
-						</xf:item>
-						<xf:item>
-							<xf:label>Proposed</xf:label>
-							<xf:value>proposed</xf:value>
-						</xf:item>
-						<xf:item>
-							<xf:label>Candidate</xf:label>
-							<xf:value>candidate</xf:value>
-						</xf:item>
-						<xf:item>
-							<xf:label>Approved</xf:label>
-							<xf:value>approved</xf:value>
-						</xf:item>
-						<xf:item>
-							<xf:label>Published</xf:label>
-							<xf:value>published</xf:value>
-						</xf:item>
-						<xf:item>
-							<xf:label>Withdrawn</xf:label>
-							<xf:value>withdrawn</xf:value>
-						</xf:item>
-						<xf:item>
-							<xf:label>Embargoed</xf:label>
-							<xf:value>embargoed</xf:value>
-						</xf:item>
+					<xf:itemset nodeset="xxf:instance('att.docStatus-instance')/dcm:valItem">
+						<xf:label>
+							<xf:output value="@ident"/>
+						</xf:label>
+						<xf:value ref="@ident"/>
+					</xf:itemset>
 				</xf:select1>
 				
 				<h:div class="vertical_spacer"/>
@@ -391,40 +364,14 @@
 							
 						</h:div>
                         <h:span class="fixed_width_mediumlong">
-							<xf:select1 ref="./@status">
-                                        <xf:item>
-                                            <xf:label/>
-                                            <xf:value/>
-                                        </xf:item>
-                                        <xf:item>
-                                            <xf:label>Draft</xf:label>
-                                            <xf:value>draft</xf:value>
-                                        </xf:item>
-                                        <xf:item>
-                                            <xf:label>Proposed</xf:label>
-                                            <xf:value>proposed</xf:value>
-                                        </xf:item>
-                            <xf:item>
-                                            <xf:label>Candidate</xf:label>
-                                            <xf:value>candidate</xf:value>
-                                        </xf:item>
-                            <xf:item>
-                                            <xf:label>Approved</xf:label>
-                                            <xf:value>approved</xf:value>
-                                        </xf:item>
-                            <xf:item>
-                                            <xf:label>Published</xf:label>
-                                            <xf:value>published</xf:value>
-                                        </xf:item>
-                            <xf:item>
-                                            <xf:label>Withdrawn</xf:label>
-                                            <xf:value>withdrawn</xf:value>
-                                        </xf:item>
-                            <xf:item>
-                                            <xf:label>Embargoed</xf:label>
-                                            <xf:value>embargoed</xf:value>
-                                        </xf:item>
-                                    </xf:select1>
+							<xf:select1 ref="@status">
+								<xf:itemset nodeset="xxf:instance('att.docStatus-instance')/dcm:valItem">
+									<xf:label>
+										<xf:output value="@ident"/>
+									</xf:label>
+									<xf:value ref="@ident"/>
+								</xf:itemset>
+							</xf:select1>
                         </h:span>
                         <h:span class="fixed_width_long">
                              <xf:input ref="m:changeDesc/m:p"/>
