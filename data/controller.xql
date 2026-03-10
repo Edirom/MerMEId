@@ -1,5 +1,6 @@
 xquery version "3.1";
 
+declare namespace err="http://www.w3.org/2005/xqt-errors";
 declare namespace exist="http://exist.sourceforge.net/NS/exist";
 declare namespace request="http://exist-db.org/xquery/request";
 declare namespace session="http://exist-db.org/xquery/session";
@@ -8,11 +9,11 @@ declare namespace transform="http://exist-db.org/xquery/transform";
 declare namespace output="http://www.w3.org/2010/xslt-xquery-serialization";
 declare namespace sm="http://exist-db.org/xquery/securitymanager";
 import module namespace config="https://github.com/edirom/mermeid/config" at "../modules/config.xqm";
+import module namespace console="http://exist-db.org/xquery/console";
 import module namespace crud="https://github.com/edirom/mermeid/crud" at "../modules/crud.xqm";
 import module namespace common="https://github.com/edirom/mermeid/common" at "../modules/common.xqm";
+import module namespace util="http://exist-db.org/xquery/util";
 import module namespace xmldb="http://exist-db.org/xquery/xmldb";
-
-import module namespace console="http://exist-db.org/xquery/console";
 
 declare variable $exist:path external;
 declare variable $exist:resource external;
@@ -117,7 +118,8 @@ else if($exist:path = '/copy' and request:get-method() eq 'POST') then
     let $target := request:get-parameter('target', util:uuid() || '.xml') (: generate a unique filename if none is provided :)
     let $title := request:get-parameter('title', ()) (: empty titles will get passed on and filled in later :)
     let $overwrite := local:overwrite()
-    let $backend-response := crud:copy($source, $target, $overwrite, $title) 
+    let $doc-status := request:get-parameter('doc-status', ())
+    let $backend-response := crud:copy($source, $target, $overwrite, $title, $doc-status) 
     return 
         if(request:get-header('Accept') eq 'application/json')
         then local:stream-json(map:remove($backend-response, 'document-node'), $backend-response?code)
@@ -153,7 +155,7 @@ else if($exist:path = '/read' and request:get-method() eq 'GET') then
         else ()
 (:~
  : rename files endpoint 
- : this simply chains a "copy" and a "delete" (if the first operation was successfull)
+ : this simply chains a "copy" and a "delete" (if the first operation was successful)
  : the returned object is a merge of the copy-response and the delete-response with a precedence for the former
  :)
 else if($exist:path = '/rename' and request:get-method() eq 'POST') then 
@@ -161,7 +163,7 @@ else if($exist:path = '/rename' and request:get-method() eq 'POST') then
     let $target := request:get-parameter('target', util:uuid() || '.xml') (: generate a unique filename if none is provided :)
     let $title := request:get-parameter('title', ()) (: empty titles will get passed on and filled in later :)
     let $overwrite := local:overwrite()
-    let $backend-response-copy := crud:copy($source, $target, $overwrite, $title)
+    let $backend-response-copy := crud:copy($source, $target, $overwrite, $title, ())
     let $update-references := 
         if($backend-response-copy instance of map(*) and $backend-response-copy?code = 200)
         then common:update-targets(collection($config:data-root), $source, $target, false())
@@ -188,11 +190,13 @@ else if($exist:path = '/create' and request:get-method() eq 'POST') then
     let $title := request:get-parameter('title', '')
     let $username := common:get-current-username() => string()
     let $change-message := 'file created with MerMEId'
+    let $status := 'draft'
+    let $doc-status := 'draft'
     let $template :=
         if(doc-available($templatepath))
         then doc($templatepath) => 
             common:set-mei-title-in-memory($title) => 
-            common:add-change-entry-to-revisionDesc-in-memory($username, $change-message) =>
+            common:add-change-entry-to-revisionDesc-in-memory($username, $change-message, $status, $doc-status) =>
             common:set-mermeid-version-info-in-memory()
         else ()
     let $filename := request:get-parameter('filename', common:mermeid-id('file') || '.xml')

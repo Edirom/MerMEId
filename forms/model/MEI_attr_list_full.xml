@@ -81,7 +81,7 @@
           <cc class="" copyof="" corresp="" follows="" label="" layer="" n="" next="" num="" part="" partstaff="" precedes="" prev="" resp="" sameas="" staff="" synch="" tstamp="" tstamp.ges="" tstamp.real="" type="" val="" xml:base="" xml:id=""/>
           <chan class="" copyof="" corresp="" follows="" label="" layer="" n="" next="" num="" part="" partstaff="" precedes="" prev="" resp="" sameas="" staff="" synch="" tstamp="" tstamp.ges="" tstamp.real="" type="" xml:base="" xml:id=""/>
           <chanPr class="" copyof="" corresp="" follows="" label="" layer="" n="" next="" num="" part="" partstaff="" precedes="" prev="" resp="" sameas="" staff="" synch="" tstamp="" tstamp.ges="" tstamp.real="" type="" xml:base="" xml:id=""/>
-          <change analog="" class="" copyof="" corresp="" enddate="" follows="" isodate="" label="" n="" next="" notafter="" notbefore="" precedes="" prev="" resp="" sameas="" startdate="" synch="" type="" xml:base="" xml:id=""/>
+          <change analog="" class="" copyof="" corresp="" enddate="" follows="" isodate="" label="" n="" next="" notafter="" notbefore="" precedes="" prev="" resp="" sameas="" startdate="" status="" synch="" type="" xml:base="" xml:id=""/>
           <changeDesc analog="" class="" copyof="" corresp="" follows="" label="" n="" next="" precedes="" prev="" resp="" sameas="" synch="" translit="" type="" xml:base="" xml:id="" xml:lang=""/>
           <choice class="" copyof="" corresp="" follows="" label="" n="" next="" precedes="" prev="" resp="" sameas="" synch="" type="" xml:base="" xml:id=""/>
           <chord altsym="" artic="" artic.ges="" beam="" breaksec="" class="" cluster="" color="" copyof="" corresp="" cue="" dots="" dots.ges="" dur="" dur.ges="" dur.metrical="" dur.ppq="" dur.real="" dur.recip="" enclose="" facs="" fermata="" follows="" fontfam="" fontname="" fontsize=""
@@ -429,7 +429,7 @@
                     label="" layer="" loc="" n="" next="" num="" numbase="" oloc="" ploc="" precedes="" prev="" resp="" sameas="" spaces="" staff="" synch="" to="" tstamp="" tstamp.ges="" tstamp.real="" tuplet="" type="" vo="" when="" x="" xml:base="" xml:id="" y=""/>
           <restore atleast="" atmost="" cert="" class="" confidence="" copyof="" corresp="" decls="" desc="" evidence="" extent="" facs="" follows="" hand="" instant="" label="" max="" min="" n="" next="" precedes="" prev="" resp="" sameas="" seq="" source="" state="" synch="" translit="" type=""
                     unit="" xml:base="" xml:id="" xml:lang=""/>
-          <revisionDesc analog="" class="" copyof="" corresp="" follows="" label="" n="" next="" precedes="" prev="" resp="" sameas="" synch="" type="" xml:base="" xml:id=""/>
+          <revisionDesc analog="" class="" copyof="" corresp="" follows="" label="" n="" next="" precedes="" prev="" resp="" sameas="" status="" synch="" type="" xml:base="" xml:id=""/>
           <role class="" copyof="" corresp="" facs="" follows="" label="" n="" next="" precedes="" prev="" resp="" sameas="" synch="" translit="" type="" xml:base="" xml:id="" xml:lang=""/>
           <roleDesc class="" copyof="" corresp="" facs="" follows="" label="" n="" next="" precedes="" prev="" resp="" sameas="" synch="" translit="" type="" xml:base="" xml:id="" xml:lang=""/>
           <roleName analog="" auth="" auth.uri="" cert="" class="" codedval="" copyof="" corresp="" enddate="" evidence="" facs="" follows="" isodate="" label="" n="" next="" nonfiling="" notafter="" notbefore="" nymref="" precedes="" prev="" resp="" role="" sameas="" source="" startdate="" synch=""

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    List of values for status attributes on `<revisionDesc>` and `<change>`.
+    This list is taken from the att.docStatus class at https://music-encoding.org/guidelines/dev/mei-all/attribute-classes/att.docStatus.html
+    and includes an empty status for cases where no status is applicable.
+ -->
+<valList xmlns="http://www.kb.dk/dcm">
+    <valItem ident="">
+        <desc>No status.</desc>
+    </valItem>
+    <valItem ident="draft">
+        <desc>Initial or preliminary version of the document.</desc>
+    </valItem>
+    <valItem ident="in-process">
+        <desc>Document is under development.</desc>
+    </valItem>
+    <valItem ident="candidate">
+        <desc>Content of the document is ready for review.</desc>
+    </valItem>
+    <valItem ident="approved">
+        <desc>Content of the document is reviewed and ready to be published.</desc>
+    </valItem>
+    <valItem ident="published">
+        <desc>Document is published.</desc>
+    </valItem>
+    <valItem ident="withdrawn">
+        <desc>Publication of the document has been reversed.</desc>
+    </valItem>
+    <valItem ident="embargoed">
+        <desc>Document cannot be published (in full or in part) due to an embargo.</desc>
+    </valItem>
+</valList>

@@ -103,10 +103,11 @@ declare function crud:create($node as node(), $filename as xs:string, $overwrite
  : @param $target-filename the output filename to copy to
  : @param $overwrite whether an existent target file may be overwritten
  : @param $new_title an optional new title. If omitted, the string "(copy)" will be appended to the old title
+ : @param $doc-status the status of the document to be encoded within `revisionDesc/@status`
  : @return a map object with source, target, message and code properties concerning the copy operation
  :)
 declare function crud:copy($source-filename as xs:string, $target-filename as xs:string, 
-    $overwrite as xs:boolean, $new_title as xs:string?) as map(*) {
+    $overwrite as xs:boolean, $new_title as xs:string?, $doc-status as xs:string?) as map(*) {
     let $source :=
         if(doc-available($config:data-root || '/' || $source-filename))
         then doc($config:data-root || '/' || $source-filename)
@@ -117,8 +118,12 @@ declare function crud:copy($source-filename as xs:string, $target-filename as xs
         else common:get-title($source) || ' (Copy)'
     let $username := common:get-current-username() => string()
     let $change-message := 'file copied from ' || $source-filename || ' to ' || $target-filename
+    let $new-status :=
+        if($doc-status)
+        then $doc-status
+        else 'draft'
     let $create-target := 
-        if($source) then crud:create($source => common:set-mei-title-in-memory($title) => common:add-change-entry-to-revisionDesc-in-memory($username, $change-message), $target-filename, $overwrite)
+        if($source) then crud:create($source => common:set-mei-title-in-memory($title) => common:add-change-entry-to-revisionDesc-in-memory($username, $change-message, $new-status, $new-status), $target-filename, $overwrite)
         else ()
     return
         if($create-target instance of map(*)) 

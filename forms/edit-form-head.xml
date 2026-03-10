@@ -110,6 +110,11 @@
       id="classification-instance">
       <classification/>
     </xf:instance>
+
+    <xf:instance xmlns="http://www.kb.dk/dcm"
+       id="att.docStatus-instance">
+      <status/>
+    </xf:instance>
     
     <xf:instance id="XMLfiles" xmlns="http://www.kb.dk/dcm">
       <fileList/>
@@ -293,7 +298,13 @@
       resource="{instance('parameters')/dcm:library_crud_home}/classification.xml"
       replace="instance" 
       instance="classification-instance"/>
-    
+
+    <xf:submission id="load-status"
+       method="get"
+       serialization="none"
+       resource="{instance('parameters')/dcm:library_crud_home}/att.docStatus.xml"
+       replace="instance"
+       instance="att.docStatus-instance"/>
     
 
     <!-- "onload" xforms actions -->
@@ -324,9 +335,10 @@
       <xf:send submission="load-instruments"/>
       <xf:send submission="load-instrument-groups"/>
       <xf:send submission="load-keywords"/>
-      <xf:send submission="load-languages"/>      
-      <xf:send submission="load-relators"/>      
-      <xf:send submission="load-resolutions"/>      
+      <xf:send submission="load-languages"/>
+      <xf:send submission="load-relators"/>
+      <xf:send submission="load-resolutions"/>
+      <xf:send submission="load-status"/>
 
       <!-- check list of language declarations -->
       <xf:dispatch name="language-update" target="form-group"/>

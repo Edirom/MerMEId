@@ -4,6 +4,7 @@ module namespace  app="http://kb.dk/this/listapp";
 import module namespace config="https://github.com/edirom/mermeid/config" at "./config.xqm";
 import module namespace common="https://github.com/edirom/mermeid/common" at "./common.xqm";
 
+declare namespace dcm="http://www.kb.dk/dcm";
 declare namespace file="http://exist-db.org/xquery/file";
 declare namespace fn="http://www.w3.org/2005/xpath-functions";
 declare namespace ft="http://exist-db.org/xquery/lucene";
@@ -11,6 +12,7 @@ declare namespace ht="http://exist-db.org/xquery/httpclient";
 declare namespace m="http://www.music-encoding.org/ns/mei";
 declare namespace request="http://exist-db.org/xquery/request";
 declare namespace response="http://exist-db.org/xquery/response";
+declare namespace session="http://exist-db.org/xquery/session";
 declare namespace util="http://exist-db.org/xquery/util";
 declare namespace xl="http://www.w3.org/1999/xlink";
 declare namespace xdb="http://exist-db.org/xquery/xmldb";
@@ -65,6 +67,13 @@ declare function app:copy-document-reference($doc as node()) as element(html:for
             <label class="ajaxform_label"><b>New title</b></label>
             <input type="text" name="title" value="{$proposed-title}" 
                 class="ajaxform_input" size="40" maxlength="36"/>
+			<label class="ajaxform_label"><b>Document status</b></label>
+            <select name="doc-status" class="ajaxform_input">
+              {
+                for $valItem in doc($config:app-root || '/library/att.docStatus.xml')//dcm:valItem
+                return <option value="{$valItem/data(@ident)}" title="{$valItem/data(dcm:desc)}">{$valItem/data(@ident)}</option>
+              }
+            </select>
             <label class="ajaxform_label">
                 <b>Overwrite target?</b>
                 <input type="checkbox" name="overwrite"/>

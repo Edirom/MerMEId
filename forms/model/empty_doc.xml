@@ -527,8 +527,8 @@
             </itemList>
          </manifestation>
       </manifestationList>
-      <revisionDesc>
-         <change isodate="">
+      <revisionDesc status="">
+         <change isodate="" status="">
             <respStmt>
                <name/>
             </respStmt>

@@ -327,29 +327,60 @@
 				<h:legend>File change history
 					<dcm:attribute-editor ref="."/>
 				</h:legend>
+				<h:span>Status of the file: </h:span>
+				<xf:select1 ref="@status">
+					<xf:itemset nodeset="xxf:instance('att.docStatus-instance')/dcm:valItem">
+						<xf:label>
+							<xf:output value="@ident"/>
+						</xf:label>
+						<xf:value ref="@ident"/>
+					</xf:itemset>
+				</xf:select1>
+				
 				<h:div class="vertical_spacer"/>
-				<h:span class="fixed_width_long">Date and time<!--<h:a class="help">&#160;?<h:span class="comment">Use date
+				<h:span class="fixed_width_long">
+                    <h:b>Date and time</h:b><!--<h:a class="help">&#160;?<h:span class="comment">Use date
 					format YYYY-MM-DD, e.g. 2011-04-30. A new row with today's date is
 					automatically created when opening the document. Your login name is automatically added on saving. 
-					Use "Add change"-button to add rows manually.</h:span></h:a>--></h:span>
-				<h:span class="fixed_width_maxlong" style="display:inline-block;">Description </h:span>
-				<h:span class="fixed_width_mediumshort" style="display:inline-block;">&#160;Responsible <h:a class="help">&#160;?<h:span 
-					class="comment">Enter your name or initials</h:span></h:a></h:span>
+					Use "Add change"-button to add rows manually.</h:span></h:a>-->
+                </h:span>
+				<h:span class="fixed_width_mediumlong" style="display:inline-block;">
+                    <h:b>Status </h:b>
+                </h:span>
+				<h:span class="fixed_width_long" style="display:inline-block;">
+                    <h:b>Description </h:b>
+                </h:span>
+				<h:span class="fixed_width_mediumshort" style="display:inline-block;">
+                    <h:b> Responsible </h:b>
+                    <h:a class="help"> ?<h:span class="comment">Enter your name or initials</h:span>
+                    </h:a>
+                </h:span>
+                <h:div class="vertical_spacer"/>
 				<xf:repeat nodeset="m:change" id="repeat-change">
 					<h:div>
 						<h:div class="fixed_width_long">
 							<!-- @isodate may be either just a date (old entries) or dateTime -->						
 							<xf:output value="format-date(@isodate, '[Y0001]-[M01]-[D01]')"/>
 							<xf:output value="format-dateTime(@isodate, '[Y0001]-[M01]-[D01] [H]:[m]:[s] [z]')"/>
+							
 						</h:div>
-						<!-- Date no longer editable -->
-						<!--<xf:input ref="@isodate"/>-->
-						<xf:input ref="m:changeDesc/m:p" class="maxlong"/>
-						<xf:input ref="m:respStmt/m:name" class="mediumshort"/>
-						<dcm:element-buttons triggers="remove" 
-							nodeset="m:change"
-							index="repeat-change"
-							origin="instance('empty-instance')/m:meiHead/m:revisionDesc/m:change"/>
+                        <h:span class="fixed_width_mediumlong">
+							<xf:select1 ref="@status">
+								<xf:itemset nodeset="xxf:instance('att.docStatus-instance')/dcm:valItem">
+									<xf:label>
+										<xf:output value="@ident"/>
+									</xf:label>
+									<xf:value ref="@ident"/>
+								</xf:itemset>
+							</xf:select1>
+                        </h:span>
+                        <h:span class="fixed_width_long">
+                             <xf:input ref="m:changeDesc/m:p"/>
+                        </h:span>
+                        <h:span class="fixed_width_mediumshort">
+                            <xf:input ref="m:respStmt/m:name"/>
+                        </h:span>
+    					<dcm:element-buttons triggers="remove" nodeset="m:change" index="repeat-change" origin="instance('empty-instance')/m:meiHead/m:revisionDesc/m:change"/>
 						<dcm:attribute-editor ref="."/>
 					</h:div>
 				</xf:repeat>
@@ -358,11 +389,9 @@
 						<xf:label>
 							<h:img src="{instance('parameters')/dcm:server_name}/editor/images/add.gif" alt="Add"/> Add change </xf:label>
 						<xf:action ev:event="DOMActivate">
-							<xf:insert nodeset="m:change" context="." at="last()" position="after"
-								origin="instance('empty-instance')/m:meiHead/m:revisionDesc/m:change"/>
-							<xf:setvalue
-								ref="instance('data-instance')/m:meiHead/m:revisionDesc/m:change[last()]/@isodate"
-								value="now()"/>
+							<xf:insert nodeset="m:change" context="." at="last()" position="after" origin="instance('empty-instance')/m:meiHead/m:revisionDesc/m:change"/>
+							<xf:setvalue ref="instance('data-instance')/m:meiHead/m:revisionDesc/m:change[last()]/@status" value="instance('data-instance')/m:meiHead/m:revisionDesc/m:change[last()-1]/@status"/>
+							<xf:setvalue ref="instance('data-instance')/m:meiHead/m:revisionDesc/m:change[last()]/@isodate" value="now()"/>
 						</xf:action>
 					</xf:trigger>
 				</h:div>
