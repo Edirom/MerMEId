@@ -32,9 +32,9 @@ authors:
   given-names: "Imran"
   orcid: https://orcid.org/0000-0002-1144-6265
 title: "MerMEId"
-version: "v2.1.0"
+version: "v2.2.0"
 doi: "10.5281/zenodo.10665425"
-date-released: "2025-08-13"
+date-released: "2026-03-13"
 url: "https://github.com/Edirom/MerMEId"
 repository-code: "https://github.com/Edirom/MerMEId"
 license: Apache-2.0
