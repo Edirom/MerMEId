@@ -44,7 +44,7 @@ jobs:
       matrix:
         include:
           - EXISTDB_IMAGE: duncdrum/existdb:6.0.1
-            IMAGE_TAG_SUFFIX:
+            IMAGE_TAG_SUFFIX: ""
             PLATFORMS: |
               linux/amd64
               linux/arm64
